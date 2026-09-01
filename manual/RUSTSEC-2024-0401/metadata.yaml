@@ -1,0 +1,26 @@
+id: RUSTSEC-2024-0401
+package: zlib-rs
+date: "2024-11-14"
+categories:
+  - denial-of-service
+CWE:
+  - CWE-770
+url: https://github.com/trifectatechfoundation/zlib-rs/security/advisories/GHSA-j3px-q95c-9683
+references: null
+severity: Medium
+aliases:
+  - GHSA-j3px-q95c-9683
+keywords:
+  - stack-overflow
+versions:
+  patched:
+    - ">= 0.4.0"
+affected:
+  functions:
+    "zlib_rs::inflate::inflate":
+      - "<= 0.3.1"
+affected.functions: null
+fix commit links:
+  - https://github.com/trifectatechfoundation/zlib-rs/commit/af224e7c29863a30fb2cd9af85678de85256cc15
+pov candidate links:
+  - http://github.com/trifectatechfoundation/zlib-rs/commit/af224e7c29863a30fb2cd9af85678de85256cc15

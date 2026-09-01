@@ -1,0 +1,25 @@
+id: RUSTSEC-2024-0441
+package: wasmtime
+date: '2024-04-02'
+categories:
+  - denial-of-service
+CWE:
+  - CWE-843
+url: https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-75hq-h6g9-h4q5
+references: null
+severity: Low
+aliases:
+  - CVE-2024-30266
+  - GHSA-75hq-h6g9-h4q5
+keywords: []
+versions:
+  patched:
+    - '>= 19.0.1'
+  unaffected:
+    - '< 19.0.0'
+affected: null
+affected.functions: null
+fix commit links:
+  - https://github.com/bytecodealliance/wasmtime/commit/7f57d0bb0948fa56cc950278d0db230ed10e8664
+pov candidate links:
+  - https://github.com/bytecodealliance/wasmtime/issues/8281

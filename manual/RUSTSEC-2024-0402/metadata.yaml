@@ -1,0 +1,29 @@
+id: RUSTSEC-2024-0402
+package: hashbrown
+date: "2024-10-11"
+categories:
+  - crypto-failure
+CWE:
+  - CWE-502
+url: https://github.com/rust-lang/hashbrown/issues/576
+references:
+  - https://github.com/advisories/GHSA-wwq9-3cpr-mm53
+severity: High
+aliases:
+  - GHSA-wwq9-3cpr-mm53
+keywords:
+  - borsh
+versions:
+  patched:
+    - ">= 0.15.1"
+  unaffected:
+    - "< 0.15.0"
+affected:
+  functions:
+    "hashbrown::HashMap::borsh_serialize":
+      - "=0.15.0"
+affected.functions: null
+fix commit links:
+  - https://github.com/rust-lang/hashbrown/pull/581/files
+pov candidate links:
+  - https://github.com/rust-lang/hashbrown/issues/576

@@ -1,0 +1,44 @@
+id: RUSTSEC-2025-0021
+package: gix-features
+date: '2025-04-03'
+categories:
+  - crypto-failure
+CWE:
+  - CWE-328
+url: https://github.com/GitoxideLabs/gitoxide/security/advisories/GHSA-2frx-2596-x5r6
+references:
+  - https://github.com/advisories/GHSA-2frx-2596-x5r6
+  - https://nvd.nist.gov/vuln/detail/CVE-2025-31130
+severity: Medium
+aliases:
+  - CVE-2025-31130
+  - GHSA-2frx-2596-x5r6
+keywords:
+  - hash-collision
+  - sha-1
+  - weak-hash
+versions:
+  patched:
+    - '>= 0.41.0'
+affected: null
+affected.functions:
+  gix_features::hash::bytes_of_file:
+    - < 0.41.0
+  gix_features::hash::bytes:
+    - < 0.41.0
+  gix_features::hash::bytes_with_hasher:
+    - < 0.41.0
+  gix_features::hash::hasher:
+    - < 0.41.0
+  gix_features::hash::Hasher::update:
+    - < 0.41.0
+  gix_features::hash::Hasher::digest:
+    - < 0.41.0
+  gix_features::hash::Write::new:
+    - < 0.41.0
+  gix_features::hash::Write::write:
+    - < 0.41.0
+  gix_features::hash::Write::flush:
+    - < 0.41.0
+fix commit links: https://github.com/GitoxideLabs/gitoxide/commit/4660f7a6f71873311f68f170b0f1f6659a02829d
+pov candidate links: https://github.com/GitoxideLabs/gitoxide/security/advisories/GHSA-2frx-2596-x5r6

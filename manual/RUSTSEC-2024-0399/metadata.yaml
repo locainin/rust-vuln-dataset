@@ -1,0 +1,28 @@
+id: RUSTSEC-2024-0399
+package: rustls
+date: "2024-11-22"
+categories:
+  - denial-of-service
+CWE:
+  - CWE-248
+url: https://github.com/rustls/rustls/issues/2227
+references:
+  - https://github.com/advisories/GHSA-qg5g-gv98-5ffh
+severity: Medium
+aliases:
+  - CVE-2024-11738
+  - GHSA-qg5g-gv98-5ffh
+keywords: null
+versions:
+  patched:
+    - ">= 0.23.18"
+  unaffected:
+    - ">= 0.23, < 0.23.13"
+    - "< 0.23"
+affected: null
+affected.functions: null
+fix commit links:
+  - https://github.com/rustls/rustls/pull/2231/files
+  - https://github.com/rustls/rustls/commit/69b6f7473a7ae096a9cf9e2d6eb3cd8b22743597
+pov candidate links:
+  - https://github.com/rustls/rustls/issues/2227

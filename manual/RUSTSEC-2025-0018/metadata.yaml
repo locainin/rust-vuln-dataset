@@ -1,0 +1,26 @@
+id: RUSTSEC-2025-0018
+package: xmas-elf
+date: '2025-03-26'
+categories:
+  - memory-exposure
+CWE:
+  - CWE-125
+url: https://github.com/nrc/xmas-elf/issues/86
+references:
+  - https://github.com/advisories/GHSA-9cc5-2pq7-hfj8
+severity: Medium
+aliases:
+  - GHSA-9cc5-2pq7-hfj8
+keywords: null
+versions:
+  patched:
+    - '>= 0.10'
+affected:
+  functions:
+    xmas_elf::hash::HashTable::get_bucket:
+      - < 0.10
+    xmas_elf::hash::HashTable::get_chain:
+      - < 0.10
+affected.functions: null
+fix commit links: https://github.com/nrc/xmas-elf/commit/57685c35512a57269086314a42a70441af4ef451
+pov candidate links: https://github.com/nrc/xmas-elf/issues/86

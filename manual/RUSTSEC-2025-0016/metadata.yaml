@@ -1,0 +1,36 @@
+id: RUSTSEC-2025-0016
+package: pared
+date: '2025-03-13'
+categories:
+  - code-execution
+  - memory-corruption
+CWE:
+  - CWE-416
+url: https://github.com/radekvit/pared/issues/2
+references:
+  - https://github.com/advisories/GHSA-vgmh-mqm4-8j88
+severity: Medium
+aliases:
+  - GHSA-vgmh-mqm4-8j88
+keywords: null
+versions:
+  patched:
+    - '>= 0.4.0'
+affected: null
+affected.functions:
+  pared::prc::Prc::from_rc:
+    - '< 0.4.0'
+  pared::prc::Prc::project:
+    - '< 0.4.0'
+  pared::prc::Prc::try_from_rc:
+    - '< 0.4.0'
+  pared::sync::Parc::from_arc:
+    - '< 0.4.0'
+  pared::sync::Parc::project:
+    - '< 0.4.0'
+  pared::sync::Parc::try_from_arc:
+    - '< 0.4.0'
+fix commit links:
+  - https://github.com/radekvit/pared/commit/108f540ea8acb6073751a1aa386085c1cdc4fd1e
+pov candidate links:
+  - https://github.com/radekvit/pared/issues/2

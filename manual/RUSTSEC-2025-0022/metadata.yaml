@@ -1,0 +1,29 @@
+id: RUSTSEC-2025-0022
+package: openssl
+date: '2025-04-04'
+categories:
+  - memory-corruption
+CWE:
+  - CWE-416
+url: https://github.com/sfackler/rust-openssl/pull/2390
+references:
+  - https://github.com/advisories/GHSA-4fcv-w3qc-ppgg
+severity: Medium
+aliases:
+  - GHSA-4fcv-w3qc-ppgg
+keywords: null
+versions:
+  patched:
+    - '>= 0.10.72'
+  unaffected:
+    - < 0.10.39
+affected: null
+affected.functions:
+  openssl::md::Md::fetch:
+    - '>= 0.10.39, < 0.10.72'
+  openssl::cipher::Cipher::fetch:
+    - '>= 0.10.39, < 0.10.72'
+fix commit links:
+  - https://github.com/sfackler/rust-openssl/pull/2390/files
+  - https://github.com/rust-openssl/rust-openssl/commit/87085bd67896b7f92e6de35d081f607a334beae4
+pov candidate links: https://github.com/sfackler/rust-openssl/pull/2390/files

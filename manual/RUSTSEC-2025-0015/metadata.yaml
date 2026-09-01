@@ -1,0 +1,30 @@
+id: RUSTSEC-2025-0015
+package: web-push
+date: '2025-02-16'
+categories:
+  - denial-of-service
+CWE:
+  - CWE-130
+  - CWE-770
+url: https://github.com/pimeys/rust-web-push/pull/68
+references:
+  - https://github.com/advisories/GHSA-287x-9rff-qvcg
+  - https://github.com/advisories/GHSA-fc83-9jwq-gc2m
+severity: Medium
+aliases:
+  - CVE-2025-53604
+  - GHSA-287x-9rff-qvcg
+  - GHSA-fc83-9jwq-gc2m
+keywords:
+  - panic
+  - oom
+versions:
+  patched:
+    - '>= 0.10.3'
+affected: null
+affected.functions: null
+fix commit links:
+  - https://github.com/pimeys/rust-web-push/pull/68/files
+  - https://github.com/pimeys/rust-web-push/commit/8447ed86bf3f24629abd7022b94104bf3cd64453
+pov candidate links:
+  - https://github.com/pimeys/rust-web-push/pull/64
