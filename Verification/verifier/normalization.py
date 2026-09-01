@@ -83,6 +83,10 @@ def _parse_links(field: str, value: Any) -> str | list[Any] | None:
     if isinstance(value, str):
         if value.lstrip().startswith("["):
             return _parse_json_list(field, value)
+        # RustXec stores some multiple links as blank-line-separated URLs
+        lines = [line.strip() for line in value.splitlines() if line.strip()]
+        if len(lines) > 1 and all(re.match(r"^https?://", line) for line in lines):
+            return lines
         return value
     raise ValueError(f"{field} must be a URL, list, or null")
 

@@ -1,0 +1,36 @@
+id: RUSTSEC-2024-0369
+package: phonenumber
+date: "2024-07-07"
+categories:
+  - denial-of-service
+CWE:
+  - CWE-248
+  - CWE-284
+  - CWE-392
+  - CWE-617
+  - CWE-1284
+url: https://github.com/whisperfish/rust-phonenumber/security/advisories/GHSA-mjw4-jj88-v687
+references:
+  - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-39697
+severity: High
+aliases:
+  - CVE-2024-39697
+  - GHSA-mjw4-jj88-v687
+keywords:
+  - panic
+  - untrusted input
+  - parsing
+versions:
+  patched:
+    - ">=0.3.6"
+  unaffected:
+    - "< 0.3.3"
+affected:
+  functions:
+    "phonenumber::parse":
+      - "*"
+affected.functions: null
+fix commit links:
+  - https://github.com/whisperfish/rust-phonenumber/commit/b792151b17fc90231c232a23935830c2266f3203
+pov candidate links:
+  - https://github.com/whisperfish/rust-phonenumber/commit/b792151b17fc90231c232a23935830c2266f3203

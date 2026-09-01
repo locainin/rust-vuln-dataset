@@ -153,6 +153,25 @@ def test_additional_link_is_found_only_when_csv_link_is_preserved():
     assert failures[0]["field"] == "fix commit links"
 
 
+def test_blank_line_separated_csv_links_compare_with_yaml_list():
+    row = csv_row()
+    row["pov candidate links"] = (
+        "https://example.invalid/pov\n\n"
+        "https://example.invalid/second-pov"
+    )
+    enriched = yaml_row()
+    enriched["pov candidate links"] = [
+        "https://example.invalid/pov",
+        "https://example.invalid/second-pov",
+    ]
+
+    assert normalize_field("pov candidate links", row["pov candidate links"]) == [
+        "https://example.invalid/pov",
+        "https://example.invalid/second-pov",
+    ]
+    assert compare_row(row, enriched) == []
+
+
 def test_changed_csv_value_fails():
     altered = yaml_row()
     altered["severity"] = "High"

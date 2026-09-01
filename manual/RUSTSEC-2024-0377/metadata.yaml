@@ -1,0 +1,25 @@
+id: RUSTSEC-2024-0377
+package: dbn
+date: "2024-10-07"
+categories:
+  - memory-corruption
+CWE:
+  - CWE-126
+url: https://github.com/databento/dbn/issues/67
+references:
+  - https://github.com/advisories/GHSA-pfr9-2p92-qrhq
+severity: Medium
+aliases:
+  - GHSA-pfr9-2p92-qrhq
+keywords:
+  - Heap-Buffer-Overflow
+versions:
+  patched:
+    - "> 0.22.0"
+affected: null
+affected.functions: null
+fix commit links:
+  - https://github.com/databento/dbn/commit/339efb90fdb980920a5e8829008abc1114f4bfdd
+pov candidate links:
+  - https://github.com/databento/dbn/issues/67
+  - https://github.com/databento/dbn/commit/339efb90fdb980920a5e8829008abc1114f4bfdd

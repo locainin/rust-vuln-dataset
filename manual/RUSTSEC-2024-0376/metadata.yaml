@@ -1,0 +1,26 @@
+id: RUSTSEC-2024-0376
+package: tonic
+date: "2024-10-01"
+categories:
+  - denial-of-service
+CWE:
+  - CWE-755
+url: https://github.com/hyperium/tonic/security/advisories/GHSA-4jwc-w2hc-78qv
+references: null
+severity: Medium
+aliases:
+  - CVE-2024-47609
+  - GHSA-4jwc-w2hc-78qv
+keywords:
+  - dos
+versions:
+  patched:
+    - ">= 0.12.3"
+  unaffected:
+    - "<= 0.11.0"
+affected: null
+affected.functions: null
+fix commit links:
+  - https://github.com/hyperium/tonic/commit/a4472a86f3290e60c7c01348b7e6a8164d6e7e48
+pov candidate links:
+  - https://github.com/hyperium/tonic/issues/1897
