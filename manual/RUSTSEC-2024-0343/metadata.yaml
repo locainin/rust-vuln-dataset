@@ -1,0 +1,31 @@
+id: RUSTSEC-2024-0343
+package: nano-id
+date: "2024-06-03"
+categories:
+  - crypto-failure
+CWE:
+  - CWE-331
+url: null
+references: null
+severity: Critical
+aliases:
+  - GHSA-2hfw-w739-p7x5
+  - GHSA-9hc7-6w9r-wj94
+  - CVE-2024-36400
+keywords: null
+versions:
+  patched:
+    - ">= 0.4.0"
+affected:
+  functions:
+    "nano_id::base58":
+      - "< 0.4.0"
+    "nano_id::base62":
+      - "< 0.4.0"
+    "nano_id::gen":
+      - "< 0.4.0"
+affected.functions: null
+fix commit links:
+  - https://github.com/viz-rs/nano-id/commit/a9022772b2f1ce38929b5b81eccc670ac9d3ab23
+pov candidate links:
+  - https://rustsec.org/advisories/RUSTSEC-2024-0343

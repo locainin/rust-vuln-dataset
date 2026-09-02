@@ -1,0 +1,28 @@
+id: RUSTSEC-2024-0021
+package: eyre
+date: "2024-03-05"
+categories:
+  - memory-corruption
+CWE:
+  - CWE-843
+url: https://github.com/eyre-rs/eyre/issues/141
+references: null
+severity: High
+aliases:
+  - GHSA-4v52-7q2x-v4xj
+keywords: null
+versions:
+  patched:
+    - ">= 0.6.12"
+  unaffected:
+    - "< 0.6.9"
+affected:
+  functions:
+    "eyre::Report::downcast":
+      - ">= 0.6.9, < 0.6.12"
+affected.functions: null
+fix commit links:
+  - https://github.com/eyre-rs/eyre/pull/143/files
+  - https://github.com/eyre-rs/eyre/commit/770ac3fa1435eae3b166a4b072053360e38a0575
+pov candidate links:
+  - https://github.com/eyre-rs/eyre/issues/141

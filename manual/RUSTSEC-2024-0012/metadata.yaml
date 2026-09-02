@@ -1,0 +1,24 @@
+id: RUSTSEC-2024-0012
+package: serde-json-wasm
+date: "2024-01-24"
+categories:
+  - denial-of-service
+CWE: []
+url: null
+references: null
+severity: High
+aliases:
+  - GHSA-rr69-rxr6-8qwf
+keywords:
+  - stack-overflow
+  - json
+versions:
+  patched:
+    - ">= 1.0.1"
+    - ">= 0.5.2, < 1.0.0"
+affected: null
+affected.functions: null
+fix commit links:
+  - https://github.com/CosmWasm/serde-json-wasm/commit/e78f9e28b3a2151d3175ee88ab2a001bf9515429
+pov candidate links:
+  - https://github.com/CosmWasm/serde-json-wasm/commit/e78f9e28b3a2151d3175ee88ab2a001bf9515429

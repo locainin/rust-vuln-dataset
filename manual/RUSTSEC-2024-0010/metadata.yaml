@@ -1,0 +1,29 @@
+id: RUSTSEC-2024-0010
+package: svix
+date: "2024-02-06"
+categories:
+  - crypto-failure
+CWE:
+  - CWE-288
+  - CWE-347
+url: https://github.com/svix/svix-webhooks/pull/1190
+references: null
+severity: Medium
+aliases:
+  - CVE-2024-21491
+  - GHSA-747x-5m58-mq97
+  - GHSA-w277-wpqf-rcfv
+keywords: null
+versions:
+  patched:
+    - ">= 1.17.0"
+affected:
+  functions:
+    "svix::webhooks::Webhook::verify":
+      - "< 1.17.0"
+affected.functions: null
+fix commit links:
+  - https://github.com/svix/svix-webhooks/pull/1190/files
+  - https://github.com/svix/svix-webhooks/commit/958821bd3b956d1436af65f70a0964d4ffb7daf6
+pov candidate links:
+  - https://github.com/svix/svix-webhooks/pull/1190/files

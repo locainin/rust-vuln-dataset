@@ -1,0 +1,27 @@
+id: RUSTSEC-2024-0356
+package: matrix-sdk-crypto
+date: "2024-07-18"
+categories:
+  - crypto-failure
+CWE:
+  - CWE-287
+  - CWE-863
+url: https://github.com/matrix-org/matrix-rust-sdk/security/advisories/GHSA-4qg4-cvh2-crgg
+references: null
+severity: Medium
+aliases:
+  - CVE-2024-40648
+  - GHSA-4qg4-cvh2-crgg
+keywords: null
+versions:
+  patched:
+    - ">= 0.7.2"
+affected:
+  functions:
+    "matrix_sdk_crypto::UserIdentity::is_verified":
+      - "< 0.7.2"
+affected.functions: null
+fix commit links:
+  - https://github.com/matrix-org/matrix-rust-sdk/commit/76a7052149bb8f722df12da915b3a06d19a6695a
+pov candidate links:
+  - https://github.com/matrix-org/matrix-rust-sdk/commit/76a7052149bb8f722df12da915b3a06d19a6695a

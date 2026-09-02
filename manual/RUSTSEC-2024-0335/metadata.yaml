@@ -1,0 +1,24 @@
+id: RUSTSEC-2024-0335
+package: gix-transport
+date: "2024-04-13"
+categories:
+  - code-execution
+CWE:
+  - CWE-77
+  - CWE-88
+url: https://github.com/Byron/gitoxide/security/advisories/GHSA-98p4-xjmm-8mfh
+references: null
+severity: Medium
+aliases:
+  - CVE-2024-32884
+  - GHSA-98p4-xjmm-8mfh
+keywords: null
+versions:
+  patched:
+    - ">= 0.42.0"
+affected: null
+affected.functions: null
+fix commit links:
+  - https://github.com/GitoxideLabs/gitoxide/commit/f56ad390a5569d0129b7b16632991d18b9ddb4f7
+pov candidate links:
+  - https://github.com/GitoxideLabs/gitoxide/security/advisories/GHSA-98p4-xjmm-8mfh

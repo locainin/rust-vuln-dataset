@@ -1,0 +1,30 @@
+id: RUSTSEC-2024-0345
+package: sequoia-openpgp
+date: "2024-06-26"
+categories:
+  - denial-of-service
+CWE:
+  - CWE-835
+url: https://gitlab.com/sequoia-pgp/sequoia/-/issues/1106
+references:
+  - https://github.com/advisories/GHSA-9344-p847-qm5c
+severity: Low
+aliases:
+  - CVE-2024-58261
+  - GHSA-9344-p847-qm5c
+keywords:
+  - infinite-loop
+versions:
+  patched:
+    - ">= 1.21.0"
+  unaffected:
+    - "< 1.13.0"
+affected:
+  functions:
+    "sequoia_openpgp::cert::raw::RawCertParser":
+      - ">= 1.13.0, < 1.21.0"
+affected.functions: null
+fix commit links:
+  - https://gitlab.com/sequoia-pgp/sequoia/-/commit/81fa1d8440116712365106bca7bd81b46349d9c0
+pov candidate links:
+  - https://gitlab.com/sequoia-pgp/sequoia/-/issues/1106

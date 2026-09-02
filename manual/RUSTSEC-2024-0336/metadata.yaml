@@ -1,0 +1,33 @@
+id: RUSTSEC-2024-0336
+package: rustls
+date: "2024-04-19"
+categories:
+  - denial-of-service
+CWE:
+  - CWE-835
+url: https://github.com/rustls/rustls/security/advisories/GHSA-6g7w-8wpp-frhj
+references: null
+severity: High
+aliases:
+  - CVE-2024-32650
+  - GHSA-6g7w-8wpp-frhj
+keywords: null
+versions:
+  patched:
+    - ">= 0.23.5"
+    - ">= 0.22.4, < 0.23.0"
+    - ">= 0.21.11, < 0.22.0"
+affected:
+  functions:
+    "rustls::ConnectionCommon::complete_io":
+      - "<= 0.23.4"
+      - "<= 0.22.3"
+      - "<= 0.21.10"
+      - "0.20"
+affected.functions: null
+fix commit links:
+  - https://github.com/rustls/rustls/commit/f45664fbded03d833dffd806503d3c8becd1b71e
+  - https://github.com/rustls/rustls/commit/6e938bcfe82a9da7a2e1cbf10b928c7eca26426e
+  - https://github.com/rustls/rustls/commit/2123576840aa31043a31b0770e6572136fbe0c2d
+pov candidate links:
+  - https://github.com/rustls/rustls/security/advisories/GHSA-6g7w-8wpp-frhj

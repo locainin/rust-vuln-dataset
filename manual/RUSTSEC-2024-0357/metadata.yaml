@@ -1,0 +1,27 @@
+id: RUSTSEC-2024-0357
+package: openssl
+date: "2024-07-21"
+categories:
+  - memory-corruption
+CWE:
+  - CWE-476
+url: https://github.com/sfackler/rust-openssl/pull/2266
+references:
+  - https://github.com/advisories/GHSA-q445-7m23-qrmw
+severity: Medium
+aliases:
+  - GHSA-q445-7m23-qrmw
+keywords: null
+versions:
+  patched:
+    - ">= 0.10.66"
+affected:
+  functions:
+    "openssl::bio::MemBio::get_buf":
+      - "< 0.10.66, >=0.8.0"
+affected.functions: null
+fix commit links:
+  - https://github.com/sfackler/rust-openssl/pull/2266/files
+  - https://github.com/sfackler/rust-openssl/commit/aef36e0f3950653148d6644309ee41ccf16e02bb
+pov candidate links:
+  - https://github.com/sfackler/rust-openssl/pull/2266/files

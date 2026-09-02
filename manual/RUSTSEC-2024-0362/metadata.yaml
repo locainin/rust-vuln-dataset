@@ -1,0 +1,24 @@
+id: RUSTSEC-2024-0362
+package: alloy-json-abi
+date: "2024-07-30"
+categories:
+  - denial-of-service
+CWE:
+  - CWE-400
+url: https://github.com/alloy-rs/core/issues/702
+references:
+  - https://github.com/advisories/GHSA-8327-84cj-8xjm
+severity: Medium
+aliases:
+  - GHSA-8327-84cj-8xjm
+keywords:
+  - stack-overflow
+versions:
+  patched:
+    - ">= 0.7.7"
+affected: null
+affected.functions: null
+fix commit links:
+  - https://github.com/alloy-rs/core/pull/703/files
+pov candidate links:
+  - https://github.com/alloy-rs/core/issues/702

@@ -1,0 +1,26 @@
+id: RUSTSEC-2024-0363
+package: sqlx
+date: "2024-08-15"
+categories:
+  - format-injection
+CWE: []
+url: https://github.com/launchbadge/sqlx/issues/3440
+references:
+  - https://github.com/advisories/GHSA-xmrp-424f-vfpx
+severity: Medium
+aliases:
+  - GHSA-xmrp-424f-vfpx
+keywords:
+  - sql
+  - injection
+  - overflow
+  - truncation
+versions:
+  patched:
+    - ">= 0.8.1"
+affected: null
+affected.functions: null
+fix commit links:
+  - https://github.com/launchbadge/sqlx/commit/bf13a7706be2732f5fbfedce6c7064d91d4d3eaf
+pov candidate links:
+  - https://github.com/launchbadge/sqlx/issues/3440#issuecomment-2307956901

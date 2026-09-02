@@ -1,0 +1,25 @@
+id: RUSTSEC-2024-0011
+package: snow
+date: "2024-01-23"
+categories:
+  - crypto-failure
+CWE:
+  - CWE-440
+url: https://github.com/mcginty/snow/security/advisories/GHSA-7g9j-g5jg-3vv3
+references: null
+severity: Medium
+aliases:
+  - GHSA-7g9j-g5jg-3vv3
+keywords:
+  - noise
+  - nonce
+  - state
+versions:
+  patched:
+    - ">= 0.9.5"
+affected: null
+affected.functions: null
+fix commit links:
+  - https://github.com/mcginty/snow/commit/12e8ae55547ae297d5f70599e5c884ea891303eb
+pov candidate links:
+  - https://github.com/mcginty/snow/commit/12e8ae55547ae297d5f70599e5c884ea891303eb
