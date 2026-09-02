@@ -1,0 +1,25 @@
+id: RUSTSEC-2023-0039
+package: buffered-reader
+date: "2023-05-16"
+categories:
+  - denial-of-service
+CWE: []
+url: https://lists.sequoia-pgp.org/hyperkitty/list/announce@lists.sequoia-pgp.org/thread/SN2E3QRT4DMQ5JNEK6VIN6DJ5SH766DI/
+references:
+  - https://gitlab.com/sequoia-pgp/sequoia/-/tags/buffered-reader%2Fv1.2.0
+severity: Low
+aliases:
+  - GHSA-29mf-62xx-28jq
+keywords:
+  - panic
+versions:
+  patched:
+    - ">= 1.0.2, < 1.1.0"
+    - ">= 1.1.5, < 1.2.0"
+    - ">= 1.2.0"
+affected: null
+affected.functions: null
+fix commit links:
+  - https://gitlab.com/sequoia-pgp/sequoia/-/commit/f6307652fb2cbf4e0fbd3f897b1ec70863fcfa61
+pov candidate links:
+  - https://gitlab.com/sequoia-pgp/sequoia/-/commit/f6307652fb2cbf4e0fbd3f897b1ec70863fcfa61

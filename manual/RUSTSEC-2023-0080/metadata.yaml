@@ -1,0 +1,26 @@
+id: RUSTSEC-2023-0080
+package: transpose
+date: "2023-12-18"
+categories:
+  - memory-corruption
+CWE:
+  - CWE-120
+  - CWE-190
+url: https://github.com/ejmahler/transpose/issues/11
+references: null
+severity: Critical
+aliases:
+  - GHSA-5gmm-6m36-r7jh
+keywords: null
+versions:
+  patched:
+    - ">= 0.2.3"
+affected:
+  functions:
+    "transpose::transpose":
+      - ">= 0.1.0"
+affected.functions: null
+fix commit links:
+  - https://github.com/ejmahler/transpose/commit/c4bcd39fabca9a31a401d0cc42d4090869b5a37a
+pov candidate links:
+  - https://github.com/ejmahler/transpose/issues/11

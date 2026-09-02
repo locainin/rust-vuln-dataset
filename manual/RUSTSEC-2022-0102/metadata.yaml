@@ -1,0 +1,26 @@
+id: RUSTSEC-2022-0102
+package: wasmtime
+date: "2022-11-05"
+categories:
+  - memory-corruption
+CWE:
+  - CWE-119
+  - CWE-125
+  - CWE-787
+url: https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-44mr-8vmm-wjhg
+references: null
+severity: Medium
+aliases:
+  - CVE-2022-39392
+  - GHSA-44mr-8vmm-wjhg
+keywords: []
+versions:
+  patched:
+    - ">= 1.0.2, < 2.0.0"
+    - ">= 2.0.2"
+affected: null
+affected.functions: null
+fix commit links:
+  - https://github.com/bytecodealliance/wasmtime/commit/e60c3742904ccbb3e26da201c9221c38a4981d72
+pov candidate links:
+  - https://github.com/bytecodealliance/wasmtime/commit/e60c3742904ccbb3e26da201c9221c38a4981d72

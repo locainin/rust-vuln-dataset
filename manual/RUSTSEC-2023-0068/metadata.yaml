@@ -1,0 +1,36 @@
+id: RUSTSEC-2023-0068
+package: cocoon
+date: "2023-10-15"
+categories:
+  - crypto-failure
+CWE: []
+url: https://github.com/fadeevab/cocoon/issues/22
+references:
+  - https://github.com/advisories/GHSA-6878-6wc2-pf5h
+severity: Medium
+aliases:
+  - GHSA-6878-6wc2-pf5h
+keywords:
+  - nonce
+  - stream-cipher
+versions:
+  patched:
+    - ">= 0.4.0"
+affected: null
+affected.functions:
+  "cocoon::Cocoon::encrypt":
+    - "<= 0.3.3"
+  "cocoon::Cocoon::dump":
+    - "<= 0.3.3"
+  "cocoon::Cocoon::wrap":
+    - "<= 0.3.3"
+  "cocoon::MiniCocoon::encrypt":
+    - "<= 0.3.3"
+  "cocoon::MiniCocoon::dump":
+    - "<= 0.3.3"
+  "cocoon::MiniCocoon::wrap":
+    - "<= 0.3.3"
+fix commit links:
+  - https://github.com/fadeevab/cocoon/pull/23/files
+pov candidate links:
+  - https://rustsec.org/advisories/RUSTSEC-2023-0068

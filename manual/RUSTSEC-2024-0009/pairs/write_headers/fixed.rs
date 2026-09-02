@@ -1,0 +1,40 @@
+    fn write_headers(&mut self, output_buffer: &mut Vec<u8>) -> Result<()> {
+        use std::io::Write;
+        let status = self.status().unwrap_or(Status::NotFound);
+
+        write!(
+            output_buffer,
+            "{} {} {}\r\n",
+            self.version,
+            status as u16,
+            status.canonical_reason()
+        )?;
+
+        self.finalize_headers();
+
+        log::trace!(
+            "sending:\n{} {}\n{}",
+            self.version,
+            status,
+            &self.response_headers
+        );
+
+        for (name, values) in &self.response_headers {
+            if name.is_valid() {
+                for value in values {
+                    if value.is_valid() {
+                        write!(output_buffer, "{name}: ")?;
+                        output_buffer.extend_from_slice(value.as_ref());
+                        write!(output_buffer, "\r\n")?;
+                    } else {
+                        log::error!("skipping invalid header value {value:?} for header {name}");
+                    }
+                }
+            } else {
+                log::error!("skipping invalid header with name {name:?}");
+            }
+        }
+
+        write!(output_buffer, "\r\n")?;
+        Ok(())
+    }

@@ -1,0 +1,29 @@
+id: RUSTSEC-2024-0009
+package: trillium-http
+date: "2024-01-23"
+categories:
+  - format-injection
+CWE:
+  - CWE-113
+  - CWE-436
+url: https://github.com/trillium-rs/trillium/security/advisories/GHSA-9f9p-cp3c-72jf
+references: null
+severity: Medium
+aliases:
+  - GHSA-9f9p-cp3c-72jf
+  - CVE-2024-23644
+keywords:
+  - http
+  - request
+  - splitting
+versions:
+  patched:
+    - ">= 0.3.12"
+  unaffected: []
+affected: null
+affected.functions: null
+fix commit links:
+  - https://github.com/trillium-rs/trillium/commit/8d468f85e27b8d0943d6f43ce9f8c7397141a999
+pov candidate links:
+  - https://github.com/trillium-rs/trillium/commit/8d468f85e27b8d0943d6f43ce9f8c7397141a999
+  - https://github.com/trillium-rs/trillium/commit/16a42b3f8378a3fa4e61ece3e3e37e6a530df51d

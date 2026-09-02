@@ -1,0 +1,26 @@
+id: RUSTSEC-2023-0044
+package: openssl
+date: "2023-06-20"
+categories:
+  - memory-exposure
+CWE:
+  - CWE-126
+url: https://github.com/sfackler/rust-openssl/issues/1965
+references:
+  - https://github.com/advisories/GHSA-xcf7-rvmh-g6q4
+severity: Medium
+aliases:
+  - GHSA-xcf7-rvmh-g6q4
+keywords: null
+versions:
+  patched:
+    - ">= 0.10.55"
+affected:
+  functions:
+    "openssl::x509::verify::X509VerifyParamRef::set_host":
+      - "< 0.10.55, >=0.10.0"
+affected.functions: null
+fix commit links:
+  - https://github.com/sfackler/rust-openssl/pull/1968/files
+pov candidate links:
+  - https://github.com/sfackler/rust-openssl/issues/1965

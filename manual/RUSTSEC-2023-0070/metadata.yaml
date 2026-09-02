@@ -1,0 +1,26 @@
+id: RUSTSEC-2023-0070
+package: self_cell
+date: "2023-11-10"
+categories:
+  - memory-corruption
+CWE: []
+url: https://github.com/Voultapher/self_cell/issues/49
+references:
+  - https://github.com/advisories/GHSA-48m6-wm5p-rr6h
+severity: High
+aliases:
+  - GHSA-48m6-wm5p-rr6h
+keywords:
+  - unsound
+  - self_cell
+  - self-referential
+versions:
+  patched:
+    - ">= 0.10.3, < 1.0.0"
+    - ">= 1.0.2"
+affected: null
+affected.functions: null
+fix commit links:
+  - https://github.com/Voultapher/self_cell/pull/50/files
+pov candidate links:
+  - https://github.com/Voultapher/self_cell/issues/49

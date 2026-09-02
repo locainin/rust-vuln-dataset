@@ -1,0 +1,61 @@
+id: RUSTSEC-2023-0074
+package: zerocopy
+date: "2023-12-14"
+categories:
+  - memory-corruption
+CWE: []
+url: https://github.com/google/zerocopy/issues/716
+references:
+  - https://github.com/advisories/GHSA-3mv5-343c-w2qg
+severity: Low
+aliases:
+  - GHSA-3mv5-343c-w2qg
+  - GHSA-rjhf-4mh8-9xjq
+keywords:
+  - ref
+  - refcell
+  - mutable-aliasing
+versions:
+  patched:
+    - ">= 0.2.9, < 0.3.0"
+    - ">= 0.3.2, < 0.4.0"
+    - ">= 0.4.1, < 0.5.0"
+    - ">= 0.5.2, < 0.6.0"
+    - ">= 0.6.6, < 0.7.0"
+    - ">= 0.7.31"
+  unaffected:
+    - "< 0.2.2"
+affected: null
+affected.functions:
+  "zerocopy::Ref::into_ref":
+    - ">= 0.2.2, < 0.2.9"
+    - ">= 0.3.0, < 0.3.2"
+    - ">= 0.4.0, < 0.4.1"
+    - ">= 0.5.0, < 0.5.2"
+    - ">= 0.6.0, < 0.6.6"
+    - ">= 0.7.0, < 0.7.31"
+  "zerocopy::Ref::into_mut":
+    - ">= 0.2.2, < 0.2.9"
+    - ">= 0.3.0, < 0.3.2"
+    - ">= 0.4.0, < 0.4.1"
+    - ">= 0.5.0, < 0.5.2"
+    - ">= 0.6.0, < 0.6.6"
+    - ">= 0.7.0, < 0.7.31"
+  "zerocopy::Ref::into_slice":
+    - ">= 0.2.2, < 0.2.9"
+    - ">= 0.3.0, < 0.3.2"
+    - ">= 0.4.0, < 0.4.1"
+    - ">= 0.5.0, < 0.5.2"
+    - ">= 0.6.0, < 0.6.6"
+    - ">= 0.7.0, < 0.7.31"
+  "zerocopy::Ref::into_mut_slice":
+    - ">= 0.2.2, < 0.2.9"
+    - ">= 0.3.0, < 0.3.2"
+    - ">= 0.4.0, < 0.4.1"
+    - ">= 0.5.0, < 0.5.2"
+    - ">= 0.6.0, < 0.6.6"
+    - ">= 0.7.0, < 0.7.31"
+fix commit links:
+  - https://github.com/google/zerocopy/commit/7d3a8f9ea6bcf982ecd77db39a8be410b098232e
+pov candidate links:
+  - https://github.com/google/zerocopy/issues/716

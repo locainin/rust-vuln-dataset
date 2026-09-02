@@ -1,0 +1,26 @@
+id: RUSTSEC-2023-0030
+package: versionize
+date: "2023-03-24"
+categories:
+  - memory-exposure
+CWE:
+  - CWE-125
+url: https://github.com/firecracker-microvm/versionize/pull/53
+references:
+  - https://github.com/advisories/GHSA-8vxc-r5wp-vgvc
+severity: Medium
+aliases:
+  - CVE-2023-28448
+  - GHSA-8vxc-r5wp-vgvc
+keywords: null
+versions:
+  patched:
+    - ">= 0.1.10"
+affected:
+  os:
+    - linux
+affected.functions: null
+fix commit links:
+  - https://github.com/firecracker-microvm/versionize/pull/53/files
+pov candidate links:
+  - https://github.com/firecracker-microvm/versionize/pull/53/files

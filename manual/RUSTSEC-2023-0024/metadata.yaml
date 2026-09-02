@@ -1,0 +1,28 @@
+id: RUSTSEC-2023-0024
+package: openssl
+date: "2023-03-24"
+categories:
+  - denial-of-service
+CWE:
+  - CWE-476
+url: https://github.com/sfackler/rust-openssl/pull/1854
+references:
+  - https://github.com/advisories/GHSA-6hcf-g6gr-hhcr
+severity: High
+aliases:
+  - GHSA-6hcf-g6gr-hhcr
+keywords: null
+versions:
+  patched:
+    - ">= 0.10.48"
+affected:
+  functions:
+    "openssl::x509::X509Extension::new":
+      - "< 0.10.48, >=0.9.7"
+    "openssl::x509::X509Extension::new_nid":
+      - "< 0.10.48, >=0.9.7"
+affected.functions: null
+fix commit links:
+  - https://github.com/sfackler/rust-openssl/pull/1854/commits/78aa9aa22cfd58ac33d1e19184cec667438fd2a1
+pov candidate links:
+  - https://github.com/sfackler/rust-openssl/pull/1854/commits/78aa9aa22cfd58ac33d1e19184cec667438fd2a1

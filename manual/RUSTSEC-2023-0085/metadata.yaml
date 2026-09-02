@@ -1,0 +1,22 @@
+id: RUSTSEC-2023-0085
+package: hpack
+date: "2023-09-15"
+categories:
+  - denial-of-service
+CWE:
+  - CWE-754
+url: https://github.com/mlalic/hpack-rs/issues/11
+references:
+  - https://github.com/sno2/hpack-rs-patched/commit/d669282924a95311599e9e7dd53869ee96b3a2f5
+severity: High
+aliases:
+  - GHSA-w7hm-hmxv-pvhf
+keywords: null
+versions:
+  patched: []
+affected: null
+affected.functions: null
+fix commit links:
+  - https://github.com/sno2/hpack-rs-patched/commit/d669282924a95311599e9e7dd53869ee96b3a2f5
+pov candidate links:
+  - https://github.com/advisories/GHSA-w7hm-hmxv-pvhf

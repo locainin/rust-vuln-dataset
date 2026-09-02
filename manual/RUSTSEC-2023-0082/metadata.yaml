@@ -1,0 +1,33 @@
+id: RUSTSEC-2023-0082
+package: phonenumber
+date: "2023-09-19"
+categories:
+  - denial-of-service
+CWE:
+  - CWE-248
+  - CWE-392
+  - CWE-1284
+url: https://github.com/whisperfish/rust-phonenumber/security/advisories/GHSA-whhr-7f2w-qqj2
+references:
+  - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-42444
+severity: High
+aliases:
+  - CVE-2023-42444
+  - whhr-7f2w-qqj2
+keywords:
+  - panic
+  - untrusted input
+  - parsing
+versions:
+  patched:
+    - ">= 0.2.5, <0.3.0"
+    - ">=0.3.3"
+affected:
+  functions:
+    "phonenumber::parse":
+      - "*"
+affected.functions: null
+fix commit links:
+  - https://github.com/whisperfish/rust-phonenumber/commit/bea8e732b9cada617ede5cf51663dba183747f71
+pov candidate links:
+  - https://github.com/whisperfish/rust-phonenumber/commit/bea8e732b9cada617ede5cf51663dba183747f71
