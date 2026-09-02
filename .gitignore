@@ -28,4 +28,5 @@ __pycache__/
 
 # Dataset case intentionally excluded (needs review).
 manual/notes.txt
+RUSTSEC-2023-0066/
 RUSTSEC-2024-0406/
