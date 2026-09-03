@@ -1,0 +1,25 @@
+id: RUSTSEC-2022-0098
+package: wasmtime
+date: "2022-11-05"
+categories:
+  - memory-exposure
+CWE:
+  - CWE-212
+  - CWE-226
+url: https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-wh6w-3828-g9qf
+references: null
+severity: High
+aliases:
+  - CVE-2022-39393
+  - GHSA-wh6w-3828-g9qf
+keywords: []
+versions:
+  patched:
+    - ">= 1.0.2, < 2.0.0"
+    - ">= 2.0.2"
+affected: null
+affected.functions: null
+fix commit links:
+  - https://github.com/bytecodealliance/wasmtime/commit/2614f2e9d2d36805ead8a8da0fa0c6e0d9e428a0
+pov candidate links:
+  - https://github.com/bytecodealliance/wasmtime/commit/2614f2e9d2d36805ead8a8da0fa0c6e0d9e428a0

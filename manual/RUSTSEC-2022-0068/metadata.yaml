@@ -1,0 +1,27 @@
+id: RUSTSEC-2022-0068
+package: capnp
+date: "2022-11-30"
+categories:
+  - memory-exposure
+CWE:
+  - CWE-125
+url: https://github.com/capnproto/capnproto/tree/master/security-advisories/2022-11-30-0-pointer-list-bounds.md
+references:
+  - https://dwrensha.github.io/capnproto-rust/2022/11/30/out_of_bounds_memory_access_bug.html
+  - https://github.com/capnproto/capnproto/security/advisories/GHSA-qqff-4vw4-f6hx
+severity: Medium
+aliases:
+  - CVE-2022-46149
+  - GHSA-qqff-4vw4-f6hx
+keywords: null
+versions:
+  patched:
+    - ">= 0.15.2"
+    - "^0.14.11"
+    - "^0.13.7"
+affected: null
+affected.functions: null
+fix commit links:
+  - https://github.com/capnproto/capnproto-rust/commit/e7ee0ef892c354b0390ed6e38d3ca634308897c5
+pov candidate links:
+  - https://github.com/capnproto/capnproto-rust/commit/e7ee0ef892c354b0390ed6e38d3ca634308897c5

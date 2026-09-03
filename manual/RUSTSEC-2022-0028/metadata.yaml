@@ -1,0 +1,29 @@
+id: RUSTSEC-2022-0028
+package: neon
+date: "2022-05-22"
+categories:
+  - memory-exposure
+CWE: []
+url: https://github.com/neon-bindings/neon/issues/896
+references: null
+severity: High
+aliases:
+  - GHSA-8mj7-wxmc-f424
+keywords:
+  - use-after-free
+  - incorrect-lifetime
+versions:
+  patched:
+    - ">= 0.10.1"
+  unaffected:
+    - "< 0.8.0"
+affected: null
+affected.functions:
+  "neon::types::JsArrayBuffer::external":
+    - "< 0.10.1, >= 0.8.0"
+  "neon::types::JsBuffer::external":
+    - "< 0.10.1, >= 0.8.0"
+fix commit links:
+  - https://github.com/neon-bindings/neon/commit/4e350ea1d74cc90158e7bc3b8ce273bf9b6a5c0f
+pov candidate links:
+  - https://github.com/neon-bindings/neon/issues/896

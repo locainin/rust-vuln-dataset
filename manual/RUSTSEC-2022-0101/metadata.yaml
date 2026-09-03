@@ -1,0 +1,24 @@
+id: RUSTSEC-2022-0101
+package: wasmtime
+date: "2022-07-05"
+categories:
+  - denial-of-service
+CWE:
+  - CWE-682
+  - CWE-824
+url: https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-7f6x-jwh5-m9r4
+references: null
+severity: Medium
+aliases:
+  - CVE-2022-23636
+  - GHSA-7f6x-jwh5-m9r4
+keywords: []
+versions:
+  patched:
+    - ">= 0.38.2"
+affected: null
+affected.functions: null
+fix commit links:
+  - https://github.com/bytecodealliance/wasmtime/commit/2ba4bce5cc719e5a74e571a534424614e62ecc41
+pov candidate links:
+  - https://github.com/bytecodealliance/wasmtime/commit/886ecc562040bef61faf19438c22285c2d62403a

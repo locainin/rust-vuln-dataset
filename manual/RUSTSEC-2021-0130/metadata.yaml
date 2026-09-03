@@ -1,0 +1,29 @@
+id: RUSTSEC-2021-0130
+package: lru
+date: "2021-12-21"
+categories:
+  - memory-corruption
+CWE:
+  - CWE-416
+url: https://github.com/jeromefroe/lru-rs/issues/120
+references: null
+severity: High
+aliases:
+  - CVE-2021-45720
+  - GHSA-qqmc-hwqp-8g2w
+  - GHSA-v362-2895-h9r2
+keywords:
+  - use-after-free
+versions:
+  patched:
+    - ">= 0.7.1"
+affected: null
+affected.functions:
+  "lru::LruCache::iter":
+    - "< 0.7.1"
+  "lru::LruCache::iter_mut":
+    - "< 0.7.1"
+fix commit links:
+  - https://github.com/jeromefroe/lru-rs/pull/121/files
+pov candidate links:
+  - https://github.com/jeromefroe/lru-rs/issues/120

@@ -1,0 +1,26 @@
+id: RUSTSEC-2022-0063
+package: linked_list_allocator
+date: "2022-09-07"
+categories:
+  - memory-corruption
+CWE:
+  - CWE-119
+  - CWE-787
+  - CWE-1284
+url: https://github.com/advisories/GHSA-xg8p-34w2-j49j
+references: null
+severity: High
+aliases:
+  - CVE-2022-36086
+  - GHSA-xg8p-34w2-j49j
+keywords: null
+versions:
+  patched:
+    - ">= 0.10.2"
+  unaffected: []
+affected: null
+affected.functions: null
+fix commit links:
+  - https://github.com/rust-osdev/linked-list-allocator/commit/013b0758643943e8df5b17bbb495460ff47e8bbf
+pov candidate links:
+  - https://github.com/rust-osdev/linked-list-allocator/commit/013b0758643943e8df5b17bbb495460ff47e8bbf

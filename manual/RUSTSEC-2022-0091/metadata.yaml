@@ -1,0 +1,28 @@
+id: RUSTSEC-2022-0091
+package: tauri
+date: "2022-09-19"
+categories:
+  - privilege-escalation
+CWE:
+  - CWE-284
+  - CWE-668
+  - CWE-706
+url: https://github.com/tauri-apps/tauri/issues/5234
+references: null
+severity: Low
+aliases:
+  - CVE-2022-41874
+  - GHSA-q9wv-22m9-vhqh
+keywords: null
+versions:
+  patched:
+    - ">= 1.0.7, < 1.1.0"
+    - ">= 1.1.2"
+  unaffected:
+    - "< 1.0.0"
+affected: null
+affected.functions: null
+fix commit links:
+  - https://github.com/108518/tauri/commit/4cbdf0fb1c0de5004eab51c36d5843a9816f18af
+pov candidate links:
+  - https://github.com/108518/tauri/commit/4cbdf0fb1c0de5004eab51c36d5843a9816f18af

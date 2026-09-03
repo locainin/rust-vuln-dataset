@@ -1,0 +1,24 @@
+id: RUSTSEC-2022-0013
+package: regex
+date: "2022-03-08"
+categories:
+  - denial-of-service
+CWE:
+  - CWE-400
+  - CWE-1333
+url: https://groups.google.com/g/rustlang-security-announcements/c/NcNNL1Jq7Yw
+references: null
+severity: High
+aliases:
+  - CVE-2022-24713
+  - GHSA-m5pq-gvj9-9vr8
+keywords: null
+versions:
+  patched:
+    - ">= 1.5.5"
+affected: null
+affected.functions: null
+fix commit links:
+  - https://github.com/rust-lang/regex/commit/ae70b41d4f46641dbc45c7a4f87954aea356283e
+pov candidate links:
+  - https://github.com/rust-lang/regex/commit/ae70b41d4f46641dbc45c7a4f87954aea356283e

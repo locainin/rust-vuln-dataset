@@ -1,0 +1,29 @@
+id: RUSTSEC-2021-0125
+package: simple_asn1
+date: "2021-11-14"
+categories:
+  - denial-of-service
+CWE:
+  - CWE-20
+  - CWE-400
+url: https://github.com/acw/simple_asn1/issues/27
+references: null
+severity: High
+aliases:
+  - CVE-2021-45711
+  - GHSA-3m6f-3gfg-4x56
+  - GHSA-g4h2-4wvh-grc5
+keywords:
+  - panic
+  - string_slice
+versions:
+  patched:
+    - ">=0.6.1"
+  unaffected:
+    - "<0.6.0"
+affected: null
+affected.functions: null
+fix commit links:
+  - https://github.com/acw/simple_asn1/pull/28/files
+pov candidate links:
+  - https://github.com/acw/simple_asn1/pull/28/files

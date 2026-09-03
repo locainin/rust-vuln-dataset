@@ -1,0 +1,25 @@
+id: RUSTSEC-2022-0072
+package: hyper-staticfile
+date: "2022-12-23"
+categories:
+  - format-injection
+CWE:
+  - CWE-601
+url: https://github.com/stephank/hyper-staticfile/commit/f12cadc6666c6f555d29725f5bc45da2103f24ea
+references: null
+severity: Medium
+aliases:
+  - GHSA-5wvv-q5fv-2388
+keywords:
+  - open redirect
+  - http
+versions:
+  patched:
+    - "^0.9.4"
+    - ">= 0.10.0-alpha.5"
+affected: null
+affected.functions: null
+fix commit links:
+  - https://github.com/stephank/hyper-staticfile/commit/f12cadc6666c6f555d29725f5bc45da2103f24ea
+pov candidate links:
+  - https://github.com/stephank/hyper-staticfile/commit/f12cadc6666c6f555d29725f5bc45da2103f24ea

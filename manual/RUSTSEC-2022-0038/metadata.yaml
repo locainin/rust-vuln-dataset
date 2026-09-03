@@ -1,0 +1,24 @@
+id: RUSTSEC-2022-0038
+package: juniper
+date: "2022-07-28"
+categories:
+  - denial-of-service
+CWE:
+  - CWE-400
+  - CWE-674
+url: https://github.com/graphql-rust/juniper/security/advisories/GHSA-4rx6-g5vg-5f3j
+references: null
+severity: High
+aliases:
+  - GHSA-4rx6-g5vg-5f3j
+  - CVE-2022-31173
+keywords: null
+versions:
+  patched:
+    - ">= 0.15.10"
+affected: null
+affected.functions: null
+fix commit links:
+  - https://github.com/graphql-rust/juniper/commit/2b609ee057be950e3454b69fadc431d120e407bb
+pov candidate links:
+  - https://github.com/graphql-rust/juniper/commit/2b609ee057be950e3454b69fadc431d120e407bb
