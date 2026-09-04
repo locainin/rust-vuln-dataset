@@ -24,7 +24,7 @@ Files:
 - `vulnerable.rs` — exact vulnerable function or Rust item extracted from `before.rs`
 - `fixed.rs` — exact repaired counterpart extracted from `after.rs`
 
-The extracted snippets preserve their original source text and indentation so provenance can be verified directly.
+The extracted snippets preserve their original source text and indentation so their inclusion in the stored snapshots can be verified directly.
 
 Some vulnerabilities are fixed by removing the vulnerable implementation entirely. In those cases, `fixed.rs` may intentionally be empty and the verifier confirms that the vulnerable item no longer exists in the repaired source.
 
@@ -71,9 +71,9 @@ It checks:
 - authoritative metadata additions
 - required source-pair files
 - vulnerable/fixed differences
-- exact vulnerable-source provenance
-- exact fixed-source provenance
-- removed-function fixes
+- exact vulnerable-snippet inclusion in `before.rs`
+- exact fixed-snippet inclusion in `after.rs`
+- removed-item fixes
 - affected-function and pair counts
 - source ranges and pair structure
 
@@ -93,7 +93,7 @@ For interactive manual review of one RustSec case at a time:
 
     python main.py --interactive
 
-This displays the case metadata, source provenance, pair information, and vulnerable-to-fixed diffs.
+This displays the case metadata, snapshot matches, pair information, and vulnerable-to-fixed diffs.
 
 To manually compare a pair:
 

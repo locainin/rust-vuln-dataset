@@ -3,14 +3,16 @@ from __future__ import annotations
 import curses
 import os
 import textwrap
+from collections.abc import Mapping
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Mapping
+from typing import Any
 
 import yaml
 
 from .case_metadata import case_id, discover_case_dirs, is_valid_case_name, load_yaml
 from .comparison import compare_row
+from .console import snapshot_match_status
 from .csv_source import load_metadata_csv
 from .dataset_structure import PairResult, StructureResult, check_structure
 from .normalization import affected_function_names
@@ -106,8 +108,7 @@ def _format_metadata_value(value: Any) -> str:
         if not value:
             return "{}"
         return "; ".join(
-            f"{key}: {_format_metadata_value(item)}"
-            for key, item in value.items()
+            f"{key}: {_format_metadata_value(item)}" for key, item in value.items()
         )
 
     rendered = str(value)
@@ -131,10 +132,7 @@ def _metadata_field_lines(
     role = field.status.lower()
 
     lines = [DisplayLine(f"{prefix}{wrapped[0]}", role)]
-    lines.extend(
-        DisplayLine(f"{continuation}{part}", role)
-        for part in wrapped[1:]
-    )
+    lines.extend(DisplayLine(f"{continuation}{part}", role) for part in wrapped[1:])
     return lines
 
 
@@ -169,14 +167,8 @@ def _status_line(
     )
 
 
-def _range_text(filename: str, source_range: tuple[int, int] | None) -> str:
-    if source_range is None:
-        return "provenance mismatch"
-    return f"{filename}:{source_range[0]}-{source_range[1]}"
-
-
 def _diff_role(line: str) -> str:
-    if line.startswith("@@") or line.startswith("---") or line.startswith("+++"):
+    if line.startswith(("@@", "---", "+++")):
         return "info"
     if line.startswith("+"):
         return "ok"
@@ -190,40 +182,47 @@ def _expanded_pair_lines(
     show_diff: bool,
 ) -> list[DisplayLine]:
     lines = [DisplayLine(pair.name)]
-    vulnerable_status = "OK" if pair.vulnerable_range is not None else "FAIL"
-    fixed_status = (
-        "REMOVED"
-        if pair.fixed_removed
-        else "OK"
-        if pair.fixed_range is not None
-        else "FAIL"
+    vulnerable_status, vulnerable_detail = snapshot_match_status(
+        "before.rs",
+        pair.vulnerable_range,
+        pair.vulnerable_match_count,
     )
+    fixed_status, fixed_detail = snapshot_match_status(
+        "after.rs",
+        pair.fixed_range,
+        pair.fixed_match_count,
+    )
+    if pair.fixed_removed:
+        fixed_status = "REMOVED"
+        fixed_detail = ""
     difference_status = "OK" if pair.vulnerable_fixed_differ is True else "FAIL"
-    provenance_status = (
-        "OK"
-        if pair.vulnerable_range is not None
-        and (pair.fixed_range is not None or pair.fixed_removed)
-        else "FAIL"
+    snapshot_statuses = {vulnerable_status, fixed_status}
+    snapshot_integrity_status = (
+        "FAIL"
+        if "FAIL" in snapshot_statuses
+        else "INFO"
+        if "INFO" in snapshot_statuses
+        else "OK"
     )
 
     lines.append(
         _status_line(
-            "vulnerable source",
+            "vulnerable snapshot match",
             vulnerable_status,
-            _range_text("before.rs", pair.vulnerable_range),
+            vulnerable_detail,
             indent="  ",
         )
     )
     lines.append(
         _status_line(
-            "fixed source",
+            "fixed snapshot match",
             fixed_status,
-            "" if pair.fixed_removed else _range_text("after.rs", pair.fixed_range),
+            fixed_detail,
             indent="  ",
         )
     )
     if pair.fixed_removed:
-        lines.append(_status_line("fixed function", "REMOVED", indent="  "))
+        lines.append(_status_line("fixed item", "REMOVED", indent="  "))
     lines.append(
         _status_line(
             "vulnerable != fixed",
@@ -231,7 +230,13 @@ def _expanded_pair_lines(
             indent="  ",
         )
     )
-    lines.append(_status_line("provenance", provenance_status, indent="  "))
+    lines.append(
+        _status_line(
+            "snapshot integrity",
+            snapshot_integrity_status,
+            indent="  ",
+        )
+    )
 
     if show_diff and pair.vulnerable_text is not None and pair.fixed_text is not None:
         lines.append(DisplayLine(""))
@@ -243,13 +248,17 @@ def _expanded_pair_lines(
 
     for variant in pair.variants:
         lines.append(DisplayLine(""))
-        source_status = "OK" if variant.source_range is not None else "FAIL"
+        source_status, source_detail = snapshot_match_status(
+            "before.rs",
+            variant.source_range,
+            variant.source_match_count,
+        )
         difference_status = "OK" if variant.differs_from_fixed is True else "FAIL"
         lines.append(
             _status_line(
                 f"{variant.name} variant",
                 source_status,
-                _range_text("before.rs", variant.source_range),
+                source_detail,
                 indent="  ",
             )
         )
@@ -295,13 +304,11 @@ def render_case_lines(
         ]
     )
 
-    variant_count = (
-        case.structure.vulnerable_snippet_count - case.structure.pair_count
-    )
+    variant_count = case.structure.vulnerable_snippet_count - case.structure.pair_count
     lines.append(_status_line("Vulnerable variants", "INFO", str(variant_count)))
     lines.append(DisplayLine(""))
 
-    # Pair provenance is always reviewable; only unified source diffs collapse
+    # Pair snapshot integrity is always reviewable; only source diffs collapse
     for pair in case.structure.pairs:
         lines.extend(_expanded_pair_lines(pair, show_diffs))
 
@@ -418,8 +425,7 @@ def load_interactive_cases(
     rows = load_metadata_csv(csv_path, expected_rows=SOURCE_ROW_COUNT)
     rows_by_id = {row["id"]: row for row in rows}
     return tuple(
-        _load_case(case_dir, rows_by_id)
-        for case_dir in discover_case_dirs(cases_dir)
+        _load_case(case_dir, rows_by_id) for case_dir in discover_case_dirs(cases_dir)
     )
 
 
@@ -508,8 +514,7 @@ def _draw(
         _safe_add(screen, offset, 0, line.text, width - 1, attribute)
 
     footer = (
-        "←/→ or h/l case   ↑/↓ scroll   PgUp/PgDn scroll   "
-        "Home/End   d diffs   q quit"
+        "←/→ or h/l case   ↑/↓ scroll   PgUp/PgDn scroll   Home/End   d diffs   q quit"
     )
     _safe_add(
         screen,
@@ -533,9 +538,7 @@ def _curses_main(
     except curses.error:
         pass
     screen.keypad(True)
-    role_attributes = _initialize_colors(
-        interactive_colors_enabled(color_requested)
-    )
+    role_attributes = _initialize_colors(interactive_colors_enabled(color_requested))
     state = InteractiveState(case_count=len(cases))
 
     while True:

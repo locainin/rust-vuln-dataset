@@ -14,7 +14,7 @@ from .case_metadata import (
     load_yaml,
 )
 from .comparison import compare_row
-from .console import Colorizer
+from .console import Colorizer, snapshot_match_status
 from .csv_source import CsvValidationError, load_metadata_csv
 from .dataset_structure import PairResult, StructureResult, check_structure
 from .normalization import affected_function_names
@@ -89,9 +89,7 @@ def _metadata_report(
         issues = compare_row(csv_row, data)
         found = [issue for issue in issues if issue["status"] == "FOUND"]
         failures = [issue for issue in issues if issue["status"] == "FAIL"]
-        errors.extend(
-            f"{issue['field']}: {issue['reason']}" for issue in failures
-        )
+        errors.extend(f"{issue['field']}: {issue['reason']}" for issue in failures)
 
     if errors:
         _print_check(
@@ -104,8 +102,7 @@ def _metadata_report(
 
         # Comparison failures include values while identity failures stay concise
         failures_by_message = {
-            f"{issue['field']}: {issue['reason']}": issue
-            for issue in failures
+            f"{issue['field']}: {issue['reason']}": issue for issue in failures
         }
         for error in errors:
             matching = failures_by_message.get(error)
@@ -146,12 +143,6 @@ def _metadata_report(
     return errors, found, csv_row, yaml_id
 
 
-def _format_range(filename: str, source_range: tuple[int, int] | None) -> str:
-    if source_range is None:
-        return "provenance mismatch"
-    return f"{filename}:{source_range[0]}-{source_range[1]}"
-
-
 def _print_diff(
     vulnerable: str | None,
     fixed: str | None,
@@ -173,34 +164,37 @@ def _print_pair(
 ) -> None:
     print(f"  {pair.name}", file=stream)
 
-    vulnerable_status = "OK" if pair.vulnerable_range is not None else "FAIL"
-    fixed_status = (
-        "REMOVED"
-        if pair.fixed_removed
-        else "OK"
-        if pair.fixed_range is not None
-        else "FAIL"
+    vulnerable_status, vulnerable_detail = snapshot_match_status(
+        "before.rs",
+        pair.vulnerable_range,
+        pair.vulnerable_match_count,
     )
+    fixed_status, fixed_detail = snapshot_match_status(
+        "after.rs",
+        pair.fixed_range,
+        pair.fixed_match_count,
+    )
+    if pair.fixed_removed:
+        fixed_status = "REMOVED"
+        fixed_detail = ""
     _print_check(
-        "vulnerable source",
+        "vulnerable snapshot match",
         vulnerable_status,
-        _format_range("before.rs", pair.vulnerable_range),
+        vulnerable_detail,
         stream,
         colors,
         indent="    ",
     )
     _print_check(
-        "fixed source",
+        "fixed snapshot match",
         fixed_status,
-        "" if pair.fixed_removed else _format_range("after.rs", pair.fixed_range),
+        fixed_detail,
         stream,
         colors,
         indent="    ",
     )
 
-    pair_difference_status = (
-        "OK" if pair.vulnerable_fixed_differ is True else "FAIL"
-    )
+    pair_difference_status = "OK" if pair.vulnerable_fixed_differ is True else "FAIL"
     _print_check(
         "vulnerable != fixed",
         pair_difference_status,
@@ -223,15 +217,17 @@ def _print_pair(
     _print_diff(pair.vulnerable_text, pair.fixed_text, stream, colors)
 
     for variant in pair.variants:
-        variant_status = (
-            "OK"
-            if variant.source_range is not None and variant.differs_from_fixed is True
-            else "FAIL"
+        variant_status, variant_detail = snapshot_match_status(
+            "before.rs",
+            variant.source_range,
+            variant.source_match_count,
         )
+        if variant.differs_from_fixed is not True:
+            variant_status = "FAIL"
         _print_check(
             f"{variant.name} variant",
             variant_status,
-            _format_range("before.rs", variant.source_range),
+            variant_detail,
             stream,
             colors,
             indent="    ",
@@ -295,7 +291,7 @@ def _structure_report(
 
     # Case-level layout failures have no pair block where they can be shown
     for error in result.errors:
-        if error.startswith("pairs/ is ") or error.startswith("pairs/ has "):
+        if error.startswith(("pairs/ is ", "pairs/ has ")):
             _print_check("Dataset structure", "FAIL", error, stream, colors)
 
 

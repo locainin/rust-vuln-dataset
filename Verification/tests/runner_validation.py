@@ -104,9 +104,18 @@ def test_runner_reports_compact_metadata_pair_diff_and_totals(tmp_path):
     assert "Curated cases:  1" in text
     assert "Metadata                    [OK] 15 fields" in text
     assert "RustSec affected functions  [INFO] 2" in text
-    assert any(line.strip().startswith("Changed pairs") and "[INFO] 1" in line for line in text.splitlines())
-    assert any("vulnerable source" in line and "[OK] before.rs:3-5" in line for line in text.splitlines())
-    assert any("fixed source" in line and "[OK] after.rs:3-5" in line for line in text.splitlines())
+    assert any(
+        line.strip().startswith("Changed pairs") and "[INFO] 1" in line
+        for line in text.splitlines()
+    )
+    assert any(
+        "vulnerable snapshot match" in line and "[OK] before.rs:3-5" in line
+        for line in text.splitlines()
+    )
+    assert any(
+        "fixed snapshot match" in line and "[OK] after.rs:3-5" in line
+        for line in text.splitlines()
+    )
     assert "-    vulnerable_call();" in text
     assert "+    fixed_call();" in text
     assert "package                     [OK]" not in text
@@ -129,6 +138,33 @@ def test_affected_function_count_may_differ_from_changed_pair_count(tmp_path):
     )
 
     assert status == 0
+
+
+def test_runner_reports_ambiguous_exact_matches_without_rejecting_case(tmp_path):
+    csv_path = tmp_path / "metadata.csv"
+    cases_dir = tmp_path / "manual"
+    cases_dir.mkdir()
+    write_csv(csv_path, [complete_row()])
+    write_case(cases_dir)
+    pair_dir = cases_dir / "RUSTSEC-2099-0001" / "pairs" / "sample"
+    (pair_dir / "before.rs").write_text(
+        BEFORE + "\n" + VULNERABLE,
+        encoding="utf-8",
+    )
+    output = io.StringIO()
+
+    status = run_verification(
+        csv_path,
+        cases_dir,
+        output,
+        expected_source_rows=1,
+        color=False,
+    )
+
+    text = output.getvalue()
+    assert status == 0
+    assert "vulnerable snapshot match   [INFO] before.rs: 2 exact matches" in text
+    assert "range is ambiguous" in text
 
 
 def test_runner_reports_found_metadata_without_failing(tmp_path):

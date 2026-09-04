@@ -15,6 +15,7 @@ class VariantResult:
     source_range: tuple[int, int] | None
     text: str | None
     differs_from_fixed: bool | None
+    source_match_count: int | None = None
 
 
 @dataclass(frozen=True)
@@ -28,6 +29,8 @@ class PairResult:
     vulnerable_fixed_differ: bool | None
     variants: tuple[VariantResult, ...]
     errors: tuple[str, ...]
+    vulnerable_match_count: int | None = None
+    fixed_match_count: int | None = None
     fixed_removed: bool = False
 
 
@@ -74,18 +77,29 @@ def _read_source(
     return data, text
 
 
-def _source_range(container: bytes, snippet: bytes) -> tuple[int, int] | None:
-    # Byte search proves exact contiguous provenance including indentation
-    offset = container.find(snippet)
-    if offset < 0:
-        return None
+def _source_match(
+    container: bytes,
+    snippet: bytes,
+    relative_path: str,
+    container_name: str,
+    errors: list[str],
+) -> tuple[tuple[int, int] | None, int]:
+    # Count matches so ambiguous snippets are visible without rejecting valid items
+    occurrence_count = container.count(snippet)
+    if occurrence_count == 0:
+        errors.append(f"{relative_path} is not an exact substring of {container_name}")
+        return None, 0
+    if occurrence_count > 1:
+        return None, occurrence_count
 
+    # Exact bytes preserve whitespace, attributes, and source indentation
+    offset = container.find(snippet)
     start_line = container.count(b"\n", 0, offset) + 1
     line_count = snippet.count(b"\n")
     if not snippet.endswith(b"\n"):
         line_count += 1
     end_line = start_line + line_count - 1
-    return start_line, end_line
+    return (start_line, end_line), occurrence_count
 
 
 def _check_pair(pair_dir: Path) -> PairResult:
@@ -124,17 +138,21 @@ def _check_pair(pair_dir: Path) -> PairResult:
             )
 
     vulnerable_range = None
+    vulnerable_match_count = None
     if before_bytes is not None and vulnerable_bytes:
-        vulnerable_range = _source_range(before_bytes, vulnerable_bytes)
-        if vulnerable_range is None:
-            pair_errors.append(
-                f"pairs/{pair_dir.name}/vulnerable.rs "
-                "is not an exact substring of before.rs"
-            )
+        vulnerable_range, vulnerable_match_count = _source_match(
+            before_bytes,
+            vulnerable_bytes,
+            f"pairs/{pair_dir.name}/vulnerable.rs",
+            "before.rs",
+            pair_errors,
+        )
 
     fixed_range = None
+    fixed_match_count = None
     fixed_removed = False
     if fixed_bytes == b"":
+        fixed_match_count = 0
         # An empty fixed snippet is valid only when the vulnerable item is gone
         if vulnerable_range is not None and after_bytes is not None:
             if vulnerable_bytes not in after_bytes:
@@ -146,19 +164,20 @@ def _check_pair(pair_dir: Path) -> PairResult:
                 )
         else:
             pair_errors.append(
-                f"pairs/{pair_dir.name}/fixed.rs is empty but deleted-function "
-                "provenance cannot be verified"
+                f"pairs/{pair_dir.name}/fixed.rs is empty but deleted-item "
+                "snapshot integrity cannot be verified"
             )
     else:
         if after_bytes == b"":
             pair_errors.append(f"pairs/{pair_dir.name}/after.rs is empty")
         if after_bytes and fixed_bytes:
-            fixed_range = _source_range(after_bytes, fixed_bytes)
-            if fixed_range is None:
-                pair_errors.append(
-                    f"pairs/{pair_dir.name}/fixed.rs "
-                    "is not an exact substring of after.rs"
-                )
+            fixed_range, fixed_match_count = _source_match(
+                after_bytes,
+                fixed_bytes,
+                f"pairs/{pair_dir.name}/fixed.rs",
+                "after.rs",
+                pair_errors,
+            )
 
     variants: list[VariantResult] = []
     for variant_path in sorted(pair_dir.glob("vulnerable-*.rs")):
@@ -170,12 +189,15 @@ def _check_pair(pair_dir: Path) -> PairResult:
         )
 
         variant_range = None
+        variant_match_count = None
         if before_bytes is not None and variant_bytes:
-            variant_range = _source_range(before_bytes, variant_bytes)
-            if variant_range is None:
-                pair_errors.append(
-                    f"{relative} is not an exact substring of before.rs"
-                )
+            variant_range, variant_match_count = _source_match(
+                before_bytes,
+                variant_bytes,
+                relative,
+                "before.rs",
+                pair_errors,
+            )
 
         differs_from_fixed = None
         if variant_bytes is not None and fixed_bytes is not None:
@@ -189,6 +211,7 @@ def _check_pair(pair_dir: Path) -> PairResult:
                 name=variant_path.stem.removeprefix("vulnerable-"),
                 filename=variant_path.name,
                 source_range=variant_range,
+                source_match_count=variant_match_count,
                 text=variant_text,
                 differs_from_fixed=differs_from_fixed,
             )
@@ -200,6 +223,8 @@ def _check_pair(pair_dir: Path) -> PairResult:
         name=pair_dir.name,
         vulnerable_range=vulnerable_range,
         fixed_range=fixed_range,
+        vulnerable_match_count=vulnerable_match_count,
+        fixed_match_count=fixed_match_count,
         vulnerable_text=vulnerable_text,
         fixed_text=fixed_text,
         before_after_differ=before_after_differ,

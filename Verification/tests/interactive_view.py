@@ -214,20 +214,18 @@ def test_long_metadata_values_wrap_on_indented_continuation_lines():
 def test_diff_toggle_keeps_pair_details_and_only_hides_unified_diff():
     case = _case(pairs=(_pair(),))
     hidden = "\n".join(
-        line.text
-        for line in render_case_lines(case, show_diffs=False, width=100)
+        line.text for line in render_case_lines(case, show_diffs=False, width=100)
     )
     shown = "\n".join(
-        line.text
-        for line in render_case_lines(case, show_diffs=True, width=100)
+        line.text for line in render_case_lines(case, show_diffs=True, width=100)
     )
 
     for expected in (
         "bytes",
-        "vulnerable source",
-        "fixed source",
+        "vulnerable snapshot match",
+        "fixed snapshot match",
         "vulnerable != fixed",
-        "provenance",
+        "snapshot integrity",
     ):
         assert expected in hidden
 
@@ -256,12 +254,42 @@ def test_deleted_pair_displays_removed_fixed_source_and_function():
     )
 
     assert any(
-        line.strip().startswith("fixed source") and "[REMOVED]" in line
+        line.strip().startswith("fixed snapshot match") and "[REMOVED]" in line
         for line in text.splitlines()
     )
     assert any(
-        line.strip().startswith("fixed function") and "[REMOVED]" in line
+        line.strip().startswith("fixed item") and "[REMOVED]" in line
         for line in text.splitlines()
     )
     assert "--- vulnerable" in text
     assert "+++ fixed" in text
+
+
+def test_interactive_view_reports_ambiguous_snapshot_match_as_information():
+    pair = PairResult(
+        name="key",
+        vulnerable_range=None,
+        fixed_range=(20, 22),
+        vulnerable_text="pub fn key(&self) -> &K { self.key }\n",
+        fixed_text="pub fn key(&self) -> &K { self.pair().0 }\n",
+        before_after_differ=True,
+        vulnerable_fixed_differ=True,
+        variants=(),
+        errors=(),
+        vulnerable_match_count=2,
+        fixed_match_count=1,
+    )
+
+    text = "\n".join(
+        line.text
+        for line in render_case_lines(
+            _case(pairs=(pair,)),
+            show_diffs=False,
+            width=100,
+        )
+    )
+
+    assert "vulnerable snapshot match   [INFO] before.rs: 2 exact matches" in text
+    assert "range is ambiguous" in text
+    assert "snapshot integrity          [INFO]" in text
+    assert "RESULT                      [OK] VERIFIED" in text

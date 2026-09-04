@@ -12,6 +12,22 @@ YELLOW = "\x1b[33m"
 CYAN = "\x1b[36m"
 
 
+def snapshot_match_status(
+    filename: str,
+    source_range: tuple[int, int] | None,
+    match_count: int | None,
+) -> tuple[str, str]:
+    # Repeated bytes prove inclusion but cannot identify one source range
+    if match_count is not None and match_count > 1:
+        return (
+            "INFO",
+            f"{filename}: {match_count} exact matches; range is ambiguous",
+        )
+    if source_range is not None:
+        return "OK", f"{filename}:{source_range[0]}-{source_range[1]}"
+    return "FAIL", "snapshot mismatch"
+
+
 class Colorizer:
     def __init__(self, stream: TextIO, enabled: bool | None = None) -> None:
         # Automatic color requires a TTY and honors the standard NO_COLOR flag

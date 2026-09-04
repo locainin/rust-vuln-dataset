@@ -13,9 +13,7 @@ NORMALIZED_FIXED = "pub fn sample() {\n    fixed_call();\n}\n"
 def make_case(tmp_path):
     case_dir = tmp_path / "RUSTSEC-2099-0001"
     (case_dir / "pairs").mkdir(parents=True)
-    (case_dir / "metadata.yaml").write_text(
-        "id: RUSTSEC-2099-0001\n", encoding="utf-8"
-    )
+    (case_dir / "metadata.yaml").write_text("id: RUSTSEC-2099-0001\n", encoding="utf-8")
     return case_dir
 
 
@@ -27,7 +25,7 @@ def make_pair(pair_dir):
     (pair_dir / "fixed.rs").write_text(FIXED, encoding="utf-8")
 
 
-def test_pair_accepts_distinct_nonempty_sources_with_exact_provenance(tmp_path):
+def test_pair_accepts_distinct_nonempty_sources_with_exact_snapshot_matches(tmp_path):
     case_dir = make_case(tmp_path)
     make_pair(case_dir / "pairs" / "sample")
 
@@ -167,7 +165,41 @@ def test_fixed_must_be_exact_after_substring(tmp_path):
 
     result = check_structure(case_dir)
 
-    assert "pairs/sample/fixed.rs is not an exact substring of after.rs" in result.errors
+    assert (
+        "pairs/sample/fixed.rs is not an exact substring of after.rs" in result.errors
+    )
+
+
+def test_vulnerable_duplicate_snapshot_matches_are_reported_as_ambiguous(tmp_path):
+    case_dir = make_case(tmp_path)
+    pair_dir = case_dir / "pairs" / "sample"
+    make_pair(pair_dir)
+    (pair_dir / "before.rs").write_text(
+        BEFORE + "\n" + VULNERABLE,
+        encoding="utf-8",
+    )
+
+    result = check_structure(case_dir)
+
+    assert result.errors == ()
+    assert result.pairs[0].vulnerable_range is None
+    assert result.pairs[0].vulnerable_match_count == 2
+
+
+def test_fixed_duplicate_snapshot_matches_are_reported_as_ambiguous(tmp_path):
+    case_dir = make_case(tmp_path)
+    pair_dir = case_dir / "pairs" / "sample"
+    make_pair(pair_dir)
+    (pair_dir / "after.rs").write_text(
+        AFTER + "\n" + FIXED,
+        encoding="utf-8",
+    )
+
+    result = check_structure(case_dir)
+
+    assert result.errors == ()
+    assert result.pairs[0].fixed_range is None
+    assert result.pairs[0].fixed_match_count == 2
 
 
 def test_vulnerable_variants_are_validated_and_counted(tmp_path):
@@ -183,6 +215,24 @@ def test_vulnerable_variants_are_validated_and_counted(tmp_path):
     assert result.errors == ()
     assert result.vulnerable_snippet_count == 2
     assert result.pairs[0].variants[0].name == "fast"
+
+
+def test_vulnerable_variant_duplicate_matches_are_reported_as_ambiguous(tmp_path):
+    case_dir = make_case(tmp_path)
+    pair_dir = case_dir / "pairs" / "sample"
+    make_pair(pair_dir)
+    variant = "    pub fn variant() {\n        vulnerable_call();\n    }\n"
+    (pair_dir / "before.rs").write_text(
+        BEFORE + "\n" + variant + "\n" + variant,
+        encoding="utf-8",
+    )
+    (pair_dir / "vulnerable-fast.rs").write_text(variant, encoding="utf-8")
+
+    result = check_structure(case_dir)
+
+    assert result.errors == ()
+    assert result.pairs[0].variants[0].source_range is None
+    assert result.pairs[0].variants[0].source_match_count == 2
 
 
 def test_vulnerable_variant_must_match_before_and_differ_from_fixed(tmp_path):
@@ -214,9 +264,7 @@ def test_unrelated_extra_pair_file_is_informational(tmp_path):
 def test_root_sources_do_not_replace_pairs_directory(tmp_path):
     case_dir = tmp_path / "RUSTSEC-2099-0001"
     case_dir.mkdir()
-    (case_dir / "metadata.yaml").write_text(
-        "id: RUSTSEC-2099-0001\n", encoding="utf-8"
-    )
+    (case_dir / "metadata.yaml").write_text("id: RUSTSEC-2099-0001\n", encoding="utf-8")
     for filename, text in (
         ("before.rs", BEFORE),
         ("after.rs", AFTER),
