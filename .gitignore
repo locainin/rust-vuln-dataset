@@ -26,9 +26,21 @@ __pycache__/
 *$py.class
 .pytest_cache/
 
-# Dataset case intentionally excluded (needs review).
+# Dataset cases intentionally excluded
 manual/notes.txt
+# RUSTSEC-2023-0066 - no authoritative fixed revision
 RUSTSEC-2023-0066/
-RUSTSEC-2024-0406/
+# RUSTSEC-2021-0122 - fix is too broad to isolate
 RUSTSEC-2021-0122/
-RUSTSEC-2021-0114/
+# RUSTSEC-2021-0110 - advisory combines multiple vulnerabilities
+RUSTSEC-2021-0110/
+# RUSTSEC-2021-0070 - patch is still vulnerable
+RUSTSEC-2021-0070/
+# RUSTSEC-2021-0041 - no patched release
+RUSTSEC-2021-0041/
+# RUSTSEC-2021-0040 - no accepted patch
+RUSTSEC-2021-0040/
+# RUSTSEC-2021-0026 - fix is not Rust code
+RUSTSEC-2021-0026/
+# RUSTSEC-2021-0011 - patch is still vulnerable
+RUSTSEC-2021-0011/
