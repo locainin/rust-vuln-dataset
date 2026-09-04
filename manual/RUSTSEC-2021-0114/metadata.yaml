@@ -1,0 +1,31 @@
+id: RUSTSEC-2021-0114
+package: nanorand
+date: "2021-09-23"
+categories:
+  - memory-corruption
+CWE: []
+url: https://github.com/Absolucy/nanorand-rs/issues/28
+references: null
+severity: Critical
+aliases:
+  - CVE-2021-45705
+  - GHSA-p6gj-gpc8-f8xw
+  - GHSA-r57r-j98g-587f
+keywords:
+  - memory-safety
+  - aliasing
+versions:
+  patched:
+    - ">= 0.6.1"
+  unaffected:
+    - "< 0.5.0"
+affected:
+  functions:
+    "nanorand::tls::tls_rand":
+      - ">= 0.5.0"
+      - "<= 0.6.0"
+affected.functions: null
+fix commit links:
+  - https://github.com/Absolucy/nanorand-rs/commit/340f893dbc9db3e43c6315b05eff4b0b150220d2
+pov candidate links:
+  - https://github.com/Absolucy/nanorand-rs/issues/28

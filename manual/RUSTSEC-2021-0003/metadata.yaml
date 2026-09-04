@@ -1,0 +1,33 @@
+id: RUSTSEC-2021-0003
+package: smallvec
+date: "2021-01-08"
+categories:
+  - memory-corruption
+CWE:
+  - CWE-787
+url: https://github.com/servo/rust-smallvec/issues/252
+references: null
+severity: Critical
+aliases:
+  - CVE-2021-25900
+  - GHSA-43w2-9j62-hq99
+keywords:
+  - buffer-overflow
+  - heap-overflow
+  - unsound
+versions:
+  patched:
+    - ">= 0.6.14, < 1.0.0"
+    - ">= 1.6.1"
+  unaffected:
+    - "< 0.6.3"
+affected:
+  functions:
+    "smallvec::SmallVec::insert_many":
+      - ">= 0.6.3, < 0.6.14"
+      - ">= 1.0.0, < 1.6.1"
+affected.functions: null
+fix commit links:
+  - https://github.com/servo/rust-smallvec/commit/9998ba0694a6b51aa6604748b00b6a98f0a0039e
+pov candidate links:
+  - https://github.com/servo/rust-smallvec/issues/252

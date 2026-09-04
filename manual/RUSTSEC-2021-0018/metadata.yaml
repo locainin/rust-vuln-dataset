@@ -1,0 +1,28 @@
+id: RUSTSEC-2021-0018
+package: qwutils
+date: "2021-02-03"
+categories:
+  - memory-corruption
+CWE:
+  - CWE-415
+url: https://github.com/qwertz19281/rust_utils/issues/3
+references: null
+severity: Medium
+aliases:
+  - CVE-2021-26954
+  - GHSA-68p4-pjpf-xwcq
+keywords:
+  - memory-safety
+  - double-free
+versions:
+  patched:
+    - ">= 0.3.1"
+affected:
+  functions:
+    "qwutils::imp::vec::VecExt::insert_slice_clone":
+      - "< 0.3.1"
+affected.functions: null
+fix commit links:
+  - https://github.com/qwertz19281/rust_utils/commit/20cb73d
+pov candidate links:
+  - https://github.com/qwertz19281/rust_utils/issues/3

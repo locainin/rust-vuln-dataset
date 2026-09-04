@@ -1,0 +1,23 @@
+id: RUSTSEC-2021-0115
+package: zeroize_derive
+date: "2021-09-24"
+categories:
+  - memory-exposure
+CWE:
+  - CWE-459
+url: https://github.com/iqlusioninc/crates/issues/876
+references: null
+severity: Critical
+aliases:
+  - CVE-2021-45706
+  - GHSA-c5hx-w945-j4pq
+keywords: null
+versions:
+  patched:
+    - ">= 1.1.1"
+affected: null
+affected.functions: null
+fix commit links:
+  - https://github.com/iqlusioninc/crates/pull/847/files
+pov candidate links:
+  - https://github.com/iqlusioninc/crates/issues/876

@@ -1,0 +1,23 @@
+id: RUSTSEC-2021-0048
+package: stackvector
+date: "2021-02-19"
+categories:
+  - memory-corruption
+CWE:
+  - CWE-787
+url: https://github.com/Alexhuszagh/rust-stackvector/issues/2
+references: null
+severity: High
+aliases:
+  - CVE-2021-29939
+  - GHSA-9frf-r7c7-j2vg
+keywords: null
+versions:
+  patched:
+    - ">= 1.0.9"
+affected: null
+affected.functions: null
+fix commit links:
+  - https://github.com/Alexhuszagh/rust-stackvector/commit/f45657d5a823a67bb3f5cffee65efbb401a44192
+pov candidate links:
+  - https://github.com/Alexhuszagh/rust-stackvector/issues/2

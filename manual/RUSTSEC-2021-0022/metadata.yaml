@@ -1,0 +1,32 @@
+id: RUSTSEC-2021-0022
+package: yottadb
+date: "2021-02-09"
+categories:
+  - memory-corruption
+CWE:
+  - CWE-416
+url: https://gitlab.com/YottaDB/Lang/YDBRust/-/issues/40
+references: null
+severity: Critical
+aliases:
+  - CVE-2021-27377
+  - GHSA-9658-c26v-7qvf
+keywords:
+  - use-after-free
+versions:
+  patched:
+    - ">= 1.2.0"
+affected: null
+affected.functions:
+  "yottadb::Key::sub_next_self_st":
+    - "< 1.2.0"
+  "yottadb::Key::sub_prev_self_st":
+    - "< 1.2.0"
+  "yottadb::KeyContext::sub_next_self_st":
+    - "< 1.2.0"
+  "yottadb::KeyContext::sub_prev_self_st":
+    - "< 1.2.0"
+fix commit links:
+  - https://gitlab.com/YottaDB/Lang/YDBRust/-/merge_requests/118/diffs
+pov candidate links:
+  - https://gitlab.com/YottaDB/Lang/YDBRust/-/merge_requests/118/diffs

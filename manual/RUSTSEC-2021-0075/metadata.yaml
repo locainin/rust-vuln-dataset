@@ -1,0 +1,29 @@
+id: RUSTSEC-2021-0075
+package: ark-r1cs-std
+date: "2021-07-08"
+categories:
+  - crypto-failure
+CWE:
+  - CWE-682
+url: https://github.com/arkworks-rs/r1cs-std/pull/70
+references: null
+severity: Critical
+aliases:
+  - CVE-2021-38194
+  - GHSA-qj3v-q2vj-4c8h
+keywords:
+  - r1cs
+  - zksnark
+  - arkworks
+versions:
+  patched:
+    - ">= 0.3.1"
+affected:
+  functions:
+    "ark_r1cs_std::FieldVar::mul_by_inverse":
+      - "< 0.3.0"
+affected.functions: null
+fix commit links:
+  - https://github.com/arkworks-rs/r1cs-std/pull/70/files
+pov candidate links:
+  - https://github.com/arkworks-rs/r1cs-std/pull/70/files

@@ -1,0 +1,23 @@
+id: RUSTSEC-2021-0007
+package: av-data
+date: "2021-01-07"
+categories:
+  - privilege-escalation
+CWE:
+  - CWE-476
+url: https://github.com/rust-av/rust-av/issues/136
+references: null
+severity: High
+aliases:
+  - CVE-2021-25904
+  - GHSA-352p-rhvq-7g78
+keywords: null
+versions:
+  patched:
+    - ">= 0.3.0"
+affected: null
+affected.functions: null
+fix commit links:
+  - https://github.com/rust-av/rust-av/commit/fb7bf1879b1b12fd30182d97e5f200e7d013f91d
+pov candidate links:
+  - https://github.com/rust-av/rust-av/issues/136

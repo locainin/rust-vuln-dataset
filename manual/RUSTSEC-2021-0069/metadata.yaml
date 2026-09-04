@@ -1,0 +1,35 @@
+id: RUSTSEC-2021-0069
+package: lettre
+date: "2021-05-22"
+categories:
+  - format-injection
+CWE:
+  - CWE-77
+  - CWE-147
+url: https://github.com/lettre/lettre/pull/627/commits/93458d01fed0ec81c0e7b4e98e6f35961356fae2
+references: null
+severity: Critical
+aliases:
+  - GHSA-qc36-q22q-cjw3
+  - CVE-2021-38189
+keywords:
+  - email
+  - smtp
+versions:
+  patched:
+    - ">= 0.10.0-rc.3"
+    - "< 0.10.0-alpha.1, >= 0.9.6"
+  unaffected:
+    - "< 0.7.0"
+affected: null
+affected.functions:
+  "lettre::smtp::SmtpTransport::send":
+    - "< 0.10.0-alpha.1"
+  "lettre::transport::smtp::SmtpTransport::send":
+    - ">= 0.10.0-alpha.1, < 0.10.0-rc.3"
+  "lettre::transport::smtp::SmtpTransport::send_raw":
+    - ">= 0.10.0-alpha.1, < 0.10.0-rc.3"
+fix commit links:
+  - https://github.com/lettre/lettre/commit/8bfc20506cc5e098fe6eb3d1cafe3bea791215ce
+pov candidate links:
+  - https://github.com/lettre/lettre/commit/8bfc20506cc5e098fe6eb3d1cafe3bea791215ce

@@ -1,0 +1,25 @@
+id: RUSTSEC-2021-0113
+package: metrics-util
+date: "2021-04-07"
+categories:
+  - thread-safety
+CWE:
+  - CWE-362
+  - CWE-787
+url: https://github.com/metrics-rs/metrics/issues/190
+references: null
+severity: High
+aliases:
+  - CVE-2021-45704
+  - GHSA-3hxh-7jxm-59x4
+  - GHSA-cwvc-87xq-pc5m
+keywords: null
+versions:
+  patched:
+    - ">= 0.7.0"
+affected: null
+affected.functions: null
+fix commit links:
+  - https://github.com/metrics-rs/metrics/pull/191/files
+pov candidate links:
+  - https://github.com/metrics-rs/metrics/issues/190

@@ -1,0 +1,28 @@
+id: RUSTSEC-2021-0081
+package: actix-http
+date: "2021-06-16"
+categories:
+  - format-injection
+CWE:
+  - CWE-444
+url: null
+references: null
+severity: High
+aliases:
+  - CVE-2021-38512
+  - GHSA-8928-2fgm-6x9x
+keywords:
+  - smuggling
+  - http
+  - reverse proxy
+  - request smuggling
+versions:
+  patched:
+    - "^ 2.2.1"
+    - ">= 3.0.0-beta.9"
+affected: null
+affected.functions: null
+fix commit links:
+  - https://github.com/actix/actix-web/commit/e965d8298f421e9c89fe98b1300b8361e948c324
+pov candidate links:
+  - https://github.com/actix/actix-web/commit/e965d8298f421e9c89fe98b1300b8361e948c324

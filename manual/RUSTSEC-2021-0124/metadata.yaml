@@ -1,0 +1,29 @@
+id: RUSTSEC-2021-0124
+package: tokio
+date: "2021-11-16"
+categories:
+  - thread-safety
+CWE:
+  - CWE-362
+url: https://github.com/tokio-rs/tokio/issues/4225
+references: null
+severity: High
+aliases:
+  - CVE-2021-45710
+  - GHSA-fg7r-2g4j-5cgr
+keywords:
+  - race condition
+versions:
+  patched:
+    - ">= 1.8.4, < 1.9.0"
+    - ">= 1.13.1"
+  unaffected:
+    - "< 0.1.14"
+affected: null
+affected.functions:
+  "tokio::sync::oneshot::Receiver::close":
+    - "<= 1.13.0, >= 0.1.14"
+fix commit links:
+  - https://github.com/tokio-rs/tokio/pull/4226/files
+pov candidate links:
+  - https://github.com/tokio-rs/tokio/pull/4226/files

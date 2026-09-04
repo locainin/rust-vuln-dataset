@@ -1,0 +1,23 @@
+id: RUSTSEC-2021-0036
+package: internment
+date: "2021-03-03"
+categories:
+  - thread-safety
+CWE:
+  - CWE-362
+url: https://github.com/droundy/internment/issues/20
+references: null
+severity: Critical
+aliases:
+  - CVE-2021-28037
+  - GHSA-gppw-3h6h-v6q2
+keywords: null
+versions:
+  patched:
+    - ">= 0.4.2"
+affected: null
+affected.functions: null
+fix commit links:
+  - https://github.com/droundy/internment/commit/2928a87a0c9f86c46ba70f8c8058d9b7b10a241d
+pov candidate links:
+  - https://github.com/droundy/internment/issues/20

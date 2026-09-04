@@ -1,0 +1,22 @@
+id: RUSTSEC-2021-0118
+package: arrow
+date: "2021-09-14"
+categories:
+  - memory-exposure
+CWE: []
+url: https://github.com/apache/arrow-rs/issues/774
+references: null
+severity: High
+aliases:
+  - GHSA-qgrp-8f3v-q85p
+keywords:
+  - buffer-overflow
+versions:
+  patched:
+    - ">= 6.4.0"
+affected: null
+affected.functions: null
+fix commit links:
+  - https://github.com/apache/arrow-rs/issues/817
+pov candidate links:
+  - https://github.com/apache/arrow-rs/issues/774

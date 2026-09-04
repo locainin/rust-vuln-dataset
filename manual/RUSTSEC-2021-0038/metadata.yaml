@@ -1,0 +1,35 @@
+id: RUSTSEC-2021-0038
+package: fltk
+date: "2021-03-06"
+categories:
+  - memory-corruption
+CWE:
+  - CWE-125
+  - CWE-476
+url: https://github.com/MoAlyousef/fltk-rs/issues/519
+references: null
+severity: High
+aliases:
+  - CVE-2021-28306
+  - CVE-2021-28307
+  - CVE-2021-28308
+  - GHSA-5pg8-h4gv-m3p8
+  - GHSA-7qcc-g2m9-8533
+  - GHSA-vjmg-pc8h-p6p8
+keywords:
+  - undefined_behavior
+versions:
+  patched:
+    - ">= 0.15.3"
+affected: null
+affected.functions:
+  "fltk::prelude::WidgetExt::set_label_type":
+    - "< 0.15.2"
+  "fltk::prelude::WindowExt::set_icon":
+    - "< 0.14.12"
+  "fltk::image::Pixmap::new":
+    - "< 0.15.2, >= 0.14.12"
+fix commit links:
+  - https://github.com/fltk-rs/fltk-rs/commit/1b2e6bdbd93df1f673f5c57cf6dda625e36b4810
+pov candidate links:
+  - https://github.com/fltk-rs/fltk-rs/issues/519

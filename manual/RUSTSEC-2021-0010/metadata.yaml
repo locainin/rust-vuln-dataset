@@ -1,0 +1,23 @@
+id: RUSTSEC-2021-0010
+package: containers
+date: "2021-01-12"
+categories:
+  - memory-corruption
+CWE:
+  - CWE-415
+url: https://github.com/strake/containers.rs/issues/2
+references: null
+severity: Critical
+aliases:
+  - CVE-2021-25907
+  - GHSA-cv7x-6rc6-pq5v
+keywords: null
+versions:
+  patched:
+    - ">= 0.9.11"
+affected: null
+affected.functions: null
+fix commit links:
+  - https://github.com/strake/containers.rs/commit/7389a24d84ee7ff1d60dc87270882897679c4afa
+pov candidate links:
+  - https://github.com/strake/containers.rs/issues/2

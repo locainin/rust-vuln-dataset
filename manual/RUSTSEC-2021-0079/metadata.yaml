@@ -1,0 +1,26 @@
+id: RUSTSEC-2021-0079
+package: hyper
+date: "2021-07-07"
+categories:
+  - format-injection
+CWE:
+  - CWE-190
+url: https://github.com/hyperium/hyper/security/advisories/GHSA-5h46-h7hh-c6x9
+references: null
+severity: Critical
+aliases:
+  - CVE-2021-32714
+  - GHSA-5h46-h7hh-c6x9
+keywords:
+  - http
+  - parsing
+  - data loss
+versions:
+  patched:
+    - ">= 0.14.10"
+affected: null
+affected.functions: null
+fix commit links:
+  - https://github.com/hyperium/hyper/commit/1068b994df1aec2a0a562224965a80ddced50e60
+pov candidate links:
+  - https://github.com/hyperium/hyper/commit/1068b994df1aec2a0a562224965a80ddced50e60

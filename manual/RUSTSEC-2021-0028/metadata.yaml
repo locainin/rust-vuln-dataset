@@ -1,0 +1,32 @@
+id: RUSTSEC-2021-0028
+package: toodee
+date: "2021-02-19"
+categories:
+  - memory-corruption
+CWE:
+  - CWE-415
+  - CWE-908
+url: https://github.com/antonmarsden/toodee/issues/13
+references: null
+severity: Critical
+aliases:
+  - CVE-2021-28028
+  - CVE-2021-28029
+  - GHSA-wcvp-r8j8-47pc
+  - GHSA-xm9m-2vj8-fmfr
+keywords:
+  - memory-safety
+  - double-free
+versions:
+  patched:
+    - ">= 0.3.0"
+  unaffected: []
+affected:
+  functions:
+    "toodee::TooDee::insert_row":
+      - "< 0.3.0"
+affected.functions: null
+fix commit links:
+  - https://github.com/antonmarsden/toodee/commit/ced70c172486fb4827c172cd8238053df3d1dcdb
+pov candidate links:
+  - https://github.com/antonmarsden/toodee/issues/13

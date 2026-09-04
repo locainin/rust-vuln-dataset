@@ -1,0 +1,26 @@
+id: RUSTSEC-2021-0027
+package: bam
+date: "2021-01-07"
+categories:
+  - memory-corruption
+CWE:
+  - CWE-191
+url: https://gitlab.com/tprodanov/bam/-/issues/4
+references: null
+severity: Critical
+aliases:
+  - CVE-2021-28027
+  - GHSA-cpqj-r29q-chrh
+keywords: null
+versions:
+  patched:
+    - ">= 0.1.3"
+affected:
+  functions:
+    "bam::bgzip::Block::load":
+      - "< 0.1.3"
+affected.functions: null
+fix commit links:
+  - https://gitlab.com/tprodanov/bam/-/commit/061eee38d47c96339b796c943d3163235490532d
+pov candidate links:
+  - https://gitlab.com/tprodanov/bam/-/issues/4

@@ -1,0 +1,24 @@
+id: RUSTSEC-2021-0063
+package: comrak
+date: "2021-05-04"
+categories:
+  - format-injection
+CWE:
+  - CWE-79
+url: https://github.com/kivikakk/comrak/releases/tag/0.10.1
+references: null
+severity: Medium
+aliases:
+  - CVE-2021-38186
+  - GHSA-6wj2-g87r-pm62
+keywords:
+  - xss
+versions:
+  patched:
+    - ">= 0.10.1"
+affected: null
+affected.functions: null
+fix commit links:
+  - https://github.com/kivikakk/comrak/commit/b72340cabe4749952530b4fb6b4fcc706bc973e5
+pov candidate links:
+  - https://github.com/kivikakk/comrak/commit/b72340cabe4749952530b4fb6b4fcc706bc973e5

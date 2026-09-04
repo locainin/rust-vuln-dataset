@@ -1,0 +1,28 @@
+id: RUSTSEC-2021-0073
+package: prost-types
+date: "2021-07-08"
+categories:
+  - denial-of-service
+CWE:
+  - CWE-120
+  - CWE-190
+url: https://github.com/tokio-rs/prost/issues/438
+references: null
+severity: High
+aliases:
+  - CVE-2021-38192
+  - GHSA-x4qm-mcjq-v2gf
+keywords:
+  - denial-of-service
+versions:
+  patched:
+    - ">= 0.8.0"
+affected:
+  functions:
+    "prost_types::Timestamp::Into<SystemTime>":
+      - "<= 0.7.0"
+affected.functions: null
+fix commit links:
+  - https://github.com/tokio-rs/prost/commit/59f2a7311dd6540696bfd0145f5281ce495f4385
+pov candidate links:
+  - https://github.com/tokio-rs/prost/issues/438

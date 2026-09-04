@@ -1,0 +1,27 @@
+id: RUSTSEC-2021-0080
+package: tar
+date: "2021-07-19"
+categories:
+  - privilege-escalation
+CWE:
+  - CWE-22
+  - CWE-59
+url: https://github.com/alexcrichton/tar-rs/issues/238
+references: null
+severity: High
+aliases:
+  - CVE-2021-38511
+  - GHSA-62jx-8vmh-4mcw
+keywords: null
+versions:
+  patched:
+    - ">= 0.4.36"
+affected:
+  functions:
+    "tar::Archive::unpack":
+      - "< 0.4.36"
+affected.functions: null
+fix commit links:
+  - https://github.com/alexcrichton/tar-rs/pull/259/files
+pov candidate links:
+  - https://github.com/alexcrichton/tar-rs/issues/238
