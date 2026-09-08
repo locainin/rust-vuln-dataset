@@ -30,10 +30,6 @@ __pycache__/
 manual/notes.txt
 # RUSTSEC-2023-0066 - no authoritative fixed revision
 RUSTSEC-2023-0066/
-# RUSTSEC-2021-0122 - fix is too broad to isolate
-RUSTSEC-2021-0122/
-# RUSTSEC-2021-0110 - advisory combines multiple vulnerabilities
-RUSTSEC-2021-0110/
 # RUSTSEC-2021-0070 - patch is still vulnerable
 RUSTSEC-2021-0070/
 # RUSTSEC-2021-0041 - no patched release

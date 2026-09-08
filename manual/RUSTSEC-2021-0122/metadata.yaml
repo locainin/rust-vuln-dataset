@@ -1,0 +1,19 @@
+id: RUSTSEC-2021-0122
+package: flatbuffers
+date: "2021-10-31"
+categories:
+  - memory-corruption
+CWE: []
+url: https://github.com/google/flatbuffers/issues/6627
+references: null
+severity: Critical
+aliases:
+  - GHSA-3jch-9qgp-4844
+keywords: null
+versions:
+  patched:
+    - ">= 22.9.29"
+affected: null
+affected.functions: null
+fix commit links: https://github.com/google/flatbuffers/pull/7518
+pov candidate links: https://github.com/google/flatbuffers/issues/6627

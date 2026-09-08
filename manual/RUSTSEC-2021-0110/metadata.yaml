@@ -1,0 +1,44 @@
+id: RUSTSEC-2021-0110
+package: wasmtime
+date: "2021-09-17"
+categories:
+  - memory-exposure
+CWE:
+  - CWE-125
+  - CWE-416
+  - CWE-590
+  - CWE-787
+  - CWE-843
+url: null
+references:
+  - https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-v4cp-h94r-m7xf
+  - https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-4873-36h9-wv49
+  - https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-q879-9g95-56mx
+severity: Medium
+aliases:
+  - CVE-2021-39216
+  - CVE-2021-39218
+  - CVE-2021-39219
+  - GHSA-4873-36h9-wv49
+  - GHSA-q879-9g95-56mx
+  - GHSA-v4cp-h94r-m7xf
+keywords:
+  - use-after-free
+  - out-of-bounds read
+  - out-of-bounds write
+  - Wasm
+  - garbage collection
+versions:
+  patched:
+    - ">= 0.30.0"
+  unaffected: []
+affected: null
+affected.functions:
+  wasmtime::Store::gc:
+    - "< 0.30.0"
+  wasmtime::Linker::func_wrap:
+    - "< 0.30.0"
+  wasmtime::Linker::func_new:
+    - "< 0.30.0"
+fix commit links: https://github.com/bytecodealliance/wasmtime/commit/101998733b74624cbd348a2366d05760b40181f3
+pov candidate links: https://github.com/bytecodealliance/wasmtime/commit/101998733b74624cbd348a2366d05760b40181f3

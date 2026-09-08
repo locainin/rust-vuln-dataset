@@ -1,0 +1,11 @@
+    pub fn safe_slice(self) -> &'a [T] {
+        let buf = self.0;
+        let loc = self.1;
+        let sz = size_of::<T>();
+        debug_assert!(sz > 0);
+        let len = unsafe { read_scalar_at::<UOffsetT>(buf, loc) } as usize;
+        let data_buf = &buf[loc + SIZE_UOFFSET..loc + SIZE_UOFFSET + len * sz];
+        let ptr = data_buf.as_ptr() as *const T;
+        let s: &'a [T] = unsafe { from_raw_parts(ptr, len) };
+        s
+    }
