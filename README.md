@@ -6,7 +6,7 @@ The goal is to build precise vulnerable/fixed source pairs with enough metadata 
 
 ## Dataset Structure
 
-Each curated RustSec case is stored under `manual/`:
+Curated RustSec cases are stored under `manual/`:
 
     manual/RUSTSEC-YYYY-NNNN/
     ├── metadata.yaml
@@ -17,12 +17,24 @@ Each curated RustSec case is stored under `manual/`:
             ├── vulnerable.rs
             └── fixed.rs
 
-Files:
+Standalone negative samples are stored under `negatives/`:
+
+    negatives/
+    ├── hard/
+    │   └── RUSTSEC-YYYY-NNNN/
+    │       └── qualified_symbol.rs
+    └── easy/
+        └── crate_name/
+            └── qualified_symbol.rs
+
+Files in each curated pair:
 
 - `before.rs` — complete source file from the vulnerable revision
 - `after.rs` — complete source file from the repaired revision
 - `vulnerable.rs` — exact vulnerable function or Rust item extracted from `before.rs`
 - `fixed.rs` — exact repaired counterpart extracted from `after.rs`
+
+Hard negatives are production Rust items selected from the same case’s file, module, or crate as a positive sample. Easy negatives are production Rust items from unrelated crates with no advisory in the pinned RustSec collection.
 
 The extracted snippets preserve their original source text and indentation so their inclusion in the stored snapshots can be verified directly.
 
