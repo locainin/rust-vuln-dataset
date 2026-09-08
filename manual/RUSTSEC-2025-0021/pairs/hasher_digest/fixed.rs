@@ -1,3 +1,4 @@
+        #[inline]
         pub fn try_finalize(self) -> Result<crate::ObjectId, Error> {
             match self.0.try_finalize() {
                 CollisionResult::Ok(digest) => Ok(crate::ObjectId::Sha1(digest.into())),

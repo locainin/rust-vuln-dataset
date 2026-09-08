@@ -1,3 +1,4 @@
+    #[inline]
     pub fn try_from_rc<U, E, F>(rc: &Rc<U>, project: F) -> Result<Self, E>
     where
         U: ?Sized,

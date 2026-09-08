@@ -1,3 +1,5 @@
+    #[corresponds(EVP_CIPHER_fetch)]
+    #[cfg(ossl300)]
     pub fn fetch(
         ctx: Option<&LibCtxRef>,
         algorithm: &str,

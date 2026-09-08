@@ -1,3 +1,4 @@
+    #[inline]
     pub fn try_from_arc<U, E, F>(arc: &Arc<U>, project: F) -> Result<Self, E>
     where
         U: ?Sized + Sync + Send,

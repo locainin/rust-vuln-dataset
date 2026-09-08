@@ -1,3 +1,4 @@
+    #[inline]
     pub fn from_rc<U, F>(rc: &Rc<U>, project: F) -> Self
     where
         U: ?Sized,

@@ -1,3 +1,4 @@
+#[cfg(all(feature = "progress", any(feature = "rustsha1", feature = "fast-sha1")))]
 pub fn bytes_of_file(
     path: &std::path::Path,
     num_bytes_from_start: u64,

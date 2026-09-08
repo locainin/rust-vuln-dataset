@@ -1,3 +1,4 @@
+    #[inline]
     pub fn project<U, F>(&self, project: F) -> Parc<U>
     where
         T: Send + Sync,

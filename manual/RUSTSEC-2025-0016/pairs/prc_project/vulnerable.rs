@@ -1,3 +1,4 @@
+    #[inline]
     pub fn project<U, F>(&self, project: F) -> Prc<U>
     where
         U: ?Sized + 'static,

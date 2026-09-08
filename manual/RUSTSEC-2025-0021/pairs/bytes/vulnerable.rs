@@ -1,3 +1,4 @@
+#[cfg(all(feature = "progress", any(feature = "rustsha1", feature = "fast-sha1")))]
 pub fn bytes(
     read: &mut dyn std::io::Read,
     num_bytes_from_start: u64,

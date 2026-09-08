@@ -1,3 +1,4 @@
+    #[inline]
     pub fn from_arc<U, F>(arc: &Arc<U>, project: F) -> Self
     where
         T: 'static,
