@@ -76,15 +76,18 @@ Run it with:
     cd Verification
     python main.py
 
+Requires Python 3.11+, PyYAML, and ast-grep; tests require pytest 8.4+
+
 It checks:
 
 - the canonical 15-field metadata schema
 - consistency with the RustXec `metadata.csv`
-- authoritative metadata additions
+- permitted metadata additions
 - required source-pair files
 - vulnerable/fixed differences
 - exact vulnerable-snippet inclusion in `before.rs`
 - exact fixed-snippet inclusion in `after.rs`
+- snippets include the whole item and its attributes, with one matching location
 - removed-item fixes
 - affected-function and pair counts
 - source ranges and pair structure
