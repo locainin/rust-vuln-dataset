@@ -1,0 +1,21 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index bb0680e..b85268e 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -1,13 +1,13 @@
+     #[inline]
+-    pub fn create_scalar_function<'c, F, T>(
+-        &'c self,
++    pub fn create_scalar_function<F, T>(
++        &self,
+         fn_name: &str,
+         n_arg: c_int,
+         flags: FunctionFlags,
+         x_func: F,
+     ) -> Result<()>
+     where
+-        F: FnMut(&Context<'_>) -> Result<T> + Send + UnwindSafe + 'c,
++        F: FnMut(&Context<'_>) -> Result<T> + Send + UnwindSafe + 'static,
+         T: ToSql,
+     {
+         self.db

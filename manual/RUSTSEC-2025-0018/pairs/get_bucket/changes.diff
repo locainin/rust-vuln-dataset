@@ -1,0 +1,15 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 350ea50..4b60a01 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -1,7 +1,8 @@
+     pub fn get_bucket(&self, index: u32) -> u32 {
+-        assert!(index < self.bucket_count);
++        assert!(index < self.inner.bucket_count);
++        assert!((index as usize) < self.bounds);
+         unsafe {
+-            let ptr = (&self.first_bucket as *const u32).offset(index as isize);
++            let ptr = (&self.inner.first_bucket as *const u32).offset(index as isize);
+             *ptr
+         }
+     }

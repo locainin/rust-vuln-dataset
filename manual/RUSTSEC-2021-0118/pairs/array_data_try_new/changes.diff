@@ -1,0 +1,22 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index de0d9f7..885699d 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -7,7 +7,7 @@
+         buffers: Vec<Buffer>,
+         child_data: Vec<ArrayData>,
+     ) -> Result<Self> {
+-        // Safetly justification: `validate` is (will be) called below
++        // Safety justification: `validate_full` is called below
+         let new_self = unsafe {
+             Self::new_unchecked(
+                 data_type,
+@@ -20,6 +20,7 @@
+             )
+         };
+ 
+-        new_self.validate()?;
++        // As the data is not trusted, do a full validation of its contents
++        new_self.validate_full()?;
+         Ok(new_self)
+     }

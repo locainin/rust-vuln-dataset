@@ -1,0 +1,20 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 8a24257..906224f 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -2,13 +2,7 @@
+     where
+         F: FnMut(<T as SliceLike>::Element),
+     {
+-        unsafe {
+-            for item in self.as_element_slice() {
+-                f(ptr::read(item));
+-            }
+-
+-            Box::from_raw((*Box::into_raw(self)).as_element_slice_mut()
+-                as *mut [<T as SliceLike>::Element]
+-                as *mut [ManuallyDrop<<T as SliceLike>::Element>]);
++        for item in vec_from_boxed_slice_like(self) {
++            f(item);
+         }
+     }

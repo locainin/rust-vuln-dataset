@@ -1,0 +1,13 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index f56c77a..436e69d 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -13,7 +13,7 @@
+             let ptr = cvt_p(ffi::EVP_MD_fetch(
+                 ctx.map_or(ptr::null_mut(), ForeignTypeRef::as_ptr),
+                 algorithm.as_ptr(),
+-                properties.map_or(ptr::null_mut(), |s| s.as_ptr()),
++                properties.as_ref().map_or(ptr::null_mut(), |s| s.as_ptr()),
+             ))?;
+ 
+             Ok(Md::from_ptr(ptr))

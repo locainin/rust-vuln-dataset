@@ -1,0 +1,12 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 64e4acf..42338f3 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -2,6 +2,7 @@
+     pub fn project<U, F>(&self, project: F) -> Prc<U>
+     where
+         U: ?Sized + 'static,
++        T: 'static,
+         F: FnOnce(&T) -> &U,
+     {
+         let projected = project(self);

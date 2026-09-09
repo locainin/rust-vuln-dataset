@@ -1,0 +1,16 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 63d2e9c..1f49081 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -1,6 +1,9 @@
+-pub fn follow_cast_ref<'a, T: Sized + 'a>(buf: &'a [u8], loc: usize) -> &'a T {
++pub unsafe fn follow_cast_ref<'a, T: Sized + 'a>(buf: &'a [u8], loc: usize) -> &'a T {
++    assert_eq!(align_of::<T>(), 1);
+     let sz = size_of::<T>();
+     let buf = &buf[loc..loc + sz];
+     let ptr = buf.as_ptr() as *const T;
+-    unsafe { &*ptr }
++    // SAFETY
++    // buf contains a value at loc of type T and T has no alignment requirements
++    &*ptr
+ }

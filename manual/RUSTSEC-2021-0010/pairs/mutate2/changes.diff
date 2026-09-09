@@ -1,0 +1,13 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 24f84fd..4960e02 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -1,6 +1,7 @@
+ #[inline]
+ pub fn mutate2<S, T, F: FnOnce(S, T) -> (S, T)>(p: &mut S, q: &mut T, f: F) { unsafe {
+-    let (x, y) = f(ptr::read(p), ptr::read(q));
++    let (x, y) = (ptr::read(p), ptr::read(q));
++    let (x, y) = abort_on_unwind(move || f(x, y));
+     ptr::write(p, x);
+     ptr::write(q, y);
+ } }

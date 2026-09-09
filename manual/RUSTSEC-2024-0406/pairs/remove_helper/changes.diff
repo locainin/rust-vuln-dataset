@@ -1,0 +1,39 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 7b1e398..1aa8737 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -23,7 +23,7 @@
+                             );
+ 
+                             // Deallocate the empty node.
+-                            self.allocator.deallocate(node.address());
++                            node.deallocate(&mut self.allocator);
+                             self.root_addr = NULL;
+                         } else {
+                             node.save(self.allocator_mut());
+@@ -313,9 +313,10 @@
+                             node.remove_child(idx);
+ 
+                             if node.entries_len() == 0 {
+-                                self.allocator.deallocate(node.address());
++                                let node_address = node.address();
++                                node.deallocate(&mut self.allocator);
+ 
+-                                if node.address() == self.root_addr {
++                                if node_address == self.root_addr {
+                                     // Update the root.
+                                     self.root_addr = left_sibling.address();
+                                     self.save();
+@@ -341,9 +342,10 @@
+                             node.remove_child(idx);
+ 
+                             if node.entries_len() == 0 {
+-                                self.allocator.deallocate(node.address());
++                                let node_address = node.address();
++                                node.deallocate(&mut self.allocator);
+ 
+-                                if node.address() == self.root_addr {
++                                if node_address == self.root_addr {
+                                     // Update the root.
+                                     self.root_addr = right_sibling.address();
+                                     self.save();

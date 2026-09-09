@@ -1,0 +1,33 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 67fc8f4..026dd5f 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -20,7 +20,7 @@
+ 
+         if self.cids_exhausted() {
+             debug!("refusing connection");
+-            self.index.remove_initial(incoming.orig_dst_cid);
++            self.index.remove_initial(dst_cid);
+             return Err(AcceptError {
+                 cause: ConnectionError::CidsExhausted,
+                 response: Some(self.initial_close(
+@@ -49,7 +49,7 @@
+             .is_err()
+         {
+             debug!(packet_number, "failed to authenticate initial packet");
+-            self.index.remove_initial(incoming.orig_dst_cid);
++            self.index.remove_initial(dst_cid);
+             return Err(AcceptError {
+                 cause: TransportError::PROTOCOL_VIOLATION("authentication failed").into(),
+                 response: None,
+@@ -98,9 +98,7 @@
+             transport_config,
+             remote_address_validated,
+         );
+-        if dst_cid.len() != 0 {
+-            self.index.insert_initial(dst_cid, ch);
+-        }
++        self.index.insert_initial(dst_cid, ch);
+ 
+         match conn.handle_first_packet(
+             now,

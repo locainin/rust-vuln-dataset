@@ -1,0 +1,18 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index fed0813..37200a6 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -12,8 +12,11 @@
+             b'"' => visitor.visit_enum(UnitVariantAccess::new(self)),
+             // if it is a struct enum
+             b'{' => {
+-                self.eat_char();
+-                visitor.visit_enum(StructVariantAccess::new(self))
++                check_recursion! {
++                    self.eat_char();
++                    let value = visitor.visit_enum(StructVariantAccess::new(self));
++                }
++                value
+             }
+             _ => Err(Error::ExpectedSomeIdent),
+         }

@@ -1,0 +1,14 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 98767a0..4cbf265 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -1,7 +1,7 @@
+     #[inline]
+-    pub fn commit_hook<'c, F>(&'c self, hook: Option<F>)
++    pub fn commit_hook<F>(&self, hook: Option<F>)
+     where
+-        F: FnMut() -> bool + Send + 'c,
++        F: FnMut() -> bool + Send + 'static,
+     {
+         self.db.borrow_mut().commit_hook(hook);
+     }

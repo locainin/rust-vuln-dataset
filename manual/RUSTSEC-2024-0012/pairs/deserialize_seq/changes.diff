@@ -1,0 +1,18 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 8d58b8e..7764665 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -4,8 +4,11 @@
+     {
+         match self.parse_whitespace().ok_or(Error::EofWhileParsingValue)? {
+             b'[' => {
+-                self.eat_char();
+-                let ret = visitor.visit_seq(SeqAccess::new(self))?;
++                check_recursion! {
++                    self.eat_char();
++                    let ret = visitor.visit_seq(SeqAccess::new(self));
++                }
++                let ret = ret?;
+ 
+                 self.end_seq()?;
+ 

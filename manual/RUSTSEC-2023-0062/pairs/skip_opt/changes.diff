@@ -1,0 +1,16 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index d161c6b..41c104b 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -59,6 +59,11 @@
+                         if let Err(err) = op(tag, constructed, stack.len()) {
+                             return Err(self.content_err(err));
+                         }
++                        if self.source.request(len)? < len {
++                            return Err(self.content_err(
++                                "short primitive value"
++                            ))
++                        }
+                         self.source.advance(len);
+                     }
+                     else {

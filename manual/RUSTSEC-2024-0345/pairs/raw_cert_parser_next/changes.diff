@@ -1,0 +1,53 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index ba35362..3090599 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -184,12 +184,11 @@
+                                     Err(err) => {
+                                         t!("Stopping: parsing public key: {}",
+                                            err);
+-                                        pending_error = Some(err);
+-                                        break;
++                                        primary_key = Some(Err(err));
+                                     }
+                                     Ok(key) => primary_key = Some(
+-                                        key.parts_into_public()
+-                                            .role_into_primary()),
++                                        Ok(key.parts_into_public()
++                                           .role_into_primary())),
+                                 }
+                             }
+                         }
+@@ -293,16 +292,20 @@
+             return None;
+         }
+ 
+-        Some(Ok(RawCert {
+-            data: if let Some(slice) = self.slice.as_ref() {
+-                let data = &slice[cert_start_absolute + cert_start
+-                                  ..cert_start_absolute + cert_end];
+-                assert_eq!(data, cert_data);
+-                Cow::Borrowed(data)
+-            } else {
+-                Cow::Owned(cert_data.to_vec())
+-            },
+-            primary_key: primary_key.expect("set"),
+-            packets,
+-        }))
++        match primary_key.expect("set") {
++            Ok(primary_key) => Some(Ok(RawCert {
++                data: if let Some(slice) = self.slice.as_ref() {
++                    let data = &slice[cert_start_absolute + cert_start
++                                      ..cert_start_absolute + cert_end];
++                    assert_eq!(data, cert_data);
++                    Cow::Borrowed(data)
++                } else {
++                    Cow::Owned(cert_data.to_vec())
++                },
++                primary_key,
++                packets,
++            })),
++            Err(err) =>
++                Some(Err(Error::UnsupportedCert(err, cert_data.into()).into())),
++        }
+     }

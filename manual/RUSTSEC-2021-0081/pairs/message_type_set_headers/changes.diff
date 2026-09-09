@@ -1,0 +1,67 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 990ab41..f9563ac 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -7,6 +7,7 @@
+         let mut has_upgrade_websocket = false;
+         let mut expect = false;
+         let mut chunked = false;
++        let mut seen_te = false;
+         let mut content_length = None;
+ 
+         {
+@@ -25,8 +26,17 @@
+                 };
+ 
+                 match name {
+-                    header::CONTENT_LENGTH => {
+-                        if let Ok(s) = value.to_str() {
++                    header::CONTENT_LENGTH if content_length.is_some() => {
++                        debug!("multiple Content-Length");
++                        return Err(ParseError::Header);
++                    }
++
++                    header::CONTENT_LENGTH => match value.to_str() {
++                        Ok(s) if s.trim().starts_with('+') => {
++                            debug!("illegal Content-Length: {:?}", s);
++                            return Err(ParseError::Header);
++                        }
++                        Ok(s) => {
+                             if let Ok(len) = s.parse::<u64>() {
+                                 if len != 0 {
+                                     content_length = Some(len);
+@@ -35,15 +45,31 @@
+                                 debug!("illegal Content-Length: {:?}", s);
+                                 return Err(ParseError::Header);
+                             }
+-                        } else {
++                        }
++                        Err(_) => {
+                             debug!("illegal Content-Length: {:?}", value);
+                             return Err(ParseError::Header);
+                         }
+-                    }
++                    },
++
+                     // transfer-encoding
++                    header::TRANSFER_ENCODING if seen_te => {
++                        debug!("multiple Transfer-Encoding not allowed");
++                        return Err(ParseError::Header);
++                    }
++
+                     header::TRANSFER_ENCODING => {
++                        seen_te = true;
++
+                         if let Ok(s) = value.to_str().map(str::trim) {
+-                            chunked = s.eq_ignore_ascii_case("chunked");
++                            if s.eq_ignore_ascii_case("chunked") {
++                                chunked = true;
++                            } else if s.eq_ignore_ascii_case("identity") {
++                                // allow silently since multiple TE headers are already checked
++                            } else {
++                                debug!("illegal Transfer-Encoding: {:?}", s);
++                                return Err(ParseError::Header);
++                            }
+                         } else {
+                             return Err(ParseError::Header);
+                         }

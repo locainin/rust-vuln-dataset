@@ -1,0 +1,14 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 0eae283..7f68f97 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -1,7 +1,7 @@
+     #[inline]
+-    pub fn rollback_hook<'c, F>(&'c self, hook: Option<F>)
++    pub fn rollback_hook<F>(&self, hook: Option<F>)
+     where
+-        F: FnMut() + Send + 'c,
++        F: FnMut() + Send + 'static,
+     {
+         self.db.borrow_mut().rollback_hook(hook);
+     }

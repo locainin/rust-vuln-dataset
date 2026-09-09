@@ -1,0 +1,11 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index db47c7d..109d55f 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -1,5 +1,5 @@
+     #[allow(non_snake_case)]
+-    pub fn sign_prehashed<'a, D>(
++    pub(crate) fn sign_prehashed<'a, D>(
+         &self,
+         prehashed_message: D,
+         public_key: &PublicKey,

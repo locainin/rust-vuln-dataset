@@ -1,0 +1,11 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 657e11d..dcf4b5a 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -1,5 +1,5 @@
+ #[repr(C)]
+-#[derive(Debug, Clone)]
++#[derive(Debug)]
+ pub struct ArrowArrayStream {
+     pub(super) get_schema: ::std::option::Option<
+         unsafe extern "C" fn(

@@ -1,0 +1,30 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 574ab71..d002379 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -1,4 +1,4 @@
+-pub fn emplace_scalar_array<T: EndianScalar, const N: usize>(
++pub unsafe fn emplace_scalar_array<T: EndianScalar, const N: usize>(
+     buf: &mut [u8],
+     loc: usize,
+     src: &[T; N],
+@@ -6,13 +6,11 @@ pub fn emplace_scalar_array<T: EndianScalar, const N: usize>(
+     let mut buf_ptr = buf[loc..].as_mut_ptr();
+     for item in src.iter() {
+         let item_le = item.to_little_endian();
+-        unsafe {
+-            core::ptr::copy_nonoverlapping(
+-                &item_le as *const T as *const u8,
+-                buf_ptr,
+-                size_of::<T>(),
+-            );
+-            buf_ptr = buf_ptr.add(size_of::<T>());
+-        }
++        core::ptr::copy_nonoverlapping(
++            &item_le as *const T::Scalar as *const u8,
++            buf_ptr,
++            size_of::<T::Scalar>(),
++        );
++        buf_ptr = buf_ptr.add(size_of::<T::Scalar>());
+     }
+ }

@@ -1,0 +1,21 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 8603ccc..bfab95d 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -1,10 +1,10 @@
+     #[inline(always)]
+     pub fn into_ref(self) -> &'a T {
+-        // SAFETY: This is sound because `B` is guaranteed to live for the
+-        // lifetime `'a`, meaning that a) the returned reference cannot outlive
+-        // the `B` from which `self` was constructed and, b) no mutable methods
+-        // on that `B` can be called during the lifetime of the returned
+-        // reference. See the documentation on `deref_helper` for what
+-        // invariants we are required to uphold.
++        assert!(B::INTO_REF_INTO_MUT_ARE_SOUND);
++
++        // SAFETY: According to the safety preconditions on
++        // `ByteSlice::INTO_REF_INTO_MUT_ARE_SOUND`, the preceding assert
++        // ensures that, given `B: 'a`, it is sound to drop `self` and still
++        // access the underlying memory using reads for `'a`.
+         unsafe { self.deref_helper() }
+     }

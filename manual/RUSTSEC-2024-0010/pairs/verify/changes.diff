@@ -1,0 +1,22 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 1620d3b..c0cc065 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -27,10 +27,13 @@
+             .filter_map(|x| x.split_once(','))
+             .filter(|x| x.0 == SIGNATURE_VERSION)
+             .any(|x| {
+-                x.1.bytes()
+-                    .zip(expected_signature.bytes())
+-                    .fold(0, |acc, (a, b)| acc | (a ^ b))
+-                    == 0
++                (x.1.len() == expected_signature.len())
++                    && (x
++                        .1
++                        .bytes()
++                        .zip(expected_signature.bytes())
++                        .fold(0, |acc, (a, b)| acc | (a ^ b))
++                        == 0)
+             })
+             .then_some(())
+             .ok_or(WebhookError::InvalidSignature)

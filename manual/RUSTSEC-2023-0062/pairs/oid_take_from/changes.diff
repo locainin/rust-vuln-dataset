@@ -1,0 +1,13 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index b46c936..60eb955 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -1,7 +1,5 @@
+     pub fn take_from<S: Source>(
+         constructed: &mut Constructed<S>
+     ) -> Result<Self, DecodeError<S::Error>> {
+-        constructed.take_primitive_if(Tag::OID, |content| {
+-            content.take_all().map(Oid)
+-        })
++        constructed.take_primitive_if(Tag::OID, Self::from_primitive)
+     }

@@ -1,0 +1,13 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 0e40aa5..bd9c5f2 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -2,7 +2,7 @@
+         lazy_static! {
+             static ref HREF_SAFE: [bool; 256] = {
+                 let mut a = [false; 256];
+-                for &c in b"-_.+!*'(),%#@?=;:/,+&$~abcdefghijklmnopqrstuvwxyz".iter() {
++                for &c in b"-_.+!*(),%#@?=;:/,+$~abcdefghijklmnopqrstuvwxyz".iter() {
+                     a[c as usize] = true;
+                 }
+                 for &c in b"ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789".iter() {

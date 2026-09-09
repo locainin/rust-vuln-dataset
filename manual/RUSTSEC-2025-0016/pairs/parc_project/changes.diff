@@ -1,0 +1,13 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 891da51..2e9c6b9 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -1,7 +1,7 @@
+     #[inline]
+     pub fn project<U, F>(&self, project: F) -> Parc<U>
+     where
+-        T: Send + Sync,
++        T: Send + Sync + 'static,
+         U: ?Sized + 'static,
+         F: FnOnce(&T) -> &U,
+     {

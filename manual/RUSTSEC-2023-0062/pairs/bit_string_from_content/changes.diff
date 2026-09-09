@@ -1,0 +1,33 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 1830b25..e5113f9 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -8,10 +8,24 @@
+                         "long bit string component in CER mode"
+                     ))
+                 }
+-                Ok(BitString {
+-                    unused: inner.take_u8()?,
+-                    bits: inner.take_all()?,
+-                })
++                let unused = inner.take_u8()?;
++                if unused > 7 {
++                    return Err(content.content_err(
++                        "invalid bit string with large initial octet"
++                    ));
++                }
++                if inner.remaining() == 0 && unused > 0 {
++                    return Err(content.content_err(
++                        "invalid bit string \
++                         (non-zero initial with empty bits)"
++                    ));
++                }
++                let bits = inner.take_all()?;
++
++                // Strictly speaking, we should also check if the unused bits
++                // in the last octet are zero.
++
++                Ok(BitString { unused, bits })
+             }
+             decode::Content::Constructed(ref inner) => {
+                 if inner.mode() == Mode::Der {

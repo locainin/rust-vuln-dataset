@@ -1,0 +1,39 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 9ece2d2..7a8debf 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -1,13 +1,12 @@
+ #[inline]
+-fn list_parser<'i, O1, O2, E>(
++fn list_parser<'i, O1, O2>(
+     open: char,
+     delim: char,
+     close: char,
+-    f: impl Parser<&'i str, O1, E>,
+-) -> impl Parser<&'i str, O2, E>
++    f: impl Parser<Input<'i>, O1, ContextError>,
++) -> impl Parser<Input<'i>, O2, ContextError>
+ where
+     O2: Accumulate<O1>,
+-    E: ParserError<&'i str> + AddContext<&'i str, StrContext>,
+ {
+     #[cfg(feature = "debug")]
+     let name = format!("list({open:?}, {delim:?}, {close:?})");
+@@ -15,13 +14,14 @@ where
+     let name = "list";
+ 
+     // These have to be outside of the closure for some reason.
++    let f = check_recursion(f);
+     let elems_1 = separated(1.., f, (char_parser(delim), space0));
+     let mut elems_and_end = terminated(elems_1, (opt(delim), space0, cut_err(char_parser(close))));
+-    trace(name, move |input: &mut &'i str| {
++    trace(name, move |input: &mut Input<'i>| {
+         let _ = char_parser(open).parse_next(input)?;
+         let _ = space0(input)?;
+-        if let Some(stripped) = input.strip_prefix(close) {
+-            *input = stripped;
++        if input.starts_with(close) {
++            input.next_slice(close.len());
+             return Ok(O2::initial(Some(0)));
+         }
+         elems_and_end.parse_next(input)

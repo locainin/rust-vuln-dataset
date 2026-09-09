@@ -1,0 +1,11 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 454a65b..df7f44e 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -1,5 +1,5 @@
+     #[allow(non_snake_case)]
+-    pub fn sign(&self, message: &[u8], public_key: &PublicKey) -> ed25519::Signature {
++    pub(crate) fn sign(&self, message: &[u8], public_key: &PublicKey) -> ed25519::Signature {
+         let mut h: Sha512 = Sha512::new();
+         let R: CompressedEdwardsY;
+         let r: Scalar;

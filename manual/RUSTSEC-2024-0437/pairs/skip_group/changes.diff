@@ -1,0 +1,19 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 205de07..3a93eb5 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -1,10 +1,6 @@
+     fn skip_group(&mut self) -> crate::Result<()> {
+-        while !self.eof()? {
+-            let wire_type = self.read_tag_unpack()?.1;
+-            if wire_type == WireType::EndGroup {
+-                break;
+-            }
+-            self.skip_field(wire_type)?;
+-        }
+-        Ok(())
++        self.incr_recursion()?;
++        let ret = self.skip_group_no_depth_check();
++        self.decr_recursion();
++        ret
+     }

@@ -1,0 +1,7 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index df5120f..8e33c67 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -1 +1 @@
+-unsafe impl<T> Sync for Block<T> {}
++unsafe impl<T: Sync> Sync for Block<T> {}

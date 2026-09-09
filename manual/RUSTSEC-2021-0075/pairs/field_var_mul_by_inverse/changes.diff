@@ -1,0 +1,14 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 48c3703..3feaef2 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -1,8 +1,4 @@
+     fn mul_by_inverse(&self, d: &Self) -> Result<Self, SynthesisError> {
+-        let d_inv = if self.is_constant() || d.is_constant() {
+-            d.inverse()?
+-        } else {
+-            Self::new_witness(self.cs(), || Ok(d.value()?.inverse().unwrap_or(F::zero())))?
+-        };
++        let d_inv = d.inverse()?;
+         Ok(d_inv * self)
+     }

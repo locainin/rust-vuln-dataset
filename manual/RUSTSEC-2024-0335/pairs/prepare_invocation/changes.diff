@@ -1,0 +1,30 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index cc59821..47d0f69 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -38,8 +38,12 @@
+                 }
+             }
+         };
+-        let host_as_ssh_arg = match url.user() {
++        let host_maybe_with_user_as_ssh_arg = match url.user() {
+             Some(user) => {
++                // FIXME: See the fixme comment on Url::user_argument_safe() about its return type.
++                if url.user_argument_safe() != Some(user) {
++                    return Err(ssh::invocation::Error::AmbiguousUserName { user: user.into() });
++                }
+                 let host = url.host().expect("present in ssh urls");
+                 format!("{user}@{host}")
+             }
+@@ -53,6 +57,9 @@
+             }
+         };
+ 
+-        // Try to force ssh to yield english messages (for parsing later)
+-        Ok(prepare.arg(host_as_ssh_arg).env("LANG", "C").env("LC_ALL", "C"))
++        // Try to force ssh to yield English messages (for parsing later).
++        Ok(prepare
++            .arg(host_maybe_with_user_as_ssh_arg)
++            .env("LANG", "C")
++            .env("LC_ALL", "C"))
+     }

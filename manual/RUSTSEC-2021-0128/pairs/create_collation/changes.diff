@@ -1,0 +1,14 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 429a74e..cf9d7b8 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -1,7 +1,7 @@
+     #[inline]
+-    pub fn create_collation<'c, C>(&'c self, collation_name: &str, x_compare: C) -> Result<()>
++    pub fn create_collation<C>(&self, collation_name: &str, x_compare: C) -> Result<()>
+     where
+-        C: Fn(&str, &str) -> Ordering + Send + UnwindSafe + 'c,
++        C: Fn(&str, &str) -> Ordering + Send + UnwindSafe + 'static,
+     {
+         self.db
+             .borrow_mut()

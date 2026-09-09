@@ -1,0 +1,16 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index ca0e24c..d53f483 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -1,9 +1,9 @@
+     #[inline]
+     pub fn from_arc<U, F>(arc: &Arc<U>, project: F) -> Self
+     where
+-        T: 'static,
+-        U: ?Sized + Send + Sync,
++        U: ?Sized + Send + Sync + 'static,
+         F: FnOnce(&U) -> &T,
++        T: 'static,
+     {
+         let projected = project(arc);
+         // SAFETY: the returned reference always converts to a non-null pointer.

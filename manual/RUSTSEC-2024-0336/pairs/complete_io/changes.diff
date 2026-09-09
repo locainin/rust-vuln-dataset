@@ -1,0 +1,16 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 9c6b73d..4c1a46c 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -10,6 +10,11 @@
+         loop {
+             let until_handshaked = self.is_handshaking();
+ 
++            if !self.wants_write() && !self.wants_read() {
++                // We will make no further progress.
++                return Ok((rdlen, wrlen));
++            }
++
+             while self.wants_write() {
+                 wrlen += self.write_tls(io)?;
+             }

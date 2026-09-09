@@ -1,0 +1,18 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 1b45bb8..abd372c 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -12,9 +12,10 @@
+             ResolveResult::PermissionDenied => HttpResponseBuilder::new()
+                 .status(StatusCode::FORBIDDEN)
+                 .body(Body::Empty),
+-            ResolveResult::IsDirectory => {
+-                let mut target = self.path.to_owned();
+-                target.push('/');
++            ResolveResult::IsDirectory {
++                redirect_to: mut target,
++            } => {
++                // Preserve any query string from the original request.
+                 if let Some(query) = self.query {
+                     target.push('?');
+                     target.push_str(query);

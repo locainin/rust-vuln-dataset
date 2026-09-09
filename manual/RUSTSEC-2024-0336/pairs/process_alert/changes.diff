@@ -1,0 +1,15 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 71d153b..7f313b0 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -8,8 +8,8 @@
+         }
+ 
+         // If we get a CloseNotify, make a note to declare EOF to our
+-        // caller.
+-        if alert.description == AlertDescription::CloseNotify {
++        // caller.  But do not treat unauthenticated alerts like this.
++        if self.may_receive_application_data && alert.description == AlertDescription::CloseNotify {
+             self.has_received_close_notify = true;
+             return Ok(());
+         }

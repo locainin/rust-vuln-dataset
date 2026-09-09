@@ -1,0 +1,13 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index cbf33f7..ac20d0a 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -1,7 +1,7 @@
+     #[inline]
+     pub fn try_from_rc<U, E, F>(rc: &Rc<U>, project: F) -> Result<Self, E>
+     where
+-        U: ?Sized,
++        U: ?Sized + 'static,
+         T: 'static,
+         F: FnOnce(&U) -> Result<&T, E>,
+     {

@@ -1,0 +1,10 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index e15ecd3..9a86a2e 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -1,4 +1,4 @@
+-    pub fn iter_mut<'a>(&'_ mut self) -> IterMut<'a, K, V> {
++    pub fn iter_mut(&mut self) -> IterMut<'_, K, V> {
+         IterMut {
+             len: self.len(),
+             ptr: unsafe { (*self.head).next },

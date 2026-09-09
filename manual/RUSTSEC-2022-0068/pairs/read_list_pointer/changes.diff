@@ -1,0 +1,15 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 9b19303..55b31fe 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -90,10 +90,6 @@
+                         }
+                     }
+                     Some(Pointer) => {
+-                        // We expected a list of pointers but got a list of structs. Assuming the
+-                        // first field in the struct is the pointer we were looking for, we want to
+-                        // munge the pointer to point at the first element's pointer section.
+-                        ptr = ptr.offset(data_size as isize * BYTES_PER_WORD as isize);
+                         if ptr_count == 0 {
+                             return Err(Error::failed(
+                                 "Expected a pointer list, but got a list of data-only structs"

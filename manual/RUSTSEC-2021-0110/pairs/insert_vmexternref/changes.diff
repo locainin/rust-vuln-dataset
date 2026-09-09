@@ -1,0 +1,11 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 061a79c..948f89c 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -1,4 +1,3 @@
+-    pub unsafe fn insert_vmexternref(&mut self, r: VMExternRef) {
+-        self.externref_activations_table
+-            .insert_with_gc(r, &self.modules)
++    pub unsafe fn insert_vmexternref_without_gc(&mut self, r: VMExternRef) {
++        self.externref_activations_table.insert_without_gc(r);
+     }

@@ -1,0 +1,21 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 41e8a64..19a026f 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -1,13 +1,6 @@
+             fn read_bytes_default_le(bytes: &[u8]) -> Self {
+-                let mut pos = 0;
+                 let len = T::BYTE_LEN;
+-                let mut result: Self;
+-                unsafe {
+-                    result = std::mem::uninitialized();
+-                    for i in 0 .. ($x) {
+-                        std::ptr::write(&mut result[i], <T>::read_bytes_default_le(&bytes[pos .. pos + len]));
+-                        pos += len;
+-                    }
+-                }
+-                result
++                (0 .. ($x)).map(|i| {
++                    <T>::read_bytes_default_le(&bytes[i * len .. (i + 1) * len])
++                }).collect::<Vec<_>>().try_into().map_err(|_|()).unwrap()
+             }

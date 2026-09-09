@@ -1,0 +1,14 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 6db0f9f..b85fa5e 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -50,7 +50,8 @@
+                 removed.push(node);
+                 continue;
+             }
+-            let pass = self.clean_child(&mut node, url_base);
++            let pass_clean = self.clean_child(&mut node, url_base);
++            let pass = pass_clean && self.check_expected_namespace(&parent, &node);
+             if pass {
+                 self.adjust_node_attributes(&mut node, &link_rel, url_base, self.id_prefix);
+                 dom.append(&parent.clone(), NodeOrText::AppendNode(node.clone()));

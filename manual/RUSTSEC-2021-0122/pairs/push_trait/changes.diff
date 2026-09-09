@@ -1,0 +1,16 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 7e23177..b5c1e36 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -1,6 +1,10 @@
+ pub trait Push: Sized {
+     type Output;
+-    fn push(&self, dst: &mut [u8], _rest: &[u8]);
++
++    /// # Safety
++    ///
++    /// dst is aligned to [`Self::alignment`] and has length greater than or equal to [`Self::size`]
++    unsafe fn push(&self, dst: &mut [u8], written_len: usize);
+     #[inline]
+     fn size() -> usize {
+         size_of::<Self::Output>()

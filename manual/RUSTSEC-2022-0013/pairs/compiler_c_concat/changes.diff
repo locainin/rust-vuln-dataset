@@ -1,0 +1,13 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 0cf2af2..922ce87 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -5,7 +5,7 @@
+         let mut exprs = exprs.into_iter();
+         let Patch { mut hole, entry } = loop {
+             match exprs.next() {
+-                None => return Ok(None),
++                None => return self.c_empty(),
+                 Some(e) => {
+                     if let Some(p) = self.c(e)? {
+                         break p;

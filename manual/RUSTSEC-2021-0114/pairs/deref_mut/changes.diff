@@ -1,0 +1,12 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index ff98695..e69de29 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -1,7 +0,0 @@
+-impl DerefMut for TlsWyRand {
+-	/// Safety: [`TlsWyRand`] is neither [Send] nor [Sync], and thus,
+-	/// there will always be a thread-local [`WyRand`] when there is a [`TlsWyRand`]
+-	fn deref_mut(&mut self) -> &mut Self::Target {
+-		unsafe { &mut *(*self.0).get() }
+-	}
+-}

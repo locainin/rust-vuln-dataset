@@ -1,0 +1,19 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 5980890..1fc3393 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -157,7 +157,13 @@ fn from_der_(i: &[u8], start_offset: usize) -> Result<Vec<ASN1Block>, ASN1Decode
+ 
+                 let v = String::from_iter(body.iter().map(|x| *x as char));
+ 
+-                let y = &v[0..2];
++                let y = match v.get(0..2) {
++                    Some(yy) => yy,
++                    None => {
++                        // This wasn't a valid character boundrary.
++                        return Err(ASN1DecodeErr::InvalidDateValue(v));
++                    }
++                };
+ 
+                 let y_prefix = match y.parse::<u8>() {
+                     Err(_) => return Err(ASN1DecodeErr::InvalidDateValue(v)),

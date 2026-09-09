@@ -1,0 +1,19 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 820fa83..9ab2a3f 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -5,9 +5,11 @@
+         let peek = self.parse_whitespace().ok_or(Error::EofWhileParsingValue)?;
+ 
+         if peek == b'{' {
+-            self.eat_char();
+-
+-            let ret = visitor.visit_map(MapAccess::new(self))?;
++            check_recursion! {
++                self.eat_char();
++                let ret = visitor.visit_map(MapAccess::new(self));
++            }
++            let ret = ret?;
+ 
+             self.end_map()?;
+ 

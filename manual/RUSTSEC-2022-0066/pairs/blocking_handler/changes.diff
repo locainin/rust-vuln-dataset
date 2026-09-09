@@ -1,0 +1,15 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 056d613..df4c219 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -3,6 +3,10 @@
+         request: Request<Body>,
+         remote_addr: SocketAddr,
+     ) -> Result<HyperResponse, ServiceError> {
++        if let Err(response) = check_content_length(&request) {
++            return Ok(response);
++        }
++
+         let (parts, body) = request.into_parts();
+         let now = StartInstant::now();
+ 

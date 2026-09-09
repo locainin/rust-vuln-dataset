@@ -1,0 +1,18 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 3c6c943..a787696 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -47,6 +47,13 @@
+ 
+         match length {
+             Length::Definite(len) => {
++                if let Some(limit) = self.source.limit() {
++                    if len > limit {
++                        return Err(self.source.content_err(
++                            "nested value with excessive length"
++                        ))
++                    }
++                }
+                 let old_limit = self.source.limit_further(Some(len));
+                 let res = {
+                     let mut content = if constructed {

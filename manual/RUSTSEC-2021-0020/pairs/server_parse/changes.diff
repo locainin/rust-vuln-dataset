@@ -1,0 +1,13 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 0851b42..6488185 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -102,6 +102,8 @@
+                     if headers::is_chunked_(&value) {
+                         is_te_chunked = true;
+                         decoder = DecodedLength::CHUNKED;
++                    } else {
++                        is_te_chunked = false;
+                     }
+                 }
+                 header::CONTENT_LENGTH => {

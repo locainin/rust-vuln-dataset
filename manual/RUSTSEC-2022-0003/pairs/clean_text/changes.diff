@@ -1,0 +1,14 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index dc45031..95d6926 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -22,7 +22,8 @@ pub fn clean_text(src: &str) -> String {
+             ' ' => "&#32;",
+             '\t' => "&#9;",
+             '\n' => "&#10;",
+-            '\r' => "&#12;",
++            '\x0c' => "&#12;",
++            '\r' => "&#13;",
+             // a spec-compliant browser will perform this replacement anyway, but the middleware might not
+             '\0' => "&#65533;",
+             // ALL OTHER CHARACTERS ARE PASSED THROUGH VERBATIM

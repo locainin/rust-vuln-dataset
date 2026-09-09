@@ -1,0 +1,13 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index fe83ae1..277ea5f 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -8,7 +8,7 @@
+     ) -> Result<()>
+     where
+         A: RefUnwindSafe + UnwindSafe,
+-        D: Aggregate<A, T>,
++        D: Aggregate<A, T> + 'static,
+         T: ToSql,
+     {
+         self.db

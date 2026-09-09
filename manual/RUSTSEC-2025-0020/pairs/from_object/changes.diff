@@ -1,0 +1,13 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index cb18046..971e56d 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -3,6 +3,8 @@
+         encoding: &str,
+         errors: &str,
+     ) -> PyResult<Bound<'py, PyString>> {
++        let encoding = CString::new(encoding)?;
++        let errors = CString::new(errors)?;
+         unsafe {
+             ffi::PyUnicode_FromEncodedObject(
+                 src.as_ptr(),

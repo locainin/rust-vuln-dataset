@@ -1,0 +1,13 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 7281f1c..c9d975c 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -4,7 +4,7 @@ macro_rules! _covariant_access {
+     (covariant, $Vis:vis, $Dependent:ident) => {
+         /// Borrows dependent.
+         $Vis fn borrow_dependent<'_q>(&'_q self) -> &'_q $Dependent<'_q> {
+-            fn _assert_covariance<'x: 'y, 'y>(x: $Dependent<'x>) -> $Dependent<'y> {
++            fn _assert_covariance<'x: 'y, 'y>(x: &'y $Dependent<'x>) -> &'y $Dependent<'y> {
+                 //  This function only compiles for covariant types.
+                 x // Change the macro invocation to not_covariant.
+             }

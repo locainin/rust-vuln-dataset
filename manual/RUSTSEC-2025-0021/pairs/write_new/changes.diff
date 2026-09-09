@@ -1,0 +1,16 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index a77aba9..5f0884b 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -1,8 +1,8 @@
+-        pub fn new(inner: T, object_hash: gix_hash::Kind) -> Self {
++        pub fn new(inner: T, object_hash: crate::Kind) -> Self {
+             match object_hash {
+-                gix_hash::Kind::Sha1 => Write {
++                crate::Kind::Sha1 => Write {
+                     inner,
+-                    hash: Hasher::default(),
++                    hash: crate::hasher(object_hash),
+                 },
+             }
+         }

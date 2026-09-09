@@ -1,0 +1,15 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index b643e21..b034459 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -1,8 +1,6 @@
+-    pub fn encrypt(&self, data: &mut [u8]) -> Result<[u8; MINI_PREFIX_SIZE], Error> {
+-        let mut rng = self.rng.clone();
+-
++    pub fn encrypt(&mut self, data: &mut [u8]) -> Result<[u8; MINI_PREFIX_SIZE], Error> {
+         let mut nonce = [0u8; 12];
+-        rng.fill_bytes(&mut nonce);
++        self.rng.fill_bytes(&mut nonce);
+ 
+         let header = MiniCocoonHeader::new(nonce, data.len());
+         let prefix = MiniFormatPrefix::new(header);

@@ -1,0 +1,16 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index c754010..4d4a02e 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -23,9 +23,9 @@
+             stream.read_exact(&mut self.buffer[HEADER_SIZE..])?;
+         }
+         let block_size = analyze_extra_fields(&self.buffer[HEADER_SIZE..])? as usize + 1;
+-        if block_size > MAX_BLOCK_SIZE {
++        if block_size > MAX_BLOCK_SIZE || block_size < HEADER_SIZE + MIN_EXTRA_SIZE {
+             return Err(BlockError::Corrupted(
+-                format!("Block size {} > {}", block_size, MAX_BLOCK_SIZE)));
++                format!("Block size {} > {} or < {}", block_size, MAX_BLOCK_SIZE, HEADER_SIZE + MIN_EXTRA_SIZE)));
+         }
+ 
+         unsafe {

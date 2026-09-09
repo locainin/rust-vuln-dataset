@@ -1,0 +1,18 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 4a23dc7..02da038 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -1,10 +1,6 @@
+     pub unsafe fn new(heap_bottom: *mut u8, heap_size: usize) -> Heap {
+-        if heap_size < HoleList::min_size() {
+-            Self::empty()
+-        } else {
+-            Heap {
+-                used: 0,
+-                holes: HoleList::new(heap_bottom, heap_size),
+-            }
++        Heap {
++            used: 0,
++            holes: HoleList::new(heap_bottom, heap_size),
+         }
+     }

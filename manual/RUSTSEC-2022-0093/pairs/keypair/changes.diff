@@ -1,0 +1,14 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index e027e11..df7d059 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -1,7 +1,7 @@
+ #[derive(Debug)]
+ pub struct Keypair {
+     /// The secret half of this keypair.
+-    pub secret: SecretKey,
++    pub(crate) secret: SecretKey,
+     /// The public half of this keypair.
+-    pub public: PublicKey,
++    pub(crate) public: PublicKey,
+ }

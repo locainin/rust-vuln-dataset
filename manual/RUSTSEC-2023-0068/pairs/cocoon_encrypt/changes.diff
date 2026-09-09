@@ -1,0 +1,25 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 3cad82a..b9f2603 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -1,16 +1,14 @@
+-    pub fn encrypt(&self, data: &mut [u8]) -> Result<[u8; PREFIX_SIZE], Error> {
++    pub fn encrypt(&mut self, data: &mut [u8]) -> Result<[u8; PREFIX_SIZE], Error> {
+         let mut salt = [0u8; 16];
+         let mut nonce = [0u8; 12];
+ 
+-        match &self.rng {
++        match self.rng {
+             #[cfg(feature = "std")]
+-            RngVariant::Thread(rng) => {
+-                let mut rng = rng.clone();
++            RngVariant::Thread(ref mut rng) => {
+                 rng.fill_bytes(&mut salt);
+                 rng.fill_bytes(&mut nonce);
+             }
+-            RngVariant::Std(rng) => {
+-                let mut rng = rng.clone();
++            RngVariant::Std(ref mut rng) => {
+                 rng.fill_bytes(&mut salt);
+                 rng.fill_bytes(&mut nonce);
+             }

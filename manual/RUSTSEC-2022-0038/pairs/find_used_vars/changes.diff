@@ -1,0 +1,42 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 66ce538..6a5c5d2 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -1,27 +1,21 @@
+     fn find_used_vars(
+-        &self,
++        &'a self,
+         from: &Scope<'a>,
+         defined: &HashSet<&'a str>,
+         used: &mut HashSet<&'a str>,
+         visited: &mut HashSet<Scope<'a>>,
+     ) {
+-        if visited.contains(from) {
+-            return;
++        let mut to_visit = Vec::new();
++        if let Some(spreads) = self.find_used_vars_inner(from, defined, used, visited) {
++            to_visit.push(spreads);
+         }
+-
+-        visited.insert(from.clone());
+-
+-        if let Some(used_vars) = self.used_variables.get(from) {
+-            for var in used_vars {
+-                if defined.contains(var) {
+-                    used.insert(var);
+-                }
+-            }
+-        }
+-
+-        if let Some(spreads) = self.spreads.get(from) {
++        while let Some(spreads) = to_visit.pop() {
+             for spread in spreads {
+-                self.find_used_vars(&Scope::Fragment(spread), defined, used, visited);
++                if let Some(spreads) =
++                    self.find_used_vars_inner(&Scope::Fragment(spread), defined, used, visited)
++                {
++                    to_visit.push(spreads);
++                }
+             }
+         }
+     }

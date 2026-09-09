@@ -1,0 +1,16 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index ed630d3..f9ced53 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -1,6 +1,6 @@
+-#[cfg(any(feature = "rustsha1", feature = "fast-sha1"))]
+-pub fn hasher(kind: gix_hash::Kind) -> Hasher {
+-    match kind {
+-        gix_hash::Kind::Sha1 => Hasher::default(),
++    #[inline]
++    pub fn hasher(kind: crate::Kind) -> Hasher {
++        match kind {
++            crate::Kind::Sha1 => Hasher::default(),
++        }
+     }
+-}

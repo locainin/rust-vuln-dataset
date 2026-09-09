@@ -1,0 +1,24 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 6c49203..52f4116 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -1,10 +1,9 @@
+-#[cfg(all(feature = "progress", any(feature = "rustsha1", feature = "fast-sha1")))]
+-pub fn bytes(
+-    read: &mut dyn std::io::Read,
+-    num_bytes_from_start: u64,
+-    kind: gix_hash::Kind,
+-    progress: &mut dyn crate::progress::Progress,
+-    should_interrupt: &std::sync::atomic::AtomicBool,
+-) -> std::io::Result<gix_hash::ObjectId> {
+-    bytes_with_hasher(read, num_bytes_from_start, hasher(kind), progress, should_interrupt)
+-}
++    pub fn bytes(
++        read: &mut dyn std::io::Read,
++        num_bytes_from_start: u64,
++        kind: crate::Kind,
++        progress: &mut dyn gix_features::progress::Progress,
++        should_interrupt: &std::sync::atomic::AtomicBool,
++    ) -> Result<crate::ObjectId, Error> {
++        bytes_with_hasher(read, num_bytes_from_start, hasher(kind), progress, should_interrupt)
++    }

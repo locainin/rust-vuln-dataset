@@ -1,0 +1,13 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index e971e39..85e34b6 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -4,7 +4,7 @@
+ 
+         self.check_size()?;
+         match *expr.kind() {
+-            Empty => Ok(None),
++            Empty => self.c_empty(),
+             Literal(hir::Literal::Unicode(c)) => self.c_char(c),
+             Literal(hir::Literal::Byte(b)) => {
+                 assert!(self.compiled.uses_bytes());

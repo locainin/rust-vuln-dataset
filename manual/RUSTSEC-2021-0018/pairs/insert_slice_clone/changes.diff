@@ -1,0 +1,12 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 2aa873b..9b75b1e 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -11,6 +11,7 @@
+         }
+ 
+         unsafe {
++            self.set_len(0);
+             {
+                 let mut p = self.as_mut_ptr().add(index);
+                 ptr::copy(p, p.add(slen), vlen - index);

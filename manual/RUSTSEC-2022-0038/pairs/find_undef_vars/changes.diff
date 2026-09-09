@@ -1,0 +1,37 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 9bfd00a..5baeaa8 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -5,23 +5,17 @@
+         unused: &mut Vec<&'a Spanning<&'a str>>,
+         visited: &mut HashSet<Scope<'a>>,
+     ) {
+-        if visited.contains(scope) {
+-            return;
++        let mut to_visit = Vec::new();
++        if let Some(spreads) = self.find_undef_vars_inner(scope, defined, unused, visited) {
++            to_visit.push(spreads);
+         }
+-
+-        visited.insert(scope.clone());
+-
+-        if let Some(used_vars) = self.used_variables.get(scope) {
+-            for var in used_vars {
+-                if !defined.contains(&var.item) {
+-                    unused.push(var);
+-                }
+-            }
+-        }
+-
+-        if let Some(spreads) = self.spreads.get(scope) {
++        while let Some(spreads) = to_visit.pop() {
+             for spread in spreads {
+-                self.find_undef_vars(&Scope::Fragment(spread), defined, unused, visited);
++                if let Some(spreads) =
++                    self.find_undef_vars_inner(&Scope::Fragment(spread), defined, unused, visited)
++                {
++                    to_visit.push(spreads);
++                }
+             }
+         }
+     }

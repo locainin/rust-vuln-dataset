@@ -1,0 +1,25 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 3e1d0a2..f3adfc8 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -1,12 +1,17 @@
+-    pub fn from_bytes<'a>(bytes: &'a [u8]) -> Result<Keypair, SignatureError> {
++    pub fn from_bytes(bytes: &[u8]) -> Result<Keypair, SignatureError> {
+         if bytes.len() != KEYPAIR_LENGTH {
+             return Err(InternalError::BytesLengthError {
+                 name: "Keypair",
+                 length: KEYPAIR_LENGTH,
+-            }.into());
++            }
++            .into());
+         }
+         let secret = SecretKey::from_bytes(&bytes[..SECRET_KEY_LENGTH])?;
+         let public = PublicKey::from_bytes(&bytes[SECRET_KEY_LENGTH..])?;
+ 
+-        Ok(Keypair{ secret: secret, public: public })
++        if public != (&secret).into() {
++            return Err(InternalError::MismatchedKeypairError.into());
++        }
++
++        Ok(Keypair { secret, public })
+     }

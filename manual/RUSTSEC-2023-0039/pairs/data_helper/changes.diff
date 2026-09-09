@@ -1,0 +1,30 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 684a1de..25c1055 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -6,12 +6,6 @@
+            self.cursor,
+            self.buffer.as_ref().map(|buffer| buffer.len()));
+ 
+-        // See if there is an error from the last invocation.
+-        if let Some(e) = self.error.take() {
+-            t!("Returning stashed error: {}", e);
+-            return Err(e);
+-        }
+-
+         if let Some(ref buffer) = self.buffer {
+             // We have a buffer.  Make sure `cursor` is sane.
+             assert!(self.cursor <= buffer.len());
+@@ -47,6 +41,12 @@
+                     break;
+                 }
+ 
++                // See if there is an error from the last invocation.
++                if let Some(e) = &self.error {
++                    t!("We have a stashed error, don't poll again: {}", e);
++                    break;
++                }
++
+                 match self.reader.read(&mut buffer_new
+                                        [amount_buffered + amount_read..]) {
+                     Ok(read) => {

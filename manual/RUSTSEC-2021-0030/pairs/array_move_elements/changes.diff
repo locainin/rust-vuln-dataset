@@ -1,0 +1,18 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index a90222f..1a8c9c3 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -2,11 +2,7 @@
+     where
+         F: FnMut(<T as Array>::Item),
+     {
+-        unsafe {
+-            for item in self.as_slice() {
+-                f(ptr::read(item))
+-            }
+-
+-            forget(self);
++        for item in ArrayIter::new(self) {
++            f(item);
+         }
+     }

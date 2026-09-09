@@ -1,0 +1,27 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 9bb83a7..daea2c3 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -20,18 +20,13 @@
+         let response_status = response.status();
+         trace!("Response status: {}", response_status);
+ 
+-        let content_length: usize = response
+-            .headers()
+-            .get(CONTENT_LENGTH)
+-            .and_then(|s| s.to_str().ok())
+-            .and_then(|s| s.parse().ok())
+-            .unwrap_or(0);
+-
+-        let mut body: Vec<u8> = Vec::with_capacity(content_length);
+         let mut chunks = response.into_body();
+-
++        let mut body = Vec::new();
+         while let Some(chunk) = chunks.data().await {
+             body.extend(&chunk?);
++            if body.len() > MAX_RESPONSE_SIZE {
++                return Err(WebPushError::ResponseTooLarge);
++            }
+         }
+         trace!("Body: {:?}", body);
+ 

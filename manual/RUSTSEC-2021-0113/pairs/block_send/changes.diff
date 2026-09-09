@@ -1,0 +1,7 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 19c9ffb..51e4176 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -1 +1 @@
+-unsafe impl<T> Send for Block<T> {}
++unsafe impl<T: Send> Send for Block<T> {}

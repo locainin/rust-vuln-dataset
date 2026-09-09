@@ -1,0 +1,10 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 112c3e5..82641a8 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -1,4 +1,4 @@
+-    pub fn iter<'a>(&'_ self) -> Iter<'a, K, V> {
++    pub fn iter(&self) -> Iter<'_, K, V> {
+         Iter {
+             len: self.len(),
+             ptr: unsafe { (*self.head).next },

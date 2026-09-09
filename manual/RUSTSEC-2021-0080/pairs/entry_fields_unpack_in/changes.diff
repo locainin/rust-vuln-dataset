@@ -1,0 +1,18 @@
+diff --git a/vulnerable.rs b/fixed.rs
+index 11bf2fa..83ded4a 100644
+--- a/vulnerable.rs
++++ b/fixed.rs
+@@ -50,11 +50,8 @@
+             None => return Ok(false),
+         };
+ 
+-        if parent.symlink_metadata().is_err() {
+-            fs::create_dir_all(&parent).map_err(|e| {
+-                TarError::new(&format!("failed to create `{}`", parent.display()), e)
+-            })?;
+-        }
++        self.ensure_dir_created(&dst, parent)
++            .map_err(|e| TarError::new(&format!("failed to create `{}`", parent.display()), e))?;
+ 
+         let canon_target = self.validate_inside_dst(&dst, parent)?;
+ 
