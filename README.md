@@ -1,12 +1,6 @@
-# Rust Vulnerability Dataset
-
-A work-in-progress function-level dataset of real Rust vulnerabilities derived primarily from RustXec and RustSec advisories.
-
-The goal is to build precise vulnerable/fixed source pairs with enough metadata and provenance for vulnerability research, static analysis, and later machine-learning experiments.
-
 ## Dataset Structure
 
-Curated RustSec cases are stored under `manual/`:
+The RustXec-derived curated core is stored under `manual/`:
 
     manual/RUSTSEC-YYYY-NNNN/
     ├── metadata.yaml
@@ -15,9 +9,10 @@ Curated RustSec cases are stored under `manual/`:
             ├── before.rs
             ├── after.rs
             ├── vulnerable.rs
-            └── fixed.rs
+            ├── fixed.rs
+            └── changes.diff
 
-Standalone negative samples are stored under `negatives/`:
+Standalone negative samples for the core dataset are stored under `negatives/`:
 
     negatives/
     ├── hard/
@@ -27,12 +22,23 @@ Standalone negative samples are stored under `negatives/`:
         └── crate_name/
             └── qualified_symbol.rs
 
-Files in each curated pair:
+External datasets are kept separate from the RustXec-derived core. HaluRust cases are stored under:
+
+    halurust/
+    └── cases/
+        └── CVE-YYYY-NNNN/
+            ├── metadata.yaml
+            ├── vulnerable.rs
+            ├── fixed.rs
+            └── changes.diff
+
+Files in each curated RustXec pair:
 
 - `before.rs` — complete source file from the vulnerable revision
 - `after.rs` — complete source file from the repaired revision
 - `vulnerable.rs` — exact vulnerable function or Rust item extracted from `before.rs`
 - `fixed.rs` — exact repaired counterpart extracted from `after.rs`
+- `changes.diff` — unified Git-style diff from `vulnerable.rs` to `fixed.rs`
 
 Hard negatives are production Rust items selected from the same case’s file, module, or crate as a positive sample. Easy negatives are production Rust items from unrelated crates with no advisory in the pinned RustSec collection.
 
@@ -64,6 +70,10 @@ Fields:
 Each curated `metadata.yaml` uses the same canonical 15 fields.
 
 Existing RustXec metadata is preserved. Missing information may be added when it can be independently verified from authoritative sources such as RustSec, GitHub Security Advisories, CVE/NVD records, or upstream project history.
+The original RustXec metadata source is preserved unchanged. Missing information may be added, and incorrect metadata may be corrected in curated case metadata when the change can be independently authenticated from sources such as RustSec, GitHub Security Advisories, CVE/NVD records, or upstream project history.
+
+HaluRust metadata follows the same core field layout while retaining HaluRust-specific provenance separately.
+
 
 ## Verification
 
@@ -76,18 +86,18 @@ Run it with:
     cd Verification
     python main.py
 
-Requires Python 3.11+, PyYAML, and ast-grep; tests require pytest 8.4+
+Requires Python 3.11+, PyYAML, and ast-grep. Tests require pytest 8.4+.
 
-It checks:
+The verifier checks the curated core for:
 
-- the canonical 15-field metadata schema
-- consistency with the RustXec `metadata.csv`
-- permitted metadata additions
+- canonical metadata structure
+- consistency with the RustXec metadata baseline
+- permitted metadata enrichment and authenticated corrections
 - required source-pair files
 - vulnerable/fixed differences
 - exact vulnerable-snippet inclusion in `before.rs`
 - exact fixed-snippet inclusion in `after.rs`
-- snippets include the whole item and its attributes, with one matching location
+- complete Rust items and attributes
 - removed-item fixes
 - affected-function and pair counts
 - source ranges and pair structure
@@ -110,9 +120,9 @@ For interactive manual review of one RustSec case at a time:
 
 This displays the case metadata, snapshot matches, pair information, and vulnerable-to-fixed diffs.
 
-To manually compare a pair:
+Each curated pair already includes `changes.diff`. To regenerate the same type of diff manually:
 
-    diff -u vulnerable.rs fixed.rs
+    git diff --no-index -- vulnerable.rs fixed.rs
 
 The diff direction is always vulnerable → fixed:
 
@@ -131,4 +141,4 @@ Or from the repository root:
 
 ## Current Status
 
-The project is currently focused on positive-pair curation.
+The RustXec-derived core has completed its initial positive-pair and negative-sample curation pass.
