@@ -32,6 +32,22 @@ External datasets are kept separate from the RustXec-derived core. HaluRust case
             ├── fixed.rs
             └── changes.diff
 
+RustMizan is stored using its native dataset structure:
+
+    rustmizan/
+    ├── samples/
+    │   └── vuln-NNNN/
+    │       ├── sample-0XXXX-level/
+    │       └── sample-1XXXX-level/
+    ├── mizan.json
+    ├── source-lock.yaml
+    ├── checksums.sha256
+    ├── tools/
+    └── tests/
+
+The RustMizan import contains 37 retained cases and 151 native projects: 84 vulnerable and 67 fixed. Five upstream cases already covered by HaluRust or the manual set were excluded.
+
+RustMizan is not normalized into the pair-oriented layout used by the other dataset families. Its native sample naming, project structure, and `mizan.json` annotations are kept intact so the imported data can be compared and verified directly
 Files in each curated RustXec pair:
 
 - `before.rs` — complete source file from the vulnerable revision
@@ -74,6 +90,7 @@ The original RustXec metadata source is preserved unchanged. Missing information
 
 HaluRust metadata follows the same core field layout while retaining HaluRust-specific provenance separately.
 
+RustMizan keeps its upstream `mizan.json` annotation format rather than converting it into the repository's `metadata.yaml` schema. Import provenance, the pinned upstream revision, and excluded overlapping cases are recorded separately in `rustmizan/source-lock.yaml`.
 
 ## Verification
 
