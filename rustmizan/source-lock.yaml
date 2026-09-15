@@ -1,0 +1,411 @@
+dataset: rustmizan
+schema_version: 1
+upstream:
+  repository: https://github.com/sfu-rsl/rust-mizan
+  revision: 1b7ca84e991ce00c9fe4f2f6c2e92fcfa4b1cd2f
+  metadata_sha256: 382537098a94343abcfe011fab942e87be98c1ebffc479d56d7e7137ee936c1d
+target_base_head: 81dd398a2902a10c58c38d03e4e254bb1da184bf
+integrity_inventory: checksums.sha256
+transformations:
+  mizan.json: Native checkout filtering only; retained records equal upstream values
+  Cargo.toml: Native checkout dataset-only workspace, resolver 2; excludes framework/mutation tools
+  Cargo.lock: 'Pruned from pinned upstream lock: 707 to 538 packages, 169 removed; no new package identity/version/source/checksum
+    tuples'
+  UPSTREAM-LICENSE.md: Byte-identical copy of upstream docs/src/license.md; renamed for attribution
+  samples/: Byte-identical complete supplied projects, dependency trees, case-level files; no repairs
+build_environment:
+  date: '2026-09-15'
+  image: rust@sha256:738ae99a3d75623f41e6882566b4ef37e38a9840244a47efd4a0ca22e9628b88
+  rust: 1.84.1
+  os: Debian Bookworm
+  target: x86_64-unknown-linux-gnu
+  profile: dev
+  features: default
+  command: cargo build --locked --offline --jobs 4 --manifest-path samples/{path_to_crate}/Cargo.toml
+  network: disabled during builds; controlled cargo fetch setup
+  isolation: non-root UID; cap-drop ALL; no-new-privileges; read-only rootfs and source bind; task-only Cargo registry
+    and target volumes; tmpfs /tmp; no credentials/home/SSH-agent/Docker-socket mounts
+  resource_limits:
+    cpus: 4
+    memory: 4g
+    pids: 256
+    timeout_seconds_per_variant: 240
+  executed_sample_programs: false
+cases:
+  vuln-0001:
+    disposition: included
+    reason: No confirmed retained-family overlap; native annotations and source integrity checked; all supplied
+      variants build unchanged
+    builds:
+      vuln-0001/sample-00001-function: pass
+      vuln-0001/sample-00001-file: pass
+      vuln-0001/sample-00001-crate: pass
+      vuln-0001/sample-10001-function: pass
+      vuln-0001/sample-10001-file: pass
+      vuln-0001/sample-10001-crate: pass
+  vuln-0002:
+    disposition: included
+    reason: No confirmed retained-family overlap; native annotations and source integrity checked; all supplied
+      variants build unchanged
+    builds:
+      vuln-0002/sample-00002-crate: pass
+      vuln-0002/sample-00002-file: pass
+      vuln-0002/sample-00002-function: pass
+      vuln-0002/sample-10002-crate: pass
+      vuln-0002/sample-10002-file: pass
+      vuln-0002/sample-10002-function: pass
+  vuln-0003:
+    disposition: excluded_overlap
+    match: halurust/cases/CVE-2018-21000
+    reason: CVE-2018-21000; same repair a134e06d740f9d7c287f74c0af2cd06206774364
+  vuln-0004:
+    disposition: included
+    reason: No confirmed retained-family overlap; native annotations and source integrity checked; all supplied
+      variants build unchanged
+    builds:
+      vuln-0004/sample-00004-crate: pass
+      vuln-0004/sample-00004-file: pass
+      vuln-0004/sample-00004-function: pass
+  vuln-0005:
+    disposition: included
+    reason: No confirmed retained-family overlap; native annotations and source integrity checked; all supplied
+      variants build unchanged
+    builds:
+      vuln-0005/sample-00005-function: pass
+      vuln-0005/sample-00005-file: pass
+      vuln-0005/sample-00005-crate: pass
+      vuln-0005/sample-10005-function: pass
+      vuln-0005/sample-10005-file: pass
+      vuln-0005/sample-10005-crate: pass
+  vuln-0006:
+    disposition: excluded_overlap
+    match: manual/RUSTSEC-2021-0003
+    reason: CVE-2021-25900; same insert_many repair 9998ba0694a6b51aa6604748b00b6a98f0a0039e
+  vuln-0007:
+    disposition: included
+    reason: No confirmed retained-family overlap; native annotations and source integrity checked; all supplied
+      variants build unchanged
+    builds:
+      vuln-0007/sample-00007-crate: pass
+      vuln-0007/sample-00007-file: pass
+      vuln-0007/sample-00007-function: pass
+  vuln-0008:
+    disposition: included
+    reason: No confirmed retained-family overlap; native annotations and source integrity checked; all supplied
+      variants build unchanged
+    builds:
+      vuln-0008/sample-00008-crate: pass
+      vuln-0008/sample-00008-function: pass
+      vuln-0008/sample-10008-function: pass
+      vuln-0008/sample-10008-crate: pass
+  vuln-0009:
+    disposition: included
+    reason: No confirmed retained-family overlap; native annotations and source integrity checked; all supplied
+      variants build unchanged
+    builds:
+      vuln-0009/sample-00009-crate: pass
+      vuln-0009/sample-00009-file: pass
+      vuln-0009/sample-00009-function: pass
+  vuln-0010:
+    disposition: included
+    reason: No confirmed retained-family overlap; native annotations and source integrity checked; all supplied
+      variants build unchanged
+    builds:
+      vuln-0010/sample-00010-crate: pass
+      vuln-0010/sample-00010-file: pass
+      vuln-0010/sample-00010-function: pass
+      vuln-0010/sample-10010-crate: pass
+      vuln-0010/sample-10010-file: pass
+      vuln-0010/sample-10010-function: pass
+  vuln-0011:
+    disposition: included
+    reason: No confirmed retained-family overlap; native annotations and source integrity checked; all supplied
+      variants build unchanged
+    builds:
+      vuln-0011/sample-00011-crate: pass
+      vuln-0011/sample-00011-function: pass
+      vuln-0011/sample-10011-crate: pass
+      vuln-0011/sample-10011-function: pass
+  vuln-0012:
+    disposition: included
+    reason: No confirmed retained-family overlap; native annotations and source integrity checked; all supplied
+      variants build unchanged
+    builds:
+      vuln-0012/sample-00012-crate: pass
+      vuln-0012/sample-00012-file: pass
+      vuln-0012/sample-00012-function: pass
+      vuln-0012/sample-10012-crate: pass
+      vuln-0012/sample-10012-file: pass
+      vuln-0012/sample-10012-function: pass
+  vuln-0013:
+    disposition: included
+    reason: No confirmed retained-family overlap; native annotations and source integrity checked; all supplied
+      variants build unchanged
+    builds:
+      vuln-0013/sample-00013-crate: pass
+      vuln-0013/sample-00013-file: pass
+      vuln-0013/sample-00013-function: pass
+      vuln-0013/sample-10013-crate: pass
+      vuln-0013/sample-10013-file: pass
+      vuln-0013/sample-10013-function: pass
+  vuln-0014:
+    disposition: included
+    reason: No confirmed retained-family overlap; native annotations and source integrity checked; all supplied
+      variants build unchanged
+    builds:
+      vuln-0014/sample-00014-crate: pass
+      vuln-0014/sample-00014-file: pass
+      vuln-0014/sample-00014-function: pass
+      vuln-0014/sample-10014-crate: pass
+      vuln-0014/sample-10014-file: pass
+      vuln-0014/sample-10014-function: pass
+  vuln-0015:
+    disposition: included
+    reason: No confirmed retained-family overlap; native annotations and source integrity checked; all supplied
+      variants build unchanged
+    builds:
+      vuln-0015/sample-00015-crate: pass
+      vuln-0015/sample-00015-function: pass
+  vuln-0016:
+    disposition: included
+    reason: No confirmed retained-family overlap; native annotations and source integrity checked; all supplied
+      variants build unchanged
+    builds:
+      vuln-0016/sample-00016-crate: pass
+      vuln-0016/sample-00016-function: pass
+  vuln-0017:
+    disposition: included
+    reason: No confirmed retained-family overlap; native annotations and source integrity checked; all supplied
+      variants build unchanged
+    builds:
+      vuln-0017/sample-00017-crate: pass
+      vuln-0017/sample-00017-function: pass
+  vuln-0018:
+    disposition: included
+    reason: No confirmed retained-family overlap; native annotations and source integrity checked; all supplied
+      variants build unchanged
+    builds:
+      vuln-0018/sample-00018-crate: pass
+      vuln-0018/sample-00018-file: pass
+      vuln-0018/sample-00018-function: pass
+      vuln-0018/sample-10018-crate: pass
+      vuln-0018/sample-10018-file: pass
+      vuln-0018/sample-10018-function: pass
+  vuln-0019:
+    disposition: included
+    reason: No confirmed retained-family overlap; native annotations and source integrity checked; all supplied
+      variants build unchanged
+    builds:
+      vuln-0019/sample-00019-crate: pass
+      vuln-0019/sample-00019-file: pass
+      vuln-0019/sample-00019-function: pass
+      vuln-0019/sample-10019-crate: pass
+      vuln-0019/sample-10019-file: pass
+      vuln-0019/sample-10019-function: pass
+  vuln-0020:
+    disposition: included
+    reason: No confirmed retained-family overlap; native annotations and source integrity checked; all supplied
+      variants build unchanged
+    builds:
+      vuln-0020/sample-00020-crate: pass
+      vuln-0020/sample-00020-file: pass
+      vuln-0020/sample-00020-function: pass
+      vuln-0020/sample-10020-crate: pass
+      vuln-0020/sample-10020-file: pass
+      vuln-0020/sample-10020-function: pass
+  vuln-0021:
+    disposition: included
+    reason: No confirmed retained-family overlap; native annotations and source integrity checked; all supplied
+      variants build unchanged
+    builds:
+      vuln-0021/sample-00021-crate: pass
+      vuln-0021/sample-00021-file: pass
+      vuln-0021/sample-00021-function: pass
+      vuln-0021/sample-10021-crate: pass
+      vuln-0021/sample-10021-file: pass
+      vuln-0021/sample-10021-function: pass
+  vuln-0022:
+    disposition: included
+    reason: No confirmed retained-family overlap; native annotations and source integrity checked; all supplied
+      variants build unchanged
+    builds:
+      vuln-0022/sample-00022-crate: pass
+      vuln-0022/sample-00022-file: pass
+      vuln-0022/sample-00022-function: pass
+      vuln-0022/sample-10022-crate: pass
+      vuln-0022/sample-10022-file: pass
+      vuln-0022/sample-10022-function: pass
+  vuln-0023:
+    disposition: included
+    reason: No confirmed retained-family overlap; native annotations and source integrity checked; all supplied
+      variants build unchanged
+    builds:
+      vuln-0023/sample-00023-crate: pass
+      vuln-0023/sample-00023-file: pass
+      vuln-0023/sample-00023-function: pass
+      vuln-0023/sample-10023-crate: pass
+      vuln-0023/sample-10023-file: pass
+      vuln-0023/sample-10023-function: pass
+  vuln-0024:
+    disposition: included
+    reason: No confirmed retained-family overlap; native annotations and source integrity checked; all supplied
+      variants build unchanged
+    builds:
+      vuln-0024/sample-00024-crate: pass
+      vuln-0024/sample-00024-function: pass
+      vuln-0024/sample-10024-crate: pass
+      vuln-0024/sample-10024-function: pass
+  vuln-0025:
+    disposition: included
+    reason: No confirmed retained-family overlap; native annotations and source integrity checked; all supplied
+      variants build unchanged
+    builds:
+      vuln-0025/sample-00025-crate: pass
+      vuln-0025/sample-00025-function: pass
+      vuln-0025/sample-10025-crate: pass
+      vuln-0025/sample-10025-function: pass
+  vuln-0026:
+    disposition: included
+    reason: No confirmed retained-family overlap; native annotations and source integrity checked; all supplied
+      variants build unchanged
+    builds:
+      vuln-0026/sample-00026-crate: pass
+      vuln-0026/sample-00026-file: pass
+      vuln-0026/sample-10026-crate: pass
+      vuln-0026/sample-10026-file: pass
+  vuln-0027:
+    disposition: included
+    reason: No confirmed retained-family overlap; native annotations and source integrity checked; all supplied
+      variants build unchanged
+    builds:
+      vuln-0027/sample-00027-crate: pass
+      vuln-0027/sample-00027-file: pass
+      vuln-0027/sample-10027-crate: pass
+      vuln-0027/sample-10027-file: pass
+  vuln-0028:
+    disposition: included
+    reason: No confirmed retained-family overlap; native annotations and source integrity checked; all supplied
+      variants build unchanged
+    builds:
+      vuln-0028/sample-00028-crate: pass
+      vuln-0028/sample-00028-function: pass
+      vuln-0028/sample-10028-crate: pass
+      vuln-0028/sample-10028-function: pass
+  vuln-0029:
+    disposition: excluded_overlap
+    match: manual/RUSTSEC-2025-0016
+    reason: Exact RUSTSEC-2025-0016 advisory and same pared projection functions
+  vuln-0030:
+    disposition: included
+    reason: No confirmed retained-family overlap; native annotations and source integrity checked; all supplied
+      variants build unchanged
+    builds:
+      vuln-0030/sample-00030-crate: pass
+      vuln-0030/sample-10030-crate: pass
+  vuln-0031:
+    disposition: included
+    reason: No confirmed retained-family overlap; native annotations and source integrity checked; all supplied
+      variants build unchanged
+    builds:
+      vuln-0031/sample-00031-crate: pass
+      vuln-0031/sample-10031-crate: pass
+  vuln-0032:
+    disposition: included
+    reason: No confirmed retained-family overlap; native annotations and source integrity checked; all supplied
+      variants build unchanged
+    builds:
+      vuln-0032/sample-00032-crate: pass
+      vuln-0032/sample-10032-crate: pass
+  vuln-0033:
+    disposition: included
+    reason: No confirmed retained-family overlap; native annotations and source integrity checked; all supplied
+      variants build unchanged
+    builds:
+      vuln-0033/sample-00033-crate: pass
+      vuln-0033/sample-10033-crate: pass
+  vuln-0034:
+    disposition: excluded_overlap
+    match: halurust/cases/CVE-2020-35870
+    reason: Exact CVE-2020-35870 and set_aux/get_aux target; other rusqlite CVEs are distinct
+  vuln-0035:
+    disposition: included
+    reason: No confirmed retained-family overlap; native annotations and source integrity checked; all supplied
+      variants build unchanged
+    builds:
+      vuln-0035/sample-00035-crate: pass
+      vuln-0035/sample-10035-crate: pass
+  vuln-0036:
+    disposition: included
+    reason: No confirmed retained-family overlap; native annotations and source integrity checked; all supplied
+      variants build unchanged
+    builds:
+      vuln-0036/sample-00036-crate: pass
+      vuln-0036/sample-10036-crate: pass
+  vuln-0037:
+    disposition: included
+    reason: No confirmed retained-family overlap; native annotations and source integrity checked; all supplied
+      variants build unchanged
+    builds:
+      vuln-0037/sample-00037-crate: pass
+      vuln-0037/sample-10037-crate: pass
+  vuln-0038:
+    disposition: included
+    reason: No confirmed retained-family overlap; native annotations and source integrity checked; all supplied
+      variants build unchanged
+    builds:
+      vuln-0038/sample-00038-crate: pass
+      vuln-0038/sample-00038-function: pass
+  vuln-0039:
+    disposition: included
+    reason: No confirmed retained-family overlap; native annotations and source integrity checked; all supplied
+      variants build unchanged
+    builds:
+      vuln-0039/sample-00039-crate: pass
+      vuln-0039/sample-00039-function: pass
+      vuln-0039/sample-10039-crate: pass
+      vuln-0039/sample-10039-function: pass
+  vuln-0040:
+    disposition: included
+    reason: No confirmed retained-family overlap; native annotations and source integrity checked; all supplied
+      variants build unchanged
+    builds:
+      vuln-0040/sample-00040-crate: pass
+      vuln-0040/sample-00040-function: pass
+      vuln-0040/sample-10040-crate: pass
+      vuln-0040/sample-10040-function: pass
+  vuln-0041:
+    disposition: excluded_overlap
+    match: manual/RUSTSEC-2025-0018
+    reason: Exact RUSTSEC-2025-0018 advisory and get_bucket/get_chain targets
+  vuln-0042:
+    disposition: included
+    reason: Authenticated original-package vulnerable state and corresponding fixed fork; no retained-family
+      overlap; all six supplied variants preserved and built unchanged
+    provenance:
+      vulnerable_package: fast-float
+      primary_advisory: RUSTSEC-2025-0003
+      vulnerable_revision: 83a49b8b5a530d8e950a6dbfdc11089d213b9ac9
+      fixed_package: fast-float2
+      fixed_advisory: RUSTSEC-2025-0002
+      fixed_snapshot_revision: 31d1abf7c6232f35eb069c64b8290e6fa92802b6
+      relationship: RustSec states that fast-float has no patched release and that the corresponding repair
+        is available in the maintained fast-float2 fork
+      source_review: >-
+        All nine vulnerable crate Rust files match the cited original revision byte-for-byte;
+        fixed crate Rust files match the cited snapshot except for RustMizan author core:: to std:: import
+        adaptations in four files; annotated first methods match across all three context levels in each state
+      preservation: Native mizan.json identity and case README are unchanged; all author adaptations are preserved
+      revision_scope: The fixed snapshot is the fast-float2 0.2.2 release state, not an asserted atomic repair commit
+    evidence:
+    - https://rustsec.org/advisories/RUSTSEC-2025-0003.html
+    - https://rustsec.org/advisories/RUSTSEC-2025-0002.html
+    - https://github.com/sfu-rsl/rust-mizan/blob/1b7ca84e991ce00c9fe4f2f6c2e92fcfa4b1cd2f/samples/vuln-0042/README.md
+    - https://github.com/aldanor/fast-float-rust/blob/83a49b8b5a530d8e950a6dbfdc11089d213b9ac9/Cargo.toml
+    - https://github.com/Alexhuszagh/fast-float-rust/blob/31d1abf7c6232f35eb069c64b8290e6fa92802b6/Cargo.toml
+    builds:
+      vuln-0042/sample-00042-crate: pass
+      vuln-0042/sample-00042-file: pass
+      vuln-0042/sample-00042-function: pass
+      vuln-0042/sample-10042-crate: pass
+      vuln-0042/sample-10042-file: pass
+      vuln-0042/sample-10042-function: pass
