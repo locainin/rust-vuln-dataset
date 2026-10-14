@@ -1,0 +1,303 @@
+{
+ "condition": "HR",
+ "seed": 42,
+ "scrub": "scrub-v1",
+ "checkpoint": "microsoft/codebert-base",
+ "design": "rustmizan-transfer-v1",
+ "predictions": {
+  "vuln-0001:v": {
+   "anchor": "vuln-0001",
+   "lineage": "RUSTSEC-2019-0016",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.09145192056894302
+  },
+  "vuln-0001:f": {
+   "anchor": "vuln-0001",
+   "lineage": "RUSTSEC-2019-0016",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.10176099836826324
+  },
+  "vuln-0002:v": {
+   "anchor": "vuln-0002",
+   "lineage": "RUSTSEC-2020-0091",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.10401459038257599
+  },
+  "vuln-0002:f": {
+   "anchor": "vuln-0002",
+   "lineage": "RUSTSEC-2020-0091",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.08550838381052017
+  },
+  "vuln-0005:v": {
+   "anchor": "vuln-0005",
+   "lineage": "RUSTSEC-2020-0073",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.09236985445022583
+  },
+  "vuln-0005:f": {
+   "anchor": "vuln-0005",
+   "lineage": "RUSTSEC-2020-0073",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.09112589806318283
+  },
+  "vuln-0008:v": {
+   "anchor": "vuln-0008",
+   "lineage": "RUSTSEC-2020-0088",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.0976288914680481
+  },
+  "vuln-0008:f": {
+   "anchor": "vuln-0008",
+   "lineage": "RUSTSEC-2020-0088",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.12204011529684067
+  },
+  "vuln-0010:v": {
+   "anchor": "vuln-0010",
+   "lineage": "RUSTSEC-2020-0096",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.1087588220834732
+  },
+  "vuln-0010:f": {
+   "anchor": "vuln-0010",
+   "lineage": "RUSTSEC-2020-0096",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.10946352034807205
+  },
+  "vuln-0011:v": {
+   "anchor": "vuln-0011",
+   "lineage": "RUSTSEC-2025-0019",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.08680393546819687
+  },
+  "vuln-0011:f": {
+   "anchor": "vuln-0011",
+   "lineage": "RUSTSEC-2025-0019",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.058135736733675
+  },
+  "vuln-0012:v": {
+   "anchor": "vuln-0012",
+   "lineage": "RUSTSEC-2020-0107",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.08522912859916687
+  },
+  "vuln-0012:f": {
+   "anchor": "vuln-0012",
+   "lineage": "RUSTSEC-2020-0107",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.0629429742693901
+  },
+  "vuln-0013:v": {
+   "anchor": "vuln-0013",
+   "lineage": "RUSTSEC-2020-0007",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.11253205686807632
+  },
+  "vuln-0013:f": {
+   "anchor": "vuln-0013",
+   "lineage": "RUSTSEC-2020-0007",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.1020989865064621
+  },
+  "vuln-0014:v": {
+   "anchor": "vuln-0014",
+   "lineage": "RUSTSEC-2025-0032",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.12160386145114899
+  },
+  "vuln-0014:f": {
+   "anchor": "vuln-0014",
+   "lineage": "RUSTSEC-2025-0032",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.12405237555503845
+  },
+  "vuln-0018:v": {
+   "anchor": "vuln-0018",
+   "lineage": "RUSTSEC-2020-0041",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.11161577701568604
+  },
+  "vuln-0018:f": {
+   "anchor": "vuln-0018",
+   "lineage": "RUSTSEC-2020-0041",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.11092423647642136
+  },
+  "vuln-0019:v": {
+   "anchor": "vuln-0019",
+   "lineage": "RUSTSEC-2020-0041",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.11251694709062576
+  },
+  "vuln-0019:f": {
+   "anchor": "vuln-0019",
+   "lineage": "RUSTSEC-2020-0041",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.12078195065259933
+  },
+  "vuln-0020:v": {
+   "anchor": "vuln-0020",
+   "lineage": "RUSTSEC-2020-0041",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.10911440849304199
+  },
+  "vuln-0020:f": {
+   "anchor": "vuln-0020",
+   "lineage": "RUSTSEC-2020-0041",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.10911440849304199
+  },
+  "vuln-0021:v": {
+   "anchor": "vuln-0021",
+   "lineage": "RUSTSEC-2020-0041",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.10708007216453552
+  },
+  "vuln-0021:f": {
+   "anchor": "vuln-0021",
+   "lineage": "RUSTSEC-2020-0041",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.10708007216453552
+  },
+  "vuln-0022:v": {
+   "anchor": "vuln-0022",
+   "lineage": "RUSTSEC-2020-0041",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.10701964795589447
+  },
+  "vuln-0022:f": {
+   "anchor": "vuln-0022",
+   "lineage": "RUSTSEC-2020-0041",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.10701842606067657
+  },
+  "vuln-0023:v": {
+   "anchor": "vuln-0023",
+   "lineage": "RUSTSEC-2020-0041",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.10870306938886642
+  },
+  "vuln-0023:f": {
+   "anchor": "vuln-0023",
+   "lineage": "RUSTSEC-2020-0041",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.1095348596572876
+  },
+  "vuln-0024:v": {
+   "anchor": "vuln-0024",
+   "lineage": "RUSTSEC-2020-0039",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.02225608564913273
+  },
+  "vuln-0024:f": {
+   "anchor": "vuln-0024",
+   "lineage": "RUSTSEC-2020-0039",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.07628069072961807
+  },
+  "vuln-0025:v": {
+   "anchor": "vuln-0025",
+   "lineage": "RUSTSEC-2020-0039",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.05911970138549805
+  },
+  "vuln-0025:f": {
+   "anchor": "vuln-0025",
+   "lineage": "RUSTSEC-2020-0039",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.07055117934942245
+  },
+  "vuln-0028:v": {
+   "anchor": "vuln-0028",
+   "lineage": "RUSTSEC-2019-0017",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.10379329323768616
+  },
+  "vuln-0028:f": {
+   "anchor": "vuln-0028",
+   "lineage": "RUSTSEC-2019-0017",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.10389630496501923
+  },
+  "vuln-0039:v": {
+   "anchor": "vuln-0039",
+   "lineage": "RUSTSEC-2019-0012",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.10690158605575562
+  },
+  "vuln-0039:f": {
+   "anchor": "vuln-0039",
+   "lineage": "RUSTSEC-2019-0012",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.10199001431465149
+  },
+  "vuln-0040:v": {
+   "anchor": "vuln-0040",
+   "lineage": "RUSTSEC-2025-0027",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.11592552065849304
+  },
+  "vuln-0040:f": {
+   "anchor": "vuln-0040",
+   "lineage": "RUSTSEC-2025-0027",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.11592552065849304
+  },
+  "vuln-0042:v": {
+   "anchor": "vuln-0042",
+   "lineage": "RUSTSEC-2025-0003",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.08089414238929749
+  },
+  "vuln-0042:f": {
+   "anchor": "vuln-0042",
+   "lineage": "RUSTSEC-2025-0003",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.10519695281982422
+  }
+ }
+}

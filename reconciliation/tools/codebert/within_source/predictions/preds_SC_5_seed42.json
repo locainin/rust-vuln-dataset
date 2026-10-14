@@ -1,0 +1,2472 @@
+{
+ "condition": "SC:5",
+ "seed": 42,
+ "scrub": "scrub-v1",
+ "checkpoint": "microsoft/codebert-base",
+ "predictions": {
+  "RUSTSEC-2021-0003:insert_many:v": {
+   "anchor": "RUSTSEC-2021-0003:insert_many",
+   "lineage": "RUSTSEC-2021-0003",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.038834940642118454
+  },
+  "RUSTSEC-2021-0003:insert_many:f": {
+   "anchor": "RUSTSEC-2021-0003:insert_many",
+   "lineage": "RUSTSEC-2021-0003",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.07138633728027344
+  },
+  "RUSTSEC-2021-0007:copy_from_raw_parts:v": {
+   "anchor": "RUSTSEC-2021-0007:copy_from_raw_parts",
+   "lineage": "CVE-2021-25904",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.08663076907396317
+  },
+  "RUSTSEC-2021-0007:copy_from_raw_parts:f": {
+   "anchor": "RUSTSEC-2021-0007:copy_from_raw_parts",
+   "lineage": "CVE-2021-25904",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.33562296628952026
+  },
+  "RUSTSEC-2021-0010:mutate:v": {
+   "anchor": "RUSTSEC-2021-0010:mutate",
+   "lineage": "RUSTSEC-2021-0010",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.07887819409370422
+  },
+  "RUSTSEC-2021-0010:mutate:f": {
+   "anchor": "RUSTSEC-2021-0010:mutate",
+   "lineage": "RUSTSEC-2021-0010",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.07209000736474991
+  },
+  "RUSTSEC-2021-0010:mutate2:v": {
+   "anchor": "RUSTSEC-2021-0010:mutate2",
+   "lineage": "RUSTSEC-2021-0010",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.05849017947912216
+  },
+  "RUSTSEC-2021-0010:mutate2:f": {
+   "anchor": "RUSTSEC-2021-0010:mutate2",
+   "lineage": "RUSTSEC-2021-0010",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.06714548170566559
+  },
+  "RUSTSEC-2021-0018:insert_slice_clone:v": {
+   "anchor": "RUSTSEC-2021-0018:insert_slice_clone",
+   "lineage": "CVE-2021-26954",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.03298628702759743
+  },
+  "RUSTSEC-2021-0018:insert_slice_clone:f": {
+   "anchor": "RUSTSEC-2021-0018:insert_slice_clone",
+   "lineage": "CVE-2021-26954",
+   "label": 0,
+   "pred": 1,
+   "logit_diff": 0.002892952412366867
+  },
+  "RUSTSEC-2021-0020:server_parse:v": {
+   "anchor": "RUSTSEC-2021-0020:server_parse",
+   "lineage": "GHSA-6HFQ-H8HQ-87MF",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.0661395788192749
+  },
+  "RUSTSEC-2021-0020:server_parse:f": {
+   "anchor": "RUSTSEC-2021-0020:server_parse",
+   "lineage": "GHSA-6HFQ-H8HQ-87MF",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.06943299621343613
+  },
+  "RUSTSEC-2021-0022:sub_self_call:v": {
+   "anchor": "RUSTSEC-2021-0022:sub_self_call",
+   "lineage": "GHSA-9658-C26V-7QVF",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.11118975281715393
+  },
+  "RUSTSEC-2021-0022:sub_self_call:f": {
+   "anchor": "RUSTSEC-2021-0022:sub_self_call",
+   "lineage": "GHSA-9658-C26V-7QVF",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.09836697578430176
+  },
+  "RUSTSEC-2021-0027:block_load:v": {
+   "anchor": "RUSTSEC-2021-0027:block_load",
+   "lineage": "GHSA-CPQJ-R29Q-CHRH",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.04822660982608795
+  },
+  "RUSTSEC-2021-0027:block_load:f": {
+   "anchor": "RUSTSEC-2021-0027:block_load",
+   "lineage": "GHSA-CPQJ-R29Q-CHRH",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.12074307352304459
+  },
+  "RUSTSEC-2021-0028:insert_row:v": {
+   "anchor": "RUSTSEC-2021-0028:insert_row",
+   "lineage": "CVE-2021-28029",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.044802047312259674
+  },
+  "RUSTSEC-2021-0028:insert_row:f": {
+   "anchor": "RUSTSEC-2021-0028:insert_row",
+   "lineage": "CVE-2021-28029",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.060800790786743164
+  },
+  "RUSTSEC-2021-0030:array_move_elements:v": {
+   "anchor": "RUSTSEC-2021-0030:array_move_elements",
+   "lineage": "RUSTSEC-2021-0030",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.06443673372268677
+  },
+  "RUSTSEC-2021-0030:array_move_elements:f": {
+   "anchor": "RUSTSEC-2021-0030:array_move_elements",
+   "lineage": "RUSTSEC-2021-0030",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.08192793279886246
+  },
+  "RUSTSEC-2021-0030:boxed_slice_move_elements:v": {
+   "anchor": "RUSTSEC-2021-0030:boxed_slice_move_elements",
+   "lineage": "RUSTSEC-2021-0030",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.05968809872865677
+  },
+  "RUSTSEC-2021-0030:boxed_slice_move_elements:f": {
+   "anchor": "RUSTSEC-2021-0030:boxed_slice_move_elements",
+   "lineage": "RUSTSEC-2021-0030",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.07924424856901169
+  },
+  "RUSTSEC-2021-0031:arena_split_at:v": {
+   "anchor": "RUSTSEC-2021-0031:arena_split_at",
+   "lineage": "GHSA-WP34-MQW5-JJ85",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.10104779899120331
+  },
+  "RUSTSEC-2021-0031:arena_split_at:f": {
+   "anchor": "RUSTSEC-2021-0031:arena_split_at",
+   "lineage": "GHSA-WP34-MQW5-JJ85",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.0956496000289917
+  },
+  "RUSTSEC-2021-0032:read_bytes_default_le:v": {
+   "anchor": "RUSTSEC-2021-0032:read_bytes_default_le",
+   "lineage": "GHSA-8FGG-5V78-6G76",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.09367373585700989
+  },
+  "RUSTSEC-2021-0032:read_bytes_default_le:f": {
+   "anchor": "RUSTSEC-2021-0032:read_bytes_default_le",
+   "lineage": "GHSA-8FGG-5V78-6G76",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.08655019104480743
+  },
+  "RUSTSEC-2021-0033:push_cloned:v": {
+   "anchor": "RUSTSEC-2021-0033:push_cloned",
+   "lineage": "CVE-2021-28034",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.04335365444421768
+  },
+  "RUSTSEC-2021-0033:push_cloned:f": {
+   "anchor": "RUSTSEC-2021-0033:push_cloned",
+   "lineage": "CVE-2021-28034",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.035361260175704956
+  },
+  "RUSTSEC-2021-0036:intern_sync:v": {
+   "anchor": "RUSTSEC-2021-0036:intern_sync",
+   "lineage": "RUSTSEC-2021-0036",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.26329198479652405
+  },
+  "RUSTSEC-2021-0036:intern_sync:f": {
+   "anchor": "RUSTSEC-2021-0036:intern_sync",
+   "lineage": "RUSTSEC-2021-0036",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.2582952380180359
+  },
+  "RUSTSEC-2021-0038:pixmap_new:v": {
+   "anchor": "RUSTSEC-2021-0038:pixmap_new",
+   "lineage": "GHSA-5PG8-H4GV-M3P8",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.11044837534427643
+  },
+  "RUSTSEC-2021-0038:pixmap_new:f": {
+   "anchor": "RUSTSEC-2021-0038:pixmap_new",
+   "lineage": "GHSA-5PG8-H4GV-M3P8",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.0784594863653183
+  },
+  "RUSTSEC-2021-0038:set_icon:v": {
+   "anchor": "RUSTSEC-2021-0038:set_icon",
+   "lineage": "GHSA-5PG8-H4GV-M3P8",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.09283896535634995
+  },
+  "RUSTSEC-2021-0038:set_icon:f": {
+   "anchor": "RUSTSEC-2021-0038:set_icon",
+   "lineage": "GHSA-5PG8-H4GV-M3P8",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.07769370079040527
+  },
+  "RUSTSEC-2021-0038:set_label_type:v": {
+   "anchor": "RUSTSEC-2021-0038:set_label_type",
+   "lineage": "GHSA-5PG8-H4GV-M3P8",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.06595218926668167
+  },
+  "RUSTSEC-2021-0038:set_label_type:f": {
+   "anchor": "RUSTSEC-2021-0038:set_label_type",
+   "lineage": "GHSA-5PG8-H4GV-M3P8",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.11015399545431137
+  },
+  "RUSTSEC-2021-0048:stackvec_extend:v": {
+   "anchor": "RUSTSEC-2021-0048:stackvec_extend",
+   "lineage": "GHSA-9FRF-R7C7-J2VG",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.018959343433380127
+  },
+  "RUSTSEC-2021-0048:stackvec_extend:f": {
+   "anchor": "RUSTSEC-2021-0048:stackvec_extend",
+   "lineage": "GHSA-9FRF-R7C7-J2VG",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.09721571952104568
+  },
+  "RUSTSEC-2021-0050:swap_index:v": {
+   "anchor": "RUSTSEC-2021-0050:swap_index",
+   "lineage": "RUSTSEC-2021-0050",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.039660558104515076
+  },
+  "RUSTSEC-2021-0050:swap_index:f": {
+   "anchor": "RUSTSEC-2021-0050:swap_index",
+   "lineage": "RUSTSEC-2021-0050",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.047644272446632385
+  },
+  "RUSTSEC-2021-0063:html_formatter_escape_href:v": {
+   "anchor": "RUSTSEC-2021-0063:html_formatter_escape_href",
+   "lineage": "CVE-2021-38186",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.08650568127632141
+  },
+  "RUSTSEC-2021-0063:html_formatter_escape_href:f": {
+   "anchor": "RUSTSEC-2021-0063:html_formatter_escape_href",
+   "lineage": "CVE-2021-38186",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.07396649569272995
+  },
+  "RUSTSEC-2021-0069:client_codec_encode:v": {
+   "anchor": "RUSTSEC-2021-0069:client_codec_encode",
+   "lineage": "RUSTSEC-2021-0069",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.0836888924241066
+  },
+  "RUSTSEC-2021-0069:client_codec_encode:f": {
+   "anchor": "RUSTSEC-2021-0069:client_codec_encode",
+   "lineage": "RUSTSEC-2021-0069",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.08215372264385223
+  },
+  "RUSTSEC-2021-0072:join_handle_abort:v": {
+   "anchor": "RUSTSEC-2021-0072:join_handle_abort",
+   "lineage": "CVE-2021-38191",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.14716552197933197
+  },
+  "RUSTSEC-2021-0072:join_handle_abort:f": {
+   "anchor": "RUSTSEC-2021-0072:join_handle_abort",
+   "lineage": "CVE-2021-38191",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.1444505751132965
+  },
+  "RUSTSEC-2021-0073:timestamp_normalize:v": {
+   "anchor": "RUSTSEC-2021-0073:timestamp_normalize",
+   "lineage": "RUSTSEC-2021-0073",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.09251362830400467
+  },
+  "RUSTSEC-2021-0073:timestamp_normalize:f": {
+   "anchor": "RUSTSEC-2021-0073:timestamp_normalize",
+   "lineage": "RUSTSEC-2021-0073",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.10212960839271545
+  },
+  "RUSTSEC-2021-0073:timestamp_system_time:v": {
+   "anchor": "RUSTSEC-2021-0073:timestamp_system_time",
+   "lineage": "RUSTSEC-2021-0073",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.11158335953950882
+  },
+  "RUSTSEC-2021-0073:timestamp_system_time:f": {
+   "anchor": "RUSTSEC-2021-0073:timestamp_system_time",
+   "lineage": "RUSTSEC-2021-0073",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.08273330330848694
+  },
+  "RUSTSEC-2021-0074:clean_dom:v": {
+   "anchor": "RUSTSEC-2021-0074:clean_dom",
+   "lineage": "RUSTSEC-2021-0074",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.043421752750873566
+  },
+  "RUSTSEC-2021-0074:clean_dom:f": {
+   "anchor": "RUSTSEC-2021-0074:clean_dom",
+   "lineage": "RUSTSEC-2021-0074",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.04291506111621857
+  },
+  "RUSTSEC-2021-0075:field_var_mul_by_inverse:v": {
+   "anchor": "RUSTSEC-2021-0075:field_var_mul_by_inverse",
+   "lineage": "CVE-2021-38194",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.07013484090566635
+  },
+  "RUSTSEC-2021-0075:field_var_mul_by_inverse:f": {
+   "anchor": "RUSTSEC-2021-0075:field_var_mul_by_inverse",
+   "lineage": "CVE-2021-38194",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.12746822834014893
+  },
+  "RUSTSEC-2021-0079:chunked_read_size:v": {
+   "anchor": "RUSTSEC-2021-0079:chunked_read_size",
+   "lineage": "RUSTSEC-2021-0079",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.05554208159446716
+  },
+  "RUSTSEC-2021-0079:chunked_read_size:f": {
+   "anchor": "RUSTSEC-2021-0079:chunked_read_size",
+   "lineage": "RUSTSEC-2021-0079",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.0617816299200058
+  },
+  "RUSTSEC-2021-0080:entry_fields_unpack_in:v": {
+   "anchor": "RUSTSEC-2021-0080:entry_fields_unpack_in",
+   "lineage": "RUSTSEC-2021-0080",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.04591681435704231
+  },
+  "RUSTSEC-2021-0080:entry_fields_unpack_in:f": {
+   "anchor": "RUSTSEC-2021-0080:entry_fields_unpack_in",
+   "lineage": "RUSTSEC-2021-0080",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.055018916726112366
+  },
+  "RUSTSEC-2021-0081:chunked_read_extension:v": {
+   "anchor": "RUSTSEC-2021-0081:chunked_read_extension",
+   "lineage": "GHSA-8928-2FGM-6X9X",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.07335615158081055
+  },
+  "RUSTSEC-2021-0081:chunked_read_extension:f": {
+   "anchor": "RUSTSEC-2021-0081:chunked_read_extension",
+   "lineage": "GHSA-8928-2FGM-6X9X",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.043605029582977295
+  },
+  "RUSTSEC-2021-0081:chunked_read_size:v": {
+   "anchor": "RUSTSEC-2021-0081:chunked_read_size",
+   "lineage": "GHSA-8928-2FGM-6X9X",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.08883006870746613
+  },
+  "RUSTSEC-2021-0081:chunked_read_size:f": {
+   "anchor": "RUSTSEC-2021-0081:chunked_read_size",
+   "lineage": "GHSA-8928-2FGM-6X9X",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.05720405653119087
+  },
+  "RUSTSEC-2021-0081:message_type_set_headers:v": {
+   "anchor": "RUSTSEC-2021-0081:message_type_set_headers",
+   "lineage": "GHSA-8928-2FGM-6X9X",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.07609473913908005
+  },
+  "RUSTSEC-2021-0081:message_type_set_headers:f": {
+   "anchor": "RUSTSEC-2021-0081:message_type_set_headers",
+   "lineage": "GHSA-8928-2FGM-6X9X",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.07283908128738403
+  },
+  "RUSTSEC-2021-0100:load_data_avx2:v": {
+   "anchor": "RUSTSEC-2021-0100:load_data_avx2",
+   "lineage": "GHSA-FC7X-2CMC-8J2G",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.09196463972330093
+  },
+  "RUSTSEC-2021-0100:load_data_avx2:f": {
+   "anchor": "RUSTSEC-2021-0100:load_data_avx2",
+   "lineage": "GHSA-FC7X-2CMC-8J2G",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.09137299656867981
+  },
+  "RUSTSEC-2021-0110:host_func_register_trampoline:v": {
+   "anchor": "RUSTSEC-2021-0110:host_func_register_trampoline",
+   "lineage": "GHSA-V4CP-H94R-M7XF",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.12535923719406128
+  },
+  "RUSTSEC-2021-0110:host_func_register_trampoline:f": {
+   "anchor": "RUSTSEC-2021-0110:host_func_register_trampoline",
+   "lineage": "GHSA-V4CP-H94R-M7XF",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.08555884659290314
+  },
+  "RUSTSEC-2021-0110:insert_vmexternref:v": {
+   "anchor": "RUSTSEC-2021-0110:insert_vmexternref",
+   "lineage": "GHSA-V4CP-H94R-M7XF",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.13081930577754974
+  },
+  "RUSTSEC-2021-0110:insert_vmexternref:f": {
+   "anchor": "RUSTSEC-2021-0110:insert_vmexternref",
+   "lineage": "GHSA-V4CP-H94R-M7XF",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.15838605165481567
+  },
+  "RUSTSEC-2021-0110:registered_module_lookup_stack_map:v": {
+   "anchor": "RUSTSEC-2021-0110:registered_module_lookup_stack_map",
+   "lineage": "GHSA-V4CP-H94R-M7XF",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.15085676312446594
+  },
+  "RUSTSEC-2021-0110:registered_module_lookup_stack_map:f": {
+   "anchor": "RUSTSEC-2021-0110:registered_module_lookup_stack_map",
+   "lineage": "GHSA-V4CP-H94R-M7XF",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.09819802641868591
+  },
+  "RUSTSEC-2021-0113:block_send:v": {
+   "anchor": "RUSTSEC-2021-0113:block_send",
+   "lineage": "CVE-2021-45704",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.2682391405105591
+  },
+  "RUSTSEC-2021-0113:block_send:f": {
+   "anchor": "RUSTSEC-2021-0113:block_send",
+   "lineage": "CVE-2021-45704",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.26173949241638184
+  },
+  "RUSTSEC-2021-0113:block_sync:v": {
+   "anchor": "RUSTSEC-2021-0113:block_sync",
+   "lineage": "CVE-2021-45704",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.2612055540084839
+  },
+  "RUSTSEC-2021-0113:block_sync:f": {
+   "anchor": "RUSTSEC-2021-0113:block_sync",
+   "lineage": "CVE-2021-45704",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.2573923170566559
+  },
+  "RUSTSEC-2021-0114:deref:v": {
+   "anchor": "RUSTSEC-2021-0114:deref",
+   "lineage": "GHSA-P6GJ-GPC8-F8XW",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.11647258698940277
+  },
+  "RUSTSEC-2021-0114:deref:f": {
+   "anchor": "RUSTSEC-2021-0114:deref",
+   "lineage": "GHSA-P6GJ-GPC8-F8XW",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.33562296628952026
+  },
+  "RUSTSEC-2021-0114:deref_mut:v": {
+   "anchor": "RUSTSEC-2021-0114:deref_mut",
+   "lineage": "GHSA-P6GJ-GPC8-F8XW",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.10583595931529999
+  },
+  "RUSTSEC-2021-0114:deref_mut:f": {
+   "anchor": "RUSTSEC-2021-0114:deref_mut",
+   "lineage": "GHSA-P6GJ-GPC8-F8XW",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.33562296628952026
+  },
+  "RUSTSEC-2021-0115:zeroize_attrs_parse:v": {
+   "anchor": "RUSTSEC-2021-0115:zeroize_attrs_parse",
+   "lineage": "GHSA-C5HX-W945-J4PQ",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.09286141395568848
+  },
+  "RUSTSEC-2021-0115:zeroize_attrs_parse:f": {
+   "anchor": "RUSTSEC-2021-0115:zeroize_attrs_parse",
+   "lineage": "GHSA-C5HX-W945-J4PQ",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.026536453515291214
+  },
+  "RUSTSEC-2021-0118:array_data_try_new:v": {
+   "anchor": "RUSTSEC-2021-0118:array_data_try_new",
+   "lineage": "GHSA-QGRP-8F3V-Q85P",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.16105741262435913
+  },
+  "RUSTSEC-2021-0118:array_data_try_new:f": {
+   "anchor": "RUSTSEC-2021-0118:array_data_try_new",
+   "lineage": "GHSA-QGRP-8F3V-Q85P",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.16663296520709991
+  },
+  "RUSTSEC-2021-0122:emplace_scalar_array:v": {
+   "anchor": "RUSTSEC-2021-0122:emplace_scalar_array",
+   "lineage": "GHSA-3JCH-9QGP-4844",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.12026271224021912
+  },
+  "RUSTSEC-2021-0122:emplace_scalar_array:f": {
+   "anchor": "RUSTSEC-2021-0122:emplace_scalar_array",
+   "lineage": "GHSA-3JCH-9QGP-4844",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.053472958505153656
+  },
+  "RUSTSEC-2021-0122:follow_cast_ref:v": {
+   "anchor": "RUSTSEC-2021-0122:follow_cast_ref",
+   "lineage": "GHSA-3JCH-9QGP-4844",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.05815032124519348
+  },
+  "RUSTSEC-2021-0122:follow_cast_ref:f": {
+   "anchor": "RUSTSEC-2021-0122:follow_cast_ref",
+   "lineage": "GHSA-3JCH-9QGP-4844",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.05466754734516144
+  },
+  "RUSTSEC-2021-0122:follow_trait:v": {
+   "anchor": "RUSTSEC-2021-0122:follow_trait",
+   "lineage": "GHSA-3JCH-9QGP-4844",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.11489902436733246
+  },
+  "RUSTSEC-2021-0122:follow_trait:f": {
+   "anchor": "RUSTSEC-2021-0122:follow_trait",
+   "lineage": "GHSA-3JCH-9QGP-4844",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.11860717087984085
+  },
+  "RUSTSEC-2021-0122:push_trait:v": {
+   "anchor": "RUSTSEC-2021-0122:push_trait",
+   "lineage": "GHSA-3JCH-9QGP-4844",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.0744301974773407
+  },
+  "RUSTSEC-2021-0122:push_trait:f": {
+   "anchor": "RUSTSEC-2021-0122:push_trait",
+   "lineage": "GHSA-3JCH-9QGP-4844",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.07452690601348877
+  },
+  "RUSTSEC-2021-0122:vector_safe_slice:v": {
+   "anchor": "RUSTSEC-2021-0122:vector_safe_slice",
+   "lineage": "GHSA-3JCH-9QGP-4844",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.05622458457946777
+  },
+  "RUSTSEC-2021-0122:vector_safe_slice:f": {
+   "anchor": "RUSTSEC-2021-0122:vector_safe_slice",
+   "lineage": "GHSA-3JCH-9QGP-4844",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.33562296628952026
+  },
+  "RUSTSEC-2021-0124:set_complete:v": {
+   "anchor": "RUSTSEC-2021-0124:set_complete",
+   "lineage": "GHSA-FG7R-2G4J-5CGR",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.1837206333875656
+  },
+  "RUSTSEC-2021-0124:set_complete:f": {
+   "anchor": "RUSTSEC-2021-0124:set_complete",
+   "lineage": "GHSA-FG7R-2G4J-5CGR",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.13858893513679504
+  },
+  "RUSTSEC-2021-0125:from_der_:v": {
+   "anchor": "RUSTSEC-2021-0125:from_der_",
+   "lineage": "GHSA-G4H2-4WVH-GRC5",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.051577985286712646
+  },
+  "RUSTSEC-2021-0125:from_der_:f": {
+   "anchor": "RUSTSEC-2021-0125:from_der_",
+   "lineage": "GHSA-G4H2-4WVH-GRC5",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.051577985286712646
+  },
+  "RUSTSEC-2021-0128:commit_hook:v": {
+   "anchor": "RUSTSEC-2021-0128:commit_hook",
+   "lineage": "GHSA-G4G4-3PQW-8M7F",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.08512164652347565
+  },
+  "RUSTSEC-2021-0128:commit_hook:f": {
+   "anchor": "RUSTSEC-2021-0128:commit_hook",
+   "lineage": "GHSA-G4G4-3PQW-8M7F",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.08853945881128311
+  },
+  "RUSTSEC-2021-0128:create_aggregate_function:v": {
+   "anchor": "RUSTSEC-2021-0128:create_aggregate_function",
+   "lineage": "GHSA-G4G4-3PQW-8M7F",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.1306280493736267
+  },
+  "RUSTSEC-2021-0128:create_aggregate_function:f": {
+   "anchor": "RUSTSEC-2021-0128:create_aggregate_function",
+   "lineage": "GHSA-G4G4-3PQW-8M7F",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.14267826080322266
+  },
+  "RUSTSEC-2021-0128:create_collation:v": {
+   "anchor": "RUSTSEC-2021-0128:create_collation",
+   "lineage": "GHSA-G4G4-3PQW-8M7F",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.08408872783184052
+  },
+  "RUSTSEC-2021-0128:create_collation:f": {
+   "anchor": "RUSTSEC-2021-0128:create_collation",
+   "lineage": "GHSA-G4G4-3PQW-8M7F",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.08893631398677826
+  },
+  "RUSTSEC-2021-0128:create_scalar_function:v": {
+   "anchor": "RUSTSEC-2021-0128:create_scalar_function",
+   "lineage": "GHSA-G4G4-3PQW-8M7F",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.11995896697044373
+  },
+  "RUSTSEC-2021-0128:create_scalar_function:f": {
+   "anchor": "RUSTSEC-2021-0128:create_scalar_function",
+   "lineage": "GHSA-G4G4-3PQW-8M7F",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.11536857485771179
+  },
+  "RUSTSEC-2021-0128:create_window_function:v": {
+   "anchor": "RUSTSEC-2021-0128:create_window_function",
+   "lineage": "GHSA-G4G4-3PQW-8M7F",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.1893918216228485
+  },
+  "RUSTSEC-2021-0128:create_window_function:f": {
+   "anchor": "RUSTSEC-2021-0128:create_window_function",
+   "lineage": "GHSA-G4G4-3PQW-8M7F",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.18575599789619446
+  },
+  "RUSTSEC-2021-0128:rollback_hook:v": {
+   "anchor": "RUSTSEC-2021-0128:rollback_hook",
+   "lineage": "GHSA-G4G4-3PQW-8M7F",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.08689934760332108
+  },
+  "RUSTSEC-2021-0128:rollback_hook:f": {
+   "anchor": "RUSTSEC-2021-0128:rollback_hook",
+   "lineage": "GHSA-G4G4-3PQW-8M7F",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.09532224386930466
+  },
+  "RUSTSEC-2021-0128:update_hook:v": {
+   "anchor": "RUSTSEC-2021-0128:update_hook",
+   "lineage": "GHSA-G4G4-3PQW-8M7F",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.07742565125226974
+  },
+  "RUSTSEC-2021-0128:update_hook:f": {
+   "anchor": "RUSTSEC-2021-0128:update_hook",
+   "lineage": "GHSA-G4G4-3PQW-8M7F",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.0800442099571228
+  },
+  "RUSTSEC-2021-0130:iter:v": {
+   "anchor": "RUSTSEC-2021-0130:iter",
+   "lineage": "GHSA-QQMC-HWQP-8G2W",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.10467137396335602
+  },
+  "RUSTSEC-2021-0130:iter:f": {
+   "anchor": "RUSTSEC-2021-0130:iter",
+   "lineage": "GHSA-QQMC-HWQP-8G2W",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.11233249306678772
+  },
+  "RUSTSEC-2021-0130:iter_mut:v": {
+   "anchor": "RUSTSEC-2021-0130:iter_mut",
+   "lineage": "GHSA-QQMC-HWQP-8G2W",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.08507753908634186
+  },
+  "RUSTSEC-2021-0130:iter_mut:f": {
+   "anchor": "RUSTSEC-2021-0130:iter_mut",
+   "lineage": "GHSA-QQMC-HWQP-8G2W",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.10675814747810364
+  },
+  "RUSTSEC-2021-0143:discard_exact:v": {
+   "anchor": "RUSTSEC-2021-0143:discard_exact",
+   "lineage": "CVE-2021-21235",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.05281555652618408
+  },
+  "RUSTSEC-2021-0143:discard_exact:f": {
+   "anchor": "RUSTSEC-2021-0143:discard_exact",
+   "lineage": "CVE-2021-21235",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.07033124566078186
+  },
+  "RUSTSEC-2022-0002:mapref_multiple_ref_multi_key:v": {
+   "anchor": "RUSTSEC-2022-0002:mapref_multiple_ref_multi_key",
+   "lineage": "RUSTSEC-2022-0002",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.12920352816581726
+  },
+  "RUSTSEC-2022-0002:mapref_multiple_ref_multi_key:f": {
+   "anchor": "RUSTSEC-2022-0002:mapref_multiple_ref_multi_key",
+   "lineage": "RUSTSEC-2022-0002",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.15994063019752502
+  },
+  "RUSTSEC-2022-0002:mapref_multiple_ref_multi_pair:v": {
+   "anchor": "RUSTSEC-2022-0002:mapref_multiple_ref_multi_pair",
+   "lineage": "RUSTSEC-2022-0002",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.14607828855514526
+  },
+  "RUSTSEC-2022-0002:mapref_multiple_ref_multi_pair:f": {
+   "anchor": "RUSTSEC-2022-0002:mapref_multiple_ref_multi_pair",
+   "lineage": "RUSTSEC-2022-0002",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.14669585227966309
+  },
+  "RUSTSEC-2022-0002:mapref_multiple_ref_multi_value:v": {
+   "anchor": "RUSTSEC-2022-0002:mapref_multiple_ref_multi_value",
+   "lineage": "RUSTSEC-2022-0002",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.1351877748966217
+  },
+  "RUSTSEC-2022-0002:mapref_multiple_ref_multi_value:f": {
+   "anchor": "RUSTSEC-2022-0002:mapref_multiple_ref_multi_value",
+   "lineage": "RUSTSEC-2022-0002",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.15528157353401184
+  },
+  "RUSTSEC-2022-0002:mapref_multiple_ref_mut_multi_key:v": {
+   "anchor": "RUSTSEC-2022-0002:mapref_multiple_ref_mut_multi_key",
+   "lineage": "RUSTSEC-2022-0002",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.12920352816581726
+  },
+  "RUSTSEC-2022-0002:mapref_multiple_ref_mut_multi_key:f": {
+   "anchor": "RUSTSEC-2022-0002:mapref_multiple_ref_mut_multi_key",
+   "lineage": "RUSTSEC-2022-0002",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.15994063019752502
+  },
+  "RUSTSEC-2022-0002:mapref_multiple_ref_mut_multi_pair:v": {
+   "anchor": "RUSTSEC-2022-0002:mapref_multiple_ref_mut_multi_pair",
+   "lineage": "RUSTSEC-2022-0002",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.13054481148719788
+  },
+  "RUSTSEC-2022-0002:mapref_multiple_ref_mut_multi_pair:f": {
+   "anchor": "RUSTSEC-2022-0002:mapref_multiple_ref_mut_multi_pair",
+   "lineage": "RUSTSEC-2022-0002",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.14669585227966309
+  },
+  "RUSTSEC-2022-0002:mapref_multiple_ref_mut_multi_pair_mut:v": {
+   "anchor": "RUSTSEC-2022-0002:mapref_multiple_ref_mut_multi_pair_mut",
+   "lineage": "RUSTSEC-2022-0002",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.11066761612892151
+  },
+  "RUSTSEC-2022-0002:mapref_multiple_ref_mut_multi_pair_mut:f": {
+   "anchor": "RUSTSEC-2022-0002:mapref_multiple_ref_mut_multi_pair_mut",
+   "lineage": "RUSTSEC-2022-0002",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.12174917757511139
+  },
+  "RUSTSEC-2022-0002:mapref_one_ref_key:v": {
+   "anchor": "RUSTSEC-2022-0002:mapref_one_ref_key",
+   "lineage": "RUSTSEC-2022-0002",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.12920352816581726
+  },
+  "RUSTSEC-2022-0002:mapref_one_ref_key:f": {
+   "anchor": "RUSTSEC-2022-0002:mapref_one_ref_key",
+   "lineage": "RUSTSEC-2022-0002",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.15994063019752502
+  },
+  "RUSTSEC-2022-0002:mapref_one_ref_mut_key:v": {
+   "anchor": "RUSTSEC-2022-0002:mapref_one_ref_mut_key",
+   "lineage": "RUSTSEC-2022-0002",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.12920352816581726
+  },
+  "RUSTSEC-2022-0002:mapref_one_ref_mut_key:f": {
+   "anchor": "RUSTSEC-2022-0002:mapref_one_ref_mut_key",
+   "lineage": "RUSTSEC-2022-0002",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.15994063019752502
+  },
+  "RUSTSEC-2022-0002:mapref_one_ref_mut_pair:v": {
+   "anchor": "RUSTSEC-2022-0002:mapref_one_ref_mut_pair",
+   "lineage": "RUSTSEC-2022-0002",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.13054481148719788
+  },
+  "RUSTSEC-2022-0002:mapref_one_ref_mut_pair:f": {
+   "anchor": "RUSTSEC-2022-0002:mapref_one_ref_mut_pair",
+   "lineage": "RUSTSEC-2022-0002",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.14669585227966309
+  },
+  "RUSTSEC-2022-0002:mapref_one_ref_mut_pair_mut:v": {
+   "anchor": "RUSTSEC-2022-0002:mapref_one_ref_mut_pair_mut",
+   "lineage": "RUSTSEC-2022-0002",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.11066761612892151
+  },
+  "RUSTSEC-2022-0002:mapref_one_ref_mut_pair_mut:f": {
+   "anchor": "RUSTSEC-2022-0002:mapref_one_ref_mut_pair_mut",
+   "lineage": "RUSTSEC-2022-0002",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.12174917757511139
+  },
+  "RUSTSEC-2022-0002:mapref_one_ref_pair:v": {
+   "anchor": "RUSTSEC-2022-0002:mapref_one_ref_pair",
+   "lineage": "RUSTSEC-2022-0002",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.14607828855514526
+  },
+  "RUSTSEC-2022-0002:mapref_one_ref_pair:f": {
+   "anchor": "RUSTSEC-2022-0002:mapref_one_ref_pair",
+   "lineage": "RUSTSEC-2022-0002",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.14669585227966309
+  },
+  "RUSTSEC-2022-0002:mapref_one_ref_value:v": {
+   "anchor": "RUSTSEC-2022-0002:mapref_one_ref_value",
+   "lineage": "RUSTSEC-2022-0002",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.1351877748966217
+  },
+  "RUSTSEC-2022-0002:mapref_one_ref_value:f": {
+   "anchor": "RUSTSEC-2022-0002:mapref_one_ref_value",
+   "lineage": "RUSTSEC-2022-0002",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.15528157353401184
+  },
+  "RUSTSEC-2022-0002:setref_multiple_ref_multi_key:v": {
+   "anchor": "RUSTSEC-2022-0002:setref_multiple_ref_multi_key",
+   "lineage": "RUSTSEC-2022-0002",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.13476920127868652
+  },
+  "RUSTSEC-2022-0002:setref_multiple_ref_multi_key:f": {
+   "anchor": "RUSTSEC-2022-0002:setref_multiple_ref_multi_key",
+   "lineage": "RUSTSEC-2022-0002",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.17091861367225647
+  },
+  "RUSTSEC-2022-0002:setref_one_ref_key:v": {
+   "anchor": "RUSTSEC-2022-0002:setref_one_ref_key",
+   "lineage": "RUSTSEC-2022-0002",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.13476920127868652
+  },
+  "RUSTSEC-2022-0002:setref_one_ref_key:f": {
+   "anchor": "RUSTSEC-2022-0002:setref_one_ref_key",
+   "lineage": "RUSTSEC-2022-0002",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.17091861367225647
+  },
+  "RUSTSEC-2022-0003:clean_text:v": {
+   "anchor": "RUSTSEC-2022-0003:clean_text",
+   "lineage": "GHSA-P2G9-94WH-65C2",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.10537166893482208
+  },
+  "RUSTSEC-2022-0003:clean_text:f": {
+   "anchor": "RUSTSEC-2022-0003:clean_text",
+   "lineage": "GHSA-P2G9-94WH-65C2",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.10269344598054886
+  },
+  "RUSTSEC-2022-0012:arrow_array:v": {
+   "anchor": "RUSTSEC-2022-0012:arrow_array",
+   "lineage": "RUSTSEC-2022-0012",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.18363630771636963
+  },
+  "RUSTSEC-2022-0012:arrow_array:f": {
+   "anchor": "RUSTSEC-2022-0012:arrow_array",
+   "lineage": "RUSTSEC-2022-0012",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.1850462555885315
+  },
+  "RUSTSEC-2022-0012:arrow_array_stream:v": {
+   "anchor": "RUSTSEC-2022-0012:arrow_array_stream",
+   "lineage": "RUSTSEC-2022-0012",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.11390956491231918
+  },
+  "RUSTSEC-2022-0012:arrow_array_stream:f": {
+   "anchor": "RUSTSEC-2022-0012:arrow_array_stream",
+   "lineage": "RUSTSEC-2022-0012",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.11143866181373596
+  },
+  "RUSTSEC-2022-0012:arrow_schema:v": {
+   "anchor": "RUSTSEC-2022-0012:arrow_schema",
+   "lineage": "RUSTSEC-2022-0012",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.18305206298828125
+  },
+  "RUSTSEC-2022-0012:arrow_schema:f": {
+   "anchor": "RUSTSEC-2022-0012:arrow_schema",
+   "lineage": "RUSTSEC-2022-0012",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.19084998965263367
+  },
+  "RUSTSEC-2022-0013:compiler_c:v": {
+   "anchor": "RUSTSEC-2022-0013:compiler_c",
+   "lineage": "CVE-2022-24713",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.06721751391887665
+  },
+  "RUSTSEC-2022-0013:compiler_c:f": {
+   "anchor": "RUSTSEC-2022-0013:compiler_c",
+   "lineage": "CVE-2022-24713",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.06832936406135559
+  },
+  "RUSTSEC-2022-0013:compiler_c_concat:v": {
+   "anchor": "RUSTSEC-2022-0013:compiler_c_concat",
+   "lineage": "CVE-2022-24713",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.024297647178173065
+  },
+  "RUSTSEC-2022-0013:compiler_c_concat:f": {
+   "anchor": "RUSTSEC-2022-0013:compiler_c_concat",
+   "lineage": "CVE-2022-24713",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.02533605322241783
+  },
+  "RUSTSEC-2022-0028:js_array_buffer_external:v": {
+   "anchor": "RUSTSEC-2022-0028:js_array_buffer_external",
+   "lineage": "GHSA-8MJ7-WXMC-F424",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.07121478766202927
+  },
+  "RUSTSEC-2022-0028:js_array_buffer_external:f": {
+   "anchor": "RUSTSEC-2022-0028:js_array_buffer_external",
+   "lineage": "GHSA-8MJ7-WXMC-F424",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.0646858662366867
+  },
+  "RUSTSEC-2022-0028:js_buffer_external:v": {
+   "anchor": "RUSTSEC-2022-0028:js_buffer_external",
+   "lineage": "GHSA-8MJ7-WXMC-F424",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.07238897681236267
+  },
+  "RUSTSEC-2022-0028:js_buffer_external:f": {
+   "anchor": "RUSTSEC-2022-0028:js_buffer_external",
+   "lineage": "GHSA-8MJ7-WXMC-F424",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.06620117276906967
+  },
+  "RUSTSEC-2022-0038:collect_conflicts_between_fields_and_fragment:v": {
+   "anchor": "RUSTSEC-2022-0038:collect_conflicts_between_fields_and_fragment",
+   "lineage": "CVE-2022-31173",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.1542607843875885
+  },
+  "RUSTSEC-2022-0038:collect_conflicts_between_fields_and_fragment:f": {
+   "anchor": "RUSTSEC-2022-0038:collect_conflicts_between_fields_and_fragment",
+   "lineage": "CVE-2022-31173",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.0922631025314331
+  },
+  "RUSTSEC-2022-0038:collect_incorrect_usages:v": {
+   "anchor": "RUSTSEC-2022-0038:collect_incorrect_usages",
+   "lineage": "CVE-2022-31173",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.09707191586494446
+  },
+  "RUSTSEC-2022-0038:collect_incorrect_usages:f": {
+   "anchor": "RUSTSEC-2022-0038:collect_incorrect_usages",
+   "lineage": "CVE-2022-31173",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.06301967799663544
+  },
+  "RUSTSEC-2022-0038:detect_from:v": {
+   "anchor": "RUSTSEC-2022-0038:detect_from",
+   "lineage": "CVE-2022-31173",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.09739013761281967
+  },
+  "RUSTSEC-2022-0038:detect_from:f": {
+   "anchor": "RUSTSEC-2022-0038:detect_from",
+   "lineage": "CVE-2022-31173",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.07997337728738785
+  },
+  "RUSTSEC-2022-0038:find_reachable_fragments:v": {
+   "anchor": "RUSTSEC-2022-0038:find_reachable_fragments",
+   "lineage": "CVE-2022-31173",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.1664981096982956
+  },
+  "RUSTSEC-2022-0038:find_reachable_fragments:f": {
+   "anchor": "RUSTSEC-2022-0038:find_reachable_fragments",
+   "lineage": "CVE-2022-31173",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.0312330424785614
+  },
+  "RUSTSEC-2022-0038:find_undef_vars:v": {
+   "anchor": "RUSTSEC-2022-0038:find_undef_vars",
+   "lineage": "CVE-2022-31173",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.037812963128089905
+  },
+  "RUSTSEC-2022-0038:find_undef_vars:f": {
+   "anchor": "RUSTSEC-2022-0038:find_undef_vars",
+   "lineage": "CVE-2022-31173",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.07560165226459503
+  },
+  "RUSTSEC-2022-0038:find_used_vars:v": {
+   "anchor": "RUSTSEC-2022-0038:find_used_vars",
+   "lineage": "CVE-2022-31173",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.047917719930410385
+  },
+  "RUSTSEC-2022-0038:find_used_vars:f": {
+   "anchor": "RUSTSEC-2022-0038:find_used_vars",
+   "lineage": "CVE-2022-31173",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.07927295565605164
+  },
+  "RUSTSEC-2022-0063:heap_extend:v": {
+   "anchor": "RUSTSEC-2022-0063:heap_extend",
+   "lineage": "CVE-2022-36086",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.08951384574174881
+  },
+  "RUSTSEC-2022-0063:heap_extend:f": {
+   "anchor": "RUSTSEC-2022-0063:heap_extend",
+   "lineage": "CVE-2022-36086",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.1588519960641861
+  },
+  "RUSTSEC-2022-0063:heap_new:v": {
+   "anchor": "RUSTSEC-2022-0063:heap_new",
+   "lineage": "CVE-2022-36086",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.0376223623752594
+  },
+  "RUSTSEC-2022-0063:heap_new:f": {
+   "anchor": "RUSTSEC-2022-0063:heap_new",
+   "lineage": "CVE-2022-36086",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.12386758625507355
+  },
+  "RUSTSEC-2022-0063:hole_new:v": {
+   "anchor": "RUSTSEC-2022-0063:hole_new",
+   "lineage": "CVE-2022-36086",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.09997638314962387
+  },
+  "RUSTSEC-2022-0063:hole_new:f": {
+   "anchor": "RUSTSEC-2022-0063:hole_new",
+   "lineage": "CVE-2022-36086",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.09395407140254974
+  },
+  "RUSTSEC-2022-0066:blocking_handler:v": {
+   "anchor": "RUSTSEC-2022-0066:blocking_handler",
+   "lineage": "CVE-2022-39294",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.0951758623123169
+  },
+  "RUSTSEC-2022-0066:blocking_handler:f": {
+   "anchor": "RUSTSEC-2022-0066:blocking_handler",
+   "lineage": "CVE-2022-39294",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.06527211517095566
+  },
+  "RUSTSEC-2022-0068:read_list_pointer:v": {
+   "anchor": "RUSTSEC-2022-0068:read_list_pointer",
+   "lineage": "GHSA-QQFF-4VW4-F6HX",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.06544505804777145
+  },
+  "RUSTSEC-2022-0068:read_list_pointer:f": {
+   "anchor": "RUSTSEC-2022-0068:read_list_pointer",
+   "lineage": "GHSA-QQFF-4VW4-F6HX",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.06938156485557556
+  },
+  "RUSTSEC-2022-0072:response_builder_build:v": {
+   "anchor": "RUSTSEC-2022-0072:response_builder_build",
+   "lineage": "RUSTSEC-2022-0072",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.09757242351770401
+  },
+  "RUSTSEC-2022-0072:response_builder_build:f": {
+   "anchor": "RUSTSEC-2022-0072:response_builder_build",
+   "lineage": "RUSTSEC-2022-0072",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.095295250415802
+  },
+  "RUSTSEC-2022-0091:allow_directory:v": {
+   "anchor": "RUSTSEC-2022-0091:allow_directory",
+   "lineage": "GHSA-Q9WV-22M9-VHQH",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.05638032406568527
+  },
+  "RUSTSEC-2022-0091:allow_directory:f": {
+   "anchor": "RUSTSEC-2022-0091:allow_directory",
+   "lineage": "GHSA-Q9WV-22M9-VHQH",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.04035723954439163
+  },
+  "RUSTSEC-2022-0091:allow_file:v": {
+   "anchor": "RUSTSEC-2022-0091:allow_file",
+   "lineage": "GHSA-Q9WV-22M9-VHQH",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.08481664210557938
+  },
+  "RUSTSEC-2022-0091:allow_file:f": {
+   "anchor": "RUSTSEC-2022-0091:allow_file",
+   "lineage": "GHSA-Q9WV-22M9-VHQH",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.07044269144535065
+  },
+  "RUSTSEC-2022-0093:expanded_secret_key_sign:v": {
+   "anchor": "RUSTSEC-2022-0093:expanded_secret_key_sign",
+   "lineage": "RUSTSEC-2022-0093",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.09507201611995697
+  },
+  "RUSTSEC-2022-0093:expanded_secret_key_sign:f": {
+   "anchor": "RUSTSEC-2022-0093:expanded_secret_key_sign",
+   "lineage": "RUSTSEC-2022-0093",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.09812033921480179
+  },
+  "RUSTSEC-2022-0093:expanded_secret_key_sign_prehashed:v": {
+   "anchor": "RUSTSEC-2022-0093:expanded_secret_key_sign_prehashed",
+   "lineage": "RUSTSEC-2022-0093",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.09860409051179886
+  },
+  "RUSTSEC-2022-0093:expanded_secret_key_sign_prehashed:f": {
+   "anchor": "RUSTSEC-2022-0093:expanded_secret_key_sign_prehashed",
+   "lineage": "RUSTSEC-2022-0093",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.0972469374537468
+  },
+  "RUSTSEC-2022-0093:keypair:v": {
+   "anchor": "RUSTSEC-2022-0093:keypair",
+   "lineage": "RUSTSEC-2022-0093",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.1947396993637085
+  },
+  "RUSTSEC-2022-0093:keypair:f": {
+   "anchor": "RUSTSEC-2022-0093:keypair",
+   "lineage": "RUSTSEC-2022-0093",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.19048729538917542
+  },
+  "RUSTSEC-2022-0093:keypair_from_bytes:v": {
+   "anchor": "RUSTSEC-2022-0093:keypair_from_bytes",
+   "lineage": "RUSTSEC-2022-0093",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.05377320200204849
+  },
+  "RUSTSEC-2022-0093:keypair_from_bytes:f": {
+   "anchor": "RUSTSEC-2022-0093:keypair_from_bytes",
+   "lineage": "RUSTSEC-2022-0093",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.11273539066314697
+  },
+  "RUSTSEC-2022-0098:allocate_memories:v": {
+   "anchor": "RUSTSEC-2022-0098:allocate_memories",
+   "lineage": "RUSTSEC-2022-0075",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.06595328450202942
+  },
+  "RUSTSEC-2022-0098:allocate_memories:f": {
+   "anchor": "RUSTSEC-2022-0098:allocate_memories",
+   "lineage": "RUSTSEC-2022-0075",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.0621832050383091
+  },
+  "RUSTSEC-2022-0101:load_constant64_full:v": {
+   "anchor": "RUSTSEC-2022-0101:load_constant64_full",
+   "lineage": "RUSTSEC-2022-0101",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.06078343465924263
+  },
+  "RUSTSEC-2022-0101:load_constant64_full:f": {
+   "anchor": "RUSTSEC-2022-0101:load_constant64_full",
+   "lineage": "RUSTSEC-2022-0101",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.0716904029250145
+  },
+  "RUSTSEC-2022-0102:memory_pool_new:v": {
+   "anchor": "RUSTSEC-2022-0102:memory_pool_new",
+   "lineage": "RUSTSEC-2022-0102",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.09000576287508011
+  },
+  "RUSTSEC-2022-0102:memory_pool_new:f": {
+   "anchor": "RUSTSEC-2022-0102:memory_pool_new",
+   "lineage": "RUSTSEC-2022-0102",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.09705870598554611
+  },
+  "RUSTSEC-2023-0024:new:v": {
+   "anchor": "RUSTSEC-2023-0024:new",
+   "lineage": "GHSA-6HCF-G6GR-HHCR",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.10978218913078308
+  },
+  "RUSTSEC-2023-0024:new:f": {
+   "anchor": "RUSTSEC-2023-0024:new",
+   "lineage": "GHSA-6HCF-G6GR-HHCR",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.09018540382385254
+  },
+  "RUSTSEC-2023-0024:new_nid:v": {
+   "anchor": "RUSTSEC-2023-0024:new_nid",
+   "lineage": "GHSA-6HCF-G6GR-HHCR",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.12057271599769592
+  },
+  "RUSTSEC-2023-0024:new_nid:f": {
+   "anchor": "RUSTSEC-2023-0024:new_nid",
+   "lineage": "GHSA-6HCF-G6GR-HHCR",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.07179369032382965
+  },
+  "RUSTSEC-2023-0030:fam_struct_wrapper_deserialize:v": {
+   "anchor": "RUSTSEC-2023-0030:fam_struct_wrapper_deserialize",
+   "lineage": "GHSA-8VXC-R5WP-VGVC",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.07722386717796326
+  },
+  "RUSTSEC-2023-0030:fam_struct_wrapper_deserialize:f": {
+   "anchor": "RUSTSEC-2023-0030:fam_struct_wrapper_deserialize",
+   "lineage": "GHSA-8VXC-R5WP-VGVC",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.10996536910533905
+  },
+  "RUSTSEC-2023-0039:data_helper:v": {
+   "anchor": "RUSTSEC-2023-0039:data_helper",
+   "lineage": "RUSTSEC-2023-0039",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.04511851817369461
+  },
+  "RUSTSEC-2023-0039:data_helper:f": {
+   "anchor": "RUSTSEC-2023-0039:data_helper",
+   "lineage": "RUSTSEC-2023-0039",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.0452038049697876
+  },
+  "RUSTSEC-2023-0044:set_host:v": {
+   "anchor": "RUSTSEC-2023-0044:set_host",
+   "lineage": "CVE-2023-53159",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.0530553013086319
+  },
+  "RUSTSEC-2023-0044:set_host:f": {
+   "anchor": "RUSTSEC-2023-0044:set_host",
+   "lineage": "CVE-2023-53159",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.04825640469789505
+  },
+  "RUSTSEC-2023-0062:bit_string_from_content:v": {
+   "anchor": "RUSTSEC-2023-0062:bit_string_from_content",
+   "lineage": "CVE-2023-39914",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.04435054957866669
+  },
+  "RUSTSEC-2023-0062:bit_string_from_content:f": {
+   "anchor": "RUSTSEC-2023-0062:bit_string_from_content",
+   "lineage": "CVE-2023-39914",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.05661467835307121
+  },
+  "RUSTSEC-2023-0062:oid_skip_if:v": {
+   "anchor": "RUSTSEC-2023-0062:oid_skip_if",
+   "lineage": "CVE-2023-39914",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.14192801713943481
+  },
+  "RUSTSEC-2023-0062:oid_skip_if:f": {
+   "anchor": "RUSTSEC-2023-0062:oid_skip_if",
+   "lineage": "CVE-2023-39914",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.18321344256401062
+  },
+  "RUSTSEC-2023-0062:oid_take_from:v": {
+   "anchor": "RUSTSEC-2023-0062:oid_take_from",
+   "lineage": "CVE-2023-39914",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.06355743110179901
+  },
+  "RUSTSEC-2023-0062:oid_take_from:f": {
+   "anchor": "RUSTSEC-2023-0062:oid_take_from",
+   "lineage": "CVE-2023-39914",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.09640106558799744
+  },
+  "RUSTSEC-2023-0062:oid_take_opt_from:v": {
+   "anchor": "RUSTSEC-2023-0062:oid_take_opt_from",
+   "lineage": "CVE-2023-39914",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.06008892506361008
+  },
+  "RUSTSEC-2023-0062:oid_take_opt_from:f": {
+   "anchor": "RUSTSEC-2023-0062:oid_take_opt_from",
+   "lineage": "CVE-2023-39914",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.09569545090198517
+  },
+  "RUSTSEC-2023-0062:process_next_value:v": {
+   "anchor": "RUSTSEC-2023-0062:process_next_value",
+   "lineage": "CVE-2023-39914",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.056931085884571075
+  },
+  "RUSTSEC-2023-0062:process_next_value:f": {
+   "anchor": "RUSTSEC-2023-0062:process_next_value",
+   "lineage": "CVE-2023-39914",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.055584561079740524
+  },
+  "RUSTSEC-2023-0062:skip_opt:v": {
+   "anchor": "RUSTSEC-2023-0062:skip_opt",
+   "lineage": "CVE-2023-39914",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.04891287162899971
+  },
+  "RUSTSEC-2023-0062:skip_opt:f": {
+   "anchor": "RUSTSEC-2023-0062:skip_opt",
+   "lineage": "CVE-2023-39914",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.051482200622558594
+  },
+  "RUSTSEC-2023-0062:tag_take_from_if:v": {
+   "anchor": "RUSTSEC-2023-0062:tag_take_from_if",
+   "lineage": "CVE-2023-39914",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.06034089997410774
+  },
+  "RUSTSEC-2023-0062:tag_take_from_if:f": {
+   "anchor": "RUSTSEC-2023-0062:tag_take_from_if",
+   "lineage": "CVE-2023-39914",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.049961354583501816
+  },
+  "RUSTSEC-2023-0068:cocoon_encrypt:v": {
+   "anchor": "RUSTSEC-2023-0068:cocoon_encrypt",
+   "lineage": "RUSTSEC-2023-0068",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.0756879448890686
+  },
+  "RUSTSEC-2023-0068:cocoon_encrypt:f": {
+   "anchor": "RUSTSEC-2023-0068:cocoon_encrypt",
+   "lineage": "RUSTSEC-2023-0068",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.08214901387691498
+  },
+  "RUSTSEC-2023-0068:mini_cocoon_encrypt:v": {
+   "anchor": "RUSTSEC-2023-0068:mini_cocoon_encrypt",
+   "lineage": "RUSTSEC-2023-0068",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.08352847397327423
+  },
+  "RUSTSEC-2023-0068:mini_cocoon_encrypt:f": {
+   "anchor": "RUSTSEC-2023-0068:mini_cocoon_encrypt",
+   "lineage": "RUSTSEC-2023-0068",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.07920151948928833
+  },
+  "RUSTSEC-2023-0070:covariant_access:v": {
+   "anchor": "RUSTSEC-2023-0070:covariant_access",
+   "lineage": "RUSTSEC-2023-0070",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.12015195190906525
+  },
+  "RUSTSEC-2023-0070:covariant_access:f": {
+   "anchor": "RUSTSEC-2023-0070:covariant_access",
+   "lineage": "RUSTSEC-2023-0070",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.10810434818267822
+  },
+  "RUSTSEC-2023-0074:into_mut:v": {
+   "anchor": "RUSTSEC-2023-0074:into_mut",
+   "lineage": "GHSA-RJHF-4MH8-9XJQ",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.10273722559213638
+  },
+  "RUSTSEC-2023-0074:into_mut:f": {
+   "anchor": "RUSTSEC-2023-0074:into_mut",
+   "lineage": "GHSA-RJHF-4MH8-9XJQ",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.10149596631526947
+  },
+  "RUSTSEC-2023-0074:into_mut_slice:v": {
+   "anchor": "RUSTSEC-2023-0074:into_mut_slice",
+   "lineage": "GHSA-RJHF-4MH8-9XJQ",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.10528441518545151
+  },
+  "RUSTSEC-2023-0074:into_mut_slice:f": {
+   "anchor": "RUSTSEC-2023-0074:into_mut_slice",
+   "lineage": "GHSA-RJHF-4MH8-9XJQ",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.10677458345890045
+  },
+  "RUSTSEC-2023-0074:into_ref:v": {
+   "anchor": "RUSTSEC-2023-0074:into_ref",
+   "lineage": "GHSA-RJHF-4MH8-9XJQ",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.11087260395288467
+  },
+  "RUSTSEC-2023-0074:into_ref:f": {
+   "anchor": "RUSTSEC-2023-0074:into_ref",
+   "lineage": "GHSA-RJHF-4MH8-9XJQ",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.11285072565078735
+  },
+  "RUSTSEC-2023-0074:into_slice:v": {
+   "anchor": "RUSTSEC-2023-0074:into_slice",
+   "lineage": "GHSA-RJHF-4MH8-9XJQ",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.1177310198545456
+  },
+  "RUSTSEC-2023-0074:into_slice:f": {
+   "anchor": "RUSTSEC-2023-0074:into_slice",
+   "lineage": "GHSA-RJHF-4MH8-9XJQ",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.11651919782161713
+  },
+  "RUSTSEC-2023-0077:data_lense_macro:v": {
+   "anchor": "RUSTSEC-2023-0077:data_lense_macro",
+   "lineage": "CVE-2023-53157",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.026565011590719223
+  },
+  "RUSTSEC-2023-0077:data_lense_macro:f": {
+   "anchor": "RUSTSEC-2023-0077:data_lense_macro",
+   "lineage": "CVE-2023-53157",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.027443617582321167
+  },
+  "RUSTSEC-2023-0080:transpose:v": {
+   "anchor": "RUSTSEC-2023-0080:transpose",
+   "lineage": "CVE-2023-53156",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.07883092015981674
+  },
+  "RUSTSEC-2023-0080:transpose:f": {
+   "anchor": "RUSTSEC-2023-0080:transpose",
+   "lineage": "CVE-2023-53156",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.07169806212186813
+  },
+  "RUSTSEC-2023-0082:rfc3966_phone_number:v": {
+   "anchor": "RUSTSEC-2023-0082:rfc3966_phone_number",
+   "lineage": "WHHR-7F2W-QQJ2",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.12642228603363037
+  },
+  "RUSTSEC-2023-0082:rfc3966_phone_number:f": {
+   "anchor": "RUSTSEC-2023-0082:rfc3966_phone_number",
+   "lineage": "WHHR-7F2W-QQJ2",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.07792682945728302
+  },
+  "RUSTSEC-2023-0085:update_max_dynamic_size:v": {
+   "anchor": "RUSTSEC-2023-0085:update_max_dynamic_size",
+   "lineage": "RUSTSEC-2023-0085",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.10361022502183914
+  },
+  "RUSTSEC-2023-0085:update_max_dynamic_size:f": {
+   "anchor": "RUSTSEC-2023-0085:update_max_dynamic_size",
+   "lineage": "RUSTSEC-2023-0085",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.1088688001036644
+  },
+  "RUSTSEC-2024-0009:write_headers:v": {
+   "anchor": "RUSTSEC-2024-0009:write_headers",
+   "lineage": "RUSTSEC-2024-0008",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.06626716256141663
+  },
+  "RUSTSEC-2024-0009:write_headers:f": {
+   "anchor": "RUSTSEC-2024-0009:write_headers",
+   "lineage": "RUSTSEC-2024-0008",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.07661006599664688
+  },
+  "RUSTSEC-2024-0010:verify:v": {
+   "anchor": "RUSTSEC-2024-0010:verify",
+   "lineage": "GHSA-W277-WPQF-RCFV",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.07692957669496536
+  },
+  "RUSTSEC-2024-0010:verify:f": {
+   "anchor": "RUSTSEC-2024-0010:verify",
+   "lineage": "GHSA-W277-WPQF-RCFV",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.09595838189125061
+  },
+  "RUSTSEC-2024-0011:decrypt_ad:v": {
+   "anchor": "RUSTSEC-2024-0011:decrypt_ad",
+   "lineage": "RUSTSEC-2024-0011",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.0903405249118805
+  },
+  "RUSTSEC-2024-0011:decrypt_ad:f": {
+   "anchor": "RUSTSEC-2024-0011:decrypt_ad",
+   "lineage": "RUSTSEC-2024-0011",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.12512393295764923
+  },
+  "RUSTSEC-2024-0012:deserialize_any:v": {
+   "anchor": "RUSTSEC-2024-0012:deserialize_any",
+   "lineage": "GHSA-RR69-RXR6-8QWF",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.1080925464630127
+  },
+  "RUSTSEC-2024-0012:deserialize_any:f": {
+   "anchor": "RUSTSEC-2024-0012:deserialize_any",
+   "lineage": "GHSA-RR69-RXR6-8QWF",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.06884477287530899
+  },
+  "RUSTSEC-2024-0012:deserialize_enum:v": {
+   "anchor": "RUSTSEC-2024-0012:deserialize_enum",
+   "lineage": "GHSA-RR69-RXR6-8QWF",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.11319391429424286
+  },
+  "RUSTSEC-2024-0012:deserialize_enum:f": {
+   "anchor": "RUSTSEC-2024-0012:deserialize_enum",
+   "lineage": "GHSA-RR69-RXR6-8QWF",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.05631641671061516
+  },
+  "RUSTSEC-2024-0012:deserialize_map:v": {
+   "anchor": "RUSTSEC-2024-0012:deserialize_map",
+   "lineage": "GHSA-RR69-RXR6-8QWF",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.050498537719249725
+  },
+  "RUSTSEC-2024-0012:deserialize_map:f": {
+   "anchor": "RUSTSEC-2024-0012:deserialize_map",
+   "lineage": "GHSA-RR69-RXR6-8QWF",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.13085485994815826
+  },
+  "RUSTSEC-2024-0012:deserialize_seq:v": {
+   "anchor": "RUSTSEC-2024-0012:deserialize_seq",
+   "lineage": "GHSA-RR69-RXR6-8QWF",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.051804497838020325
+  },
+  "RUSTSEC-2024-0012:deserialize_seq:f": {
+   "anchor": "RUSTSEC-2024-0012:deserialize_seq",
+   "lineage": "GHSA-RR69-RXR6-8QWF",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.10268658399581909
+  },
+  "RUSTSEC-2024-0021:context_drop_rest:v": {
+   "anchor": "RUSTSEC-2024-0021:context_drop_rest",
+   "lineage": "RUSTSEC-2024-0021",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.07655484974384308
+  },
+  "RUSTSEC-2024-0021:context_drop_rest:f": {
+   "anchor": "RUSTSEC-2024-0021:context_drop_rest",
+   "lineage": "RUSTSEC-2024-0021",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.0782880187034607
+  },
+  "RUSTSEC-2024-0335:prepare_invocation:v": {
+   "anchor": "RUSTSEC-2024-0335:prepare_invocation",
+   "lineage": "GHSA-98P4-XJMM-8MFH",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.06852784007787704
+  },
+  "RUSTSEC-2024-0335:prepare_invocation:f": {
+   "anchor": "RUSTSEC-2024-0335:prepare_invocation",
+   "lineage": "GHSA-98P4-XJMM-8MFH",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.07942019402980804
+  },
+  "RUSTSEC-2024-0336:complete_io:v": {
+   "anchor": "RUSTSEC-2024-0336:complete_io",
+   "lineage": "GHSA-6G7W-8WPP-FRHJ",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.06635336577892303
+  },
+  "RUSTSEC-2024-0336:complete_io:f": {
+   "anchor": "RUSTSEC-2024-0336:complete_io",
+   "lineage": "GHSA-6G7W-8WPP-FRHJ",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.0652943104505539
+  },
+  "RUSTSEC-2024-0336:process_alert:v": {
+   "anchor": "RUSTSEC-2024-0336:process_alert",
+   "lineage": "GHSA-6G7W-8WPP-FRHJ",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.048835638910532
+  },
+  "RUSTSEC-2024-0336:process_alert:f": {
+   "anchor": "RUSTSEC-2024-0336:process_alert",
+   "lineage": "GHSA-6G7W-8WPP-FRHJ",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.05890786275267601
+  },
+  "RUSTSEC-2024-0341:poll_accept:v": {
+   "anchor": "RUSTSEC-2024-0341:poll_accept",
+   "lineage": "GHSA-2QPH-QPVM-2QF7",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.03629133850336075
+  },
+  "RUSTSEC-2024-0341:poll_accept:f": {
+   "anchor": "RUSTSEC-2024-0341:poll_accept",
+   "lineage": "GHSA-2QPH-QPVM-2QF7",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.10254546254873276
+  },
+  "RUSTSEC-2024-0343:gen_macro:v": {
+   "anchor": "RUSTSEC-2024-0343:gen_macro",
+   "lineage": "RUSTSEC-2024-0343",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.06778205931186676
+  },
+  "RUSTSEC-2024-0343:gen_macro:f": {
+   "anchor": "RUSTSEC-2024-0343:gen_macro",
+   "lineage": "RUSTSEC-2024-0343",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.08811889588832855
+  },
+  "RUSTSEC-2024-0345:raw_cert_parser_next:v": {
+   "anchor": "RUSTSEC-2024-0345:raw_cert_parser_next",
+   "lineage": "GHSA-9344-P847-QM5C",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.05287414789199829
+  },
+  "RUSTSEC-2024-0345:raw_cert_parser_next:f": {
+   "anchor": "RUSTSEC-2024-0345:raw_cert_parser_next",
+   "lineage": "GHSA-9344-P847-QM5C",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.05287414789199829
+  },
+  "RUSTSEC-2024-0350:make_relative_path_current:v": {
+   "anchor": "RUSTSEC-2024-0350:make_relative_path_current",
+   "lineage": "RUSTSEC-2024-0348",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.05536946654319763
+  },
+  "RUSTSEC-2024-0350:make_relative_path_current:f": {
+   "anchor": "RUSTSEC-2024-0350:make_relative_path_current",
+   "lineage": "RUSTSEC-2024-0348",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.05156460776925087
+  },
+  "RUSTSEC-2024-0356:user_identity_is_verified:v": {
+   "anchor": "RUSTSEC-2024-0356:user_identity_is_verified",
+   "lineage": "GHSA-4QG4-CVH2-CRGG",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.13605853915214539
+  },
+  "RUSTSEC-2024-0356:user_identity_is_verified:f": {
+   "anchor": "RUSTSEC-2024-0356:user_identity_is_verified",
+   "lineage": "GHSA-4QG4-CVH2-CRGG",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.09406924992799759
+  },
+  "RUSTSEC-2024-0357:mem_bio_get_buf:v": {
+   "anchor": "RUSTSEC-2024-0357:mem_bio_get_buf",
+   "lineage": "RUSTSEC-2024-0357",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.08154334127902985
+  },
+  "RUSTSEC-2024-0357:mem_bio_get_buf:f": {
+   "anchor": "RUSTSEC-2024-0357:mem_bio_get_buf",
+   "lineage": "RUSTSEC-2024-0357",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.06333115696907043
+  },
+  "RUSTSEC-2024-0362:list_parser:v": {
+   "anchor": "RUSTSEC-2024-0362:list_parser",
+   "lineage": "RUSTSEC-2024-0362",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.041867613792419434
+  },
+  "RUSTSEC-2024-0362:list_parser:f": {
+   "anchor": "RUSTSEC-2024-0362:list_parser",
+   "lineage": "RUSTSEC-2024-0362",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.0360574945807457
+  },
+  "RUSTSEC-2024-0363:pg_hstore_encode_by_ref:v": {
+   "anchor": "RUSTSEC-2024-0363:pg_hstore_encode_by_ref",
+   "lineage": "RUSTSEC-2024-0363",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.09455287456512451
+  },
+  "RUSTSEC-2024-0363:pg_hstore_encode_by_ref:f": {
+   "anchor": "RUSTSEC-2024-0363:pg_hstore_encode_by_ref",
+   "lineage": "RUSTSEC-2024-0363",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.06256923079490662
+  },
+  "RUSTSEC-2024-0369:national_number_new:v": {
+   "anchor": "RUSTSEC-2024-0369:national_number_new",
+   "lineage": "CVE-2024-39697",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.08900932967662811
+  },
+  "RUSTSEC-2024-0369:national_number_new:f": {
+   "anchor": "RUSTSEC-2024-0369:national_number_new",
+   "lineage": "CVE-2024-39697",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.07067163288593292
+  },
+  "RUSTSEC-2024-0373:clean_up_incoming:v": {
+   "anchor": "RUSTSEC-2024-0373:clean_up_incoming",
+   "lineage": "GHSA-VR26-JCQ5-FJJ8",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.12053723633289337
+  },
+  "RUSTSEC-2024-0373:clean_up_incoming:f": {
+   "anchor": "RUSTSEC-2024-0373:clean_up_incoming",
+   "lineage": "GHSA-VR26-JCQ5-FJJ8",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.11354353278875351
+  },
+  "RUSTSEC-2024-0373:endpoint_accept:v": {
+   "anchor": "RUSTSEC-2024-0373:endpoint_accept",
+   "lineage": "GHSA-VR26-JCQ5-FJJ8",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.10424388200044632
+  },
+  "RUSTSEC-2024-0373:endpoint_accept:f": {
+   "anchor": "RUSTSEC-2024-0373:endpoint_accept",
+   "lineage": "GHSA-VR26-JCQ5-FJJ8",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.10313168168067932
+  },
+  "RUSTSEC-2024-0376:handle_accept_error:v": {
+   "anchor": "RUSTSEC-2024-0376:handle_accept_error",
+   "lineage": "CVE-2024-47609",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.05841168761253357
+  },
+  "RUSTSEC-2024-0376:handle_accept_error:f": {
+   "anchor": "RUSTSEC-2024-0376:handle_accept_error",
+   "lineage": "CVE-2024-47609",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.17931601405143738
+  },
+  "RUSTSEC-2024-0377:c_chars_to_str:v": {
+   "anchor": "RUSTSEC-2024-0377:c_chars_to_str",
+   "lineage": "RUSTSEC-2024-0377",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.07392530888319016
+  },
+  "RUSTSEC-2024-0377:c_chars_to_str:f": {
+   "anchor": "RUSTSEC-2024-0377:c_chars_to_str",
+   "lineage": "RUSTSEC-2024-0377",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.0392821729183197
+  },
+  "RUSTSEC-2024-0399:first_handshake_message:v": {
+   "anchor": "RUSTSEC-2024-0399:first_handshake_message",
+   "lineage": "GHSA-QG5G-GV98-5FFH",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.07636569440364838
+  },
+  "RUSTSEC-2024-0399:first_handshake_message:f": {
+   "anchor": "RUSTSEC-2024-0399:first_handshake_message",
+   "lineage": "GHSA-QG5G-GV98-5FFH",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.05634772777557373
+  },
+  "RUSTSEC-2024-0401:dispatch:v": {
+   "anchor": "RUSTSEC-2024-0401:dispatch",
+   "lineage": "GHSA-J3PX-Q95C-9683",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.09452587366104126
+  },
+  "RUSTSEC-2024-0401:dispatch:f": {
+   "anchor": "RUSTSEC-2024-0401:dispatch",
+   "lineage": "GHSA-J3PX-Q95C-9683",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.07198815792798996
+  },
+  "RUSTSEC-2024-0402:borsh_serialize:v": {
+   "anchor": "RUSTSEC-2024-0402:borsh_serialize",
+   "lineage": "GHSA-WWQ9-3CPR-MM53",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.07870013266801834
+  },
+  "RUSTSEC-2024-0402:borsh_serialize:f": {
+   "anchor": "RUSTSEC-2024-0402:borsh_serialize",
+   "lineage": "GHSA-WWQ9-3CPR-MM53",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.33562296628952026
+  },
+  "RUSTSEC-2024-0406:merge:v": {
+   "anchor": "RUSTSEC-2024-0406:merge",
+   "lineage": "GHSA-3RCQ-39XP-7XJP",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.1184120699763298
+  },
+  "RUSTSEC-2024-0406:merge:f": {
+   "anchor": "RUSTSEC-2024-0406:merge",
+   "lineage": "GHSA-3RCQ-39XP-7XJP",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.12953801453113556
+  },
+  "RUSTSEC-2024-0406:remove_helper:v": {
+   "anchor": "RUSTSEC-2024-0406:remove_helper",
+   "lineage": "GHSA-3RCQ-39XP-7XJP",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.05969338119029999
+  },
+  "RUSTSEC-2024-0406:remove_helper:f": {
+   "anchor": "RUSTSEC-2024-0406:remove_helper",
+   "lineage": "GHSA-3RCQ-39XP-7XJP",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.06387712806463242
+  },
+  "RUSTSEC-2024-0437:skip_group:v": {
+   "anchor": "RUSTSEC-2024-0437:skip_group",
+   "lineage": "CVE-2025-53605",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.02275976538658142
+  },
+  "RUSTSEC-2024-0437:skip_group:f": {
+   "anchor": "RUSTSEC-2024-0437:skip_group",
+   "lineage": "CVE-2025-53605",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.13522809743881226
+  },
+  "RUSTSEC-2024-0441:table_init:v": {
+   "anchor": "RUSTSEC-2024-0441:table_init",
+   "lineage": "RUSTSEC-2024-0441",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.1327129453420639
+  },
+  "RUSTSEC-2024-0441:table_init:f": {
+   "anchor": "RUSTSEC-2024-0441:table_init",
+   "lineage": "RUSTSEC-2024-0441",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.13262033462524414
+  },
+  "RUSTSEC-2025-0005:get_coverage:v": {
+   "anchor": "RUSTSEC-2025-0005:get_coverage",
+   "lineage": "GHSA-QM2P-4W45-V2VR",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.12779581546783447
+  },
+  "RUSTSEC-2025-0005:get_coverage:f": {
+   "anchor": "RUSTSEC-2025-0005:get_coverage",
+   "lineage": "GHSA-QM2P-4W45-V2VR",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.13058990240097046
+  },
+  "RUSTSEC-2025-0015:hyper_send:v": {
+   "anchor": "RUSTSEC-2025-0015:hyper_send",
+   "lineage": "GHSA-287X-9RFF-QVCG",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.04387068748474121
+  },
+  "RUSTSEC-2025-0015:hyper_send:f": {
+   "anchor": "RUSTSEC-2025-0015:hyper_send",
+   "lineage": "GHSA-287X-9RFF-QVCG",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.021631915122270584
+  },
+  "RUSTSEC-2025-0015:isahc_send:v": {
+   "anchor": "RUSTSEC-2025-0015:isahc_send",
+   "lineage": "GHSA-287X-9RFF-QVCG",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.09061902016401291
+  },
+  "RUSTSEC-2025-0015:isahc_send:f": {
+   "anchor": "RUSTSEC-2025-0015:isahc_send",
+   "lineage": "GHSA-287X-9RFF-QVCG",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.0504528172314167
+  },
+  "RUSTSEC-2025-0016:parc_from_arc:v": {
+   "anchor": "RUSTSEC-2025-0016:parc_from_arc",
+   "lineage": "GHSA-VGMH-MQM4-8J88",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.07696495950222015
+  },
+  "RUSTSEC-2025-0016:parc_from_arc:f": {
+   "anchor": "RUSTSEC-2025-0016:parc_from_arc",
+   "lineage": "GHSA-VGMH-MQM4-8J88",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.05391600728034973
+  },
+  "RUSTSEC-2025-0016:parc_project:v": {
+   "anchor": "RUSTSEC-2025-0016:parc_project",
+   "lineage": "GHSA-VGMH-MQM4-8J88",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.07612158358097076
+  },
+  "RUSTSEC-2025-0016:parc_project:f": {
+   "anchor": "RUSTSEC-2025-0016:parc_project",
+   "lineage": "GHSA-VGMH-MQM4-8J88",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.0827711969614029
+  },
+  "RUSTSEC-2025-0016:parc_try_from_arc:v": {
+   "anchor": "RUSTSEC-2025-0016:parc_try_from_arc",
+   "lineage": "GHSA-VGMH-MQM4-8J88",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.05725175142288208
+  },
+  "RUSTSEC-2025-0016:parc_try_from_arc:f": {
+   "anchor": "RUSTSEC-2025-0016:parc_try_from_arc",
+   "lineage": "GHSA-VGMH-MQM4-8J88",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.07249843329191208
+  },
+  "RUSTSEC-2025-0016:prc_from_rc:v": {
+   "anchor": "RUSTSEC-2025-0016:prc_from_rc",
+   "lineage": "GHSA-VGMH-MQM4-8J88",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.06920608133077621
+  },
+  "RUSTSEC-2025-0016:prc_from_rc:f": {
+   "anchor": "RUSTSEC-2025-0016:prc_from_rc",
+   "lineage": "GHSA-VGMH-MQM4-8J88",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.05720473825931549
+  },
+  "RUSTSEC-2025-0016:prc_project:v": {
+   "anchor": "RUSTSEC-2025-0016:prc_project",
+   "lineage": "GHSA-VGMH-MQM4-8J88",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.05536060780286789
+  },
+  "RUSTSEC-2025-0016:prc_project:f": {
+   "anchor": "RUSTSEC-2025-0016:prc_project",
+   "lineage": "GHSA-VGMH-MQM4-8J88",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.05913528800010681
+  },
+  "RUSTSEC-2025-0016:prc_try_from_rc:v": {
+   "anchor": "RUSTSEC-2025-0016:prc_try_from_rc",
+   "lineage": "GHSA-VGMH-MQM4-8J88",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.08035960793495178
+  },
+  "RUSTSEC-2025-0016:prc_try_from_rc:f": {
+   "anchor": "RUSTSEC-2025-0016:prc_try_from_rc",
+   "lineage": "GHSA-VGMH-MQM4-8J88",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.08022567629814148
+  },
+  "RUSTSEC-2025-0018:get_bucket:v": {
+   "anchor": "RUSTSEC-2025-0018:get_bucket",
+   "lineage": "RUSTSEC-2025-0018",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.07962736487388611
+  },
+  "RUSTSEC-2025-0018:get_bucket:f": {
+   "anchor": "RUSTSEC-2025-0018:get_bucket",
+   "lineage": "RUSTSEC-2025-0018",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.06150102615356445
+  },
+  "RUSTSEC-2025-0018:get_chain:v": {
+   "anchor": "RUSTSEC-2025-0018:get_chain",
+   "lineage": "RUSTSEC-2025-0018",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.07110992819070816
+  },
+  "RUSTSEC-2025-0018:get_chain:f": {
+   "anchor": "RUSTSEC-2025-0018:get_chain",
+   "lineage": "RUSTSEC-2025-0018",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.0604124590754509
+  },
+  "RUSTSEC-2025-0020:from_object:v": {
+   "anchor": "RUSTSEC-2025-0020:from_object",
+   "lineage": "RUSTSEC-2025-0020",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.09590598940849304
+  },
+  "RUSTSEC-2025-0020:from_object:f": {
+   "anchor": "RUSTSEC-2025-0020:from_object",
+   "lineage": "RUSTSEC-2025-0020",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.14620380103588104
+  },
+  "RUSTSEC-2025-0021:bytes:v": {
+   "anchor": "RUSTSEC-2025-0021:bytes",
+   "lineage": "CVE-2025-31130",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.16280877590179443
+  },
+  "RUSTSEC-2025-0021:bytes:f": {
+   "anchor": "RUSTSEC-2025-0021:bytes",
+   "lineage": "CVE-2025-31130",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.18384981155395508
+  },
+  "RUSTSEC-2025-0021:bytes_of_file:v": {
+   "anchor": "RUSTSEC-2025-0021:bytes_of_file",
+   "lineage": "CVE-2025-31130",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.1549449861049652
+  },
+  "RUSTSEC-2025-0021:bytes_of_file:f": {
+   "anchor": "RUSTSEC-2025-0021:bytes_of_file",
+   "lineage": "CVE-2025-31130",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.18224933743476868
+  },
+  "RUSTSEC-2025-0021:bytes_with_hasher:v": {
+   "anchor": "RUSTSEC-2025-0021:bytes_with_hasher",
+   "lineage": "CVE-2025-31130",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.062375422567129135
+  },
+  "RUSTSEC-2025-0021:bytes_with_hasher:f": {
+   "anchor": "RUSTSEC-2025-0021:bytes_with_hasher",
+   "lineage": "CVE-2025-31130",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.10101788491010666
+  },
+  "RUSTSEC-2025-0021:hasher:v": {
+   "anchor": "RUSTSEC-2025-0021:hasher",
+   "lineage": "CVE-2025-31130",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.0810748040676117
+  },
+  "RUSTSEC-2025-0021:hasher:f": {
+   "anchor": "RUSTSEC-2025-0021:hasher",
+   "lineage": "CVE-2025-31130",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.126285120844841
+  },
+  "RUSTSEC-2025-0021:hasher_digest:v": {
+   "anchor": "RUSTSEC-2025-0021:hasher_digest",
+   "lineage": "CVE-2025-31130",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.10600282996892929
+  },
+  "RUSTSEC-2025-0021:hasher_digest:f": {
+   "anchor": "RUSTSEC-2025-0021:hasher_digest",
+   "lineage": "CVE-2025-31130",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.03601442277431488
+  },
+  "RUSTSEC-2025-0021:write_new:v": {
+   "anchor": "RUSTSEC-2025-0021:write_new",
+   "lineage": "CVE-2025-31130",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.052879445254802704
+  },
+  "RUSTSEC-2025-0021:write_new:f": {
+   "anchor": "RUSTSEC-2025-0021:write_new",
+   "lineage": "CVE-2025-31130",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.04312168061733246
+  },
+  "RUSTSEC-2025-0022:cipher_fetch:v": {
+   "anchor": "RUSTSEC-2025-0022:cipher_fetch",
+   "lineage": "RUSTSEC-2025-0022",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.10720272362232208
+  },
+  "RUSTSEC-2025-0022:cipher_fetch:f": {
+   "anchor": "RUSTSEC-2025-0022:cipher_fetch",
+   "lineage": "RUSTSEC-2025-0022",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.10448333621025085
+  },
+  "RUSTSEC-2025-0022:md_fetch:v": {
+   "anchor": "RUSTSEC-2025-0022:md_fetch",
+   "lineage": "RUSTSEC-2025-0022",
+   "label": 1,
+   "pred": 0,
+   "logit_diff": -0.09921872615814209
+  },
+  "RUSTSEC-2025-0022:md_fetch:f": {
+   "anchor": "RUSTSEC-2025-0022:md_fetch",
+   "lineage": "RUSTSEC-2025-0022",
+   "label": 0,
+   "pred": 0,
+   "logit_diff": -0.09629607200622559
+  }
+ }
+}

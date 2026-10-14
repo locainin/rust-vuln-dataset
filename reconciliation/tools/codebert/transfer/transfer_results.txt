@@ -1,0 +1,34 @@
+loaded RX: seeds [42, 1337, 2026]
+loaded HR: seeds [42, 1337, 2026]
+loaded NU: seeds [42, 1337, 2026]
+loaded ID: seeds [42, 1337, 2026]
+anchors 21 pairs, 15 entity clusters
+
+run                 PA
+RX seed 42       0.714
+RX seed 1337     0.571
+RX seed 2026     0.667
+HR seed 42       0.476
+HR seed 1337     0.524
+HR seed 2026     0.571
+NU seed 42       0.667
+NU seed 1337     0.667
+NU seed 2026     0.476
+ID seed 42       0.619
+ID seed 1337     0.571
+ID seed 2026     0.476
+
+PA^RX = 0.6508 (mean of 3 seeds, 21 pairs)
+PA^HR = 0.5238 (mean of 3 seeds, 21 pairs)
+PA^NU = 0.6032 (mean of 3 seeds, 21 pairs)
+PA^ID = 0.5556 (mean of 3 seeds, 21 pairs)
+
+entity-clustered paired bootstrap 95% CIs (15 clusters; descriptive, small cluster count):
+  PA^HR - PA^RX: -0.1270  [-0.2222, -0.0580]  (excludes 0)
+  PA^NU - PA^RX: -0.0476  [-0.2353, +0.0667]  (includes 0)
+  PA^ID - PA^RX: -0.0952  [-0.2708, +0.0215]  (includes 0)
+  PA^NU - PA^HR: +0.0794  [-0.0625, +0.1733]  (includes 0)
+  PA^ID - PA^HR: +0.0317  [-0.1042, +0.1222]  (includes 0)
+  PA^ID - PA^NU: -0.0476  [-0.1569, +0.0833]  (includes 0)
+
+Delta_rec = PA^AR - PA^NU: NOT COMPUTABLE (AR blocked on the two-reviewer audit); no value is substituted.
