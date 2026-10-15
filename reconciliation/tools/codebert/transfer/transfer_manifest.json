@@ -1,0 +1,3902 @@
+{
+ "design": "rustmizan-transfer-v1",
+ "manifest_seed": 20261013,
+ "anchors": [
+  {
+   "anchor_id": "vuln-0001",
+   "lineage": "RUSTSEC-2019-0016",
+   "vulnerable_files": [
+    "rustmizan/samples/vuln-0001/sample-00001-function/src/lib.rs"
+   ],
+   "fixed_files": [
+    "rustmizan/samples/vuln-0001/sample-10001-function/src/lib.rs"
+   ]
+  },
+  {
+   "anchor_id": "vuln-0002",
+   "lineage": "RUSTSEC-2020-0091",
+   "vulnerable_files": [
+    "rustmizan/samples/vuln-0002/sample-00002-function/src/lib.rs"
+   ],
+   "fixed_files": [
+    "rustmizan/samples/vuln-0002/sample-10002-function/src/lib.rs"
+   ]
+  },
+  {
+   "anchor_id": "vuln-0005",
+   "lineage": "RUSTSEC-2020-0073",
+   "vulnerable_files": [
+    "rustmizan/samples/vuln-0005/sample-00005-function/src/lib.rs"
+   ],
+   "fixed_files": [
+    "rustmizan/samples/vuln-0005/sample-10005-function/src/lib.rs"
+   ]
+  },
+  {
+   "anchor_id": "vuln-0008",
+   "lineage": "RUSTSEC-2020-0088",
+   "vulnerable_files": [
+    "rustmizan/samples/vuln-0008/sample-00008-function/src/buffer/dynamic.rs",
+    "rustmizan/samples/vuln-0008/sample-00008-function/src/buffer/mod.rs",
+    "rustmizan/samples/vuln-0008/sample-00008-function/src/lib.rs",
+    "rustmizan/samples/vuln-0008/sample-00008-function/src/mpmc.rs",
+    "rustmizan/samples/vuln-0008/sample-00008-function/src/mpsc.rs",
+    "rustmizan/samples/vuln-0008/sample-00008-function/src/spmc.rs",
+    "rustmizan/samples/vuln-0008/sample-00008-function/src/spsc.rs",
+    "rustmizan/samples/vuln-0008/sample-00008-function/src/util.rs"
+   ],
+   "fixed_files": [
+    "rustmizan/samples/vuln-0008/sample-10008-function/src/lib.rs",
+    "rustmizan/samples/vuln-0008/sample-10008-function/src/mpmc.rs",
+    "rustmizan/samples/vuln-0008/sample-10008-function/src/mpsc.rs",
+    "rustmizan/samples/vuln-0008/sample-10008-function/src/spmc.rs",
+    "rustmizan/samples/vuln-0008/sample-10008-function/src/spsc.rs"
+   ]
+  },
+  {
+   "anchor_id": "vuln-0010",
+   "lineage": "RUSTSEC-2020-0096",
+   "vulnerable_files": [
+    "rustmizan/samples/vuln-0010/sample-00010-function/src/lib.rs"
+   ],
+   "fixed_files": [
+    "rustmizan/samples/vuln-0010/sample-10010-function/src/lib.rs"
+   ]
+  },
+  {
+   "anchor_id": "vuln-0011",
+   "lineage": "RUSTSEC-2025-0019",
+   "vulnerable_files": [
+    "rustmizan/samples/vuln-0011/sample-00011-function/src/lib.rs"
+   ],
+   "fixed_files": [
+    "rustmizan/samples/vuln-0011/sample-10011-function/src/lib.rs"
+   ]
+  },
+  {
+   "anchor_id": "vuln-0012",
+   "lineage": "RUSTSEC-2020-0107",
+   "vulnerable_files": [
+    "rustmizan/samples/vuln-0012/sample-00012-function/src/lib.rs"
+   ],
+   "fixed_files": [
+    "rustmizan/samples/vuln-0012/sample-10012-function/src/lib.rs"
+   ]
+  },
+  {
+   "anchor_id": "vuln-0013",
+   "lineage": "RUSTSEC-2020-0007",
+   "vulnerable_files": [
+    "rustmizan/samples/vuln-0013/sample-00013-function/src/lib.rs"
+   ],
+   "fixed_files": [
+    "rustmizan/samples/vuln-0013/sample-10013-function/src/lib.rs"
+   ]
+  },
+  {
+   "anchor_id": "vuln-0014",
+   "lineage": "RUSTSEC-2025-0032",
+   "vulnerable_files": [
+    "rustmizan/samples/vuln-0014/sample-00014-function/src/lib.rs",
+    "rustmizan/samples/vuln-0014/sample-00014-function/src/prelude.rs"
+   ],
+   "fixed_files": [
+    "rustmizan/samples/vuln-0014/sample-10014-function/src/lib.rs",
+    "rustmizan/samples/vuln-0014/sample-10014-function/src/prelude.rs"
+   ]
+  },
+  {
+   "anchor_id": "vuln-0018",
+   "lineage": "RUSTSEC-2020-0041",
+   "vulnerable_files": [
+    "rustmizan/samples/vuln-0018/sample-00018-function/src/lib.rs",
+    "rustmizan/samples/vuln-0018/sample-00018-function/src/types.rs"
+   ],
+   "fixed_files": [
+    "rustmizan/samples/vuln-0018/sample-10018-function/src/lib.rs",
+    "rustmizan/samples/vuln-0018/sample-10018-function/src/types.rs"
+   ]
+  },
+  {
+   "anchor_id": "vuln-0019",
+   "lineage": "RUSTSEC-2020-0041",
+   "vulnerable_files": [
+    "rustmizan/samples/vuln-0019/sample-00019-function/src/lib.rs",
+    "rustmizan/samples/vuln-0019/sample-00019-function/src/types.rs"
+   ],
+   "fixed_files": [
+    "rustmizan/samples/vuln-0019/sample-10019-function/src/lib.rs",
+    "rustmizan/samples/vuln-0019/sample-10019-function/src/types.rs"
+   ]
+  },
+  {
+   "anchor_id": "vuln-0020",
+   "lineage": "RUSTSEC-2020-0041",
+   "vulnerable_files": [
+    "rustmizan/samples/vuln-0020/sample-00020-function/src/inline_array/iter.rs",
+    "rustmizan/samples/vuln-0020/sample-00020-function/src/inline_array/mod.rs",
+    "rustmizan/samples/vuln-0020/sample-00020-function/src/lib.rs",
+    "rustmizan/samples/vuln-0020/sample-00020-function/src/types.rs"
+   ],
+   "fixed_files": [
+    "rustmizan/samples/vuln-0020/sample-10020-function/src/inline_array/iter.rs",
+    "rustmizan/samples/vuln-0020/sample-10020-function/src/inline_array/mod.rs",
+    "rustmizan/samples/vuln-0020/sample-10020-function/src/lib.rs",
+    "rustmizan/samples/vuln-0020/sample-10020-function/src/types.rs"
+   ]
+  },
+  {
+   "anchor_id": "vuln-0021",
+   "lineage": "RUSTSEC-2020-0041",
+   "vulnerable_files": [
+    "rustmizan/samples/vuln-0021/sample-00021-function/src/index.rs",
+    "rustmizan/samples/vuln-0021/sample-00021-function/src/lib.rs",
+    "rustmizan/samples/vuln-0021/sample-00021-function/src/types.rs"
+   ],
+   "fixed_files": [
+    "rustmizan/samples/vuln-0021/sample-10021-function/src/index.rs",
+    "rustmizan/samples/vuln-0021/sample-10021-function/src/lib.rs",
+    "rustmizan/samples/vuln-0021/sample-10021-function/src/types.rs"
+   ]
+  },
+  {
+   "anchor_id": "vuln-0022",
+   "lineage": "RUSTSEC-2020-0041",
+   "vulnerable_files": [
+    "rustmizan/samples/vuln-0022/sample-00022-function/src/index.rs",
+    "rustmizan/samples/vuln-0022/sample-00022-function/src/lib.rs",
+    "rustmizan/samples/vuln-0022/sample-00022-function/src/types.rs"
+   ],
+   "fixed_files": [
+    "rustmizan/samples/vuln-0022/sample-10022-function/src/index.rs",
+    "rustmizan/samples/vuln-0022/sample-10022-function/src/lib.rs",
+    "rustmizan/samples/vuln-0022/sample-10022-function/src/types.rs"
+   ]
+  },
+  {
+   "anchor_id": "vuln-0023",
+   "lineage": "RUSTSEC-2020-0041",
+   "vulnerable_files": [
+    "rustmizan/samples/vuln-0023/sample-00023-function/src/lib.rs"
+   ],
+   "fixed_files": [
+    "rustmizan/samples/vuln-0023/sample-10023-function/src/lib.rs"
+   ]
+  },
+  {
+   "anchor_id": "vuln-0024",
+   "lineage": "RUSTSEC-2020-0039",
+   "vulnerable_files": [
+    "rustmizan/samples/vuln-0024/sample-00024-function/src/lib.rs"
+   ],
+   "fixed_files": [
+    "rustmizan/samples/vuln-0024/sample-10024-function/src/lib.rs"
+   ]
+  },
+  {
+   "anchor_id": "vuln-0025",
+   "lineage": "RUSTSEC-2020-0039",
+   "vulnerable_files": [
+    "rustmizan/samples/vuln-0025/sample-00025-function/src/lib.rs"
+   ],
+   "fixed_files": [
+    "rustmizan/samples/vuln-0025/sample-10025-function/src/lib.rs"
+   ]
+  },
+  {
+   "anchor_id": "vuln-0028",
+   "lineage": "RUSTSEC-2019-0017",
+   "vulnerable_files": [
+    "rustmizan/samples/vuln-0028/sample-00028-function/src/lib.rs"
+   ],
+   "fixed_files": [
+    "rustmizan/samples/vuln-0028/sample-10028-function/src/lib.rs"
+   ]
+  },
+  {
+   "anchor_id": "vuln-0039",
+   "lineage": "RUSTSEC-2019-0012",
+   "vulnerable_files": [
+    "rustmizan/samples/vuln-0039/sample-00039-function/lib.rs"
+   ],
+   "fixed_files": [
+    "rustmizan/samples/vuln-0039/sample-10039-function/lib.rs"
+   ]
+  },
+  {
+   "anchor_id": "vuln-0040",
+   "lineage": "RUSTSEC-2025-0027",
+   "vulnerable_files": [
+    "rustmizan/samples/vuln-0040/sample-00040-function/src/enums.rs",
+    "rustmizan/samples/vuln-0040/sample-00040-function/src/lib.rs",
+    "rustmizan/samples/vuln-0040/sample-00040-function/src/types.rs",
+    "rustmizan/samples/vuln-0040/sample-00040-function/src/utils.rs"
+   ],
+   "fixed_files": [
+    "rustmizan/samples/vuln-0040/sample-10040-function/src/enums.rs",
+    "rustmizan/samples/vuln-0040/sample-10040-function/src/lib.rs",
+    "rustmizan/samples/vuln-0040/sample-10040-function/src/types.rs",
+    "rustmizan/samples/vuln-0040/sample-10040-function/src/utils.rs"
+   ]
+  },
+  {
+   "anchor_id": "vuln-0042",
+   "lineage": "RUSTSEC-2025-0003",
+   "vulnerable_files": [
+    "rustmizan/samples/vuln-0042/sample-00042-function/src/lib.rs"
+   ],
+   "fixed_files": [
+    "rustmizan/samples/vuln-0042/sample-10042-function/src/lib.rs"
+   ]
+  }
+ ],
+ "anchor_entity_count": 15,
+ "train_units": [
+  {
+   "unit_id": "RX:RUSTSEC-2021-0003:insert_many",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0003",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0003/pairs/insert_many/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0003/pairs/insert_many/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0007:copy_from_raw_parts",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0007",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0007/pairs/copy_from_raw_parts/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0007/pairs/copy_from_raw_parts/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0010:mutate",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0010",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0010/pairs/mutate/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0010/pairs/mutate/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0010:mutate2",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0010",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0010/pairs/mutate2/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0010/pairs/mutate2/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0018:insert_slice_clone",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0018",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0018/pairs/insert_slice_clone/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0018/pairs/insert_slice_clone/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0020:server_parse",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0020",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0020/pairs/server_parse/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0020/pairs/server_parse/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0022:sub_self_call",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0022",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0022/pairs/sub_self_call/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0022/pairs/sub_self_call/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0027:block_load",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0027",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0027/pairs/block_load/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0027/pairs/block_load/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0028:insert_row",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0028",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0028/pairs/insert_row/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0028/pairs/insert_row/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0030:array_move_elements",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0030",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0030/pairs/array_move_elements/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0030/pairs/array_move_elements/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0030:boxed_slice_move_elements",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0030",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0030/pairs/boxed_slice_move_elements/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0030/pairs/boxed_slice_move_elements/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0031:arena_split_at",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0031",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0031/pairs/arena_split_at/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0031/pairs/arena_split_at/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0032:read_bytes_default_le",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0032",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0032/pairs/read_bytes_default_le/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0032/pairs/read_bytes_default_le/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0033:push_cloned",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0033",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0033/pairs/push_cloned/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0033/pairs/push_cloned/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0036:intern_sync",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0036",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0036/pairs/intern_sync/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0036/pairs/intern_sync/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0038:pixmap_new",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0038",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0038/pairs/pixmap_new/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0038/pairs/pixmap_new/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0038:set_icon",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0038",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0038/pairs/set_icon/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0038/pairs/set_icon/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0038:set_label_type",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0038",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0038/pairs/set_label_type/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0038/pairs/set_label_type/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0048:stackvec_extend",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0048",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0048/pairs/stackvec_extend/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0048/pairs/stackvec_extend/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0050:swap_index",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0050",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0050/pairs/swap_index/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0050/pairs/swap_index/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0063:html_formatter_escape_href",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0063",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0063/pairs/html_formatter_escape_href/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0063/pairs/html_formatter_escape_href/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0069:client_codec_encode",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0069",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0069/pairs/client_codec_encode/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0069/pairs/client_codec_encode/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0072:join_handle_abort",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0072",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0072/pairs/join_handle_abort/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0072/pairs/join_handle_abort/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0073:timestamp_normalize",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0073",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0073/pairs/timestamp_normalize/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0073/pairs/timestamp_normalize/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0073:timestamp_system_time",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0073",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0073/pairs/timestamp_system_time/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0073/pairs/timestamp_system_time/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0074:clean_dom",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0074",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0074/pairs/clean_dom/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0074/pairs/clean_dom/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0075:field_var_mul_by_inverse",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0075",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0075/pairs/field_var_mul_by_inverse/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0075/pairs/field_var_mul_by_inverse/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0079:chunked_read_size",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0079",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0079/pairs/chunked_read_size/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0079/pairs/chunked_read_size/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0080:entry_fields_unpack_in",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0080",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0080/pairs/entry_fields_unpack_in/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0080/pairs/entry_fields_unpack_in/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0081:chunked_read_extension",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0081",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0081/pairs/chunked_read_extension/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0081/pairs/chunked_read_extension/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0081:chunked_read_size",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0081",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0081/pairs/chunked_read_size/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0081/pairs/chunked_read_size/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0081:message_type_set_headers",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0081",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0081/pairs/message_type_set_headers/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0081/pairs/message_type_set_headers/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0100:load_data_avx2",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0100",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0100/pairs/load_data_avx2/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0100/pairs/load_data_avx2/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0110:host_func_register_trampoline",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0110",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0110/pairs/host_func_register_trampoline/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0110/pairs/host_func_register_trampoline/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0110:insert_vmexternref",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0110",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0110/pairs/insert_vmexternref/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0110/pairs/insert_vmexternref/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0110:registered_module_lookup_stack_map",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0110",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0110/pairs/registered_module_lookup_stack_map/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0110/pairs/registered_module_lookup_stack_map/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0113:block_send",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0113",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0113/pairs/block_send/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0113/pairs/block_send/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0113:block_sync",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0113",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0113/pairs/block_sync/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0113/pairs/block_sync/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0114:deref",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0114",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0114/pairs/deref/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0114/pairs/deref/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0114:deref_mut",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0114",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0114/pairs/deref_mut/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0114/pairs/deref_mut/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0115:zeroize_attrs_parse",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0115",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0115/pairs/zeroize_attrs_parse/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0115/pairs/zeroize_attrs_parse/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0118:array_data_try_new",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0118",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0118/pairs/array_data_try_new/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0118/pairs/array_data_try_new/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0122:emplace_scalar_array",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0122",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0122/pairs/emplace_scalar_array/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0122/pairs/emplace_scalar_array/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0122:follow_cast_ref",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0122",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0122/pairs/follow_cast_ref/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0122/pairs/follow_cast_ref/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0122:follow_trait",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0122",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0122/pairs/follow_trait/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0122/pairs/follow_trait/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0122:push_trait",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0122",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0122/pairs/push_trait/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0122/pairs/push_trait/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0122:vector_safe_slice",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0122",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0122/pairs/vector_safe_slice/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0122/pairs/vector_safe_slice/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0124:set_complete",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0124",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0124/pairs/set_complete/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0124/pairs/set_complete/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0125:from_der_",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0125",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0125/pairs/from_der_/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0125/pairs/from_der_/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0128:commit_hook",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0128",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0128/pairs/commit_hook/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0128/pairs/commit_hook/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0128:create_aggregate_function",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0128",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0128/pairs/create_aggregate_function/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0128/pairs/create_aggregate_function/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0128:create_collation",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0128",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0128/pairs/create_collation/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0128/pairs/create_collation/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0128:create_scalar_function",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0128",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0128/pairs/create_scalar_function/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0128/pairs/create_scalar_function/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0128:create_window_function",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0128",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0128/pairs/create_window_function/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0128/pairs/create_window_function/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0128:rollback_hook",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0128",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0128/pairs/rollback_hook/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0128/pairs/rollback_hook/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0128:update_hook",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0128",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0128/pairs/update_hook/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0128/pairs/update_hook/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0130:iter",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0130",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0130/pairs/iter/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0130/pairs/iter/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0130:iter_mut",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0130",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0130/pairs/iter_mut/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0130/pairs/iter_mut/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2021-0143:discard_exact",
+   "source": "RX",
+   "entity": "RUSTSEC-2021-0143",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0143/pairs/discard_exact/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0143/pairs/discard_exact/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2022-0002:mapref_multiple_ref_multi_key",
+   "source": "RX",
+   "entity": "RUSTSEC-2022-0002",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_multiple_ref_multi_key/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_multiple_ref_multi_key/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2022-0002:mapref_multiple_ref_multi_pair",
+   "source": "RX",
+   "entity": "RUSTSEC-2022-0002",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_multiple_ref_multi_pair/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_multiple_ref_multi_pair/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2022-0002:mapref_multiple_ref_multi_value",
+   "source": "RX",
+   "entity": "RUSTSEC-2022-0002",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_multiple_ref_multi_value/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_multiple_ref_multi_value/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2022-0002:mapref_multiple_ref_mut_multi_key",
+   "source": "RX",
+   "entity": "RUSTSEC-2022-0002",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_multiple_ref_mut_multi_key/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_multiple_ref_mut_multi_key/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2022-0002:mapref_multiple_ref_mut_multi_pair",
+   "source": "RX",
+   "entity": "RUSTSEC-2022-0002",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_multiple_ref_mut_multi_pair/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_multiple_ref_mut_multi_pair/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2022-0002:mapref_multiple_ref_mut_multi_pair_mut",
+   "source": "RX",
+   "entity": "RUSTSEC-2022-0002",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_multiple_ref_mut_multi_pair_mut/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_multiple_ref_mut_multi_pair_mut/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2022-0002:mapref_one_ref_key",
+   "source": "RX",
+   "entity": "RUSTSEC-2022-0002",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_one_ref_key/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_one_ref_key/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2022-0002:mapref_one_ref_mut_key",
+   "source": "RX",
+   "entity": "RUSTSEC-2022-0002",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_one_ref_mut_key/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_one_ref_mut_key/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2022-0002:mapref_one_ref_mut_pair",
+   "source": "RX",
+   "entity": "RUSTSEC-2022-0002",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_one_ref_mut_pair/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_one_ref_mut_pair/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2022-0002:mapref_one_ref_mut_pair_mut",
+   "source": "RX",
+   "entity": "RUSTSEC-2022-0002",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_one_ref_mut_pair_mut/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_one_ref_mut_pair_mut/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2022-0002:mapref_one_ref_pair",
+   "source": "RX",
+   "entity": "RUSTSEC-2022-0002",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_one_ref_pair/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_one_ref_pair/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2022-0002:mapref_one_ref_value",
+   "source": "RX",
+   "entity": "RUSTSEC-2022-0002",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_one_ref_value/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_one_ref_value/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2022-0002:setref_multiple_ref_multi_key",
+   "source": "RX",
+   "entity": "RUSTSEC-2022-0002",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0002/pairs/setref_multiple_ref_multi_key/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0002/pairs/setref_multiple_ref_multi_key/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2022-0002:setref_one_ref_key",
+   "source": "RX",
+   "entity": "RUSTSEC-2022-0002",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0002/pairs/setref_one_ref_key/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0002/pairs/setref_one_ref_key/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2022-0003:clean_text",
+   "source": "RX",
+   "entity": "RUSTSEC-2022-0003",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0003/pairs/clean_text/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0003/pairs/clean_text/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2022-0012:arrow_array",
+   "source": "RX",
+   "entity": "RUSTSEC-2022-0012",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0012/pairs/arrow_array/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0012/pairs/arrow_array/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2022-0012:arrow_array_stream",
+   "source": "RX",
+   "entity": "RUSTSEC-2022-0012",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0012/pairs/arrow_array_stream/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0012/pairs/arrow_array_stream/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2022-0012:arrow_schema",
+   "source": "RX",
+   "entity": "RUSTSEC-2022-0012",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0012/pairs/arrow_schema/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0012/pairs/arrow_schema/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2022-0013:compiler_c",
+   "source": "RX",
+   "entity": "RUSTSEC-2022-0013",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0013/pairs/compiler_c/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0013/pairs/compiler_c/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2022-0013:compiler_c_concat",
+   "source": "RX",
+   "entity": "RUSTSEC-2022-0013",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0013/pairs/compiler_c_concat/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0013/pairs/compiler_c_concat/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2022-0028:js_array_buffer_external",
+   "source": "RX",
+   "entity": "RUSTSEC-2022-0028",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0028/pairs/js_array_buffer_external/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0028/pairs/js_array_buffer_external/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2022-0028:js_buffer_external",
+   "source": "RX",
+   "entity": "RUSTSEC-2022-0028",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0028/pairs/js_buffer_external/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0028/pairs/js_buffer_external/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2022-0038:collect_conflicts_between_fields_and_fragment",
+   "source": "RX",
+   "entity": "RUSTSEC-2022-0038",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0038/pairs/collect_conflicts_between_fields_and_fragment/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0038/pairs/collect_conflicts_between_fields_and_fragment/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2022-0038:collect_incorrect_usages",
+   "source": "RX",
+   "entity": "RUSTSEC-2022-0038",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0038/pairs/collect_incorrect_usages/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0038/pairs/collect_incorrect_usages/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2022-0038:detect_from",
+   "source": "RX",
+   "entity": "RUSTSEC-2022-0038",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0038/pairs/detect_from/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0038/pairs/detect_from/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2022-0038:find_reachable_fragments",
+   "source": "RX",
+   "entity": "RUSTSEC-2022-0038",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0038/pairs/find_reachable_fragments/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0038/pairs/find_reachable_fragments/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2022-0038:find_undef_vars",
+   "source": "RX",
+   "entity": "RUSTSEC-2022-0038",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0038/pairs/find_undef_vars/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0038/pairs/find_undef_vars/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2022-0038:find_used_vars",
+   "source": "RX",
+   "entity": "RUSTSEC-2022-0038",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0038/pairs/find_used_vars/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0038/pairs/find_used_vars/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2022-0063:heap_extend",
+   "source": "RX",
+   "entity": "RUSTSEC-2022-0063",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0063/pairs/heap_extend/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0063/pairs/heap_extend/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2022-0063:heap_new",
+   "source": "RX",
+   "entity": "RUSTSEC-2022-0063",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0063/pairs/heap_new/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0063/pairs/heap_new/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2022-0063:hole_new",
+   "source": "RX",
+   "entity": "RUSTSEC-2022-0063",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0063/pairs/hole_new/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0063/pairs/hole_new/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2022-0066:blocking_handler",
+   "source": "RX",
+   "entity": "RUSTSEC-2022-0066",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0066/pairs/blocking_handler/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0066/pairs/blocking_handler/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2022-0068:read_list_pointer",
+   "source": "RX",
+   "entity": "RUSTSEC-2022-0068",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0068/pairs/read_list_pointer/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0068/pairs/read_list_pointer/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2022-0072:response_builder_build",
+   "source": "RX",
+   "entity": "RUSTSEC-2022-0072",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0072/pairs/response_builder_build/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0072/pairs/response_builder_build/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2022-0091:allow_directory",
+   "source": "RX",
+   "entity": "RUSTSEC-2022-0091",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0091/pairs/allow_directory/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0091/pairs/allow_directory/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2022-0091:allow_file",
+   "source": "RX",
+   "entity": "RUSTSEC-2022-0091",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0091/pairs/allow_file/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0091/pairs/allow_file/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2022-0093:expanded_secret_key_sign",
+   "source": "RX",
+   "entity": "RUSTSEC-2022-0093",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0093/pairs/expanded_secret_key_sign/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0093/pairs/expanded_secret_key_sign/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2022-0093:expanded_secret_key_sign_prehashed",
+   "source": "RX",
+   "entity": "RUSTSEC-2022-0093",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0093/pairs/expanded_secret_key_sign_prehashed/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0093/pairs/expanded_secret_key_sign_prehashed/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2022-0093:keypair",
+   "source": "RX",
+   "entity": "RUSTSEC-2022-0093",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0093/pairs/keypair/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0093/pairs/keypair/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2022-0093:keypair_from_bytes",
+   "source": "RX",
+   "entity": "RUSTSEC-2022-0093",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0093/pairs/keypair_from_bytes/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0093/pairs/keypair_from_bytes/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2022-0098:allocate_memories",
+   "source": "RX",
+   "entity": "RUSTSEC-2022-0075",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0098/pairs/allocate_memories/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0098/pairs/allocate_memories/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2022-0101:load_constant64_full",
+   "source": "RX",
+   "entity": "RUSTSEC-2022-0101",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0101/pairs/load_constant64_full/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0101/pairs/load_constant64_full/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2022-0102:memory_pool_new",
+   "source": "RX",
+   "entity": "RUSTSEC-2022-0102",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0102/pairs/memory_pool_new/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0102/pairs/memory_pool_new/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2023-0024:new",
+   "source": "RX",
+   "entity": "RUSTSEC-2023-0024",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0024/pairs/new/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0024/pairs/new/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2023-0024:new_nid",
+   "source": "RX",
+   "entity": "RUSTSEC-2023-0024",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0024/pairs/new_nid/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0024/pairs/new_nid/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2023-0030:fam_struct_wrapper_deserialize",
+   "source": "RX",
+   "entity": "RUSTSEC-2023-0030",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0030/pairs/fam_struct_wrapper_deserialize/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0030/pairs/fam_struct_wrapper_deserialize/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2023-0039:data_helper",
+   "source": "RX",
+   "entity": "RUSTSEC-2023-0039",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0039/pairs/data_helper/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0039/pairs/data_helper/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2023-0044:set_host",
+   "source": "RX",
+   "entity": "RUSTSEC-2023-0044",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0044/pairs/set_host/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0044/pairs/set_host/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2023-0062:bit_string_from_content",
+   "source": "RX",
+   "entity": "RUSTSEC-2023-0062",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0062/pairs/bit_string_from_content/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0062/pairs/bit_string_from_content/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2023-0062:oid_skip_if",
+   "source": "RX",
+   "entity": "RUSTSEC-2023-0062",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0062/pairs/oid_skip_if/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0062/pairs/oid_skip_if/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2023-0062:oid_take_from",
+   "source": "RX",
+   "entity": "RUSTSEC-2023-0062",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0062/pairs/oid_take_from/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0062/pairs/oid_take_from/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2023-0062:oid_take_opt_from",
+   "source": "RX",
+   "entity": "RUSTSEC-2023-0062",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0062/pairs/oid_take_opt_from/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0062/pairs/oid_take_opt_from/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2023-0062:process_next_value",
+   "source": "RX",
+   "entity": "RUSTSEC-2023-0062",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0062/pairs/process_next_value/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0062/pairs/process_next_value/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2023-0062:skip_opt",
+   "source": "RX",
+   "entity": "RUSTSEC-2023-0062",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0062/pairs/skip_opt/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0062/pairs/skip_opt/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2023-0062:tag_take_from_if",
+   "source": "RX",
+   "entity": "RUSTSEC-2023-0062",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0062/pairs/tag_take_from_if/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0062/pairs/tag_take_from_if/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2023-0068:cocoon_encrypt",
+   "source": "RX",
+   "entity": "RUSTSEC-2023-0068",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0068/pairs/cocoon_encrypt/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0068/pairs/cocoon_encrypt/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2023-0068:mini_cocoon_encrypt",
+   "source": "RX",
+   "entity": "RUSTSEC-2023-0068",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0068/pairs/mini_cocoon_encrypt/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0068/pairs/mini_cocoon_encrypt/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2023-0070:covariant_access",
+   "source": "RX",
+   "entity": "RUSTSEC-2023-0070",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0070/pairs/covariant_access/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0070/pairs/covariant_access/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2023-0074:into_mut",
+   "source": "RX",
+   "entity": "RUSTSEC-2023-0074",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0074/pairs/into_mut/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0074/pairs/into_mut/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2023-0074:into_mut_slice",
+   "source": "RX",
+   "entity": "RUSTSEC-2023-0074",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0074/pairs/into_mut_slice/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0074/pairs/into_mut_slice/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2023-0074:into_ref",
+   "source": "RX",
+   "entity": "RUSTSEC-2023-0074",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0074/pairs/into_ref/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0074/pairs/into_ref/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2023-0074:into_slice",
+   "source": "RX",
+   "entity": "RUSTSEC-2023-0074",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0074/pairs/into_slice/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0074/pairs/into_slice/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2023-0077:data_lense_macro",
+   "source": "RX",
+   "entity": "RUSTSEC-2023-0077",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0077/pairs/data_lense_macro/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0077/pairs/data_lense_macro/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2023-0080:transpose",
+   "source": "RX",
+   "entity": "RUSTSEC-2023-0080",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0080/pairs/transpose/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0080/pairs/transpose/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2023-0082:rfc3966_phone_number",
+   "source": "RX",
+   "entity": "RUSTSEC-2023-0082",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0082/pairs/rfc3966_phone_number/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0082/pairs/rfc3966_phone_number/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2023-0085:update_max_dynamic_size",
+   "source": "RX",
+   "entity": "RUSTSEC-2023-0085",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0085/pairs/update_max_dynamic_size/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0085/pairs/update_max_dynamic_size/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2024-0009:write_headers",
+   "source": "RX",
+   "entity": "RUSTSEC-2024-0008",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0009/pairs/write_headers/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0009/pairs/write_headers/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2024-0010:verify",
+   "source": "RX",
+   "entity": "RUSTSEC-2024-0010",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0010/pairs/verify/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0010/pairs/verify/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2024-0011:decrypt_ad",
+   "source": "RX",
+   "entity": "RUSTSEC-2024-0011",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0011/pairs/decrypt_ad/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0011/pairs/decrypt_ad/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2024-0012:deserialize_any",
+   "source": "RX",
+   "entity": "RUSTSEC-2024-0012",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0012/pairs/deserialize_any/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0012/pairs/deserialize_any/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2024-0012:deserialize_enum",
+   "source": "RX",
+   "entity": "RUSTSEC-2024-0012",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0012/pairs/deserialize_enum/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0012/pairs/deserialize_enum/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2024-0012:deserialize_map",
+   "source": "RX",
+   "entity": "RUSTSEC-2024-0012",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0012/pairs/deserialize_map/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0012/pairs/deserialize_map/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2024-0012:deserialize_seq",
+   "source": "RX",
+   "entity": "RUSTSEC-2024-0012",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0012/pairs/deserialize_seq/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0012/pairs/deserialize_seq/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2024-0021:context_drop_rest",
+   "source": "RX",
+   "entity": "RUSTSEC-2024-0021",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0021/pairs/context_drop_rest/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0021/pairs/context_drop_rest/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2024-0335:prepare_invocation",
+   "source": "RX",
+   "entity": "RUSTSEC-2024-0335",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0335/pairs/prepare_invocation/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0335/pairs/prepare_invocation/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2024-0336:complete_io",
+   "source": "RX",
+   "entity": "RUSTSEC-2024-0336",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0336/pairs/complete_io/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0336/pairs/complete_io/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2024-0336:process_alert",
+   "source": "RX",
+   "entity": "RUSTSEC-2024-0336",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0336/pairs/process_alert/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0336/pairs/process_alert/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2024-0341:poll_accept",
+   "source": "RX",
+   "entity": "RUSTSEC-2024-0341",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0341/pairs/poll_accept/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0341/pairs/poll_accept/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2024-0343:gen_macro",
+   "source": "RX",
+   "entity": "RUSTSEC-2024-0343",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0343/pairs/gen_macro/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0343/pairs/gen_macro/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2024-0345:raw_cert_parser_next",
+   "source": "RX",
+   "entity": "RUSTSEC-2024-0345",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0345/pairs/raw_cert_parser_next/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0345/pairs/raw_cert_parser_next/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2024-0350:make_relative_path_current",
+   "source": "RX",
+   "entity": "RUSTSEC-2024-0349",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0350/pairs/make_relative_path_current/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0350/pairs/make_relative_path_current/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2024-0356:user_identity_is_verified",
+   "source": "RX",
+   "entity": "RUSTSEC-2024-0356",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0356/pairs/user_identity_is_verified/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0356/pairs/user_identity_is_verified/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2024-0357:mem_bio_get_buf",
+   "source": "RX",
+   "entity": "RUSTSEC-2024-0357",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0357/pairs/mem_bio_get_buf/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0357/pairs/mem_bio_get_buf/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2024-0362:list_parser",
+   "source": "RX",
+   "entity": "RUSTSEC-2024-0362",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0362/pairs/list_parser/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0362/pairs/list_parser/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2024-0363:pg_hstore_encode_by_ref",
+   "source": "RX",
+   "entity": "RUSTSEC-2024-0363",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0363/pairs/pg_hstore_encode_by_ref/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0363/pairs/pg_hstore_encode_by_ref/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2024-0369:national_number_new",
+   "source": "RX",
+   "entity": "RUSTSEC-2024-0369",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0369/pairs/national_number_new/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0369/pairs/national_number_new/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2024-0373:clean_up_incoming",
+   "source": "RX",
+   "entity": "RUSTSEC-2024-0373",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0373/pairs/clean_up_incoming/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0373/pairs/clean_up_incoming/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2024-0373:endpoint_accept",
+   "source": "RX",
+   "entity": "RUSTSEC-2024-0373",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0373/pairs/endpoint_accept/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0373/pairs/endpoint_accept/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2024-0376:handle_accept_error",
+   "source": "RX",
+   "entity": "RUSTSEC-2024-0376",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0376/pairs/handle_accept_error/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0376/pairs/handle_accept_error/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2024-0377:c_chars_to_str",
+   "source": "RX",
+   "entity": "RUSTSEC-2024-0377",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0377/pairs/c_chars_to_str/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0377/pairs/c_chars_to_str/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2024-0399:first_handshake_message",
+   "source": "RX",
+   "entity": "RUSTSEC-2024-0399",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0399/pairs/first_handshake_message/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0399/pairs/first_handshake_message/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2024-0401:dispatch",
+   "source": "RX",
+   "entity": "RUSTSEC-2024-0401",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0401/pairs/dispatch/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0401/pairs/dispatch/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2024-0402:borsh_serialize",
+   "source": "RX",
+   "entity": "RUSTSEC-2024-0402",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0402/pairs/borsh_serialize/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0402/pairs/borsh_serialize/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2024-0406:merge",
+   "source": "RX",
+   "entity": "RUSTSEC-2024-0406",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0406/pairs/merge/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0406/pairs/merge/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2024-0406:remove_helper",
+   "source": "RX",
+   "entity": "RUSTSEC-2024-0406",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0406/pairs/remove_helper/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0406/pairs/remove_helper/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2024-0437:skip_group",
+   "source": "RX",
+   "entity": "RUSTSEC-2024-0437",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0437/pairs/skip_group/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0437/pairs/skip_group/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2024-0441:table_init",
+   "source": "RX",
+   "entity": "RUSTSEC-2024-0441",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0441/pairs/table_init/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0441/pairs/table_init/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2025-0005:get_coverage",
+   "source": "RX",
+   "entity": "RUSTSEC-2025-0005",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2025-0005/pairs/get_coverage/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2025-0005/pairs/get_coverage/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2025-0015:hyper_send",
+   "source": "RX",
+   "entity": "RUSTSEC-2025-0015",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2025-0015/pairs/hyper_send/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2025-0015/pairs/hyper_send/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2025-0015:isahc_send",
+   "source": "RX",
+   "entity": "RUSTSEC-2025-0015",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2025-0015/pairs/isahc_send/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2025-0015/pairs/isahc_send/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2025-0016:parc_from_arc",
+   "source": "RX",
+   "entity": "RUSTSEC-2025-0016",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2025-0016/pairs/parc_from_arc/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2025-0016/pairs/parc_from_arc/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2025-0016:parc_project",
+   "source": "RX",
+   "entity": "RUSTSEC-2025-0016",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2025-0016/pairs/parc_project/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2025-0016/pairs/parc_project/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2025-0016:parc_try_from_arc",
+   "source": "RX",
+   "entity": "RUSTSEC-2025-0016",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2025-0016/pairs/parc_try_from_arc/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2025-0016/pairs/parc_try_from_arc/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2025-0016:prc_from_rc",
+   "source": "RX",
+   "entity": "RUSTSEC-2025-0016",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2025-0016/pairs/prc_from_rc/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2025-0016/pairs/prc_from_rc/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2025-0016:prc_project",
+   "source": "RX",
+   "entity": "RUSTSEC-2025-0016",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2025-0016/pairs/prc_project/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2025-0016/pairs/prc_project/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2025-0016:prc_try_from_rc",
+   "source": "RX",
+   "entity": "RUSTSEC-2025-0016",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2025-0016/pairs/prc_try_from_rc/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2025-0016/pairs/prc_try_from_rc/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2025-0018:get_bucket",
+   "source": "RX",
+   "entity": "RUSTSEC-2025-0018",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2025-0018/pairs/get_bucket/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2025-0018/pairs/get_bucket/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2025-0018:get_chain",
+   "source": "RX",
+   "entity": "RUSTSEC-2025-0018",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2025-0018/pairs/get_chain/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2025-0018/pairs/get_chain/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2025-0020:from_object",
+   "source": "RX",
+   "entity": "RUSTSEC-2025-0020",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2025-0020/pairs/from_object/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2025-0020/pairs/from_object/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2025-0021:bytes",
+   "source": "RX",
+   "entity": "RUSTSEC-2025-0021",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2025-0021/pairs/bytes/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2025-0021/pairs/bytes/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2025-0021:bytes_of_file",
+   "source": "RX",
+   "entity": "RUSTSEC-2025-0021",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2025-0021/pairs/bytes_of_file/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2025-0021/pairs/bytes_of_file/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2025-0021:bytes_with_hasher",
+   "source": "RX",
+   "entity": "RUSTSEC-2025-0021",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2025-0021/pairs/bytes_with_hasher/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2025-0021/pairs/bytes_with_hasher/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2025-0021:hasher",
+   "source": "RX",
+   "entity": "RUSTSEC-2025-0021",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2025-0021/pairs/hasher/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2025-0021/pairs/hasher/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2025-0021:hasher_digest",
+   "source": "RX",
+   "entity": "RUSTSEC-2025-0021",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2025-0021/pairs/hasher_digest/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2025-0021/pairs/hasher_digest/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2025-0021:write_new",
+   "source": "RX",
+   "entity": "RUSTSEC-2025-0021",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2025-0021/pairs/write_new/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2025-0021/pairs/write_new/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2025-0022:cipher_fetch",
+   "source": "RX",
+   "entity": "RUSTSEC-2025-0022",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2025-0022/pairs/cipher_fetch/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2025-0022/pairs/cipher_fetch/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "RX:RUSTSEC-2025-0022:md_fetch",
+   "source": "RX",
+   "entity": "RUSTSEC-2025-0022",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2025-0022/pairs/md_fetch/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2025-0022/pairs/md_fetch/fixed.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2015-20001_CWE-119",
+   "source": "HR",
+   "entity": "CVE-2015-20001",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2015-20001_CWE-119.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2015-20001_CWE-119.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2017-18016_CWE-346",
+   "source": "HR",
+   "entity": "CVE-2017-18016",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2017-18016_CWE-346.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2017-18016_CWE-346.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2018-1000657_CWE-119",
+   "source": "HR",
+   "entity": "CVE-2018-1000657",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2018-1000657_CWE-119.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2018-1000657_CWE-119.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2018-1000810_CWE-190",
+   "source": "HR",
+   "entity": "CVE-2018-1000810",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2018-1000810_CWE-190.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2018-1000810_CWE-190.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2018-21000_CWE-119",
+   "source": "HR",
+   "entity": "RUSTSEC-2018-0013",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2018-21000_CWE-119.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2018-21000_CWE-119.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2018-25008_CWE-662",
+   "source": "HR",
+   "entity": "CVE-2018-25008",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2018-25008_CWE-662.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2018-25008_CWE-662.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2019-1010299_CWE-200",
+   "source": "HR",
+   "entity": "CVE-2019-1010299",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2019-1010299_CWE-200.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2019-1010299_CWE-200.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2019-15541_CWE-88",
+   "source": "HR",
+   "entity": "CVE-2019-15541",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2019-15541_CWE-88.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2019-15541_CWE-88.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2019-15550_CWE-125",
+   "source": "HR",
+   "entity": "RUSTSEC-2019-0008",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2019-15550_CWE-125.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2019-15550_CWE-125.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2019-16214_CWE-701",
+   "source": "HR",
+   "entity": "CVE-2019-16214",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2019-16214_CWE-701.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2019-16214_CWE-701.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2019-16880_CWE-415",
+   "source": "HR",
+   "entity": "RUSTSEC-2019-0021",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2019-16880_CWE-415.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2019-16880_CWE-415.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2019-16882_CWE-416",
+   "source": "HR",
+   "entity": "RUSTSEC-2019-0023",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2019-16882_CWE-416.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2019-16882_CWE-416.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2019-20399_CWE-203",
+   "source": "HR",
+   "entity": "RUSTSEC-2020-0156",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2019-20399_CWE-203.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2019-20399_CWE-203.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2020-25573_CWE-824",
+   "source": "HR",
+   "entity": "RUSTSEC-2020-0026",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2020-25573_CWE-824.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2020-25573_CWE-824.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2020-26297_CWE-79",
+   "source": "HR",
+   "entity": "RUSTSEC-2021-0001",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2020-26297_CWE-79.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2020-26297_CWE-79.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2020-35861_CWE-125",
+   "source": "HR",
+   "entity": "RUSTSEC-2020-0006",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2020-35861_CWE-125.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2020-35861_CWE-125.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2020-35869_CWE-134",
+   "source": "HR",
+   "entity": "RUSTSEC-2020-0014",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2020-35869_CWE-134.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2020-35869_CWE-134.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2020-35870_CWE-416",
+   "source": "HR",
+   "entity": "RUSTSEC-2020-0014",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2020-35870_CWE-416.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2020-35870_CWE-416.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2020-35904_CWE-131",
+   "source": "HR",
+   "entity": "RUSTSEC-2020-0052",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2020-35904_CWE-131.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2020-35904_CWE-131.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2020-35906_CWE-416",
+   "source": "HR",
+   "entity": "RUSTSEC-2020-0060",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2020-35906_CWE-416.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2020-35906_CWE-416.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2020-35917_CWE-416",
+   "source": "HR",
+   "entity": "RUSTSEC-2020-0074",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2020-35917_CWE-416.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2020-35917_CWE-416.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2020-35923_CWE-416",
+   "source": "HR",
+   "entity": "RUSTSEC-2020-0082",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2020-35923_CWE-416.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2020-35923_CWE-416.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2020-36210_CWE-908",
+   "source": "HR",
+   "entity": "RUSTSEC-2020-0103",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2020-36210_CWE-908.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2020-36210_CWE-908.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2020-36317_CWE-787",
+   "source": "HR",
+   "entity": "CVE-2020-36317",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2020-36317_CWE-787.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2020-36317_CWE-787.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2020-36318_CWE-416",
+   "source": "HR",
+   "entity": "CVE-2020-36318",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2020-36318_CWE-416.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2020-36318_CWE-416.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2021-21235_CWE-400",
+   "source": "HR",
+   "entity": "RUSTSEC-2021-0143",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-21235_CWE-400.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-21235_CWE-400.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2021-21299_CWE-444",
+   "source": "HR",
+   "entity": "RUSTSEC-2021-0020",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-21299_CWE-444.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-21299_CWE-444.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2021-24117_CWE-203",
+   "source": "HR",
+   "entity": "CVE-2021-24117",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-24117_CWE-203.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-24117_CWE-203.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2021-25900_CWE-787",
+   "source": "HR",
+   "entity": "RUSTSEC-2021-0003",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-25900_CWE-787.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-25900_CWE-787.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2021-25902_CWE-416",
+   "source": "HR",
+   "entity": "RUSTSEC-2021-0005",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-25902_CWE-416.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-25902_CWE-416.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2021-28875_CWE-252",
+   "source": "HR",
+   "entity": "CVE-2021-28875",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-28875_CWE-252.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-28875_CWE-252.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2021-28876_CWE-755",
+   "source": "HR",
+   "entity": "CVE-2021-28876",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-28876_CWE-755.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-28876_CWE-755.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2021-28877_CWE-119",
+   "source": "HR",
+   "entity": "CVE-2021-28877",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-28877_CWE-119.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-28877_CWE-119.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2021-28878_CWE-119",
+   "source": "HR",
+   "entity": "CVE-2021-28878",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-28878_CWE-119.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-28878_CWE-119.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2021-28879_CWE-190",
+   "source": "HR",
+   "entity": "CVE-2021-28879",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-28879_CWE-190.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-28879_CWE-190.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2021-29511_CWE-770",
+   "source": "HR",
+   "entity": "CVE-2021-29511",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-29511_CWE-770.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-29511_CWE-770.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2021-29922_CWE-20",
+   "source": "HR",
+   "entity": "CVE-2021-29922",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-29922_CWE-20.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-29922_CWE-20.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2021-31162_CWE-415",
+   "source": "HR",
+   "entity": "CVE-2021-31162",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-31162_CWE-415.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-31162_CWE-415.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2021-32715_CWE-444",
+   "source": "HR",
+   "entity": "RUSTSEC-2021-0078",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-32715_CWE-444.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-32715_CWE-444.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2021-32814_CWE-22",
+   "source": "HR",
+   "entity": "CVE-2021-32814",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-32814_CWE-22.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-32814_CWE-22.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2021-36376_CWE-427",
+   "source": "HR",
+   "entity": "RUSTSEC-2021-0105",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-36376_CWE-427.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-36376_CWE-427.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2021-36753_CWE-427",
+   "source": "HR",
+   "entity": "RUSTSEC-2021-0106",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-36753_CWE-427.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-36753_CWE-427.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2021-37625_CWE-252",
+   "source": "HR",
+   "entity": "CVE-2021-37625",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-37625_CWE-252.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-37625_CWE-252.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2021-3917_CWE-276",
+   "source": "HR",
+   "entity": "CVE-2021-3917",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-3917_CWE-276.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-3917_CWE-276.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2021-39193_CWE-20",
+   "source": "HR",
+   "entity": "CVE-2021-39193",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-39193_CWE-20.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-39193_CWE-20.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2021-41138_CWE-20",
+   "source": "HR",
+   "entity": "CVE-2021-41138",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-41138_CWE-20.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-41138_CWE-20.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2021-41153_CWE-670",
+   "source": "HR",
+   "entity": "CVE-2021-41153",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-41153_CWE-670.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-41153_CWE-670.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2021-43790_CWE-416",
+   "source": "HR",
+   "entity": "RUSTSEC-2021-0155",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-43790_CWE-416.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-43790_CWE-416.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2021-44421_CWE-203",
+   "source": "HR",
+   "entity": "CVE-2021-44421",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-44421_CWE-203.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-44421_CWE-203.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2022-21685_CWE-191",
+   "source": "HR",
+   "entity": "CVE-2022-21685",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2022-21685_CWE-191.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2022-21685_CWE-191.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2022-23066_CWE-682",
+   "source": "HR",
+   "entity": "CVE-2022-23066",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2022-23066_CWE-682.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2022-23066_CWE-682.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2022-23573_CWE-908",
+   "source": "HR",
+   "entity": "CVE-2022-23573",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2022-23573_CWE-908.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2022-23573_CWE-908.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2022-23639_CWE-362",
+   "source": "HR",
+   "entity": "RUSTSEC-2022-0041",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2022-23639_CWE-362.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2022-23639_CWE-362.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2022-24713_CWE-400",
+   "source": "HR",
+   "entity": "RUSTSEC-2022-0013",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2022-24713_CWE-400.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2022-24713_CWE-400.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2022-24791_CWE-416",
+   "source": "HR",
+   "entity": "RUSTSEC-2022-0099",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2022-24791_CWE-416.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2022-24791_CWE-416.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2022-27815_CWE-59",
+   "source": "HR",
+   "entity": "CVE-2022-27815",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2022-27815_CWE-59.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2022-27815_CWE-59.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2022-27816_CWE-59",
+   "source": "HR",
+   "entity": "CVE-2022-27816",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2022-27816_CWE-59.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2022-27816_CWE-59.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2022-27818_CWE-668",
+   "source": "HR",
+   "entity": "CVE-2022-27818",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2022-27818_CWE-668.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2022-27818_CWE-668.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2022-27819_CWE-400",
+   "source": "HR",
+   "entity": "CVE-2022-27819",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2022-27819_CWE-400.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2022-27819_CWE-400.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2022-31099_CWE-674",
+   "source": "HR",
+   "entity": "RUSTSEC-2022-0030",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2022-31099_CWE-674.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2022-31099_CWE-674.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2022-31100_CWE-617",
+   "source": "HR",
+   "entity": "RUSTSEC-2022-0031",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2022-31100_CWE-617.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2022-31100_CWE-617.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2022-31111_CWE-670",
+   "source": "HR",
+   "entity": "CVE-2022-31111",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2022-31111_CWE-670.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2022-31111_CWE-670.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2022-31169_CWE-682",
+   "source": "HR",
+   "entity": "RUSTSEC-2022-0101",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2022-31169_CWE-682.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2022-31169_CWE-682.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2022-31173_CWE-400",
+   "source": "HR",
+   "entity": "RUSTSEC-2022-0038",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2022-31173_CWE-400.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2022-31173_CWE-400.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2022-35922_CWE-400",
+   "source": "HR",
+   "entity": "RUSTSEC-2022-0035",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2022-35922_CWE-400.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2022-35922_CWE-400.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2022-36008_CWE-190",
+   "source": "HR",
+   "entity": "CVE-2022-36008",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2022-36008_CWE-190.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2022-36008_CWE-190.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2022-36113_CWE-22",
+   "source": "HR",
+   "entity": "CVE-2022-36113",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2022-36113_CWE-22.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2022-36113_CWE-22.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2022-39252_CWE-287",
+   "source": "HR",
+   "entity": "RUSTSEC-2022-0085",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2022-39252_CWE-287.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2022-39252_CWE-287.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2023-22466_CWE-665",
+   "source": "HR",
+   "entity": "RUSTSEC-2023-0001",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2023-22466_CWE-665.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2023-22466_CWE-665.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2023-28113_CWE-347",
+   "source": "HR",
+   "entity": "CVE-2023-28113",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2023-28113_CWE-347.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2023-28113_CWE-347.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2023-30624_CWE-758",
+   "source": "HR",
+   "entity": "RUSTSEC-2023-0092",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2023-30624_CWE-758.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2023-30624_CWE-758.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2023-41051_CWE-125",
+   "source": "HR",
+   "entity": "RUSTSEC-2023-0056",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2023-41051_CWE-125.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2023-41051_CWE-125.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2023-41317_CWE-755",
+   "source": "HR",
+   "entity": "CVE-2023-41317",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2023-41317_CWE-755.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2023-41317_CWE-755.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2023-45812_CWE-754",
+   "source": "HR",
+   "entity": "CVE-2023-45812",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2023-45812_CWE-754.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2023-45812_CWE-754.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2023-46135_CWE-248",
+   "source": "HR",
+   "entity": "CVE-2023-46135",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2023-46135_CWE-248.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2023-46135_CWE-248.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2023-50711_CWE-787",
+   "source": "HR",
+   "entity": "RUSTSEC-2024-0002",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2023-50711_CWE-787.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2023-50711_CWE-787.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2023-6245_CWE-20",
+   "source": "HR",
+   "entity": "RUSTSEC-2023-0073",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2023-6245_CWE-20.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2023-6245_CWE-20.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2024-20380_CWE-475",
+   "source": "HR",
+   "entity": "CVE-2024-20380",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2024-20380_CWE-475.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2024-20380_CWE-475.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2024-21491_CWE-288",
+   "source": "HR",
+   "entity": "RUSTSEC-2024-0010",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2024-21491_CWE-288.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2024-21491_CWE-288.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2024-21629_CWE-703",
+   "source": "HR",
+   "entity": "CVE-2024-21629",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2024-21629_CWE-703.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2024-21629_CWE-703.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2024-23644_CWE-113",
+   "source": "HR",
+   "entity": "RUSTSEC-2024-0008",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2024-23644_CWE-113.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2024-23644_CWE-113.rs"
+   ]
+  },
+  {
+   "unit_id": "HR:CVE-2024-28854_CWE-400",
+   "source": "HR",
+   "entity": "RUSTSEC-2024-0341",
+   "vulnerable_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2024-28854_CWE-400.rs"
+   ],
+   "fixed_files": [
+    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2024-28854_CWE-400.rs"
+   ]
+  }
+ ],
+ "fix_by_deletion_units": [
+  "RX:RUSTSEC-2021-0007:copy_from_raw_parts",
+  "RX:RUSTSEC-2021-0114:deref",
+  "RX:RUSTSEC-2021-0114:deref_mut",
+  "RX:RUSTSEC-2021-0122:vector_safe_slice",
+  "RX:RUSTSEC-2024-0402:borsh_serialize"
+ ],
+ "conditions": {
+  "RX": {
+   "units": [
+    "RX:RUSTSEC-2021-0003:insert_many",
+    "RX:RUSTSEC-2021-0007:copy_from_raw_parts",
+    "RX:RUSTSEC-2021-0010:mutate",
+    "RX:RUSTSEC-2021-0010:mutate2",
+    "RX:RUSTSEC-2021-0018:insert_slice_clone",
+    "RX:RUSTSEC-2021-0020:server_parse",
+    "RX:RUSTSEC-2021-0022:sub_self_call",
+    "RX:RUSTSEC-2021-0027:block_load",
+    "RX:RUSTSEC-2021-0028:insert_row",
+    "RX:RUSTSEC-2021-0030:array_move_elements",
+    "RX:RUSTSEC-2021-0030:boxed_slice_move_elements",
+    "RX:RUSTSEC-2021-0031:arena_split_at",
+    "RX:RUSTSEC-2021-0032:read_bytes_default_le",
+    "RX:RUSTSEC-2021-0033:push_cloned",
+    "RX:RUSTSEC-2021-0036:intern_sync",
+    "RX:RUSTSEC-2021-0038:pixmap_new",
+    "RX:RUSTSEC-2021-0038:set_icon",
+    "RX:RUSTSEC-2021-0038:set_label_type",
+    "RX:RUSTSEC-2021-0048:stackvec_extend",
+    "RX:RUSTSEC-2021-0050:swap_index",
+    "RX:RUSTSEC-2021-0063:html_formatter_escape_href",
+    "RX:RUSTSEC-2021-0069:client_codec_encode",
+    "RX:RUSTSEC-2021-0072:join_handle_abort",
+    "RX:RUSTSEC-2021-0073:timestamp_normalize",
+    "RX:RUSTSEC-2021-0073:timestamp_system_time",
+    "RX:RUSTSEC-2021-0074:clean_dom",
+    "RX:RUSTSEC-2021-0075:field_var_mul_by_inverse",
+    "RX:RUSTSEC-2021-0079:chunked_read_size",
+    "RX:RUSTSEC-2021-0080:entry_fields_unpack_in",
+    "RX:RUSTSEC-2021-0081:chunked_read_extension",
+    "RX:RUSTSEC-2021-0081:chunked_read_size",
+    "RX:RUSTSEC-2021-0081:message_type_set_headers",
+    "RX:RUSTSEC-2021-0100:load_data_avx2",
+    "RX:RUSTSEC-2021-0110:host_func_register_trampoline",
+    "RX:RUSTSEC-2021-0110:insert_vmexternref",
+    "RX:RUSTSEC-2021-0110:registered_module_lookup_stack_map",
+    "RX:RUSTSEC-2021-0113:block_send",
+    "RX:RUSTSEC-2021-0113:block_sync",
+    "RX:RUSTSEC-2021-0114:deref",
+    "RX:RUSTSEC-2021-0114:deref_mut",
+    "RX:RUSTSEC-2021-0115:zeroize_attrs_parse",
+    "RX:RUSTSEC-2021-0118:array_data_try_new",
+    "RX:RUSTSEC-2021-0122:emplace_scalar_array",
+    "RX:RUSTSEC-2021-0122:follow_cast_ref",
+    "RX:RUSTSEC-2021-0122:follow_trait",
+    "RX:RUSTSEC-2021-0122:push_trait",
+    "RX:RUSTSEC-2021-0122:vector_safe_slice",
+    "RX:RUSTSEC-2021-0124:set_complete",
+    "RX:RUSTSEC-2021-0125:from_der_",
+    "RX:RUSTSEC-2021-0128:commit_hook",
+    "RX:RUSTSEC-2021-0128:create_aggregate_function",
+    "RX:RUSTSEC-2021-0128:create_collation",
+    "RX:RUSTSEC-2021-0128:create_scalar_function",
+    "RX:RUSTSEC-2021-0128:create_window_function",
+    "RX:RUSTSEC-2021-0128:rollback_hook",
+    "RX:RUSTSEC-2021-0128:update_hook",
+    "RX:RUSTSEC-2021-0130:iter",
+    "RX:RUSTSEC-2021-0130:iter_mut",
+    "RX:RUSTSEC-2021-0143:discard_exact",
+    "RX:RUSTSEC-2022-0002:mapref_multiple_ref_multi_key",
+    "RX:RUSTSEC-2022-0002:mapref_multiple_ref_multi_pair",
+    "RX:RUSTSEC-2022-0002:mapref_multiple_ref_multi_value",
+    "RX:RUSTSEC-2022-0002:mapref_multiple_ref_mut_multi_key",
+    "RX:RUSTSEC-2022-0002:mapref_multiple_ref_mut_multi_pair",
+    "RX:RUSTSEC-2022-0002:mapref_multiple_ref_mut_multi_pair_mut",
+    "RX:RUSTSEC-2022-0002:mapref_one_ref_key",
+    "RX:RUSTSEC-2022-0002:mapref_one_ref_mut_key",
+    "RX:RUSTSEC-2022-0002:mapref_one_ref_mut_pair",
+    "RX:RUSTSEC-2022-0002:mapref_one_ref_mut_pair_mut",
+    "RX:RUSTSEC-2022-0002:mapref_one_ref_pair",
+    "RX:RUSTSEC-2022-0002:mapref_one_ref_value",
+    "RX:RUSTSEC-2022-0002:setref_multiple_ref_multi_key",
+    "RX:RUSTSEC-2022-0002:setref_one_ref_key",
+    "RX:RUSTSEC-2022-0003:clean_text",
+    "RX:RUSTSEC-2022-0012:arrow_array",
+    "RX:RUSTSEC-2022-0012:arrow_array_stream",
+    "RX:RUSTSEC-2022-0012:arrow_schema",
+    "RX:RUSTSEC-2022-0013:compiler_c",
+    "RX:RUSTSEC-2022-0013:compiler_c_concat",
+    "RX:RUSTSEC-2022-0028:js_array_buffer_external",
+    "RX:RUSTSEC-2022-0028:js_buffer_external",
+    "RX:RUSTSEC-2022-0038:collect_conflicts_between_fields_and_fragment",
+    "RX:RUSTSEC-2022-0038:collect_incorrect_usages",
+    "RX:RUSTSEC-2022-0038:detect_from",
+    "RX:RUSTSEC-2022-0038:find_reachable_fragments",
+    "RX:RUSTSEC-2022-0038:find_undef_vars",
+    "RX:RUSTSEC-2022-0038:find_used_vars",
+    "RX:RUSTSEC-2022-0063:heap_extend",
+    "RX:RUSTSEC-2022-0063:heap_new",
+    "RX:RUSTSEC-2022-0063:hole_new",
+    "RX:RUSTSEC-2022-0066:blocking_handler",
+    "RX:RUSTSEC-2022-0068:read_list_pointer",
+    "RX:RUSTSEC-2022-0072:response_builder_build",
+    "RX:RUSTSEC-2022-0091:allow_directory",
+    "RX:RUSTSEC-2022-0091:allow_file",
+    "RX:RUSTSEC-2022-0093:expanded_secret_key_sign",
+    "RX:RUSTSEC-2022-0093:expanded_secret_key_sign_prehashed",
+    "RX:RUSTSEC-2022-0093:keypair",
+    "RX:RUSTSEC-2022-0093:keypair_from_bytes",
+    "RX:RUSTSEC-2022-0098:allocate_memories",
+    "RX:RUSTSEC-2022-0101:load_constant64_full",
+    "RX:RUSTSEC-2022-0102:memory_pool_new",
+    "RX:RUSTSEC-2023-0024:new",
+    "RX:RUSTSEC-2023-0024:new_nid",
+    "RX:RUSTSEC-2023-0030:fam_struct_wrapper_deserialize",
+    "RX:RUSTSEC-2023-0039:data_helper",
+    "RX:RUSTSEC-2023-0044:set_host",
+    "RX:RUSTSEC-2023-0062:bit_string_from_content",
+    "RX:RUSTSEC-2023-0062:oid_skip_if",
+    "RX:RUSTSEC-2023-0062:oid_take_from",
+    "RX:RUSTSEC-2023-0062:oid_take_opt_from",
+    "RX:RUSTSEC-2023-0062:process_next_value",
+    "RX:RUSTSEC-2023-0062:skip_opt",
+    "RX:RUSTSEC-2023-0062:tag_take_from_if",
+    "RX:RUSTSEC-2023-0068:cocoon_encrypt",
+    "RX:RUSTSEC-2023-0068:mini_cocoon_encrypt",
+    "RX:RUSTSEC-2023-0070:covariant_access",
+    "RX:RUSTSEC-2023-0074:into_mut",
+    "RX:RUSTSEC-2023-0074:into_mut_slice",
+    "RX:RUSTSEC-2023-0074:into_ref",
+    "RX:RUSTSEC-2023-0074:into_slice",
+    "RX:RUSTSEC-2023-0077:data_lense_macro",
+    "RX:RUSTSEC-2023-0080:transpose",
+    "RX:RUSTSEC-2023-0082:rfc3966_phone_number",
+    "RX:RUSTSEC-2023-0085:update_max_dynamic_size",
+    "RX:RUSTSEC-2024-0009:write_headers",
+    "RX:RUSTSEC-2024-0010:verify",
+    "RX:RUSTSEC-2024-0011:decrypt_ad",
+    "RX:RUSTSEC-2024-0012:deserialize_any",
+    "RX:RUSTSEC-2024-0012:deserialize_enum",
+    "RX:RUSTSEC-2024-0012:deserialize_map",
+    "RX:RUSTSEC-2024-0012:deserialize_seq",
+    "RX:RUSTSEC-2024-0021:context_drop_rest",
+    "RX:RUSTSEC-2024-0335:prepare_invocation",
+    "RX:RUSTSEC-2024-0336:complete_io",
+    "RX:RUSTSEC-2024-0336:process_alert",
+    "RX:RUSTSEC-2024-0341:poll_accept",
+    "RX:RUSTSEC-2024-0343:gen_macro",
+    "RX:RUSTSEC-2024-0345:raw_cert_parser_next",
+    "RX:RUSTSEC-2024-0350:make_relative_path_current",
+    "RX:RUSTSEC-2024-0356:user_identity_is_verified",
+    "RX:RUSTSEC-2024-0357:mem_bio_get_buf",
+    "RX:RUSTSEC-2024-0362:list_parser",
+    "RX:RUSTSEC-2024-0363:pg_hstore_encode_by_ref",
+    "RX:RUSTSEC-2024-0369:national_number_new",
+    "RX:RUSTSEC-2024-0373:clean_up_incoming",
+    "RX:RUSTSEC-2024-0373:endpoint_accept",
+    "RX:RUSTSEC-2024-0376:handle_accept_error",
+    "RX:RUSTSEC-2024-0377:c_chars_to_str",
+    "RX:RUSTSEC-2024-0399:first_handshake_message",
+    "RX:RUSTSEC-2024-0401:dispatch",
+    "RX:RUSTSEC-2024-0402:borsh_serialize",
+    "RX:RUSTSEC-2024-0406:merge",
+    "RX:RUSTSEC-2024-0406:remove_helper",
+    "RX:RUSTSEC-2024-0437:skip_group",
+    "RX:RUSTSEC-2024-0441:table_init",
+    "RX:RUSTSEC-2025-0005:get_coverage",
+    "RX:RUSTSEC-2025-0015:hyper_send",
+    "RX:RUSTSEC-2025-0015:isahc_send",
+    "RX:RUSTSEC-2025-0016:parc_from_arc",
+    "RX:RUSTSEC-2025-0016:parc_project",
+    "RX:RUSTSEC-2025-0016:parc_try_from_arc",
+    "RX:RUSTSEC-2025-0016:prc_from_rc",
+    "RX:RUSTSEC-2025-0016:prc_project",
+    "RX:RUSTSEC-2025-0016:prc_try_from_rc",
+    "RX:RUSTSEC-2025-0018:get_bucket",
+    "RX:RUSTSEC-2025-0018:get_chain",
+    "RX:RUSTSEC-2025-0020:from_object",
+    "RX:RUSTSEC-2025-0021:bytes",
+    "RX:RUSTSEC-2025-0021:bytes_of_file",
+    "RX:RUSTSEC-2025-0021:bytes_with_hasher",
+    "RX:RUSTSEC-2025-0021:hasher",
+    "RX:RUSTSEC-2025-0021:hasher_digest",
+    "RX:RUSTSEC-2025-0021:write_new",
+    "RX:RUSTSEC-2025-0022:cipher_fetch",
+    "RX:RUSTSEC-2025-0022:md_fetch"
+   ]
+  },
+  "HR": {
+   "units": [
+    "HR:CVE-2015-20001_CWE-119",
+    "HR:CVE-2017-18016_CWE-346",
+    "HR:CVE-2018-1000657_CWE-119",
+    "HR:CVE-2018-1000810_CWE-190",
+    "HR:CVE-2018-21000_CWE-119",
+    "HR:CVE-2018-25008_CWE-662",
+    "HR:CVE-2019-1010299_CWE-200",
+    "HR:CVE-2019-15541_CWE-88",
+    "HR:CVE-2019-15550_CWE-125",
+    "HR:CVE-2019-16214_CWE-701",
+    "HR:CVE-2019-16880_CWE-415",
+    "HR:CVE-2019-16882_CWE-416",
+    "HR:CVE-2019-20399_CWE-203",
+    "HR:CVE-2020-25573_CWE-824",
+    "HR:CVE-2020-26297_CWE-79",
+    "HR:CVE-2020-35861_CWE-125",
+    "HR:CVE-2020-35869_CWE-134",
+    "HR:CVE-2020-35870_CWE-416",
+    "HR:CVE-2020-35904_CWE-131",
+    "HR:CVE-2020-35906_CWE-416",
+    "HR:CVE-2020-35917_CWE-416",
+    "HR:CVE-2020-35923_CWE-416",
+    "HR:CVE-2020-36210_CWE-908",
+    "HR:CVE-2020-36317_CWE-787",
+    "HR:CVE-2020-36318_CWE-416",
+    "HR:CVE-2021-21235_CWE-400",
+    "HR:CVE-2021-21299_CWE-444",
+    "HR:CVE-2021-24117_CWE-203",
+    "HR:CVE-2021-25900_CWE-787",
+    "HR:CVE-2021-25902_CWE-416",
+    "HR:CVE-2021-28875_CWE-252",
+    "HR:CVE-2021-28876_CWE-755",
+    "HR:CVE-2021-28877_CWE-119",
+    "HR:CVE-2021-28878_CWE-119",
+    "HR:CVE-2021-28879_CWE-190",
+    "HR:CVE-2021-29511_CWE-770",
+    "HR:CVE-2021-29922_CWE-20",
+    "HR:CVE-2021-31162_CWE-415",
+    "HR:CVE-2021-32715_CWE-444",
+    "HR:CVE-2021-32814_CWE-22",
+    "HR:CVE-2021-36376_CWE-427",
+    "HR:CVE-2021-36753_CWE-427",
+    "HR:CVE-2021-37625_CWE-252",
+    "HR:CVE-2021-3917_CWE-276",
+    "HR:CVE-2021-39193_CWE-20",
+    "HR:CVE-2021-41138_CWE-20",
+    "HR:CVE-2021-41153_CWE-670",
+    "HR:CVE-2021-43790_CWE-416",
+    "HR:CVE-2021-44421_CWE-203",
+    "HR:CVE-2022-21685_CWE-191",
+    "HR:CVE-2022-23066_CWE-682",
+    "HR:CVE-2022-23573_CWE-908",
+    "HR:CVE-2022-23639_CWE-362",
+    "HR:CVE-2022-24713_CWE-400",
+    "HR:CVE-2022-24791_CWE-416",
+    "HR:CVE-2022-27815_CWE-59",
+    "HR:CVE-2022-27816_CWE-59",
+    "HR:CVE-2022-27818_CWE-668",
+    "HR:CVE-2022-27819_CWE-400",
+    "HR:CVE-2022-31099_CWE-674",
+    "HR:CVE-2022-31100_CWE-617",
+    "HR:CVE-2022-31111_CWE-670",
+    "HR:CVE-2022-31169_CWE-682",
+    "HR:CVE-2022-31173_CWE-400",
+    "HR:CVE-2022-35922_CWE-400",
+    "HR:CVE-2022-36008_CWE-190",
+    "HR:CVE-2022-36113_CWE-22",
+    "HR:CVE-2022-39252_CWE-287",
+    "HR:CVE-2023-22466_CWE-665",
+    "HR:CVE-2023-28113_CWE-347",
+    "HR:CVE-2023-30624_CWE-758",
+    "HR:CVE-2023-41051_CWE-125",
+    "HR:CVE-2023-41317_CWE-755",
+    "HR:CVE-2023-45812_CWE-754",
+    "HR:CVE-2023-46135_CWE-248",
+    "HR:CVE-2023-50711_CWE-787",
+    "HR:CVE-2023-6245_CWE-20",
+    "HR:CVE-2024-20380_CWE-475",
+    "HR:CVE-2024-21491_CWE-288",
+    "HR:CVE-2024-21629_CWE-703",
+    "HR:CVE-2024-23644_CWE-113",
+    "HR:CVE-2024-28854_CWE-400"
+   ]
+  },
+  "NU": {
+   "units": [
+    "RX:RUSTSEC-2021-0003:insert_many",
+    "RX:RUSTSEC-2021-0007:copy_from_raw_parts",
+    "RX:RUSTSEC-2021-0010:mutate",
+    "RX:RUSTSEC-2021-0010:mutate2",
+    "RX:RUSTSEC-2021-0018:insert_slice_clone",
+    "RX:RUSTSEC-2021-0020:server_parse",
+    "RX:RUSTSEC-2021-0022:sub_self_call",
+    "RX:RUSTSEC-2021-0027:block_load",
+    "RX:RUSTSEC-2021-0028:insert_row",
+    "RX:RUSTSEC-2021-0030:array_move_elements",
+    "RX:RUSTSEC-2021-0030:boxed_slice_move_elements",
+    "RX:RUSTSEC-2021-0031:arena_split_at",
+    "RX:RUSTSEC-2021-0032:read_bytes_default_le",
+    "RX:RUSTSEC-2021-0033:push_cloned",
+    "RX:RUSTSEC-2021-0036:intern_sync",
+    "RX:RUSTSEC-2021-0038:pixmap_new",
+    "RX:RUSTSEC-2021-0038:set_icon",
+    "RX:RUSTSEC-2021-0038:set_label_type",
+    "RX:RUSTSEC-2021-0048:stackvec_extend",
+    "RX:RUSTSEC-2021-0050:swap_index",
+    "RX:RUSTSEC-2021-0063:html_formatter_escape_href",
+    "RX:RUSTSEC-2021-0069:client_codec_encode",
+    "RX:RUSTSEC-2021-0072:join_handle_abort",
+    "RX:RUSTSEC-2021-0073:timestamp_normalize",
+    "RX:RUSTSEC-2021-0073:timestamp_system_time",
+    "RX:RUSTSEC-2021-0074:clean_dom",
+    "RX:RUSTSEC-2021-0075:field_var_mul_by_inverse",
+    "RX:RUSTSEC-2021-0079:chunked_read_size",
+    "RX:RUSTSEC-2021-0080:entry_fields_unpack_in",
+    "RX:RUSTSEC-2021-0081:chunked_read_extension",
+    "RX:RUSTSEC-2021-0081:chunked_read_size",
+    "RX:RUSTSEC-2021-0081:message_type_set_headers",
+    "RX:RUSTSEC-2021-0100:load_data_avx2",
+    "RX:RUSTSEC-2021-0110:host_func_register_trampoline",
+    "RX:RUSTSEC-2021-0110:insert_vmexternref",
+    "RX:RUSTSEC-2021-0110:registered_module_lookup_stack_map",
+    "RX:RUSTSEC-2021-0113:block_send",
+    "RX:RUSTSEC-2021-0113:block_sync",
+    "RX:RUSTSEC-2021-0114:deref",
+    "RX:RUSTSEC-2021-0114:deref_mut",
+    "RX:RUSTSEC-2021-0115:zeroize_attrs_parse",
+    "RX:RUSTSEC-2021-0118:array_data_try_new",
+    "RX:RUSTSEC-2021-0122:emplace_scalar_array",
+    "RX:RUSTSEC-2021-0122:follow_cast_ref",
+    "RX:RUSTSEC-2021-0122:follow_trait",
+    "RX:RUSTSEC-2021-0122:push_trait",
+    "RX:RUSTSEC-2021-0122:vector_safe_slice",
+    "RX:RUSTSEC-2021-0124:set_complete",
+    "RX:RUSTSEC-2021-0125:from_der_",
+    "RX:RUSTSEC-2021-0128:commit_hook",
+    "RX:RUSTSEC-2021-0128:create_aggregate_function",
+    "RX:RUSTSEC-2021-0128:create_collation",
+    "RX:RUSTSEC-2021-0128:create_scalar_function",
+    "RX:RUSTSEC-2021-0128:create_window_function",
+    "RX:RUSTSEC-2021-0128:rollback_hook",
+    "RX:RUSTSEC-2021-0128:update_hook",
+    "RX:RUSTSEC-2021-0130:iter",
+    "RX:RUSTSEC-2021-0130:iter_mut",
+    "RX:RUSTSEC-2021-0143:discard_exact",
+    "RX:RUSTSEC-2022-0002:mapref_multiple_ref_multi_key",
+    "RX:RUSTSEC-2022-0002:mapref_multiple_ref_multi_pair",
+    "RX:RUSTSEC-2022-0002:mapref_multiple_ref_multi_value",
+    "RX:RUSTSEC-2022-0002:mapref_multiple_ref_mut_multi_key",
+    "RX:RUSTSEC-2022-0002:mapref_multiple_ref_mut_multi_pair",
+    "RX:RUSTSEC-2022-0002:mapref_multiple_ref_mut_multi_pair_mut",
+    "RX:RUSTSEC-2022-0002:mapref_one_ref_key",
+    "RX:RUSTSEC-2022-0002:mapref_one_ref_mut_key",
+    "RX:RUSTSEC-2022-0002:mapref_one_ref_mut_pair",
+    "RX:RUSTSEC-2022-0002:mapref_one_ref_mut_pair_mut",
+    "RX:RUSTSEC-2022-0002:mapref_one_ref_pair",
+    "RX:RUSTSEC-2022-0002:mapref_one_ref_value",
+    "RX:RUSTSEC-2022-0002:setref_multiple_ref_multi_key",
+    "RX:RUSTSEC-2022-0002:setref_one_ref_key",
+    "RX:RUSTSEC-2022-0003:clean_text",
+    "RX:RUSTSEC-2022-0012:arrow_array",
+    "RX:RUSTSEC-2022-0012:arrow_array_stream",
+    "RX:RUSTSEC-2022-0012:arrow_schema",
+    "RX:RUSTSEC-2022-0013:compiler_c",
+    "RX:RUSTSEC-2022-0013:compiler_c_concat",
+    "RX:RUSTSEC-2022-0028:js_array_buffer_external",
+    "RX:RUSTSEC-2022-0028:js_buffer_external",
+    "RX:RUSTSEC-2022-0038:collect_conflicts_between_fields_and_fragment",
+    "RX:RUSTSEC-2022-0038:collect_incorrect_usages",
+    "RX:RUSTSEC-2022-0038:detect_from",
+    "RX:RUSTSEC-2022-0038:find_reachable_fragments",
+    "RX:RUSTSEC-2022-0038:find_undef_vars",
+    "RX:RUSTSEC-2022-0038:find_used_vars",
+    "RX:RUSTSEC-2022-0063:heap_extend",
+    "RX:RUSTSEC-2022-0063:heap_new",
+    "RX:RUSTSEC-2022-0063:hole_new",
+    "RX:RUSTSEC-2022-0066:blocking_handler",
+    "RX:RUSTSEC-2022-0068:read_list_pointer",
+    "RX:RUSTSEC-2022-0072:response_builder_build",
+    "RX:RUSTSEC-2022-0091:allow_directory",
+    "RX:RUSTSEC-2022-0091:allow_file",
+    "RX:RUSTSEC-2022-0093:expanded_secret_key_sign",
+    "RX:RUSTSEC-2022-0093:expanded_secret_key_sign_prehashed",
+    "RX:RUSTSEC-2022-0093:keypair",
+    "RX:RUSTSEC-2022-0093:keypair_from_bytes",
+    "RX:RUSTSEC-2022-0098:allocate_memories",
+    "RX:RUSTSEC-2022-0101:load_constant64_full",
+    "RX:RUSTSEC-2022-0102:memory_pool_new",
+    "RX:RUSTSEC-2023-0024:new",
+    "RX:RUSTSEC-2023-0024:new_nid",
+    "RX:RUSTSEC-2023-0030:fam_struct_wrapper_deserialize",
+    "RX:RUSTSEC-2023-0039:data_helper",
+    "RX:RUSTSEC-2023-0044:set_host",
+    "RX:RUSTSEC-2023-0062:bit_string_from_content",
+    "RX:RUSTSEC-2023-0062:oid_skip_if",
+    "RX:RUSTSEC-2023-0062:oid_take_from",
+    "RX:RUSTSEC-2023-0062:oid_take_opt_from",
+    "RX:RUSTSEC-2023-0062:process_next_value",
+    "RX:RUSTSEC-2023-0062:skip_opt",
+    "RX:RUSTSEC-2023-0062:tag_take_from_if",
+    "RX:RUSTSEC-2023-0068:cocoon_encrypt",
+    "RX:RUSTSEC-2023-0068:mini_cocoon_encrypt",
+    "RX:RUSTSEC-2023-0070:covariant_access",
+    "RX:RUSTSEC-2023-0074:into_mut",
+    "RX:RUSTSEC-2023-0074:into_mut_slice",
+    "RX:RUSTSEC-2023-0074:into_ref",
+    "RX:RUSTSEC-2023-0074:into_slice",
+    "RX:RUSTSEC-2023-0077:data_lense_macro",
+    "RX:RUSTSEC-2023-0080:transpose",
+    "RX:RUSTSEC-2023-0082:rfc3966_phone_number",
+    "RX:RUSTSEC-2023-0085:update_max_dynamic_size",
+    "RX:RUSTSEC-2024-0009:write_headers",
+    "RX:RUSTSEC-2024-0010:verify",
+    "RX:RUSTSEC-2024-0011:decrypt_ad",
+    "RX:RUSTSEC-2024-0012:deserialize_any",
+    "RX:RUSTSEC-2024-0012:deserialize_enum",
+    "RX:RUSTSEC-2024-0012:deserialize_map",
+    "RX:RUSTSEC-2024-0012:deserialize_seq",
+    "RX:RUSTSEC-2024-0021:context_drop_rest",
+    "RX:RUSTSEC-2024-0335:prepare_invocation",
+    "RX:RUSTSEC-2024-0336:complete_io",
+    "RX:RUSTSEC-2024-0336:process_alert",
+    "RX:RUSTSEC-2024-0341:poll_accept",
+    "RX:RUSTSEC-2024-0343:gen_macro",
+    "RX:RUSTSEC-2024-0345:raw_cert_parser_next",
+    "RX:RUSTSEC-2024-0350:make_relative_path_current",
+    "RX:RUSTSEC-2024-0356:user_identity_is_verified",
+    "RX:RUSTSEC-2024-0357:mem_bio_get_buf",
+    "RX:RUSTSEC-2024-0362:list_parser",
+    "RX:RUSTSEC-2024-0363:pg_hstore_encode_by_ref",
+    "RX:RUSTSEC-2024-0369:national_number_new",
+    "RX:RUSTSEC-2024-0373:clean_up_incoming",
+    "RX:RUSTSEC-2024-0373:endpoint_accept",
+    "RX:RUSTSEC-2024-0376:handle_accept_error",
+    "RX:RUSTSEC-2024-0377:c_chars_to_str",
+    "RX:RUSTSEC-2024-0399:first_handshake_message",
+    "RX:RUSTSEC-2024-0401:dispatch",
+    "RX:RUSTSEC-2024-0402:borsh_serialize",
+    "RX:RUSTSEC-2024-0406:merge",
+    "RX:RUSTSEC-2024-0406:remove_helper",
+    "RX:RUSTSEC-2024-0437:skip_group",
+    "RX:RUSTSEC-2024-0441:table_init",
+    "RX:RUSTSEC-2025-0005:get_coverage",
+    "RX:RUSTSEC-2025-0015:hyper_send",
+    "RX:RUSTSEC-2025-0015:isahc_send",
+    "RX:RUSTSEC-2025-0016:parc_from_arc",
+    "RX:RUSTSEC-2025-0016:parc_project",
+    "RX:RUSTSEC-2025-0016:parc_try_from_arc",
+    "RX:RUSTSEC-2025-0016:prc_from_rc",
+    "RX:RUSTSEC-2025-0016:prc_project",
+    "RX:RUSTSEC-2025-0016:prc_try_from_rc",
+    "RX:RUSTSEC-2025-0018:get_bucket",
+    "RX:RUSTSEC-2025-0018:get_chain",
+    "RX:RUSTSEC-2025-0020:from_object",
+    "RX:RUSTSEC-2025-0021:bytes",
+    "RX:RUSTSEC-2025-0021:bytes_of_file",
+    "RX:RUSTSEC-2025-0021:bytes_with_hasher",
+    "RX:RUSTSEC-2025-0021:hasher",
+    "RX:RUSTSEC-2025-0021:hasher_digest",
+    "RX:RUSTSEC-2025-0021:write_new",
+    "RX:RUSTSEC-2025-0022:cipher_fetch",
+    "RX:RUSTSEC-2025-0022:md_fetch",
+    "HR:CVE-2015-20001_CWE-119",
+    "HR:CVE-2017-18016_CWE-346",
+    "HR:CVE-2018-1000657_CWE-119",
+    "HR:CVE-2018-1000810_CWE-190",
+    "HR:CVE-2018-21000_CWE-119",
+    "HR:CVE-2018-25008_CWE-662",
+    "HR:CVE-2019-1010299_CWE-200",
+    "HR:CVE-2019-15541_CWE-88",
+    "HR:CVE-2019-15550_CWE-125",
+    "HR:CVE-2019-16214_CWE-701",
+    "HR:CVE-2019-16880_CWE-415",
+    "HR:CVE-2019-16882_CWE-416",
+    "HR:CVE-2019-20399_CWE-203",
+    "HR:CVE-2020-25573_CWE-824",
+    "HR:CVE-2020-26297_CWE-79",
+    "HR:CVE-2020-35861_CWE-125",
+    "HR:CVE-2020-35869_CWE-134",
+    "HR:CVE-2020-35870_CWE-416",
+    "HR:CVE-2020-35904_CWE-131",
+    "HR:CVE-2020-35906_CWE-416",
+    "HR:CVE-2020-35917_CWE-416",
+    "HR:CVE-2020-35923_CWE-416",
+    "HR:CVE-2020-36210_CWE-908",
+    "HR:CVE-2020-36317_CWE-787",
+    "HR:CVE-2020-36318_CWE-416",
+    "HR:CVE-2021-21235_CWE-400",
+    "HR:CVE-2021-21299_CWE-444",
+    "HR:CVE-2021-24117_CWE-203",
+    "HR:CVE-2021-25900_CWE-787",
+    "HR:CVE-2021-25902_CWE-416",
+    "HR:CVE-2021-28875_CWE-252",
+    "HR:CVE-2021-28876_CWE-755",
+    "HR:CVE-2021-28877_CWE-119",
+    "HR:CVE-2021-28878_CWE-119",
+    "HR:CVE-2021-28879_CWE-190",
+    "HR:CVE-2021-29511_CWE-770",
+    "HR:CVE-2021-29922_CWE-20",
+    "HR:CVE-2021-31162_CWE-415",
+    "HR:CVE-2021-32715_CWE-444",
+    "HR:CVE-2021-32814_CWE-22",
+    "HR:CVE-2021-36376_CWE-427",
+    "HR:CVE-2021-36753_CWE-427",
+    "HR:CVE-2021-37625_CWE-252",
+    "HR:CVE-2021-3917_CWE-276",
+    "HR:CVE-2021-39193_CWE-20",
+    "HR:CVE-2021-41138_CWE-20",
+    "HR:CVE-2021-41153_CWE-670",
+    "HR:CVE-2021-43790_CWE-416",
+    "HR:CVE-2021-44421_CWE-203",
+    "HR:CVE-2022-21685_CWE-191",
+    "HR:CVE-2022-23066_CWE-682",
+    "HR:CVE-2022-23573_CWE-908",
+    "HR:CVE-2022-23639_CWE-362",
+    "HR:CVE-2022-24713_CWE-400",
+    "HR:CVE-2022-24791_CWE-416",
+    "HR:CVE-2022-27815_CWE-59",
+    "HR:CVE-2022-27816_CWE-59",
+    "HR:CVE-2022-27818_CWE-668",
+    "HR:CVE-2022-27819_CWE-400",
+    "HR:CVE-2022-31099_CWE-674",
+    "HR:CVE-2022-31100_CWE-617",
+    "HR:CVE-2022-31111_CWE-670",
+    "HR:CVE-2022-31169_CWE-682",
+    "HR:CVE-2022-31173_CWE-400",
+    "HR:CVE-2022-35922_CWE-400",
+    "HR:CVE-2022-36008_CWE-190",
+    "HR:CVE-2022-36113_CWE-22",
+    "HR:CVE-2022-39252_CWE-287",
+    "HR:CVE-2023-22466_CWE-665",
+    "HR:CVE-2023-28113_CWE-347",
+    "HR:CVE-2023-30624_CWE-758",
+    "HR:CVE-2023-41051_CWE-125",
+    "HR:CVE-2023-41317_CWE-755",
+    "HR:CVE-2023-45812_CWE-754",
+    "HR:CVE-2023-46135_CWE-248",
+    "HR:CVE-2023-50711_CWE-787",
+    "HR:CVE-2023-6245_CWE-20",
+    "HR:CVE-2024-20380_CWE-475",
+    "HR:CVE-2024-21491_CWE-288",
+    "HR:CVE-2024-21629_CWE-703",
+    "HR:CVE-2024-23644_CWE-113",
+    "HR:CVE-2024-28854_CWE-400"
+   ]
+  },
+  "ID": {
+   "units": [
+    "RX:RUSTSEC-2021-0003:insert_many",
+    "RX:RUSTSEC-2021-0007:copy_from_raw_parts",
+    "RX:RUSTSEC-2021-0010:mutate",
+    "RX:RUSTSEC-2021-0010:mutate2",
+    "RX:RUSTSEC-2021-0018:insert_slice_clone",
+    "RX:RUSTSEC-2021-0020:server_parse",
+    "RX:RUSTSEC-2021-0022:sub_self_call",
+    "RX:RUSTSEC-2021-0027:block_load",
+    "RX:RUSTSEC-2021-0028:insert_row",
+    "RX:RUSTSEC-2021-0030:array_move_elements",
+    "RX:RUSTSEC-2021-0030:boxed_slice_move_elements",
+    "RX:RUSTSEC-2021-0031:arena_split_at",
+    "RX:RUSTSEC-2021-0032:read_bytes_default_le",
+    "RX:RUSTSEC-2021-0033:push_cloned",
+    "RX:RUSTSEC-2021-0036:intern_sync",
+    "RX:RUSTSEC-2021-0038:pixmap_new",
+    "RX:RUSTSEC-2021-0038:set_icon",
+    "RX:RUSTSEC-2021-0038:set_label_type",
+    "RX:RUSTSEC-2021-0048:stackvec_extend",
+    "RX:RUSTSEC-2021-0050:swap_index",
+    "RX:RUSTSEC-2021-0063:html_formatter_escape_href",
+    "RX:RUSTSEC-2021-0069:client_codec_encode",
+    "RX:RUSTSEC-2021-0072:join_handle_abort",
+    "RX:RUSTSEC-2021-0073:timestamp_normalize",
+    "RX:RUSTSEC-2021-0073:timestamp_system_time",
+    "RX:RUSTSEC-2021-0074:clean_dom",
+    "RX:RUSTSEC-2021-0075:field_var_mul_by_inverse",
+    "RX:RUSTSEC-2021-0079:chunked_read_size",
+    "RX:RUSTSEC-2021-0080:entry_fields_unpack_in",
+    "RX:RUSTSEC-2021-0081:chunked_read_extension",
+    "RX:RUSTSEC-2021-0081:chunked_read_size",
+    "RX:RUSTSEC-2021-0081:message_type_set_headers",
+    "RX:RUSTSEC-2021-0100:load_data_avx2",
+    "RX:RUSTSEC-2021-0110:host_func_register_trampoline",
+    "RX:RUSTSEC-2021-0110:insert_vmexternref",
+    "RX:RUSTSEC-2021-0110:registered_module_lookup_stack_map",
+    "RX:RUSTSEC-2021-0113:block_send",
+    "RX:RUSTSEC-2021-0113:block_sync",
+    "RX:RUSTSEC-2021-0114:deref",
+    "RX:RUSTSEC-2021-0114:deref_mut",
+    "RX:RUSTSEC-2021-0115:zeroize_attrs_parse",
+    "RX:RUSTSEC-2021-0118:array_data_try_new",
+    "RX:RUSTSEC-2021-0122:emplace_scalar_array",
+    "RX:RUSTSEC-2021-0122:follow_cast_ref",
+    "RX:RUSTSEC-2021-0122:follow_trait",
+    "RX:RUSTSEC-2021-0122:push_trait",
+    "RX:RUSTSEC-2021-0122:vector_safe_slice",
+    "RX:RUSTSEC-2021-0124:set_complete",
+    "RX:RUSTSEC-2021-0125:from_der_",
+    "RX:RUSTSEC-2021-0128:commit_hook",
+    "RX:RUSTSEC-2021-0128:create_aggregate_function",
+    "RX:RUSTSEC-2021-0128:create_collation",
+    "RX:RUSTSEC-2021-0128:create_scalar_function",
+    "RX:RUSTSEC-2021-0128:create_window_function",
+    "RX:RUSTSEC-2021-0128:rollback_hook",
+    "RX:RUSTSEC-2021-0128:update_hook",
+    "RX:RUSTSEC-2021-0130:iter",
+    "RX:RUSTSEC-2021-0130:iter_mut",
+    "RX:RUSTSEC-2021-0143:discard_exact",
+    "RX:RUSTSEC-2022-0002:mapref_multiple_ref_multi_key",
+    "RX:RUSTSEC-2022-0002:mapref_multiple_ref_multi_pair",
+    "RX:RUSTSEC-2022-0002:mapref_multiple_ref_multi_value",
+    "RX:RUSTSEC-2022-0002:mapref_multiple_ref_mut_multi_key",
+    "RX:RUSTSEC-2022-0002:mapref_multiple_ref_mut_multi_pair",
+    "RX:RUSTSEC-2022-0002:mapref_multiple_ref_mut_multi_pair_mut",
+    "RX:RUSTSEC-2022-0002:mapref_one_ref_key",
+    "RX:RUSTSEC-2022-0002:mapref_one_ref_mut_key",
+    "RX:RUSTSEC-2022-0002:mapref_one_ref_mut_pair",
+    "RX:RUSTSEC-2022-0002:mapref_one_ref_mut_pair_mut",
+    "RX:RUSTSEC-2022-0002:mapref_one_ref_pair",
+    "RX:RUSTSEC-2022-0002:mapref_one_ref_value",
+    "RX:RUSTSEC-2022-0002:setref_multiple_ref_multi_key",
+    "RX:RUSTSEC-2022-0002:setref_one_ref_key",
+    "RX:RUSTSEC-2022-0003:clean_text",
+    "RX:RUSTSEC-2022-0012:arrow_array",
+    "RX:RUSTSEC-2022-0012:arrow_array_stream",
+    "RX:RUSTSEC-2022-0012:arrow_schema",
+    "RX:RUSTSEC-2022-0013:compiler_c",
+    "RX:RUSTSEC-2022-0013:compiler_c_concat",
+    "RX:RUSTSEC-2022-0028:js_array_buffer_external",
+    "RX:RUSTSEC-2022-0028:js_buffer_external",
+    "RX:RUSTSEC-2022-0038:collect_conflicts_between_fields_and_fragment",
+    "RX:RUSTSEC-2022-0038:collect_incorrect_usages",
+    "RX:RUSTSEC-2022-0038:detect_from",
+    "RX:RUSTSEC-2022-0038:find_reachable_fragments",
+    "RX:RUSTSEC-2022-0038:find_undef_vars",
+    "RX:RUSTSEC-2022-0038:find_used_vars",
+    "RX:RUSTSEC-2022-0063:heap_extend",
+    "RX:RUSTSEC-2022-0063:heap_new",
+    "RX:RUSTSEC-2022-0063:hole_new",
+    "RX:RUSTSEC-2022-0066:blocking_handler",
+    "RX:RUSTSEC-2022-0068:read_list_pointer",
+    "RX:RUSTSEC-2022-0072:response_builder_build",
+    "RX:RUSTSEC-2022-0091:allow_directory",
+    "RX:RUSTSEC-2022-0091:allow_file",
+    "RX:RUSTSEC-2022-0093:expanded_secret_key_sign",
+    "RX:RUSTSEC-2022-0093:expanded_secret_key_sign_prehashed",
+    "RX:RUSTSEC-2022-0093:keypair",
+    "RX:RUSTSEC-2022-0093:keypair_from_bytes",
+    "RX:RUSTSEC-2022-0098:allocate_memories",
+    "RX:RUSTSEC-2022-0101:load_constant64_full",
+    "RX:RUSTSEC-2022-0102:memory_pool_new",
+    "RX:RUSTSEC-2023-0024:new",
+    "RX:RUSTSEC-2023-0024:new_nid",
+    "RX:RUSTSEC-2023-0030:fam_struct_wrapper_deserialize",
+    "RX:RUSTSEC-2023-0039:data_helper",
+    "RX:RUSTSEC-2023-0044:set_host",
+    "RX:RUSTSEC-2023-0062:bit_string_from_content",
+    "RX:RUSTSEC-2023-0062:oid_skip_if",
+    "RX:RUSTSEC-2023-0062:oid_take_from",
+    "RX:RUSTSEC-2023-0062:oid_take_opt_from",
+    "RX:RUSTSEC-2023-0062:process_next_value",
+    "RX:RUSTSEC-2023-0062:skip_opt",
+    "RX:RUSTSEC-2023-0062:tag_take_from_if",
+    "RX:RUSTSEC-2023-0068:cocoon_encrypt",
+    "RX:RUSTSEC-2023-0068:mini_cocoon_encrypt",
+    "RX:RUSTSEC-2023-0070:covariant_access",
+    "RX:RUSTSEC-2023-0074:into_mut",
+    "RX:RUSTSEC-2023-0074:into_mut_slice",
+    "RX:RUSTSEC-2023-0074:into_ref",
+    "RX:RUSTSEC-2023-0074:into_slice",
+    "RX:RUSTSEC-2023-0077:data_lense_macro",
+    "RX:RUSTSEC-2023-0080:transpose",
+    "RX:RUSTSEC-2023-0082:rfc3966_phone_number",
+    "RX:RUSTSEC-2023-0085:update_max_dynamic_size",
+    "RX:RUSTSEC-2024-0009:write_headers",
+    "RX:RUSTSEC-2024-0010:verify",
+    "RX:RUSTSEC-2024-0011:decrypt_ad",
+    "RX:RUSTSEC-2024-0012:deserialize_any",
+    "RX:RUSTSEC-2024-0012:deserialize_enum",
+    "RX:RUSTSEC-2024-0012:deserialize_map",
+    "RX:RUSTSEC-2024-0012:deserialize_seq",
+    "RX:RUSTSEC-2024-0021:context_drop_rest",
+    "RX:RUSTSEC-2024-0335:prepare_invocation",
+    "RX:RUSTSEC-2024-0336:complete_io",
+    "RX:RUSTSEC-2024-0336:process_alert",
+    "RX:RUSTSEC-2024-0341:poll_accept",
+    "RX:RUSTSEC-2024-0343:gen_macro",
+    "RX:RUSTSEC-2024-0345:raw_cert_parser_next",
+    "RX:RUSTSEC-2024-0350:make_relative_path_current",
+    "RX:RUSTSEC-2024-0356:user_identity_is_verified",
+    "RX:RUSTSEC-2024-0357:mem_bio_get_buf",
+    "RX:RUSTSEC-2024-0362:list_parser",
+    "RX:RUSTSEC-2024-0363:pg_hstore_encode_by_ref",
+    "RX:RUSTSEC-2024-0369:national_number_new",
+    "RX:RUSTSEC-2024-0373:clean_up_incoming",
+    "RX:RUSTSEC-2024-0373:endpoint_accept",
+    "RX:RUSTSEC-2024-0376:handle_accept_error",
+    "RX:RUSTSEC-2024-0377:c_chars_to_str",
+    "RX:RUSTSEC-2024-0399:first_handshake_message",
+    "RX:RUSTSEC-2024-0401:dispatch",
+    "RX:RUSTSEC-2024-0402:borsh_serialize",
+    "RX:RUSTSEC-2024-0406:merge",
+    "RX:RUSTSEC-2024-0406:remove_helper",
+    "RX:RUSTSEC-2024-0437:skip_group",
+    "RX:RUSTSEC-2024-0441:table_init",
+    "RX:RUSTSEC-2025-0005:get_coverage",
+    "RX:RUSTSEC-2025-0015:hyper_send",
+    "RX:RUSTSEC-2025-0015:isahc_send",
+    "RX:RUSTSEC-2025-0016:parc_from_arc",
+    "RX:RUSTSEC-2025-0016:parc_project",
+    "RX:RUSTSEC-2025-0016:parc_try_from_arc",
+    "RX:RUSTSEC-2025-0016:prc_from_rc",
+    "RX:RUSTSEC-2025-0016:prc_project",
+    "RX:RUSTSEC-2025-0016:prc_try_from_rc",
+    "RX:RUSTSEC-2025-0018:get_bucket",
+    "RX:RUSTSEC-2025-0018:get_chain",
+    "RX:RUSTSEC-2025-0020:from_object",
+    "RX:RUSTSEC-2025-0021:bytes",
+    "RX:RUSTSEC-2025-0021:bytes_of_file",
+    "RX:RUSTSEC-2025-0021:bytes_with_hasher",
+    "RX:RUSTSEC-2025-0021:hasher",
+    "RX:RUSTSEC-2025-0021:hasher_digest",
+    "RX:RUSTSEC-2025-0021:write_new",
+    "RX:RUSTSEC-2025-0022:cipher_fetch",
+    "RX:RUSTSEC-2025-0022:md_fetch",
+    "HR:CVE-2015-20001_CWE-119",
+    "HR:CVE-2017-18016_CWE-346",
+    "HR:CVE-2018-1000657_CWE-119",
+    "HR:CVE-2018-1000810_CWE-190",
+    "HR:CVE-2018-21000_CWE-119",
+    "HR:CVE-2018-25008_CWE-662",
+    "HR:CVE-2019-1010299_CWE-200",
+    "HR:CVE-2019-15541_CWE-88",
+    "HR:CVE-2019-15550_CWE-125",
+    "HR:CVE-2019-16214_CWE-701",
+    "HR:CVE-2019-16880_CWE-415",
+    "HR:CVE-2019-16882_CWE-416",
+    "HR:CVE-2019-20399_CWE-203",
+    "HR:CVE-2020-25573_CWE-824",
+    "HR:CVE-2020-26297_CWE-79",
+    "HR:CVE-2020-35861_CWE-125",
+    "HR:CVE-2020-35869_CWE-134",
+    "HR:CVE-2020-35904_CWE-131",
+    "HR:CVE-2020-35906_CWE-416",
+    "HR:CVE-2020-35917_CWE-416",
+    "HR:CVE-2020-35923_CWE-416",
+    "HR:CVE-2020-36210_CWE-908",
+    "HR:CVE-2020-36317_CWE-787",
+    "HR:CVE-2020-36318_CWE-416",
+    "HR:CVE-2021-24117_CWE-203",
+    "HR:CVE-2021-25902_CWE-416",
+    "HR:CVE-2021-28875_CWE-252",
+    "HR:CVE-2021-28876_CWE-755",
+    "HR:CVE-2021-28877_CWE-119",
+    "HR:CVE-2021-28878_CWE-119",
+    "HR:CVE-2021-28879_CWE-190",
+    "HR:CVE-2021-29511_CWE-770",
+    "HR:CVE-2021-29922_CWE-20",
+    "HR:CVE-2021-31162_CWE-415",
+    "HR:CVE-2021-32715_CWE-444",
+    "HR:CVE-2021-32814_CWE-22",
+    "HR:CVE-2021-36376_CWE-427",
+    "HR:CVE-2021-36753_CWE-427",
+    "HR:CVE-2021-37625_CWE-252",
+    "HR:CVE-2021-3917_CWE-276",
+    "HR:CVE-2021-39193_CWE-20",
+    "HR:CVE-2021-41138_CWE-20",
+    "HR:CVE-2021-41153_CWE-670",
+    "HR:CVE-2021-43790_CWE-416",
+    "HR:CVE-2021-44421_CWE-203",
+    "HR:CVE-2022-21685_CWE-191",
+    "HR:CVE-2022-23066_CWE-682",
+    "HR:CVE-2022-23573_CWE-908",
+    "HR:CVE-2022-23639_CWE-362",
+    "HR:CVE-2022-24791_CWE-416",
+    "HR:CVE-2022-27815_CWE-59",
+    "HR:CVE-2022-27816_CWE-59",
+    "HR:CVE-2022-27818_CWE-668",
+    "HR:CVE-2022-27819_CWE-400",
+    "HR:CVE-2022-31099_CWE-674",
+    "HR:CVE-2022-31100_CWE-617",
+    "HR:CVE-2022-31111_CWE-670",
+    "HR:CVE-2022-35922_CWE-400",
+    "HR:CVE-2022-36008_CWE-190",
+    "HR:CVE-2022-36113_CWE-22",
+    "HR:CVE-2022-39252_CWE-287",
+    "HR:CVE-2023-22466_CWE-665",
+    "HR:CVE-2023-28113_CWE-347",
+    "HR:CVE-2023-30624_CWE-758",
+    "HR:CVE-2023-41051_CWE-125",
+    "HR:CVE-2023-41317_CWE-755",
+    "HR:CVE-2023-45812_CWE-754",
+    "HR:CVE-2023-46135_CWE-248",
+    "HR:CVE-2023-50711_CWE-787",
+    "HR:CVE-2023-6245_CWE-20",
+    "HR:CVE-2024-20380_CWE-475",
+    "HR:CVE-2024-21629_CWE-703"
+   ],
+   "dropped_duplicates": [
+    "HR:CVE-2020-35870_CWE-416",
+    "HR:CVE-2021-21235_CWE-400",
+    "HR:CVE-2021-21299_CWE-444",
+    "HR:CVE-2021-25900_CWE-787",
+    "HR:CVE-2022-24713_CWE-400",
+    "HR:CVE-2022-31169_CWE-682",
+    "HR:CVE-2022-31173_CWE-400",
+    "HR:CVE-2024-21491_CWE-288",
+    "HR:CVE-2024-23644_CWE-113",
+    "HR:CVE-2024-28854_CWE-400"
+   ]
+  },
+  "AR": {
+   "status": "blocked: two-reviewer audit not completed"
+  },
+  "MC": {
+   "status": "blocked: matched to AR size"
+  }
+ },
+ "sha256_of_content": "e6883b0194286bef4e54055ecb18fa35a56aad985b1c25c122a4c4cac6014bd7"
+}

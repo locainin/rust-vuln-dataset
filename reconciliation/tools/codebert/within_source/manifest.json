@@ -1,0 +1,3955 @@
+{
+ "design": "v2: RustXec pair anchors; HaluRust+RustMizan train; upstream C2",
+ "pins": {
+  "repo": "c6b68320219838f216fec4eb8ae2673b5692752f",
+  "halurust_upstream": "b97396b4c2adcb1156b71c4d73ef358dcd5a9ebf",
+  "mizan_upstream": "1b7ca84e991ce00c9fe4f2f6c2e92fcfa4b1cd2f"
+ },
+ "manifest_seed": 2026,
+ "b_draws": 20,
+ "anchors": [
+  {
+   "anchor_id": "RUSTSEC-2021-0003:insert_many",
+   "advisory": "RUSTSEC-2021-0003",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0003/pairs/insert_many/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0003/pairs/insert_many/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2021-0003"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0007:copy_from_raw_parts",
+   "advisory": "RUSTSEC-2021-0007",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0007/pairs/copy_from_raw_parts/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0007/pairs/copy_from_raw_parts/fixed.rs"
+   ],
+   "lineage": "CVE-2021-25904"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0010:mutate",
+   "advisory": "RUSTSEC-2021-0010",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0010/pairs/mutate/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0010/pairs/mutate/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2021-0010"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0010:mutate2",
+   "advisory": "RUSTSEC-2021-0010",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0010/pairs/mutate2/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0010/pairs/mutate2/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2021-0010"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0018:insert_slice_clone",
+   "advisory": "RUSTSEC-2021-0018",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0018/pairs/insert_slice_clone/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0018/pairs/insert_slice_clone/fixed.rs"
+   ],
+   "lineage": "CVE-2021-26954"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0020:server_parse",
+   "advisory": "RUSTSEC-2021-0020",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0020/pairs/server_parse/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0020/pairs/server_parse/fixed.rs"
+   ],
+   "lineage": "GHSA-6HFQ-H8HQ-87MF"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0022:sub_self_call",
+   "advisory": "RUSTSEC-2021-0022",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0022/pairs/sub_self_call/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0022/pairs/sub_self_call/fixed.rs"
+   ],
+   "lineage": "GHSA-9658-C26V-7QVF"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0027:block_load",
+   "advisory": "RUSTSEC-2021-0027",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0027/pairs/block_load/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0027/pairs/block_load/fixed.rs"
+   ],
+   "lineage": "GHSA-CPQJ-R29Q-CHRH"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0028:insert_row",
+   "advisory": "RUSTSEC-2021-0028",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0028/pairs/insert_row/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0028/pairs/insert_row/fixed.rs"
+   ],
+   "lineage": "CVE-2021-28029"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0030:array_move_elements",
+   "advisory": "RUSTSEC-2021-0030",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0030/pairs/array_move_elements/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0030/pairs/array_move_elements/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2021-0030"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0030:boxed_slice_move_elements",
+   "advisory": "RUSTSEC-2021-0030",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0030/pairs/boxed_slice_move_elements/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0030/pairs/boxed_slice_move_elements/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2021-0030"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0031:arena_split_at",
+   "advisory": "RUSTSEC-2021-0031",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0031/pairs/arena_split_at/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0031/pairs/arena_split_at/fixed.rs"
+   ],
+   "lineage": "GHSA-WP34-MQW5-JJ85"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0032:read_bytes_default_le",
+   "advisory": "RUSTSEC-2021-0032",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0032/pairs/read_bytes_default_le/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0032/pairs/read_bytes_default_le/fixed.rs"
+   ],
+   "lineage": "GHSA-8FGG-5V78-6G76"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0033:push_cloned",
+   "advisory": "RUSTSEC-2021-0033",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0033/pairs/push_cloned/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0033/pairs/push_cloned/fixed.rs"
+   ],
+   "lineage": "CVE-2021-28034"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0036:intern_sync",
+   "advisory": "RUSTSEC-2021-0036",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0036/pairs/intern_sync/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0036/pairs/intern_sync/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2021-0036"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0038:pixmap_new",
+   "advisory": "RUSTSEC-2021-0038",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0038/pairs/pixmap_new/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0038/pairs/pixmap_new/fixed.rs"
+   ],
+   "lineage": "GHSA-5PG8-H4GV-M3P8"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0038:set_icon",
+   "advisory": "RUSTSEC-2021-0038",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0038/pairs/set_icon/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0038/pairs/set_icon/fixed.rs"
+   ],
+   "lineage": "GHSA-5PG8-H4GV-M3P8"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0038:set_label_type",
+   "advisory": "RUSTSEC-2021-0038",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0038/pairs/set_label_type/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0038/pairs/set_label_type/fixed.rs"
+   ],
+   "lineage": "GHSA-5PG8-H4GV-M3P8"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0048:stackvec_extend",
+   "advisory": "RUSTSEC-2021-0048",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0048/pairs/stackvec_extend/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0048/pairs/stackvec_extend/fixed.rs"
+   ],
+   "lineage": "GHSA-9FRF-R7C7-J2VG"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0050:swap_index",
+   "advisory": "RUSTSEC-2021-0050",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0050/pairs/swap_index/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0050/pairs/swap_index/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2021-0050"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0063:html_formatter_escape_href",
+   "advisory": "RUSTSEC-2021-0063",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0063/pairs/html_formatter_escape_href/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0063/pairs/html_formatter_escape_href/fixed.rs"
+   ],
+   "lineage": "CVE-2021-38186"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0069:client_codec_encode",
+   "advisory": "RUSTSEC-2021-0069",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0069/pairs/client_codec_encode/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0069/pairs/client_codec_encode/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2021-0069"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0072:join_handle_abort",
+   "advisory": "RUSTSEC-2021-0072",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0072/pairs/join_handle_abort/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0072/pairs/join_handle_abort/fixed.rs"
+   ],
+   "lineage": "CVE-2021-38191"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0073:timestamp_normalize",
+   "advisory": "RUSTSEC-2021-0073",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0073/pairs/timestamp_normalize/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0073/pairs/timestamp_normalize/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2021-0073"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0073:timestamp_system_time",
+   "advisory": "RUSTSEC-2021-0073",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0073/pairs/timestamp_system_time/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0073/pairs/timestamp_system_time/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2021-0073"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0074:clean_dom",
+   "advisory": "RUSTSEC-2021-0074",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0074/pairs/clean_dom/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0074/pairs/clean_dom/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2021-0074"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0075:field_var_mul_by_inverse",
+   "advisory": "RUSTSEC-2021-0075",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0075/pairs/field_var_mul_by_inverse/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0075/pairs/field_var_mul_by_inverse/fixed.rs"
+   ],
+   "lineage": "CVE-2021-38194"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0079:chunked_read_size",
+   "advisory": "RUSTSEC-2021-0079",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0079/pairs/chunked_read_size/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0079/pairs/chunked_read_size/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2021-0079"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0080:entry_fields_unpack_in",
+   "advisory": "RUSTSEC-2021-0080",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0080/pairs/entry_fields_unpack_in/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0080/pairs/entry_fields_unpack_in/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2021-0080"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0081:chunked_read_extension",
+   "advisory": "RUSTSEC-2021-0081",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0081/pairs/chunked_read_extension/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0081/pairs/chunked_read_extension/fixed.rs"
+   ],
+   "lineage": "GHSA-8928-2FGM-6X9X"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0081:chunked_read_size",
+   "advisory": "RUSTSEC-2021-0081",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0081/pairs/chunked_read_size/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0081/pairs/chunked_read_size/fixed.rs"
+   ],
+   "lineage": "GHSA-8928-2FGM-6X9X"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0081:message_type_set_headers",
+   "advisory": "RUSTSEC-2021-0081",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0081/pairs/message_type_set_headers/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0081/pairs/message_type_set_headers/fixed.rs"
+   ],
+   "lineage": "GHSA-8928-2FGM-6X9X"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0100:load_data_avx2",
+   "advisory": "RUSTSEC-2021-0100",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0100/pairs/load_data_avx2/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0100/pairs/load_data_avx2/fixed.rs"
+   ],
+   "lineage": "GHSA-FC7X-2CMC-8J2G"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0110:host_func_register_trampoline",
+   "advisory": "RUSTSEC-2021-0110",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0110/pairs/host_func_register_trampoline/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0110/pairs/host_func_register_trampoline/fixed.rs"
+   ],
+   "lineage": "GHSA-V4CP-H94R-M7XF"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0110:insert_vmexternref",
+   "advisory": "RUSTSEC-2021-0110",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0110/pairs/insert_vmexternref/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0110/pairs/insert_vmexternref/fixed.rs"
+   ],
+   "lineage": "GHSA-V4CP-H94R-M7XF"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0110:registered_module_lookup_stack_map",
+   "advisory": "RUSTSEC-2021-0110",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0110/pairs/registered_module_lookup_stack_map/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0110/pairs/registered_module_lookup_stack_map/fixed.rs"
+   ],
+   "lineage": "GHSA-V4CP-H94R-M7XF"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0113:block_send",
+   "advisory": "RUSTSEC-2021-0113",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0113/pairs/block_send/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0113/pairs/block_send/fixed.rs"
+   ],
+   "lineage": "CVE-2021-45704"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0113:block_sync",
+   "advisory": "RUSTSEC-2021-0113",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0113/pairs/block_sync/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0113/pairs/block_sync/fixed.rs"
+   ],
+   "lineage": "CVE-2021-45704"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0114:deref",
+   "advisory": "RUSTSEC-2021-0114",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0114/pairs/deref/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0114/pairs/deref/fixed.rs"
+   ],
+   "lineage": "GHSA-P6GJ-GPC8-F8XW"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0114:deref_mut",
+   "advisory": "RUSTSEC-2021-0114",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0114/pairs/deref_mut/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0114/pairs/deref_mut/fixed.rs"
+   ],
+   "lineage": "GHSA-P6GJ-GPC8-F8XW"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0115:zeroize_attrs_parse",
+   "advisory": "RUSTSEC-2021-0115",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0115/pairs/zeroize_attrs_parse/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0115/pairs/zeroize_attrs_parse/fixed.rs"
+   ],
+   "lineage": "GHSA-C5HX-W945-J4PQ"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0118:array_data_try_new",
+   "advisory": "RUSTSEC-2021-0118",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0118/pairs/array_data_try_new/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0118/pairs/array_data_try_new/fixed.rs"
+   ],
+   "lineage": "GHSA-QGRP-8F3V-Q85P"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0122:emplace_scalar_array",
+   "advisory": "RUSTSEC-2021-0122",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0122/pairs/emplace_scalar_array/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0122/pairs/emplace_scalar_array/fixed.rs"
+   ],
+   "lineage": "GHSA-3JCH-9QGP-4844"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0122:follow_cast_ref",
+   "advisory": "RUSTSEC-2021-0122",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0122/pairs/follow_cast_ref/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0122/pairs/follow_cast_ref/fixed.rs"
+   ],
+   "lineage": "GHSA-3JCH-9QGP-4844"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0122:follow_trait",
+   "advisory": "RUSTSEC-2021-0122",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0122/pairs/follow_trait/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0122/pairs/follow_trait/fixed.rs"
+   ],
+   "lineage": "GHSA-3JCH-9QGP-4844"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0122:push_trait",
+   "advisory": "RUSTSEC-2021-0122",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0122/pairs/push_trait/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0122/pairs/push_trait/fixed.rs"
+   ],
+   "lineage": "GHSA-3JCH-9QGP-4844"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0122:vector_safe_slice",
+   "advisory": "RUSTSEC-2021-0122",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0122/pairs/vector_safe_slice/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0122/pairs/vector_safe_slice/fixed.rs"
+   ],
+   "lineage": "GHSA-3JCH-9QGP-4844"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0124:set_complete",
+   "advisory": "RUSTSEC-2021-0124",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0124/pairs/set_complete/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0124/pairs/set_complete/fixed.rs"
+   ],
+   "lineage": "GHSA-FG7R-2G4J-5CGR"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0125:from_der_",
+   "advisory": "RUSTSEC-2021-0125",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0125/pairs/from_der_/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0125/pairs/from_der_/fixed.rs"
+   ],
+   "lineage": "GHSA-G4H2-4WVH-GRC5"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0128:commit_hook",
+   "advisory": "RUSTSEC-2021-0128",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0128/pairs/commit_hook/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0128/pairs/commit_hook/fixed.rs"
+   ],
+   "lineage": "GHSA-G4G4-3PQW-8M7F"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0128:create_aggregate_function",
+   "advisory": "RUSTSEC-2021-0128",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0128/pairs/create_aggregate_function/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0128/pairs/create_aggregate_function/fixed.rs"
+   ],
+   "lineage": "GHSA-G4G4-3PQW-8M7F"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0128:create_collation",
+   "advisory": "RUSTSEC-2021-0128",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0128/pairs/create_collation/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0128/pairs/create_collation/fixed.rs"
+   ],
+   "lineage": "GHSA-G4G4-3PQW-8M7F"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0128:create_scalar_function",
+   "advisory": "RUSTSEC-2021-0128",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0128/pairs/create_scalar_function/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0128/pairs/create_scalar_function/fixed.rs"
+   ],
+   "lineage": "GHSA-G4G4-3PQW-8M7F"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0128:create_window_function",
+   "advisory": "RUSTSEC-2021-0128",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0128/pairs/create_window_function/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0128/pairs/create_window_function/fixed.rs"
+   ],
+   "lineage": "GHSA-G4G4-3PQW-8M7F"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0128:rollback_hook",
+   "advisory": "RUSTSEC-2021-0128",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0128/pairs/rollback_hook/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0128/pairs/rollback_hook/fixed.rs"
+   ],
+   "lineage": "GHSA-G4G4-3PQW-8M7F"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0128:update_hook",
+   "advisory": "RUSTSEC-2021-0128",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0128/pairs/update_hook/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0128/pairs/update_hook/fixed.rs"
+   ],
+   "lineage": "GHSA-G4G4-3PQW-8M7F"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0130:iter",
+   "advisory": "RUSTSEC-2021-0130",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0130/pairs/iter/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0130/pairs/iter/fixed.rs"
+   ],
+   "lineage": "GHSA-QQMC-HWQP-8G2W"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0130:iter_mut",
+   "advisory": "RUSTSEC-2021-0130",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0130/pairs/iter_mut/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0130/pairs/iter_mut/fixed.rs"
+   ],
+   "lineage": "GHSA-QQMC-HWQP-8G2W"
+  },
+  {
+   "anchor_id": "RUSTSEC-2021-0143:discard_exact",
+   "advisory": "RUSTSEC-2021-0143",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2021-0143/pairs/discard_exact/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2021-0143/pairs/discard_exact/fixed.rs"
+   ],
+   "lineage": "CVE-2021-21235"
+  },
+  {
+   "anchor_id": "RUSTSEC-2022-0002:mapref_multiple_ref_multi_key",
+   "advisory": "RUSTSEC-2022-0002",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_multiple_ref_multi_key/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_multiple_ref_multi_key/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2022-0002"
+  },
+  {
+   "anchor_id": "RUSTSEC-2022-0002:mapref_multiple_ref_multi_pair",
+   "advisory": "RUSTSEC-2022-0002",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_multiple_ref_multi_pair/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_multiple_ref_multi_pair/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2022-0002"
+  },
+  {
+   "anchor_id": "RUSTSEC-2022-0002:mapref_multiple_ref_multi_value",
+   "advisory": "RUSTSEC-2022-0002",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_multiple_ref_multi_value/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_multiple_ref_multi_value/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2022-0002"
+  },
+  {
+   "anchor_id": "RUSTSEC-2022-0002:mapref_multiple_ref_mut_multi_key",
+   "advisory": "RUSTSEC-2022-0002",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_multiple_ref_mut_multi_key/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_multiple_ref_mut_multi_key/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2022-0002"
+  },
+  {
+   "anchor_id": "RUSTSEC-2022-0002:mapref_multiple_ref_mut_multi_pair",
+   "advisory": "RUSTSEC-2022-0002",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_multiple_ref_mut_multi_pair/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_multiple_ref_mut_multi_pair/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2022-0002"
+  },
+  {
+   "anchor_id": "RUSTSEC-2022-0002:mapref_multiple_ref_mut_multi_pair_mut",
+   "advisory": "RUSTSEC-2022-0002",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_multiple_ref_mut_multi_pair_mut/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_multiple_ref_mut_multi_pair_mut/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2022-0002"
+  },
+  {
+   "anchor_id": "RUSTSEC-2022-0002:mapref_one_ref_key",
+   "advisory": "RUSTSEC-2022-0002",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_one_ref_key/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_one_ref_key/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2022-0002"
+  },
+  {
+   "anchor_id": "RUSTSEC-2022-0002:mapref_one_ref_mut_key",
+   "advisory": "RUSTSEC-2022-0002",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_one_ref_mut_key/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_one_ref_mut_key/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2022-0002"
+  },
+  {
+   "anchor_id": "RUSTSEC-2022-0002:mapref_one_ref_mut_pair",
+   "advisory": "RUSTSEC-2022-0002",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_one_ref_mut_pair/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_one_ref_mut_pair/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2022-0002"
+  },
+  {
+   "anchor_id": "RUSTSEC-2022-0002:mapref_one_ref_mut_pair_mut",
+   "advisory": "RUSTSEC-2022-0002",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_one_ref_mut_pair_mut/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_one_ref_mut_pair_mut/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2022-0002"
+  },
+  {
+   "anchor_id": "RUSTSEC-2022-0002:mapref_one_ref_pair",
+   "advisory": "RUSTSEC-2022-0002",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_one_ref_pair/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_one_ref_pair/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2022-0002"
+  },
+  {
+   "anchor_id": "RUSTSEC-2022-0002:mapref_one_ref_value",
+   "advisory": "RUSTSEC-2022-0002",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_one_ref_value/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0002/pairs/mapref_one_ref_value/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2022-0002"
+  },
+  {
+   "anchor_id": "RUSTSEC-2022-0002:setref_multiple_ref_multi_key",
+   "advisory": "RUSTSEC-2022-0002",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0002/pairs/setref_multiple_ref_multi_key/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0002/pairs/setref_multiple_ref_multi_key/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2022-0002"
+  },
+  {
+   "anchor_id": "RUSTSEC-2022-0002:setref_one_ref_key",
+   "advisory": "RUSTSEC-2022-0002",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0002/pairs/setref_one_ref_key/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0002/pairs/setref_one_ref_key/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2022-0002"
+  },
+  {
+   "anchor_id": "RUSTSEC-2022-0003:clean_text",
+   "advisory": "RUSTSEC-2022-0003",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0003/pairs/clean_text/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0003/pairs/clean_text/fixed.rs"
+   ],
+   "lineage": "GHSA-P2G9-94WH-65C2"
+  },
+  {
+   "anchor_id": "RUSTSEC-2022-0012:arrow_array",
+   "advisory": "RUSTSEC-2022-0012",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0012/pairs/arrow_array/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0012/pairs/arrow_array/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2022-0012"
+  },
+  {
+   "anchor_id": "RUSTSEC-2022-0012:arrow_array_stream",
+   "advisory": "RUSTSEC-2022-0012",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0012/pairs/arrow_array_stream/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0012/pairs/arrow_array_stream/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2022-0012"
+  },
+  {
+   "anchor_id": "RUSTSEC-2022-0012:arrow_schema",
+   "advisory": "RUSTSEC-2022-0012",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0012/pairs/arrow_schema/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0012/pairs/arrow_schema/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2022-0012"
+  },
+  {
+   "anchor_id": "RUSTSEC-2022-0013:compiler_c",
+   "advisory": "RUSTSEC-2022-0013",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0013/pairs/compiler_c/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0013/pairs/compiler_c/fixed.rs"
+   ],
+   "lineage": "CVE-2022-24713"
+  },
+  {
+   "anchor_id": "RUSTSEC-2022-0013:compiler_c_concat",
+   "advisory": "RUSTSEC-2022-0013",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0013/pairs/compiler_c_concat/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0013/pairs/compiler_c_concat/fixed.rs"
+   ],
+   "lineage": "CVE-2022-24713"
+  },
+  {
+   "anchor_id": "RUSTSEC-2022-0028:js_array_buffer_external",
+   "advisory": "RUSTSEC-2022-0028",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0028/pairs/js_array_buffer_external/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0028/pairs/js_array_buffer_external/fixed.rs"
+   ],
+   "lineage": "GHSA-8MJ7-WXMC-F424"
+  },
+  {
+   "anchor_id": "RUSTSEC-2022-0028:js_buffer_external",
+   "advisory": "RUSTSEC-2022-0028",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0028/pairs/js_buffer_external/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0028/pairs/js_buffer_external/fixed.rs"
+   ],
+   "lineage": "GHSA-8MJ7-WXMC-F424"
+  },
+  {
+   "anchor_id": "RUSTSEC-2022-0038:collect_conflicts_between_fields_and_fragment",
+   "advisory": "RUSTSEC-2022-0038",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0038/pairs/collect_conflicts_between_fields_and_fragment/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0038/pairs/collect_conflicts_between_fields_and_fragment/fixed.rs"
+   ],
+   "lineage": "CVE-2022-31173"
+  },
+  {
+   "anchor_id": "RUSTSEC-2022-0038:collect_incorrect_usages",
+   "advisory": "RUSTSEC-2022-0038",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0038/pairs/collect_incorrect_usages/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0038/pairs/collect_incorrect_usages/fixed.rs"
+   ],
+   "lineage": "CVE-2022-31173"
+  },
+  {
+   "anchor_id": "RUSTSEC-2022-0038:detect_from",
+   "advisory": "RUSTSEC-2022-0038",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0038/pairs/detect_from/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0038/pairs/detect_from/fixed.rs"
+   ],
+   "lineage": "CVE-2022-31173"
+  },
+  {
+   "anchor_id": "RUSTSEC-2022-0038:find_reachable_fragments",
+   "advisory": "RUSTSEC-2022-0038",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0038/pairs/find_reachable_fragments/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0038/pairs/find_reachable_fragments/fixed.rs"
+   ],
+   "lineage": "CVE-2022-31173"
+  },
+  {
+   "anchor_id": "RUSTSEC-2022-0038:find_undef_vars",
+   "advisory": "RUSTSEC-2022-0038",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0038/pairs/find_undef_vars/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0038/pairs/find_undef_vars/fixed.rs"
+   ],
+   "lineage": "CVE-2022-31173"
+  },
+  {
+   "anchor_id": "RUSTSEC-2022-0038:find_used_vars",
+   "advisory": "RUSTSEC-2022-0038",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0038/pairs/find_used_vars/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0038/pairs/find_used_vars/fixed.rs"
+   ],
+   "lineage": "CVE-2022-31173"
+  },
+  {
+   "anchor_id": "RUSTSEC-2022-0063:heap_extend",
+   "advisory": "RUSTSEC-2022-0063",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0063/pairs/heap_extend/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0063/pairs/heap_extend/fixed.rs"
+   ],
+   "lineage": "CVE-2022-36086"
+  },
+  {
+   "anchor_id": "RUSTSEC-2022-0063:heap_new",
+   "advisory": "RUSTSEC-2022-0063",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0063/pairs/heap_new/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0063/pairs/heap_new/fixed.rs"
+   ],
+   "lineage": "CVE-2022-36086"
+  },
+  {
+   "anchor_id": "RUSTSEC-2022-0063:hole_new",
+   "advisory": "RUSTSEC-2022-0063",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0063/pairs/hole_new/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0063/pairs/hole_new/fixed.rs"
+   ],
+   "lineage": "CVE-2022-36086"
+  },
+  {
+   "anchor_id": "RUSTSEC-2022-0066:blocking_handler",
+   "advisory": "RUSTSEC-2022-0066",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0066/pairs/blocking_handler/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0066/pairs/blocking_handler/fixed.rs"
+   ],
+   "lineage": "CVE-2022-39294"
+  },
+  {
+   "anchor_id": "RUSTSEC-2022-0068:read_list_pointer",
+   "advisory": "RUSTSEC-2022-0068",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0068/pairs/read_list_pointer/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0068/pairs/read_list_pointer/fixed.rs"
+   ],
+   "lineage": "GHSA-QQFF-4VW4-F6HX"
+  },
+  {
+   "anchor_id": "RUSTSEC-2022-0072:response_builder_build",
+   "advisory": "RUSTSEC-2022-0072",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0072/pairs/response_builder_build/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0072/pairs/response_builder_build/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2022-0072"
+  },
+  {
+   "anchor_id": "RUSTSEC-2022-0091:allow_directory",
+   "advisory": "RUSTSEC-2022-0091",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0091/pairs/allow_directory/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0091/pairs/allow_directory/fixed.rs"
+   ],
+   "lineage": "GHSA-Q9WV-22M9-VHQH"
+  },
+  {
+   "anchor_id": "RUSTSEC-2022-0091:allow_file",
+   "advisory": "RUSTSEC-2022-0091",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0091/pairs/allow_file/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0091/pairs/allow_file/fixed.rs"
+   ],
+   "lineage": "GHSA-Q9WV-22M9-VHQH"
+  },
+  {
+   "anchor_id": "RUSTSEC-2022-0093:expanded_secret_key_sign",
+   "advisory": "RUSTSEC-2022-0093",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0093/pairs/expanded_secret_key_sign/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0093/pairs/expanded_secret_key_sign/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2022-0093"
+  },
+  {
+   "anchor_id": "RUSTSEC-2022-0093:expanded_secret_key_sign_prehashed",
+   "advisory": "RUSTSEC-2022-0093",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0093/pairs/expanded_secret_key_sign_prehashed/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0093/pairs/expanded_secret_key_sign_prehashed/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2022-0093"
+  },
+  {
+   "anchor_id": "RUSTSEC-2022-0093:keypair",
+   "advisory": "RUSTSEC-2022-0093",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0093/pairs/keypair/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0093/pairs/keypair/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2022-0093"
+  },
+  {
+   "anchor_id": "RUSTSEC-2022-0093:keypair_from_bytes",
+   "advisory": "RUSTSEC-2022-0093",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0093/pairs/keypair_from_bytes/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0093/pairs/keypair_from_bytes/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2022-0093"
+  },
+  {
+   "anchor_id": "RUSTSEC-2022-0098:allocate_memories",
+   "advisory": "RUSTSEC-2022-0098",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0098/pairs/allocate_memories/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0098/pairs/allocate_memories/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2022-0075"
+  },
+  {
+   "anchor_id": "RUSTSEC-2022-0101:load_constant64_full",
+   "advisory": "RUSTSEC-2022-0101",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0101/pairs/load_constant64_full/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0101/pairs/load_constant64_full/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2022-0101"
+  },
+  {
+   "anchor_id": "RUSTSEC-2022-0102:memory_pool_new",
+   "advisory": "RUSTSEC-2022-0102",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2022-0102/pairs/memory_pool_new/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2022-0102/pairs/memory_pool_new/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2022-0102"
+  },
+  {
+   "anchor_id": "RUSTSEC-2023-0024:new",
+   "advisory": "RUSTSEC-2023-0024",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0024/pairs/new/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0024/pairs/new/fixed.rs"
+   ],
+   "lineage": "GHSA-6HCF-G6GR-HHCR"
+  },
+  {
+   "anchor_id": "RUSTSEC-2023-0024:new_nid",
+   "advisory": "RUSTSEC-2023-0024",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0024/pairs/new_nid/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0024/pairs/new_nid/fixed.rs"
+   ],
+   "lineage": "GHSA-6HCF-G6GR-HHCR"
+  },
+  {
+   "anchor_id": "RUSTSEC-2023-0030:fam_struct_wrapper_deserialize",
+   "advisory": "RUSTSEC-2023-0030",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0030/pairs/fam_struct_wrapper_deserialize/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0030/pairs/fam_struct_wrapper_deserialize/fixed.rs"
+   ],
+   "lineage": "GHSA-8VXC-R5WP-VGVC"
+  },
+  {
+   "anchor_id": "RUSTSEC-2023-0039:data_helper",
+   "advisory": "RUSTSEC-2023-0039",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0039/pairs/data_helper/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0039/pairs/data_helper/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2023-0039"
+  },
+  {
+   "anchor_id": "RUSTSEC-2023-0044:set_host",
+   "advisory": "RUSTSEC-2023-0044",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0044/pairs/set_host/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0044/pairs/set_host/fixed.rs"
+   ],
+   "lineage": "CVE-2023-53159"
+  },
+  {
+   "anchor_id": "RUSTSEC-2023-0062:bit_string_from_content",
+   "advisory": "RUSTSEC-2023-0062",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0062/pairs/bit_string_from_content/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0062/pairs/bit_string_from_content/fixed.rs"
+   ],
+   "lineage": "CVE-2023-39914"
+  },
+  {
+   "anchor_id": "RUSTSEC-2023-0062:oid_skip_if",
+   "advisory": "RUSTSEC-2023-0062",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0062/pairs/oid_skip_if/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0062/pairs/oid_skip_if/fixed.rs"
+   ],
+   "lineage": "CVE-2023-39914"
+  },
+  {
+   "anchor_id": "RUSTSEC-2023-0062:oid_take_from",
+   "advisory": "RUSTSEC-2023-0062",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0062/pairs/oid_take_from/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0062/pairs/oid_take_from/fixed.rs"
+   ],
+   "lineage": "CVE-2023-39914"
+  },
+  {
+   "anchor_id": "RUSTSEC-2023-0062:oid_take_opt_from",
+   "advisory": "RUSTSEC-2023-0062",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0062/pairs/oid_take_opt_from/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0062/pairs/oid_take_opt_from/fixed.rs"
+   ],
+   "lineage": "CVE-2023-39914"
+  },
+  {
+   "anchor_id": "RUSTSEC-2023-0062:process_next_value",
+   "advisory": "RUSTSEC-2023-0062",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0062/pairs/process_next_value/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0062/pairs/process_next_value/fixed.rs"
+   ],
+   "lineage": "CVE-2023-39914"
+  },
+  {
+   "anchor_id": "RUSTSEC-2023-0062:skip_opt",
+   "advisory": "RUSTSEC-2023-0062",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0062/pairs/skip_opt/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0062/pairs/skip_opt/fixed.rs"
+   ],
+   "lineage": "CVE-2023-39914"
+  },
+  {
+   "anchor_id": "RUSTSEC-2023-0062:tag_take_from_if",
+   "advisory": "RUSTSEC-2023-0062",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0062/pairs/tag_take_from_if/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0062/pairs/tag_take_from_if/fixed.rs"
+   ],
+   "lineage": "CVE-2023-39914"
+  },
+  {
+   "anchor_id": "RUSTSEC-2023-0068:cocoon_encrypt",
+   "advisory": "RUSTSEC-2023-0068",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0068/pairs/cocoon_encrypt/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0068/pairs/cocoon_encrypt/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2023-0068"
+  },
+  {
+   "anchor_id": "RUSTSEC-2023-0068:mini_cocoon_encrypt",
+   "advisory": "RUSTSEC-2023-0068",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0068/pairs/mini_cocoon_encrypt/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0068/pairs/mini_cocoon_encrypt/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2023-0068"
+  },
+  {
+   "anchor_id": "RUSTSEC-2023-0070:covariant_access",
+   "advisory": "RUSTSEC-2023-0070",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0070/pairs/covariant_access/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0070/pairs/covariant_access/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2023-0070"
+  },
+  {
+   "anchor_id": "RUSTSEC-2023-0074:into_mut",
+   "advisory": "RUSTSEC-2023-0074",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0074/pairs/into_mut/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0074/pairs/into_mut/fixed.rs"
+   ],
+   "lineage": "GHSA-RJHF-4MH8-9XJQ"
+  },
+  {
+   "anchor_id": "RUSTSEC-2023-0074:into_mut_slice",
+   "advisory": "RUSTSEC-2023-0074",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0074/pairs/into_mut_slice/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0074/pairs/into_mut_slice/fixed.rs"
+   ],
+   "lineage": "GHSA-RJHF-4MH8-9XJQ"
+  },
+  {
+   "anchor_id": "RUSTSEC-2023-0074:into_ref",
+   "advisory": "RUSTSEC-2023-0074",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0074/pairs/into_ref/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0074/pairs/into_ref/fixed.rs"
+   ],
+   "lineage": "GHSA-RJHF-4MH8-9XJQ"
+  },
+  {
+   "anchor_id": "RUSTSEC-2023-0074:into_slice",
+   "advisory": "RUSTSEC-2023-0074",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0074/pairs/into_slice/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0074/pairs/into_slice/fixed.rs"
+   ],
+   "lineage": "GHSA-RJHF-4MH8-9XJQ"
+  },
+  {
+   "anchor_id": "RUSTSEC-2023-0077:data_lense_macro",
+   "advisory": "RUSTSEC-2023-0077",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0077/pairs/data_lense_macro/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0077/pairs/data_lense_macro/fixed.rs"
+   ],
+   "lineage": "CVE-2023-53157"
+  },
+  {
+   "anchor_id": "RUSTSEC-2023-0080:transpose",
+   "advisory": "RUSTSEC-2023-0080",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0080/pairs/transpose/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0080/pairs/transpose/fixed.rs"
+   ],
+   "lineage": "CVE-2023-53156"
+  },
+  {
+   "anchor_id": "RUSTSEC-2023-0082:rfc3966_phone_number",
+   "advisory": "RUSTSEC-2023-0082",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0082/pairs/rfc3966_phone_number/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0082/pairs/rfc3966_phone_number/fixed.rs"
+   ],
+   "lineage": "WHHR-7F2W-QQJ2"
+  },
+  {
+   "anchor_id": "RUSTSEC-2023-0085:update_max_dynamic_size",
+   "advisory": "RUSTSEC-2023-0085",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2023-0085/pairs/update_max_dynamic_size/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2023-0085/pairs/update_max_dynamic_size/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2023-0085"
+  },
+  {
+   "anchor_id": "RUSTSEC-2024-0009:write_headers",
+   "advisory": "RUSTSEC-2024-0009",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0009/pairs/write_headers/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0009/pairs/write_headers/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2024-0008"
+  },
+  {
+   "anchor_id": "RUSTSEC-2024-0010:verify",
+   "advisory": "RUSTSEC-2024-0010",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0010/pairs/verify/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0010/pairs/verify/fixed.rs"
+   ],
+   "lineage": "GHSA-W277-WPQF-RCFV"
+  },
+  {
+   "anchor_id": "RUSTSEC-2024-0011:decrypt_ad",
+   "advisory": "RUSTSEC-2024-0011",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0011/pairs/decrypt_ad/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0011/pairs/decrypt_ad/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2024-0011"
+  },
+  {
+   "anchor_id": "RUSTSEC-2024-0012:deserialize_any",
+   "advisory": "RUSTSEC-2024-0012",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0012/pairs/deserialize_any/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0012/pairs/deserialize_any/fixed.rs"
+   ],
+   "lineage": "GHSA-RR69-RXR6-8QWF"
+  },
+  {
+   "anchor_id": "RUSTSEC-2024-0012:deserialize_enum",
+   "advisory": "RUSTSEC-2024-0012",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0012/pairs/deserialize_enum/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0012/pairs/deserialize_enum/fixed.rs"
+   ],
+   "lineage": "GHSA-RR69-RXR6-8QWF"
+  },
+  {
+   "anchor_id": "RUSTSEC-2024-0012:deserialize_map",
+   "advisory": "RUSTSEC-2024-0012",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0012/pairs/deserialize_map/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0012/pairs/deserialize_map/fixed.rs"
+   ],
+   "lineage": "GHSA-RR69-RXR6-8QWF"
+  },
+  {
+   "anchor_id": "RUSTSEC-2024-0012:deserialize_seq",
+   "advisory": "RUSTSEC-2024-0012",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0012/pairs/deserialize_seq/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0012/pairs/deserialize_seq/fixed.rs"
+   ],
+   "lineage": "GHSA-RR69-RXR6-8QWF"
+  },
+  {
+   "anchor_id": "RUSTSEC-2024-0021:context_drop_rest",
+   "advisory": "RUSTSEC-2024-0021",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0021/pairs/context_drop_rest/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0021/pairs/context_drop_rest/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2024-0021"
+  },
+  {
+   "anchor_id": "RUSTSEC-2024-0335:prepare_invocation",
+   "advisory": "RUSTSEC-2024-0335",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0335/pairs/prepare_invocation/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0335/pairs/prepare_invocation/fixed.rs"
+   ],
+   "lineage": "GHSA-98P4-XJMM-8MFH"
+  },
+  {
+   "anchor_id": "RUSTSEC-2024-0336:complete_io",
+   "advisory": "RUSTSEC-2024-0336",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0336/pairs/complete_io/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0336/pairs/complete_io/fixed.rs"
+   ],
+   "lineage": "GHSA-6G7W-8WPP-FRHJ"
+  },
+  {
+   "anchor_id": "RUSTSEC-2024-0336:process_alert",
+   "advisory": "RUSTSEC-2024-0336",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0336/pairs/process_alert/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0336/pairs/process_alert/fixed.rs"
+   ],
+   "lineage": "GHSA-6G7W-8WPP-FRHJ"
+  },
+  {
+   "anchor_id": "RUSTSEC-2024-0341:poll_accept",
+   "advisory": "RUSTSEC-2024-0341",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0341/pairs/poll_accept/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0341/pairs/poll_accept/fixed.rs"
+   ],
+   "lineage": "GHSA-2QPH-QPVM-2QF7"
+  },
+  {
+   "anchor_id": "RUSTSEC-2024-0343:gen_macro",
+   "advisory": "RUSTSEC-2024-0343",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0343/pairs/gen_macro/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0343/pairs/gen_macro/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2024-0343"
+  },
+  {
+   "anchor_id": "RUSTSEC-2024-0345:raw_cert_parser_next",
+   "advisory": "RUSTSEC-2024-0345",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0345/pairs/raw_cert_parser_next/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0345/pairs/raw_cert_parser_next/fixed.rs"
+   ],
+   "lineage": "GHSA-9344-P847-QM5C"
+  },
+  {
+   "anchor_id": "RUSTSEC-2024-0350:make_relative_path_current",
+   "advisory": "RUSTSEC-2024-0350",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0350/pairs/make_relative_path_current/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0350/pairs/make_relative_path_current/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2024-0348"
+  },
+  {
+   "anchor_id": "RUSTSEC-2024-0356:user_identity_is_verified",
+   "advisory": "RUSTSEC-2024-0356",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0356/pairs/user_identity_is_verified/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0356/pairs/user_identity_is_verified/fixed.rs"
+   ],
+   "lineage": "GHSA-4QG4-CVH2-CRGG"
+  },
+  {
+   "anchor_id": "RUSTSEC-2024-0357:mem_bio_get_buf",
+   "advisory": "RUSTSEC-2024-0357",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0357/pairs/mem_bio_get_buf/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0357/pairs/mem_bio_get_buf/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2024-0357"
+  },
+  {
+   "anchor_id": "RUSTSEC-2024-0362:list_parser",
+   "advisory": "RUSTSEC-2024-0362",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0362/pairs/list_parser/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0362/pairs/list_parser/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2024-0362"
+  },
+  {
+   "anchor_id": "RUSTSEC-2024-0363:pg_hstore_encode_by_ref",
+   "advisory": "RUSTSEC-2024-0363",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0363/pairs/pg_hstore_encode_by_ref/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0363/pairs/pg_hstore_encode_by_ref/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2024-0363"
+  },
+  {
+   "anchor_id": "RUSTSEC-2024-0369:national_number_new",
+   "advisory": "RUSTSEC-2024-0369",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0369/pairs/national_number_new/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0369/pairs/national_number_new/fixed.rs"
+   ],
+   "lineage": "CVE-2024-39697"
+  },
+  {
+   "anchor_id": "RUSTSEC-2024-0373:clean_up_incoming",
+   "advisory": "RUSTSEC-2024-0373",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0373/pairs/clean_up_incoming/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0373/pairs/clean_up_incoming/fixed.rs"
+   ],
+   "lineage": "GHSA-VR26-JCQ5-FJJ8"
+  },
+  {
+   "anchor_id": "RUSTSEC-2024-0373:endpoint_accept",
+   "advisory": "RUSTSEC-2024-0373",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0373/pairs/endpoint_accept/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0373/pairs/endpoint_accept/fixed.rs"
+   ],
+   "lineage": "GHSA-VR26-JCQ5-FJJ8"
+  },
+  {
+   "anchor_id": "RUSTSEC-2024-0376:handle_accept_error",
+   "advisory": "RUSTSEC-2024-0376",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0376/pairs/handle_accept_error/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0376/pairs/handle_accept_error/fixed.rs"
+   ],
+   "lineage": "CVE-2024-47609"
+  },
+  {
+   "anchor_id": "RUSTSEC-2024-0377:c_chars_to_str",
+   "advisory": "RUSTSEC-2024-0377",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0377/pairs/c_chars_to_str/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0377/pairs/c_chars_to_str/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2024-0377"
+  },
+  {
+   "anchor_id": "RUSTSEC-2024-0399:first_handshake_message",
+   "advisory": "RUSTSEC-2024-0399",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0399/pairs/first_handshake_message/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0399/pairs/first_handshake_message/fixed.rs"
+   ],
+   "lineage": "GHSA-QG5G-GV98-5FFH"
+  },
+  {
+   "anchor_id": "RUSTSEC-2024-0401:dispatch",
+   "advisory": "RUSTSEC-2024-0401",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0401/pairs/dispatch/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0401/pairs/dispatch/fixed.rs"
+   ],
+   "lineage": "GHSA-J3PX-Q95C-9683"
+  },
+  {
+   "anchor_id": "RUSTSEC-2024-0402:borsh_serialize",
+   "advisory": "RUSTSEC-2024-0402",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0402/pairs/borsh_serialize/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0402/pairs/borsh_serialize/fixed.rs"
+   ],
+   "lineage": "GHSA-WWQ9-3CPR-MM53"
+  },
+  {
+   "anchor_id": "RUSTSEC-2024-0406:merge",
+   "advisory": "RUSTSEC-2024-0406",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0406/pairs/merge/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0406/pairs/merge/fixed.rs"
+   ],
+   "lineage": "GHSA-3RCQ-39XP-7XJP"
+  },
+  {
+   "anchor_id": "RUSTSEC-2024-0406:remove_helper",
+   "advisory": "RUSTSEC-2024-0406",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0406/pairs/remove_helper/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0406/pairs/remove_helper/fixed.rs"
+   ],
+   "lineage": "GHSA-3RCQ-39XP-7XJP"
+  },
+  {
+   "anchor_id": "RUSTSEC-2024-0437:skip_group",
+   "advisory": "RUSTSEC-2024-0437",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0437/pairs/skip_group/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0437/pairs/skip_group/fixed.rs"
+   ],
+   "lineage": "CVE-2025-53605"
+  },
+  {
+   "anchor_id": "RUSTSEC-2024-0441:table_init",
+   "advisory": "RUSTSEC-2024-0441",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2024-0441/pairs/table_init/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2024-0441/pairs/table_init/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2024-0441"
+  },
+  {
+   "anchor_id": "RUSTSEC-2025-0005:get_coverage",
+   "advisory": "RUSTSEC-2025-0005",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2025-0005/pairs/get_coverage/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2025-0005/pairs/get_coverage/fixed.rs"
+   ],
+   "lineage": "GHSA-QM2P-4W45-V2VR"
+  },
+  {
+   "anchor_id": "RUSTSEC-2025-0015:hyper_send",
+   "advisory": "RUSTSEC-2025-0015",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2025-0015/pairs/hyper_send/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2025-0015/pairs/hyper_send/fixed.rs"
+   ],
+   "lineage": "GHSA-287X-9RFF-QVCG"
+  },
+  {
+   "anchor_id": "RUSTSEC-2025-0015:isahc_send",
+   "advisory": "RUSTSEC-2025-0015",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2025-0015/pairs/isahc_send/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2025-0015/pairs/isahc_send/fixed.rs"
+   ],
+   "lineage": "GHSA-287X-9RFF-QVCG"
+  },
+  {
+   "anchor_id": "RUSTSEC-2025-0016:parc_from_arc",
+   "advisory": "RUSTSEC-2025-0016",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2025-0016/pairs/parc_from_arc/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2025-0016/pairs/parc_from_arc/fixed.rs"
+   ],
+   "lineage": "GHSA-VGMH-MQM4-8J88"
+  },
+  {
+   "anchor_id": "RUSTSEC-2025-0016:parc_project",
+   "advisory": "RUSTSEC-2025-0016",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2025-0016/pairs/parc_project/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2025-0016/pairs/parc_project/fixed.rs"
+   ],
+   "lineage": "GHSA-VGMH-MQM4-8J88"
+  },
+  {
+   "anchor_id": "RUSTSEC-2025-0016:parc_try_from_arc",
+   "advisory": "RUSTSEC-2025-0016",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2025-0016/pairs/parc_try_from_arc/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2025-0016/pairs/parc_try_from_arc/fixed.rs"
+   ],
+   "lineage": "GHSA-VGMH-MQM4-8J88"
+  },
+  {
+   "anchor_id": "RUSTSEC-2025-0016:prc_from_rc",
+   "advisory": "RUSTSEC-2025-0016",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2025-0016/pairs/prc_from_rc/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2025-0016/pairs/prc_from_rc/fixed.rs"
+   ],
+   "lineage": "GHSA-VGMH-MQM4-8J88"
+  },
+  {
+   "anchor_id": "RUSTSEC-2025-0016:prc_project",
+   "advisory": "RUSTSEC-2025-0016",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2025-0016/pairs/prc_project/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2025-0016/pairs/prc_project/fixed.rs"
+   ],
+   "lineage": "GHSA-VGMH-MQM4-8J88"
+  },
+  {
+   "anchor_id": "RUSTSEC-2025-0016:prc_try_from_rc",
+   "advisory": "RUSTSEC-2025-0016",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2025-0016/pairs/prc_try_from_rc/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2025-0016/pairs/prc_try_from_rc/fixed.rs"
+   ],
+   "lineage": "GHSA-VGMH-MQM4-8J88"
+  },
+  {
+   "anchor_id": "RUSTSEC-2025-0018:get_bucket",
+   "advisory": "RUSTSEC-2025-0018",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2025-0018/pairs/get_bucket/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2025-0018/pairs/get_bucket/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2025-0018"
+  },
+  {
+   "anchor_id": "RUSTSEC-2025-0018:get_chain",
+   "advisory": "RUSTSEC-2025-0018",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2025-0018/pairs/get_chain/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2025-0018/pairs/get_chain/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2025-0018"
+  },
+  {
+   "anchor_id": "RUSTSEC-2025-0020:from_object",
+   "advisory": "RUSTSEC-2025-0020",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2025-0020/pairs/from_object/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2025-0020/pairs/from_object/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2025-0020"
+  },
+  {
+   "anchor_id": "RUSTSEC-2025-0021:bytes",
+   "advisory": "RUSTSEC-2025-0021",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2025-0021/pairs/bytes/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2025-0021/pairs/bytes/fixed.rs"
+   ],
+   "lineage": "CVE-2025-31130"
+  },
+  {
+   "anchor_id": "RUSTSEC-2025-0021:bytes_of_file",
+   "advisory": "RUSTSEC-2025-0021",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2025-0021/pairs/bytes_of_file/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2025-0021/pairs/bytes_of_file/fixed.rs"
+   ],
+   "lineage": "CVE-2025-31130"
+  },
+  {
+   "anchor_id": "RUSTSEC-2025-0021:bytes_with_hasher",
+   "advisory": "RUSTSEC-2025-0021",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2025-0021/pairs/bytes_with_hasher/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2025-0021/pairs/bytes_with_hasher/fixed.rs"
+   ],
+   "lineage": "CVE-2025-31130"
+  },
+  {
+   "anchor_id": "RUSTSEC-2025-0021:hasher",
+   "advisory": "RUSTSEC-2025-0021",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2025-0021/pairs/hasher/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2025-0021/pairs/hasher/fixed.rs"
+   ],
+   "lineage": "CVE-2025-31130"
+  },
+  {
+   "anchor_id": "RUSTSEC-2025-0021:hasher_digest",
+   "advisory": "RUSTSEC-2025-0021",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2025-0021/pairs/hasher_digest/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2025-0021/pairs/hasher_digest/fixed.rs"
+   ],
+   "lineage": "CVE-2025-31130"
+  },
+  {
+   "anchor_id": "RUSTSEC-2025-0021:write_new",
+   "advisory": "RUSTSEC-2025-0021",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2025-0021/pairs/write_new/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2025-0021/pairs/write_new/fixed.rs"
+   ],
+   "lineage": "CVE-2025-31130"
+  },
+  {
+   "anchor_id": "RUSTSEC-2025-0022:cipher_fetch",
+   "advisory": "RUSTSEC-2025-0022",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2025-0022/pairs/cipher_fetch/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2025-0022/pairs/cipher_fetch/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2025-0022"
+  },
+  {
+   "anchor_id": "RUSTSEC-2025-0022:md_fetch",
+   "advisory": "RUSTSEC-2025-0022",
+   "vulnerable_files": [
+    "manual/RUSTSEC-2025-0022/pairs/md_fetch/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "manual/RUSTSEC-2025-0022/pairs/md_fetch/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2025-0022"
+  }
+ ],
+ "train_units": [
+  {
+   "unit_id": "halurust:CVE-2015-20001",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2015-20001/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2015-20001/fixed.rs"
+   ],
+   "lineage": "GHSA-GF7G-J42C-9RJR"
+  },
+  {
+   "unit_id": "halurust:CVE-2018-1000657",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2018-1000657/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2018-1000657/fixed.rs"
+   ],
+   "lineage": "GHSA-7877-M5C6-FGMX"
+  },
+  {
+   "unit_id": "halurust:CVE-2018-21000",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2018-21000/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2018-21000/fixed.rs"
+   ],
+   "lineage": "GHSA-2V78-J59H-FMPF"
+  },
+  {
+   "unit_id": "halurust:CVE-2018-25008",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2018-25008/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2018-25008/fixed.rs"
+   ],
+   "lineage": "GHSA-PRM6-42X6-PWFM"
+  },
+  {
+   "unit_id": "halurust:CVE-2019-1010299",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2019-1010299/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2019-1010299/fixed.rs"
+   ],
+   "lineage": "GHSA-Q36Q-X6V6-CVMP"
+  },
+  {
+   "unit_id": "halurust:CVE-2019-15541",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2019-15541/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2019-15541/fixed.rs"
+   ],
+   "lineage": "GHSA-888V-C6VC-WH7R"
+  },
+  {
+   "unit_id": "halurust:CVE-2019-15550",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2019-15550/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2019-15550/fixed.rs"
+   ],
+   "lineage": "CVE-2019-15550"
+  },
+  {
+   "unit_id": "halurust:CVE-2019-16214",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2019-16214/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2019-16214/fixed.rs"
+   ],
+   "lineage": "GHSA-R66W-GH88-5CGC"
+  },
+  {
+   "unit_id": "halurust:CVE-2019-16880",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2019-16880/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2019-16880/fixed.rs"
+   ],
+   "lineage": "CVE-2019-16880"
+  },
+  {
+   "unit_id": "halurust:CVE-2019-20399",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2019-20399/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2019-20399/fixed.rs"
+   ],
+   "lineage": "GHSA-7CQG-8449-RMFV"
+  },
+  {
+   "unit_id": "halurust:CVE-2020-25573",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2020-25573/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2020-25573/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2020-0026"
+  },
+  {
+   "unit_id": "halurust:CVE-2020-35870",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2020-35870/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2020-35870/fixed.rs"
+   ],
+   "lineage": "GHSA-G4W7-3QR8-5623"
+  },
+  {
+   "unit_id": "halurust:CVE-2020-35904",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2020-35904/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2020-35904/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2020-0052"
+  },
+  {
+   "unit_id": "halurust:CVE-2020-35906",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2020-35906/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2020-35906/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2020-0060"
+  },
+  {
+   "unit_id": "halurust:CVE-2020-35917",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2020-35917/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2020-35917/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2020-0074"
+  },
+  {
+   "unit_id": "halurust:CVE-2020-36210",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2020-36210/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2020-36210/fixed.rs"
+   ],
+   "lineage": "GHSA-CGMG-2V6M-FJG7"
+  },
+  {
+   "unit_id": "halurust:CVE-2020-36317",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2020-36317/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2020-36317/fixed.rs"
+   ],
+   "lineage": "GHSA-JC5Q-P9CV-J8PJ"
+  },
+  {
+   "unit_id": "halurust:CVE-2020-36318",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2020-36318/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2020-36318/fixed.rs"
+   ],
+   "lineage": "GHSA-W7C8-V5H2-32FF"
+  },
+  {
+   "unit_id": "halurust:CVE-2021-24117",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2021-24117/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2021-24117/fixed.rs"
+   ],
+   "lineage": "GHSA-QC79-WMWR-7FJH"
+  },
+  {
+   "unit_id": "halurust:CVE-2021-25902",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2021-25902/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2021-25902/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2021-0005"
+  },
+  {
+   "unit_id": "halurust:CVE-2021-28875",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2021-28875/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2021-28875/fixed.rs"
+   ],
+   "lineage": "GHSA-FHRH-9GC2-PFGH"
+  },
+  {
+   "unit_id": "halurust:CVE-2021-28877",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2021-28877/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2021-28877/fixed.rs"
+   ],
+   "lineage": "GHSA-R23X-H32H-X9JH"
+  },
+  {
+   "unit_id": "halurust:CVE-2021-28878",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2021-28878/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2021-28878/fixed.rs"
+   ],
+   "lineage": "GHSA-P39X-6CJX-6MPM"
+  },
+  {
+   "unit_id": "halurust:CVE-2021-28879",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2021-28879/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2021-28879/fixed.rs"
+   ],
+   "lineage": "GHSA-RQ3P-62M7-C66F"
+  },
+  {
+   "unit_id": "halurust:CVE-2021-29511",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2021-29511/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2021-29511/fixed.rs"
+   ],
+   "lineage": "GHSA-4JWQ-572W-4388"
+  },
+  {
+   "unit_id": "halurust:CVE-2021-29922",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2021-29922/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2021-29922/fixed.rs"
+   ],
+   "lineage": "GHSA-G9V3-GH27-QJH3"
+  },
+  {
+   "unit_id": "halurust:CVE-2021-31162",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2021-31162/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2021-31162/fixed.rs"
+   ],
+   "lineage": "GHSA-FJCW-72X2-RMMV"
+  },
+  {
+   "unit_id": "halurust:CVE-2021-32814",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2021-32814/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2021-32814/fixed.rs"
+   ],
+   "lineage": "GHSA-2HJ9-CXMC-M4G7"
+  },
+  {
+   "unit_id": "halurust:CVE-2021-36376",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2021-36376/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2021-36376/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2021-0105"
+  },
+  {
+   "unit_id": "halurust:CVE-2021-36753",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2021-36753/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2021-36753/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2021-0106"
+  },
+  {
+   "unit_id": "halurust:CVE-2021-37625",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2021-37625/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2021-37625/fixed.rs"
+   ],
+   "lineage": "GHSA-Q27R-H25M-HCC7"
+  },
+  {
+   "unit_id": "halurust:CVE-2021-3917",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2021-3917/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2021-3917/fixed.rs"
+   ],
+   "lineage": "GHSA-862G-9H5M-M3QV"
+  },
+  {
+   "unit_id": "halurust:CVE-2021-39193",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2021-39193/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2021-39193/fixed.rs"
+   ],
+   "lineage": "GHSA-HW4V-5X4H-C3XM"
+  },
+  {
+   "unit_id": "halurust:CVE-2021-41153",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2021-41153/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2021-41153/fixed.rs"
+   ],
+   "lineage": "GHSA-PVH2-PJ76-4M96"
+  },
+  {
+   "unit_id": "halurust:CVE-2021-43790",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2021-43790/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2021-43790/fixed.rs"
+   ],
+   "lineage": "CVE-2021-43790"
+  },
+  {
+   "unit_id": "halurust:CVE-2021-44421",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2021-44421/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2021-44421/fixed.rs"
+   ],
+   "lineage": "GHSA-PJ6M-JC6G-72C4"
+  },
+  {
+   "unit_id": "halurust:CVE-2022-21685",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2022-21685/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2022-21685/fixed.rs"
+   ],
+   "lineage": "GHSA-CJG2-2FJG-FPH4"
+  },
+  {
+   "unit_id": "halurust:CVE-2022-23066",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2022-23066/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2022-23066/fixed.rs"
+   ],
+   "lineage": "GHSA-9QMM-4MFR-R3WJ"
+  },
+  {
+   "unit_id": "halurust:CVE-2022-23639",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2022-23639/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2022-23639/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2022-0041"
+  },
+  {
+   "unit_id": "halurust:CVE-2022-24791",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2022-24791/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2022-24791/fixed.rs"
+   ],
+   "lineage": "RUSTSEC-2022-0099"
+  },
+  {
+   "unit_id": "halurust:CVE-2022-27815",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2022-27815/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2022-27815/fixed.rs"
+   ],
+   "lineage": "GHSA-P4JG-PCCF-H82C"
+  },
+  {
+   "unit_id": "halurust:CVE-2022-27816",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2022-27816/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2022-27816/fixed.rs"
+   ],
+   "lineage": "GHSA-8M49-2XJ8-67V9"
+  },
+  {
+   "unit_id": "halurust:CVE-2022-27818",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2022-27818/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2022-27818/fixed.rs"
+   ],
+   "lineage": "GHSA-R3R5-JHW6-4634"
+  },
+  {
+   "unit_id": "halurust:CVE-2022-27819",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2022-27819/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2022-27819/fixed.rs"
+   ],
+   "lineage": "GHSA-H6XW-MGHQ-7523"
+  },
+  {
+   "unit_id": "halurust:CVE-2022-31100",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2022-31100/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2022-31100/fixed.rs"
+   ],
+   "lineage": "GHSA-8V9W-P43C-R885"
+  },
+  {
+   "unit_id": "halurust:CVE-2022-35922",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2022-35922/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2022-35922/fixed.rs"
+   ],
+   "lineage": "GHSA-QRJV-RF5Q-QPXC"
+  },
+  {
+   "unit_id": "halurust:CVE-2022-36008",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2022-36008/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2022-36008/fixed.rs"
+   ],
+   "lineage": "GHSA-MJVM-MHGC-Q4GP"
+  },
+  {
+   "unit_id": "halurust:CVE-2022-39252",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2022-39252/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2022-39252/fixed.rs"
+   ],
+   "lineage": "GHSA-VP68-2WRM-69QM"
+  },
+  {
+   "unit_id": "halurust:CVE-2023-22466",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2023-22466/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2023-22466/fixed.rs"
+   ],
+   "lineage": "GHSA-7RRJ-XR53-82P7"
+  },
+  {
+   "unit_id": "halurust:CVE-2023-28113",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2023-28113/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2023-28113/fixed.rs"
+   ],
+   "lineage": "GHSA-CQVM-J2R2-HWPG"
+  },
+  {
+   "unit_id": "halurust:CVE-2023-30624",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2023-30624/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2023-30624/fixed.rs"
+   ],
+   "lineage": "GHSA-CH89-5G45-QWC7"
+  },
+  {
+   "unit_id": "halurust:CVE-2023-41051",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2023-41051/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2023-41051/fixed.rs"
+   ],
+   "lineage": "GHSA-49HH-FPRX-M68G"
+  },
+  {
+   "unit_id": "halurust:CVE-2023-45812",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2023-45812/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2023-45812/fixed.rs"
+   ],
+   "lineage": "GHSA-R344-XW3P-2FRJ"
+  },
+  {
+   "unit_id": "halurust:CVE-2023-46135",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2023-46135/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2023-46135/fixed.rs"
+   ],
+   "lineage": "GHSA-5873-6FWQ-463F"
+  },
+  {
+   "unit_id": "halurust:CVE-2023-6245",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2023-6245/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2023-6245/fixed.rs"
+   ],
+   "lineage": "GHSA-7787-P7X6-FQ3J"
+  },
+  {
+   "unit_id": "halurust:CVE-2024-20380",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2024-20380/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2024-20380/fixed.rs"
+   ],
+   "lineage": "GHSA-M2RV-2GGP-66M7"
+  },
+  {
+   "unit_id": "halurust:CVE-2024-21629",
+   "source": "halurust",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "halurust/cases/CVE-2024-21629/vulnerable.rs"
+   ],
+   "fixed_files": [
+    "halurust/cases/CVE-2024-21629/fixed.rs"
+   ],
+   "lineage": "GHSA-27WG-99G8-2V4V"
+  },
+  {
+   "unit_id": "rustmizan:vuln-0001",
+   "source": "rustmizan",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "rustmizan/samples/vuln-0001/sample-00001-function/src/lib.rs"
+   ],
+   "fixed_files": [
+    "rustmizan/samples/vuln-0001/sample-10001-function/src/lib.rs"
+   ],
+   "lineage": "RUSTSEC-2019-0016"
+  },
+  {
+   "unit_id": "rustmizan:vuln-0002",
+   "source": "rustmizan",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "rustmizan/samples/vuln-0002/sample-00002-function/src/lib.rs"
+   ],
+   "fixed_files": [
+    "rustmizan/samples/vuln-0002/sample-10002-function/src/lib.rs"
+   ],
+   "lineage": "GHSA-9PQX-G3JH-QPQQ"
+  },
+  {
+   "unit_id": "rustmizan:vuln-0005",
+   "source": "rustmizan",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "rustmizan/samples/vuln-0005/sample-00005-function/src/lib.rs"
+   ],
+   "fixed_files": [
+    "rustmizan/samples/vuln-0005/sample-10005-function/src/lib.rs"
+   ],
+   "lineage": "GHSA-9WGH-VJJ7-7433"
+  },
+  {
+   "unit_id": "rustmizan:vuln-0008",
+   "source": "rustmizan",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "rustmizan/samples/vuln-0008/sample-00008-function/src/buffer/dynamic.rs",
+    "rustmizan/samples/vuln-0008/sample-00008-function/src/buffer/mod.rs",
+    "rustmizan/samples/vuln-0008/sample-00008-function/src/lib.rs",
+    "rustmizan/samples/vuln-0008/sample-00008-function/src/mpmc.rs",
+    "rustmizan/samples/vuln-0008/sample-00008-function/src/mpsc.rs",
+    "rustmizan/samples/vuln-0008/sample-00008-function/src/spmc.rs",
+    "rustmizan/samples/vuln-0008/sample-00008-function/src/spsc.rs",
+    "rustmizan/samples/vuln-0008/sample-00008-function/src/util.rs"
+   ],
+   "fixed_files": [
+    "rustmizan/samples/vuln-0008/sample-10008-function/src/lib.rs",
+    "rustmizan/samples/vuln-0008/sample-10008-function/src/mpmc.rs",
+    "rustmizan/samples/vuln-0008/sample-10008-function/src/mpsc.rs",
+    "rustmizan/samples/vuln-0008/sample-10008-function/src/spmc.rs",
+    "rustmizan/samples/vuln-0008/sample-10008-function/src/spsc.rs"
+   ],
+   "lineage": "CVE-2020-35925"
+  },
+  {
+   "unit_id": "rustmizan:vuln-0010",
+   "source": "rustmizan",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "rustmizan/samples/vuln-0010/sample-00010-function/src/lib.rs"
+   ],
+   "fixed_files": [
+    "rustmizan/samples/vuln-0010/sample-10010-function/src/lib.rs"
+   ],
+   "lineage": "GHSA-Q9H2-4XHF-23XX"
+  },
+  {
+   "unit_id": "rustmizan:vuln-0011",
+   "source": "rustmizan",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "rustmizan/samples/vuln-0011/sample-00011-function/src/lib.rs"
+   ],
+   "fixed_files": [
+    "rustmizan/samples/vuln-0011/sample-10011-function/src/lib.rs"
+   ],
+   "lineage": "GHSA-67R5-RQWV-9P9Q"
+  },
+  {
+   "unit_id": "rustmizan:vuln-0012",
+   "source": "rustmizan",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "rustmizan/samples/vuln-0012/sample-00012-function/src/lib.rs"
+   ],
+   "fixed_files": [
+    "rustmizan/samples/vuln-0012/sample-10012-function/src/lib.rs"
+   ],
+   "lineage": "GHSA-RW2C-C256-3R53"
+  },
+  {
+   "unit_id": "rustmizan:vuln-0013",
+   "source": "rustmizan",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "rustmizan/samples/vuln-0013/sample-00013-function/src/lib.rs"
+   ],
+   "fixed_files": [
+    "rustmizan/samples/vuln-0013/sample-10013-function/src/lib.rs"
+   ],
+   "lineage": "CVE-2020-35862"
+  },
+  {
+   "unit_id": "rustmizan:vuln-0014",
+   "source": "rustmizan",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "rustmizan/samples/vuln-0014/sample-00014-function/src/lib.rs",
+    "rustmizan/samples/vuln-0014/sample-00014-function/src/prelude.rs"
+   ],
+   "fixed_files": [
+    "rustmizan/samples/vuln-0014/sample-10014-function/src/lib.rs",
+    "rustmizan/samples/vuln-0014/sample-10014-function/src/prelude.rs"
+   ],
+   "lineage": "GHSA-58XC-HPVQ-8473"
+  },
+  {
+   "unit_id": "rustmizan:vuln-0018",
+   "source": "rustmizan",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "rustmizan/samples/vuln-0018/sample-00018-function/src/lib.rs",
+    "rustmizan/samples/vuln-0018/sample-00018-function/src/types.rs"
+   ],
+   "fixed_files": [
+    "rustmizan/samples/vuln-0018/sample-10018-function/src/lib.rs",
+    "rustmizan/samples/vuln-0018/sample-10018-function/src/types.rs"
+   ],
+   "lineage": "CVE-2020-25796"
+  },
+  {
+   "unit_id": "rustmizan:vuln-0019",
+   "source": "rustmizan",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "rustmizan/samples/vuln-0019/sample-00019-function/src/lib.rs",
+    "rustmizan/samples/vuln-0019/sample-00019-function/src/types.rs"
+   ],
+   "fixed_files": [
+    "rustmizan/samples/vuln-0019/sample-10019-function/src/lib.rs",
+    "rustmizan/samples/vuln-0019/sample-10019-function/src/types.rs"
+   ],
+   "lineage": "CVE-2020-25796"
+  },
+  {
+   "unit_id": "rustmizan:vuln-0020",
+   "source": "rustmizan",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "rustmizan/samples/vuln-0020/sample-00020-function/src/inline_array/iter.rs",
+    "rustmizan/samples/vuln-0020/sample-00020-function/src/inline_array/mod.rs",
+    "rustmizan/samples/vuln-0020/sample-00020-function/src/lib.rs",
+    "rustmizan/samples/vuln-0020/sample-00020-function/src/types.rs"
+   ],
+   "fixed_files": [
+    "rustmizan/samples/vuln-0020/sample-10020-function/src/inline_array/iter.rs",
+    "rustmizan/samples/vuln-0020/sample-10020-function/src/inline_array/mod.rs",
+    "rustmizan/samples/vuln-0020/sample-10020-function/src/lib.rs",
+    "rustmizan/samples/vuln-0020/sample-10020-function/src/types.rs"
+   ],
+   "lineage": "CVE-2020-25796"
+  },
+  {
+   "unit_id": "rustmizan:vuln-0021",
+   "source": "rustmizan",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "rustmizan/samples/vuln-0021/sample-00021-function/src/index.rs",
+    "rustmizan/samples/vuln-0021/sample-00021-function/src/lib.rs",
+    "rustmizan/samples/vuln-0021/sample-00021-function/src/types.rs"
+   ],
+   "fixed_files": [
+    "rustmizan/samples/vuln-0021/sample-10021-function/src/index.rs",
+    "rustmizan/samples/vuln-0021/sample-10021-function/src/lib.rs",
+    "rustmizan/samples/vuln-0021/sample-10021-function/src/types.rs"
+   ],
+   "lineage": "CVE-2020-25796"
+  },
+  {
+   "unit_id": "rustmizan:vuln-0022",
+   "source": "rustmizan",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "rustmizan/samples/vuln-0022/sample-00022-function/src/index.rs",
+    "rustmizan/samples/vuln-0022/sample-00022-function/src/lib.rs",
+    "rustmizan/samples/vuln-0022/sample-00022-function/src/types.rs"
+   ],
+   "fixed_files": [
+    "rustmizan/samples/vuln-0022/sample-10022-function/src/index.rs",
+    "rustmizan/samples/vuln-0022/sample-10022-function/src/lib.rs",
+    "rustmizan/samples/vuln-0022/sample-10022-function/src/types.rs"
+   ],
+   "lineage": "CVE-2020-25796"
+  },
+  {
+   "unit_id": "rustmizan:vuln-0023",
+   "source": "rustmizan",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "rustmizan/samples/vuln-0023/sample-00023-function/src/lib.rs"
+   ],
+   "fixed_files": [
+    "rustmizan/samples/vuln-0023/sample-10023-function/src/lib.rs"
+   ],
+   "lineage": "CVE-2020-25796"
+  },
+  {
+   "unit_id": "rustmizan:vuln-0024",
+   "source": "rustmizan",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "rustmizan/samples/vuln-0024/sample-00024-function/src/lib.rs"
+   ],
+   "fixed_files": [
+    "rustmizan/samples/vuln-0024/sample-10024-function/src/lib.rs"
+   ],
+   "lineage": "CVE-2020-35892"
+  },
+  {
+   "unit_id": "rustmizan:vuln-0025",
+   "source": "rustmizan",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "rustmizan/samples/vuln-0025/sample-00025-function/src/lib.rs"
+   ],
+   "fixed_files": [
+    "rustmizan/samples/vuln-0025/sample-10025-function/src/lib.rs"
+   ],
+   "lineage": "CVE-2020-35892"
+  },
+  {
+   "unit_id": "rustmizan:vuln-0028",
+   "source": "rustmizan",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "rustmizan/samples/vuln-0028/sample-00028-function/src/lib.rs"
+   ],
+   "fixed_files": [
+    "rustmizan/samples/vuln-0028/sample-10028-function/src/lib.rs"
+   ],
+   "lineage": "CVE-2019-16141"
+  },
+  {
+   "unit_id": "rustmizan:vuln-0039",
+   "source": "rustmizan",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "rustmizan/samples/vuln-0039/sample-00039-function/lib.rs"
+   ],
+   "fixed_files": [
+    "rustmizan/samples/vuln-0039/sample-10039-function/lib.rs"
+   ],
+   "lineage": "CVE-2019-15554"
+  },
+  {
+   "unit_id": "rustmizan:vuln-0040",
+   "source": "rustmizan",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "rustmizan/samples/vuln-0040/sample-00040-function/src/enums.rs",
+    "rustmizan/samples/vuln-0040/sample-00040-function/src/lib.rs",
+    "rustmizan/samples/vuln-0040/sample-00040-function/src/types.rs",
+    "rustmizan/samples/vuln-0040/sample-00040-function/src/utils.rs"
+   ],
+   "fixed_files": [
+    "rustmizan/samples/vuln-0040/sample-10040-function/src/enums.rs",
+    "rustmizan/samples/vuln-0040/sample-10040-function/src/lib.rs",
+    "rustmizan/samples/vuln-0040/sample-10040-function/src/types.rs",
+    "rustmizan/samples/vuln-0040/sample-10040-function/src/utils.rs"
+   ],
+   "lineage": "GHSA-927Q-G9W9-PM54"
+  },
+  {
+   "unit_id": "rustmizan:vuln-0042",
+   "source": "rustmizan",
+   "upstream_only": false,
+   "vulnerable_files": [
+    "rustmizan/samples/vuln-0042/sample-00042-function/src/lib.rs"
+   ],
+   "fixed_files": [
+    "rustmizan/samples/vuln-0042/sample-10042-function/src/lib.rs"
+   ],
+   "lineage": "GHSA-8655-XGH5-5VVQ"
+  },
+  {
+   "unit_id": "halurust-up:CVE-2017-18016_CWE-346",
+   "source": "halurust",
+   "upstream_only": true,
+   "vulnerable_files": [
+    "../CVE_Samples/Data/Positive/CVE-2017-18016_CWE-346.rs"
+   ],
+   "fixed_files": [
+    "../CVE_Samples/Data/Negative/CVE-2017-18016_CWE-346.rs"
+   ],
+   "lineage": "CVE-2017-18016"
+  },
+  {
+   "unit_id": "halurust-up:CVE-2018-1000810_CWE-190",
+   "source": "halurust",
+   "upstream_only": true,
+   "vulnerable_files": [
+    "../CVE_Samples/Data/Positive/CVE-2018-1000810_CWE-190.rs"
+   ],
+   "fixed_files": [
+    "../CVE_Samples/Data/Negative/CVE-2018-1000810_CWE-190.rs"
+   ],
+   "lineage": "CVE-2018-1000810"
+  },
+  {
+   "unit_id": "halurust-up:CVE-2019-16882_CWE-416",
+   "source": "halurust",
+   "upstream_only": true,
+   "vulnerable_files": [
+    "../CVE_Samples/Data/Positive/CVE-2019-16882_CWE-416.rs"
+   ],
+   "fixed_files": [
+    "../CVE_Samples/Data/Negative/CVE-2019-16882_CWE-416.rs"
+   ],
+   "lineage": "RUSTSEC-2019-0023"
+  },
+  {
+   "unit_id": "halurust-up:CVE-2020-26297_CWE-79",
+   "source": "halurust",
+   "upstream_only": true,
+   "vulnerable_files": [
+    "../CVE_Samples/Data/Positive/CVE-2020-26297_CWE-79.rs"
+   ],
+   "fixed_files": [
+    "../CVE_Samples/Data/Negative/CVE-2020-26297_CWE-79.rs"
+   ],
+   "lineage": "CVE-2020-26297"
+  },
+  {
+   "unit_id": "halurust-up:CVE-2020-35861_CWE-125",
+   "source": "halurust",
+   "upstream_only": true,
+   "vulnerable_files": [
+    "../CVE_Samples/Data/Positive/CVE-2020-35861_CWE-125.rs"
+   ],
+   "fixed_files": [
+    "../CVE_Samples/Data/Negative/CVE-2020-35861_CWE-125.rs"
+   ],
+   "lineage": "RUSTSEC-2020-0006"
+  },
+  {
+   "unit_id": "halurust-up:CVE-2020-35869_CWE-134",
+   "source": "halurust",
+   "upstream_only": true,
+   "vulnerable_files": [
+    "../CVE_Samples/Data/Positive/CVE-2020-35869_CWE-134.rs"
+   ],
+   "fixed_files": [
+    "../CVE_Samples/Data/Negative/CVE-2020-35869_CWE-134.rs"
+   ],
+   "lineage": "GHSA-G4W7-3QR8-5623"
+  },
+  {
+   "unit_id": "halurust-up:CVE-2020-35923_CWE-416",
+   "source": "halurust",
+   "upstream_only": true,
+   "vulnerable_files": [
+    "../CVE_Samples/Data/Positive/CVE-2020-35923_CWE-416.rs"
+   ],
+   "fixed_files": [
+    "../CVE_Samples/Data/Negative/CVE-2020-35923_CWE-416.rs"
+   ],
+   "lineage": "CVE-2020-35923"
+  },
+  {
+   "unit_id": "halurust-up:CVE-2021-21235_CWE-400",
+   "source": "halurust",
+   "upstream_only": true,
+   "vulnerable_files": [
+    "../CVE_Samples/Data/Positive/CVE-2021-21235_CWE-400.rs"
+   ],
+   "fixed_files": [
+    "../CVE_Samples/Data/Negative/CVE-2021-21235_CWE-400.rs"
+   ],
+   "lineage": "CVE-2021-21235"
+  },
+  {
+   "unit_id": "halurust-up:CVE-2021-21299_CWE-444",
+   "source": "halurust",
+   "upstream_only": true,
+   "vulnerable_files": [
+    "../CVE_Samples/Data/Positive/CVE-2021-21299_CWE-444.rs"
+   ],
+   "fixed_files": [
+    "../CVE_Samples/Data/Negative/CVE-2021-21299_CWE-444.rs"
+   ],
+   "lineage": "GHSA-6HFQ-H8HQ-87MF"
+  },
+  {
+   "unit_id": "halurust-up:CVE-2021-25900_CWE-787",
+   "source": "halurust",
+   "upstream_only": true,
+   "vulnerable_files": [
+    "../CVE_Samples/Data/Positive/CVE-2021-25900_CWE-787.rs"
+   ],
+   "fixed_files": [
+    "../CVE_Samples/Data/Negative/CVE-2021-25900_CWE-787.rs"
+   ],
+   "lineage": "RUSTSEC-2021-0003"
+  },
+  {
+   "unit_id": "halurust-up:CVE-2021-28876_CWE-755",
+   "source": "halurust",
+   "upstream_only": true,
+   "vulnerable_files": [
+    "../CVE_Samples/Data/Positive/CVE-2021-28876_CWE-755.rs"
+   ],
+   "fixed_files": [
+    "../CVE_Samples/Data/Negative/CVE-2021-28876_CWE-755.rs"
+   ],
+   "lineage": "CVE-2021-28876"
+  },
+  {
+   "unit_id": "halurust-up:CVE-2021-32715_CWE-444",
+   "source": "halurust",
+   "upstream_only": true,
+   "vulnerable_files": [
+    "../CVE_Samples/Data/Positive/CVE-2021-32715_CWE-444.rs"
+   ],
+   "fixed_files": [
+    "../CVE_Samples/Data/Negative/CVE-2021-32715_CWE-444.rs"
+   ],
+   "lineage": "CVE-2021-32715"
+  },
+  {
+   "unit_id": "halurust-up:CVE-2021-41138_CWE-20",
+   "source": "halurust",
+   "upstream_only": true,
+   "vulnerable_files": [
+    "../CVE_Samples/Data/Positive/CVE-2021-41138_CWE-20.rs"
+   ],
+   "fixed_files": [
+    "../CVE_Samples/Data/Negative/CVE-2021-41138_CWE-20.rs"
+   ],
+   "lineage": "CVE-2021-41138"
+  },
+  {
+   "unit_id": "halurust-up:CVE-2022-23573_CWE-908",
+   "source": "halurust",
+   "upstream_only": true,
+   "vulnerable_files": [
+    "../CVE_Samples/Data/Positive/CVE-2022-23573_CWE-908.rs"
+   ],
+   "fixed_files": [
+    "../CVE_Samples/Data/Negative/CVE-2022-23573_CWE-908.rs"
+   ],
+   "lineage": "CVE-2022-23573"
+  },
+  {
+   "unit_id": "halurust-up:CVE-2022-24713_CWE-400",
+   "source": "halurust",
+   "upstream_only": true,
+   "vulnerable_files": [
+    "../CVE_Samples/Data/Positive/CVE-2022-24713_CWE-400.rs"
+   ],
+   "fixed_files": [
+    "../CVE_Samples/Data/Negative/CVE-2022-24713_CWE-400.rs"
+   ],
+   "lineage": "CVE-2022-24713"
+  },
+  {
+   "unit_id": "halurust-up:CVE-2022-31099_CWE-674",
+   "source": "halurust",
+   "upstream_only": true,
+   "vulnerable_files": [
+    "../CVE_Samples/Data/Positive/CVE-2022-31099_CWE-674.rs"
+   ],
+   "fixed_files": [
+    "../CVE_Samples/Data/Negative/CVE-2022-31099_CWE-674.rs"
+   ],
+   "lineage": "CVE-2022-31099"
+  },
+  {
+   "unit_id": "halurust-up:CVE-2022-31111_CWE-670",
+   "source": "halurust",
+   "upstream_only": true,
+   "vulnerable_files": [
+    "../CVE_Samples/Data/Positive/CVE-2022-31111_CWE-670.rs"
+   ],
+   "fixed_files": [
+    "../CVE_Samples/Data/Negative/CVE-2022-31111_CWE-670.rs"
+   ],
+   "lineage": "CVE-2022-31111"
+  },
+  {
+   "unit_id": "halurust-up:CVE-2022-31169_CWE-682",
+   "source": "halurust",
+   "upstream_only": true,
+   "vulnerable_files": [
+    "../CVE_Samples/Data/Positive/CVE-2022-31169_CWE-682.rs"
+   ],
+   "fixed_files": [
+    "../CVE_Samples/Data/Negative/CVE-2022-31169_CWE-682.rs"
+   ],
+   "lineage": "RUSTSEC-2022-0101"
+  },
+  {
+   "unit_id": "halurust-up:CVE-2022-31173_CWE-400",
+   "source": "halurust",
+   "upstream_only": true,
+   "vulnerable_files": [
+    "../CVE_Samples/Data/Positive/CVE-2022-31173_CWE-400.rs"
+   ],
+   "fixed_files": [
+    "../CVE_Samples/Data/Negative/CVE-2022-31173_CWE-400.rs"
+   ],
+   "lineage": "CVE-2022-31173"
+  },
+  {
+   "unit_id": "halurust-up:CVE-2022-36113_CWE-22",
+   "source": "halurust",
+   "upstream_only": true,
+   "vulnerable_files": [
+    "../CVE_Samples/Data/Positive/CVE-2022-36113_CWE-22.rs"
+   ],
+   "fixed_files": [
+    "../CVE_Samples/Data/Negative/CVE-2022-36113_CWE-22.rs"
+   ],
+   "lineage": "CVE-2022-36113"
+  },
+  {
+   "unit_id": "halurust-up:CVE-2023-41317_CWE-755",
+   "source": "halurust",
+   "upstream_only": true,
+   "vulnerable_files": [
+    "../CVE_Samples/Data/Positive/CVE-2023-41317_CWE-755.rs"
+   ],
+   "fixed_files": [
+    "../CVE_Samples/Data/Negative/CVE-2023-41317_CWE-755.rs"
+   ],
+   "lineage": "CVE-2023-41317"
+  },
+  {
+   "unit_id": "halurust-up:CVE-2023-50711_CWE-787",
+   "source": "halurust",
+   "upstream_only": true,
+   "vulnerable_files": [
+    "../CVE_Samples/Data/Positive/CVE-2023-50711_CWE-787.rs"
+   ],
+   "fixed_files": [
+    "../CVE_Samples/Data/Negative/CVE-2023-50711_CWE-787.rs"
+   ],
+   "lineage": "CVE-2023-50711"
+  },
+  {
+   "unit_id": "halurust-up:CVE-2024-21491_CWE-288",
+   "source": "halurust",
+   "upstream_only": true,
+   "vulnerable_files": [
+    "../CVE_Samples/Data/Positive/CVE-2024-21491_CWE-288.rs"
+   ],
+   "fixed_files": [
+    "../CVE_Samples/Data/Negative/CVE-2024-21491_CWE-288.rs"
+   ],
+   "lineage": "GHSA-W277-WPQF-RCFV"
+  },
+  {
+   "unit_id": "halurust-up:CVE-2024-23644_CWE-113",
+   "source": "halurust",
+   "upstream_only": true,
+   "vulnerable_files": [
+    "../CVE_Samples/Data/Positive/CVE-2024-23644_CWE-113.rs"
+   ],
+   "fixed_files": [
+    "../CVE_Samples/Data/Negative/CVE-2024-23644_CWE-113.rs"
+   ],
+   "lineage": "RUSTSEC-2024-0008"
+  },
+  {
+   "unit_id": "halurust-up:CVE-2024-28854_CWE-400",
+   "source": "halurust",
+   "upstream_only": true,
+   "vulnerable_files": [
+    "../CVE_Samples/Data/Positive/CVE-2024-28854_CWE-400.rs"
+   ],
+   "fixed_files": [
+    "../CVE_Samples/Data/Negative/CVE-2024-28854_CWE-400.rs"
+   ],
+   "lineage": "GHSA-2QPH-QPVM-2QF7"
+  },
+  {
+   "unit_id": "rustmizan-up:vuln-0003",
+   "source": "rustmizan",
+   "upstream_only": true,
+   "vulnerable_files": [
+    "../rust-mizan/samples/vuln-0003/sample-00003-function/src/lib.rs"
+   ],
+   "fixed_files": [
+    "../rust-mizan/samples/vuln-0003/sample-10003-function/src/lib.rs"
+   ],
+   "lineage": "GHSA-2V78-J59H-FMPF"
+  },
+  {
+   "unit_id": "rustmizan-up:vuln-0006",
+   "source": "rustmizan",
+   "upstream_only": true,
+   "vulnerable_files": [
+    "../rust-mizan/samples/vuln-0006/sample-00006-function/src/lib.rs"
+   ],
+   "fixed_files": [
+    "../rust-mizan/samples/vuln-0006/sample-10006-function/src/lib.rs"
+   ],
+   "lineage": "RUSTSEC-2021-0003"
+  },
+  {
+   "unit_id": "rustmizan-up:vuln-0029",
+   "source": "rustmizan",
+   "upstream_only": true,
+   "vulnerable_files": [
+    "../rust-mizan/samples/vuln-0029/sample-00029-function/src/erased_ptr.rs",
+    "../rust-mizan/samples/vuln-0029/sample-00029-function/src/lib.rs",
+    "../rust-mizan/samples/vuln-0029/sample-00029-function/src/prc.rs",
+    "../rust-mizan/samples/vuln-0029/sample-00029-function/src/prc/erased_rc.rs",
+    "../rust-mizan/samples/vuln-0029/sample-00029-function/src/sync.rs",
+    "../rust-mizan/samples/vuln-0029/sample-00029-function/src/sync/erased_arc.rs",
+    "../rust-mizan/samples/vuln-0029/sample-00029-function/src/vtable.rs"
+   ],
+   "fixed_files": [
+    "../rust-mizan/samples/vuln-0029/sample-10029-function/src/erased_ptr.rs",
+    "../rust-mizan/samples/vuln-0029/sample-10029-function/src/lib.rs",
+    "../rust-mizan/samples/vuln-0029/sample-10029-function/src/prc.rs",
+    "../rust-mizan/samples/vuln-0029/sample-10029-function/src/prc/erased_rc.rs",
+    "../rust-mizan/samples/vuln-0029/sample-10029-function/src/sync.rs",
+    "../rust-mizan/samples/vuln-0029/sample-10029-function/src/sync/erased_arc.rs",
+    "../rust-mizan/samples/vuln-0029/sample-10029-function/src/vtable.rs"
+   ],
+   "lineage": "GHSA-VGMH-MQM4-8J88"
+  },
+  {
+   "unit_id": "rustmizan-up:vuln-0041",
+   "source": "rustmizan",
+   "upstream_only": true,
+   "vulnerable_files": [
+    "../rust-mizan/samples/vuln-0041/sample-00041-function/src/lib.rs"
+   ],
+   "fixed_files": [
+    "../rust-mizan/samples/vuln-0041/sample-10041-function/src/lib.rs"
+   ],
+   "lineage": "RUSTSEC-2025-0018"
+  }
+ ],
+ "exposed_lineages": [
+  "CVE-2021-21235",
+  "CVE-2022-24713",
+  "CVE-2022-31173",
+  "GHSA-2QPH-QPVM-2QF7",
+  "GHSA-6HFQ-H8HQ-87MF",
+  "GHSA-VGMH-MQM4-8J88",
+  "GHSA-W277-WPQF-RCFV",
+  "RUSTSEC-2021-0003",
+  "RUSTSEC-2022-0101",
+  "RUSTSEC-2024-0008",
+  "RUSTSEC-2025-0018"
+ ],
+ "exposed_advisories": [
+  "RUSTSEC-2021-0003",
+  "RUSTSEC-2021-0020",
+  "RUSTSEC-2021-0143",
+  "RUSTSEC-2022-0013",
+  "RUSTSEC-2022-0038",
+  "RUSTSEC-2022-0101",
+  "RUSTSEC-2024-0009",
+  "RUSTSEC-2024-0010",
+  "RUSTSEC-2024-0341",
+  "RUSTSEC-2025-0016",
+  "RUSTSEC-2025-0018"
+ ],
+ "exposed_anchor_ids": [
+  "RUSTSEC-2021-0003:insert_many",
+  "RUSTSEC-2021-0020:server_parse",
+  "RUSTSEC-2021-0143:discard_exact",
+  "RUSTSEC-2022-0013:compiler_c",
+  "RUSTSEC-2022-0013:compiler_c_concat",
+  "RUSTSEC-2022-0038:collect_conflicts_between_fields_and_fragment",
+  "RUSTSEC-2022-0038:collect_incorrect_usages",
+  "RUSTSEC-2022-0038:detect_from",
+  "RUSTSEC-2022-0038:find_reachable_fragments",
+  "RUSTSEC-2022-0038:find_undef_vars",
+  "RUSTSEC-2022-0038:find_used_vars",
+  "RUSTSEC-2022-0101:load_constant64_full",
+  "RUSTSEC-2024-0009:write_headers",
+  "RUSTSEC-2024-0010:verify",
+  "RUSTSEC-2024-0341:poll_accept",
+  "RUSTSEC-2025-0016:parc_from_arc",
+  "RUSTSEC-2025-0016:parc_project",
+  "RUSTSEC-2025-0016:parc_try_from_arc",
+  "RUSTSEC-2025-0016:prc_from_rc",
+  "RUSTSEC-2025-0016:prc_project",
+  "RUSTSEC-2025-0016:prc_try_from_rc",
+  "RUSTSEC-2025-0018:get_bucket",
+  "RUSTSEC-2025-0018:get_chain"
+ ],
+ "exposure_rate_pairs": 0.1307,
+ "conditions": {
+  "C2": {
+   "removed_units": []
+  },
+  "C3": {
+   "removed_units": [
+    "halurust-up:CVE-2021-21235_CWE-400",
+    "halurust-up:CVE-2021-21299_CWE-444",
+    "halurust-up:CVE-2021-25900_CWE-787",
+    "halurust-up:CVE-2022-24713_CWE-400",
+    "halurust-up:CVE-2022-31169_CWE-682",
+    "halurust-up:CVE-2022-31173_CWE-400",
+    "halurust-up:CVE-2024-21491_CWE-288",
+    "halurust-up:CVE-2024-23644_CWE-113",
+    "halurust-up:CVE-2024-28854_CWE-400",
+    "rustmizan-up:vuln-0006",
+    "rustmizan-up:vuln-0029",
+    "rustmizan-up:vuln-0041"
+   ]
+  },
+  "SC": [
+   {
+    "draw": 0,
+    "removed_lineages": [
+     "CVE-2020-35923",
+     "CVE-2020-35925",
+     "CVE-2021-32715",
+     "CVE-2021-41138",
+     "GHSA-27WG-99G8-2V4V",
+     "GHSA-5873-6FWQ-463F",
+     "GHSA-CGMG-2V6M-FJG7",
+     "GHSA-P4JG-PCCF-H82C",
+     "RUSTSEC-2019-0016",
+     "RUSTSEC-2020-0060",
+     "RUSTSEC-2021-0105"
+    ],
+    "removed_units": [
+     "halurust-up:CVE-2020-35923_CWE-416",
+     "halurust-up:CVE-2021-32715_CWE-444",
+     "halurust-up:CVE-2021-41138_CWE-20",
+     "halurust:CVE-2020-35906",
+     "halurust:CVE-2020-36210",
+     "halurust:CVE-2021-36376",
+     "halurust:CVE-2022-27815",
+     "halurust:CVE-2023-46135",
+     "halurust:CVE-2024-21629",
+     "rustmizan:vuln-0001",
+     "rustmizan:vuln-0008"
+    ]
+   },
+   {
+    "draw": 1,
+    "removed_lineages": [
+     "CVE-2017-18016",
+     "CVE-2020-35923",
+     "GHSA-7877-M5C6-FGMX",
+     "GHSA-CJG2-2FJG-FPH4",
+     "GHSA-FJCW-72X2-RMMV",
+     "GHSA-P4JG-PCCF-H82C",
+     "GHSA-Q9H2-4XHF-23XX",
+     "GHSA-RW2C-C256-3R53",
+     "RUSTSEC-2020-0026",
+     "RUSTSEC-2020-0052",
+     "RUSTSEC-2020-0074"
+    ],
+    "removed_units": [
+     "halurust-up:CVE-2017-18016_CWE-346",
+     "halurust-up:CVE-2020-35923_CWE-416",
+     "halurust:CVE-2018-1000657",
+     "halurust:CVE-2020-25573",
+     "halurust:CVE-2020-35904",
+     "halurust:CVE-2020-35917",
+     "halurust:CVE-2021-31162",
+     "halurust:CVE-2022-21685",
+     "halurust:CVE-2022-27815",
+     "rustmizan:vuln-0010",
+     "rustmizan:vuln-0012"
+    ]
+   },
+   {
+    "draw": 2,
+    "removed_lineages": [
+     "CVE-2020-35862",
+     "CVE-2021-41138",
+     "GHSA-7CQG-8449-RMFV",
+     "GHSA-7RRJ-XR53-82P7",
+     "GHSA-8V9W-P43C-R885",
+     "GHSA-9QMM-4MFR-R3WJ",
+     "GHSA-9WGH-VJJ7-7433",
+     "GHSA-CJG2-2FJG-FPH4",
+     "GHSA-G4W7-3QR8-5623",
+     "GHSA-H6XW-MGHQ-7523",
+     "GHSA-QRJV-RF5Q-QPXC"
+    ],
+    "removed_units": [
+     "halurust-up:CVE-2020-35869_CWE-134",
+     "halurust-up:CVE-2021-41138_CWE-20",
+     "halurust:CVE-2019-20399",
+     "halurust:CVE-2020-35870",
+     "halurust:CVE-2022-21685",
+     "halurust:CVE-2022-23066",
+     "halurust:CVE-2022-27819",
+     "halurust:CVE-2022-31100",
+     "halurust:CVE-2022-35922",
+     "halurust:CVE-2023-22466",
+     "rustmizan:vuln-0005",
+     "rustmizan:vuln-0013"
+    ]
+   },
+   {
+    "draw": 3,
+    "removed_lineages": [
+     "CVE-2021-28876",
+     "GHSA-49HH-FPRX-M68G",
+     "GHSA-7787-P7X6-FQ3J",
+     "GHSA-927Q-G9W9-PM54",
+     "GHSA-9PQX-G3JH-QPQQ",
+     "GHSA-G4W7-3QR8-5623",
+     "GHSA-MJVM-MHGC-Q4GP",
+     "GHSA-PRM6-42X6-PWFM",
+     "GHSA-VP68-2WRM-69QM",
+     "RUSTSEC-2019-0023",
+     "RUSTSEC-2022-0099"
+    ],
+    "removed_units": [
+     "halurust-up:CVE-2019-16882_CWE-416",
+     "halurust-up:CVE-2020-35869_CWE-134",
+     "halurust-up:CVE-2021-28876_CWE-755",
+     "halurust:CVE-2018-25008",
+     "halurust:CVE-2020-35870",
+     "halurust:CVE-2022-24791",
+     "halurust:CVE-2022-36008",
+     "halurust:CVE-2022-39252",
+     "halurust:CVE-2023-41051",
+     "halurust:CVE-2023-6245",
+     "rustmizan:vuln-0002",
+     "rustmizan:vuln-0040"
+    ]
+   },
+   {
+    "draw": 4,
+    "removed_lineages": [
+     "CVE-2020-25796",
+     "CVE-2020-35923",
+     "CVE-2020-35925",
+     "CVE-2021-32715",
+     "CVE-2022-31099",
+     "GHSA-5873-6FWQ-463F",
+     "GHSA-7787-P7X6-FQ3J",
+     "GHSA-CH89-5G45-QWC7",
+     "GHSA-PRM6-42X6-PWFM",
+     "GHSA-PVH2-PJ76-4M96",
+     "RUSTSEC-2020-0006"
+    ],
+    "removed_units": [
+     "halurust-up:CVE-2020-35861_CWE-125",
+     "halurust-up:CVE-2020-35923_CWE-416",
+     "halurust-up:CVE-2021-32715_CWE-444",
+     "halurust-up:CVE-2022-31099_CWE-674",
+     "halurust:CVE-2018-25008",
+     "halurust:CVE-2021-41153",
+     "halurust:CVE-2023-30624",
+     "halurust:CVE-2023-46135",
+     "halurust:CVE-2023-6245",
+     "rustmizan:vuln-0008",
+     "rustmizan:vuln-0018",
+     "rustmizan:vuln-0019",
+     "rustmizan:vuln-0020",
+     "rustmizan:vuln-0021",
+     "rustmizan:vuln-0022",
+     "rustmizan:vuln-0023"
+    ]
+   },
+   {
+    "draw": 5,
+    "removed_lineages": [
+     "CVE-2019-15550",
+     "CVE-2020-26297",
+     "CVE-2022-23573",
+     "GHSA-7787-P7X6-FQ3J",
+     "GHSA-927Q-G9W9-PM54",
+     "GHSA-9PQX-G3JH-QPQQ",
+     "GHSA-JC5Q-P9CV-J8PJ",
+     "GHSA-QC79-WMWR-7FJH",
+     "RUSTSEC-2020-0006",
+     "RUSTSEC-2020-0060",
+     "RUSTSEC-2021-0106"
+    ],
+    "removed_units": [
+     "halurust-up:CVE-2020-26297_CWE-79",
+     "halurust-up:CVE-2020-35861_CWE-125",
+     "halurust-up:CVE-2022-23573_CWE-908",
+     "halurust:CVE-2019-15550",
+     "halurust:CVE-2020-35906",
+     "halurust:CVE-2020-36317",
+     "halurust:CVE-2021-24117",
+     "halurust:CVE-2021-36753",
+     "halurust:CVE-2023-6245",
+     "rustmizan:vuln-0002",
+     "rustmizan:vuln-0040"
+    ]
+   },
+   {
+    "draw": 6,
+    "removed_lineages": [
+     "CVE-2018-1000810",
+     "CVE-2020-26297",
+     "CVE-2020-35925",
+     "CVE-2021-32715",
+     "CVE-2022-31099",
+     "CVE-2022-36113",
+     "GHSA-49HH-FPRX-M68G",
+     "GHSA-HW4V-5X4H-C3XM",
+     "GHSA-RW2C-C256-3R53",
+     "RUSTSEC-2020-0006",
+     "RUSTSEC-2022-0099"
+    ],
+    "removed_units": [
+     "halurust-up:CVE-2018-1000810_CWE-190",
+     "halurust-up:CVE-2020-26297_CWE-79",
+     "halurust-up:CVE-2020-35861_CWE-125",
+     "halurust-up:CVE-2021-32715_CWE-444",
+     "halurust-up:CVE-2022-31099_CWE-674",
+     "halurust-up:CVE-2022-36113_CWE-22",
+     "halurust:CVE-2021-39193",
+     "halurust:CVE-2022-24791",
+     "halurust:CVE-2023-41051",
+     "rustmizan:vuln-0008",
+     "rustmizan:vuln-0012"
+    ]
+   },
+   {
+    "draw": 7,
+    "removed_lineages": [
+     "CVE-2018-1000810",
+     "CVE-2019-16141",
+     "CVE-2020-35923",
+     "CVE-2021-43790",
+     "GHSA-7877-M5C6-FGMX",
+     "GHSA-9QMM-4MFR-R3WJ",
+     "GHSA-G9V3-GH27-QJH3",
+     "GHSA-MJVM-MHGC-Q4GP",
+     "GHSA-Q36Q-X6V6-CVMP",
+     "GHSA-Q9H2-4XHF-23XX",
+     "RUSTSEC-2021-0005"
+    ],
+    "removed_units": [
+     "halurust-up:CVE-2018-1000810_CWE-190",
+     "halurust-up:CVE-2020-35923_CWE-416",
+     "halurust:CVE-2018-1000657",
+     "halurust:CVE-2019-1010299",
+     "halurust:CVE-2021-25902",
+     "halurust:CVE-2021-29922",
+     "halurust:CVE-2021-43790",
+     "halurust:CVE-2022-23066",
+     "halurust:CVE-2022-36008",
+     "rustmizan:vuln-0010",
+     "rustmizan:vuln-0028"
+    ]
+   },
+   {
+    "draw": 8,
+    "removed_lineages": [
+     "CVE-2018-1000810",
+     "CVE-2019-15554",
+     "CVE-2020-35923",
+     "CVE-2021-28876",
+     "CVE-2021-41138",
+     "GHSA-8655-XGH5-5VVQ",
+     "GHSA-9QMM-4MFR-R3WJ",
+     "GHSA-M2RV-2GGP-66M7",
+     "GHSA-P4JG-PCCF-H82C",
+     "GHSA-Q36Q-X6V6-CVMP",
+     "RUSTSEC-2019-0023"
+    ],
+    "removed_units": [
+     "halurust-up:CVE-2018-1000810_CWE-190",
+     "halurust-up:CVE-2019-16882_CWE-416",
+     "halurust-up:CVE-2020-35923_CWE-416",
+     "halurust-up:CVE-2021-28876_CWE-755",
+     "halurust-up:CVE-2021-41138_CWE-20",
+     "halurust:CVE-2019-1010299",
+     "halurust:CVE-2022-23066",
+     "halurust:CVE-2022-27815",
+     "halurust:CVE-2024-20380",
+     "rustmizan:vuln-0039",
+     "rustmizan:vuln-0042"
+    ]
+   },
+   {
+    "draw": 9,
+    "removed_lineages": [
+     "CVE-2017-18016",
+     "CVE-2019-16880",
+     "CVE-2020-35892",
+     "CVE-2021-41138",
+     "GHSA-27WG-99G8-2V4V",
+     "GHSA-7787-P7X6-FQ3J",
+     "GHSA-PVH2-PJ76-4M96",
+     "GHSA-Q9H2-4XHF-23XX",
+     "GHSA-RQ3P-62M7-C66F",
+     "RUSTSEC-2020-0006",
+     "RUSTSEC-2020-0052"
+    ],
+    "removed_units": [
+     "halurust-up:CVE-2017-18016_CWE-346",
+     "halurust-up:CVE-2020-35861_CWE-125",
+     "halurust-up:CVE-2021-41138_CWE-20",
+     "halurust:CVE-2019-16880",
+     "halurust:CVE-2020-35904",
+     "halurust:CVE-2021-28879",
+     "halurust:CVE-2021-41153",
+     "halurust:CVE-2023-6245",
+     "halurust:CVE-2024-21629",
+     "rustmizan:vuln-0010",
+     "rustmizan:vuln-0024",
+     "rustmizan:vuln-0025"
+    ]
+   },
+   {
+    "draw": 10,
+    "removed_lineages": [
+     "CVE-2017-18016",
+     "CVE-2020-35862",
+     "CVE-2021-28876",
+     "GHSA-4JWQ-572W-4388",
+     "GHSA-7877-M5C6-FGMX",
+     "GHSA-G4W7-3QR8-5623",
+     "GHSA-QC79-WMWR-7FJH",
+     "GHSA-R344-XW3P-2FRJ",
+     "GHSA-VP68-2WRM-69QM",
+     "RUSTSEC-2019-0016",
+     "RUSTSEC-2020-0052"
+    ],
+    "removed_units": [
+     "halurust-up:CVE-2017-18016_CWE-346",
+     "halurust-up:CVE-2020-35869_CWE-134",
+     "halurust-up:CVE-2021-28876_CWE-755",
+     "halurust:CVE-2018-1000657",
+     "halurust:CVE-2020-35870",
+     "halurust:CVE-2020-35904",
+     "halurust:CVE-2021-24117",
+     "halurust:CVE-2021-29511",
+     "halurust:CVE-2022-39252",
+     "halurust:CVE-2023-45812",
+     "rustmizan:vuln-0001",
+     "rustmizan:vuln-0013"
+    ]
+   },
+   {
+    "draw": 11,
+    "removed_lineages": [
+     "CVE-2021-43790",
+     "CVE-2022-36113",
+     "GHSA-67R5-RQWV-9P9Q",
+     "GHSA-862G-9H5M-M3QV",
+     "GHSA-888V-C6VC-WH7R",
+     "GHSA-CGMG-2V6M-FJG7",
+     "GHSA-G9V3-GH27-QJH3",
+     "GHSA-QRJV-RF5Q-QPXC",
+     "RUSTSEC-2019-0016",
+     "RUSTSEC-2020-0026",
+     "RUSTSEC-2021-0005"
+    ],
+    "removed_units": [
+     "halurust-up:CVE-2022-36113_CWE-22",
+     "halurust:CVE-2019-15541",
+     "halurust:CVE-2020-25573",
+     "halurust:CVE-2020-36210",
+     "halurust:CVE-2021-25902",
+     "halurust:CVE-2021-29922",
+     "halurust:CVE-2021-3917",
+     "halurust:CVE-2021-43790",
+     "halurust:CVE-2022-35922",
+     "rustmizan:vuln-0001",
+     "rustmizan:vuln-0011"
+    ]
+   },
+   {
+    "draw": 12,
+    "removed_lineages": [
+     "CVE-2020-26297",
+     "CVE-2020-35892",
+     "CVE-2020-35923",
+     "CVE-2021-32715",
+     "CVE-2022-36113",
+     "GHSA-9QMM-4MFR-R3WJ",
+     "GHSA-JC5Q-P9CV-J8PJ",
+     "GHSA-RW2C-C256-3R53",
+     "GHSA-W7C8-V5H2-32FF",
+     "RUSTSEC-2020-0026",
+     "RUSTSEC-2021-0105"
+    ],
+    "removed_units": [
+     "halurust-up:CVE-2020-26297_CWE-79",
+     "halurust-up:CVE-2020-35923_CWE-416",
+     "halurust-up:CVE-2021-32715_CWE-444",
+     "halurust-up:CVE-2022-36113_CWE-22",
+     "halurust:CVE-2020-25573",
+     "halurust:CVE-2020-36317",
+     "halurust:CVE-2020-36318",
+     "halurust:CVE-2021-36376",
+     "halurust:CVE-2022-23066",
+     "rustmizan:vuln-0012",
+     "rustmizan:vuln-0024",
+     "rustmizan:vuln-0025"
+    ]
+   },
+   {
+    "draw": 13,
+    "removed_lineages": [
+     "CVE-2021-32715",
+     "GHSA-7RRJ-XR53-82P7",
+     "GHSA-9PQX-G3JH-QPQQ",
+     "GHSA-CQVM-J2R2-HWPG",
+     "GHSA-FHRH-9GC2-PFGH",
+     "GHSA-G9V3-GH27-QJH3",
+     "GHSA-R344-XW3P-2FRJ",
+     "GHSA-W7C8-V5H2-32FF",
+     "RUSTSEC-2019-0016",
+     "RUSTSEC-2021-0005",
+     "RUSTSEC-2022-0099"
+    ],
+    "removed_units": [
+     "halurust-up:CVE-2021-32715_CWE-444",
+     "halurust:CVE-2020-36318",
+     "halurust:CVE-2021-25902",
+     "halurust:CVE-2021-28875",
+     "halurust:CVE-2021-29922",
+     "halurust:CVE-2022-24791",
+     "halurust:CVE-2023-22466",
+     "halurust:CVE-2023-28113",
+     "halurust:CVE-2023-45812",
+     "rustmizan:vuln-0001",
+     "rustmizan:vuln-0002"
+    ]
+   },
+   {
+    "draw": 14,
+    "removed_lineages": [
+     "CVE-2019-15550",
+     "CVE-2020-26297",
+     "CVE-2020-35892",
+     "CVE-2022-23573",
+     "GHSA-7CQG-8449-RMFV",
+     "GHSA-8M49-2XJ8-67V9",
+     "GHSA-8V9W-P43C-R885",
+     "GHSA-CQVM-J2R2-HWPG",
+     "GHSA-PRM6-42X6-PWFM",
+     "GHSA-Q9H2-4XHF-23XX",
+     "GHSA-QRJV-RF5Q-QPXC"
+    ],
+    "removed_units": [
+     "halurust-up:CVE-2020-26297_CWE-79",
+     "halurust-up:CVE-2022-23573_CWE-908",
+     "halurust:CVE-2018-25008",
+     "halurust:CVE-2019-15550",
+     "halurust:CVE-2019-20399",
+     "halurust:CVE-2022-27816",
+     "halurust:CVE-2022-31100",
+     "halurust:CVE-2022-35922",
+     "halurust:CVE-2023-28113",
+     "rustmizan:vuln-0010",
+     "rustmizan:vuln-0024",
+     "rustmizan:vuln-0025"
+    ]
+   },
+   {
+    "draw": 15,
+    "removed_lineages": [
+     "CVE-2017-18016",
+     "CVE-2020-25796",
+     "CVE-2021-28876",
+     "GHSA-67R5-RQWV-9P9Q",
+     "GHSA-8M49-2XJ8-67V9",
+     "GHSA-CGMG-2V6M-FJG7",
+     "GHSA-FJCW-72X2-RMMV",
+     "GHSA-M2RV-2GGP-66M7",
+     "GHSA-R23X-H32H-X9JH",
+     "RUSTSEC-2019-0023",
+     "RUSTSEC-2021-0005"
+    ],
+    "removed_units": [
+     "halurust-up:CVE-2017-18016_CWE-346",
+     "halurust-up:CVE-2019-16882_CWE-416",
+     "halurust-up:CVE-2021-28876_CWE-755",
+     "halurust:CVE-2020-36210",
+     "halurust:CVE-2021-25902",
+     "halurust:CVE-2021-28877",
+     "halurust:CVE-2021-31162",
+     "halurust:CVE-2022-27816",
+     "halurust:CVE-2024-20380",
+     "rustmizan:vuln-0011",
+     "rustmizan:vuln-0018",
+     "rustmizan:vuln-0019",
+     "rustmizan:vuln-0020",
+     "rustmizan:vuln-0021",
+     "rustmizan:vuln-0022",
+     "rustmizan:vuln-0023"
+    ]
+   },
+   {
+    "draw": 16,
+    "removed_lineages": [
+     "CVE-2018-1000810",
+     "CVE-2019-15550",
+     "CVE-2019-16880",
+     "CVE-2020-35862",
+     "GHSA-49HH-FPRX-M68G",
+     "GHSA-888V-C6VC-WH7R",
+     "GHSA-927Q-G9W9-PM54",
+     "GHSA-G9V3-GH27-QJH3",
+     "GHSA-P39X-6CJX-6MPM",
+     "GHSA-Q36Q-X6V6-CVMP",
+     "RUSTSEC-2021-0106"
+    ],
+    "removed_units": [
+     "halurust-up:CVE-2018-1000810_CWE-190",
+     "halurust:CVE-2019-1010299",
+     "halurust:CVE-2019-15541",
+     "halurust:CVE-2019-15550",
+     "halurust:CVE-2019-16880",
+     "halurust:CVE-2021-28878",
+     "halurust:CVE-2021-29922",
+     "halurust:CVE-2021-36753",
+     "halurust:CVE-2023-41051",
+     "rustmizan:vuln-0013",
+     "rustmizan:vuln-0040"
+    ]
+   },
+   {
+    "draw": 17,
+    "removed_lineages": [
+     "CVE-2022-31099",
+     "GHSA-2HJ9-CXMC-M4G7",
+     "GHSA-2V78-J59H-FMPF",
+     "GHSA-4JWQ-572W-4388",
+     "GHSA-FHRH-9GC2-PFGH",
+     "GHSA-JC5Q-P9CV-J8PJ",
+     "GHSA-Q9H2-4XHF-23XX",
+     "GHSA-RQ3P-62M7-C66F",
+     "GHSA-RW2C-C256-3R53",
+     "GHSA-W7C8-V5H2-32FF",
+     "RUSTSEC-2020-0006"
+    ],
+    "removed_units": [
+     "halurust-up:CVE-2020-35861_CWE-125",
+     "halurust-up:CVE-2022-31099_CWE-674",
+     "halurust:CVE-2018-21000",
+     "halurust:CVE-2020-36317",
+     "halurust:CVE-2020-36318",
+     "halurust:CVE-2021-28875",
+     "halurust:CVE-2021-28879",
+     "halurust:CVE-2021-29511",
+     "halurust:CVE-2021-32814",
+     "rustmizan-up:vuln-0003",
+     "rustmizan:vuln-0010",
+     "rustmizan:vuln-0012"
+    ]
+   },
+   {
+    "draw": 18,
+    "removed_lineages": [
+     "CVE-2020-35862",
+     "CVE-2022-31111",
+     "GHSA-5873-6FWQ-463F",
+     "GHSA-7787-P7X6-FQ3J",
+     "GHSA-8V9W-P43C-R885",
+     "GHSA-CQVM-J2R2-HWPG",
+     "GHSA-P39X-6CJX-6MPM",
+     "GHSA-Q9H2-4XHF-23XX",
+     "GHSA-RQ3P-62M7-C66F",
+     "RUSTSEC-2020-0026",
+     "RUSTSEC-2022-0099"
+    ],
+    "removed_units": [
+     "halurust-up:CVE-2022-31111_CWE-670",
+     "halurust:CVE-2020-25573",
+     "halurust:CVE-2021-28878",
+     "halurust:CVE-2021-28879",
+     "halurust:CVE-2022-24791",
+     "halurust:CVE-2022-31100",
+     "halurust:CVE-2023-28113",
+     "halurust:CVE-2023-46135",
+     "halurust:CVE-2023-6245",
+     "rustmizan:vuln-0010",
+     "rustmizan:vuln-0013"
+    ]
+   },
+   {
+    "draw": 19,
+    "removed_lineages": [
+     "CVE-2019-15554",
+     "CVE-2021-28876",
+     "GHSA-27WG-99G8-2V4V",
+     "GHSA-5873-6FWQ-463F",
+     "GHSA-58XC-HPVQ-8473",
+     "GHSA-8M49-2XJ8-67V9",
+     "GHSA-CGMG-2V6M-FJG7",
+     "GHSA-CJG2-2FJG-FPH4",
+     "GHSA-P39X-6CJX-6MPM",
+     "RUSTSEC-2019-0023",
+     "RUSTSEC-2020-0006"
+    ],
+    "removed_units": [
+     "halurust-up:CVE-2019-16882_CWE-416",
+     "halurust-up:CVE-2020-35861_CWE-125",
+     "halurust-up:CVE-2021-28876_CWE-755",
+     "halurust:CVE-2020-36210",
+     "halurust:CVE-2021-28878",
+     "halurust:CVE-2022-21685",
+     "halurust:CVE-2022-27816",
+     "halurust:CVE-2023-46135",
+     "halurust:CVE-2024-21629",
+     "rustmizan:vuln-0014",
+     "rustmizan:vuln-0039"
+    ]
+   }
+  ]
+ }
+}
