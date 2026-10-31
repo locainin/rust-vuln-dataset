@@ -11,4 +11,5 @@ Each item stays under its original terms; nothing here relicenses it.
 | `manual/` (vulnerable/fixed function pairs) | Extracted from the upstream crates named in each advisory, at the commits listed in the metadata | Each file stays under the license of the crate it was taken from |
 
 Pinned upstream sources that are *not* copied here (RustSec advisory-db f23b768, the full
-HALURust release) are referenced by commit.
+HALURust release) are referenced by commit; `reconciliation/tools/audit/README.md` shows how
+to fetch them.

@@ -1,0 +1,30 @@
+RUSTSEC-2021-0003:insert_many vs HR CVE-2021-25900: RXvuln⊂otherV=1.00 RXfix⊂otherF=1.00 | RX-removed 12: inV 12 inF 0 | RX-added 9: inV 0 inF 9 | tests V/F 0/0
+RUSTSEC-2021-0020:server_parse vs HR CVE-2021-21299: RXvuln⊂otherV=1.00 RXfix⊂otherF=1.00 | RX-removed 0: inV 0 inF 0 | RX-added 1: inV 0 inF 1 | tests V/F 0/0
+RUSTSEC-2021-0143:discard_exact vs HR CVE-2021-21235: RXvuln⊂otherV=1.00 RXfix⊂otherF=1.00 | RX-removed 0: inV 0 inF 0 | RX-added 3: inV 3 inF 3 | tests V/F 0/0
+RUSTSEC-2022-0013:compiler_c vs HR CVE-2022-24713: RXvuln⊂otherV=1.00 RXfix⊂otherF=1.00 | RX-removed 1: inV 1 inF 0 | RX-added 1: inV 0 inF 1 | tests V/F 0/0
+RUSTSEC-2022-0013:compiler_c_concat vs HR CVE-2022-24713: RXvuln⊂otherV=0.26 RXfix⊂otherF=0.26 | RX-removed 1: inV 0 inF 0 | RX-added 1: inV 0 inF 0 | tests V/F 0/0
+RUSTSEC-2022-0038:collect_conflicts_between_fields_and_fragment vs HR CVE-2022-31173: RXvuln⊂otherV=1.00 RXfix⊂otherF=1.00 | RX-removed 8: inV 8 inF 6 | RX-added 9: inV 2 inF 9 | tests V/F 0/0
+RUSTSEC-2022-0038:collect_incorrect_usages vs HR CVE-2022-31173: RXvuln⊂otherV=0.54 RXfix⊂otherF=0.38 | RX-removed 25: inV 8 inF 5 | RX-added 12: inV 1 inF 1 | tests V/F 0/0
+RUSTSEC-2022-0038:detect_from vs HR CVE-2022-31173: RXvuln⊂otherV=1.00 RXfix⊂otherF=0.29 | RX-removed 21: inV 21 inF 2 | RX-added 5: inV 0 inF 0 | tests V/F 0/0
+RUSTSEC-2022-0038:find_reachable_fragments vs HR CVE-2022-31173: RXvuln⊂otherV=1.00 RXfix⊂otherF=0.36 | RX-removed 8: inV 8 inF 1 | RX-added 6: inV 0 inF 0 | tests V/F 0/0
+RUSTSEC-2022-0038:find_undef_vars vs HR CVE-2022-31173: RXvuln⊂otherV=0.54 RXfix⊂otherF=0.57 | RX-removed 9: inV 2 inF 7 | RX-added 8: inV 1 inF 1 | tests V/F 0/0
+RUSTSEC-2022-0038:find_used_vars vs HR CVE-2022-31173: RXvuln⊂otherV=1.00 RXfix⊂otherF=0.48 | RX-removed 10: inV 10 inF 3 | RX-added 9: inV 1 inF 2 | tests V/F 0/0
+RUSTSEC-2022-0101:load_constant64_full vs HR CVE-2022-31169: RXvuln⊂otherV=1.00 RXfix⊂otherF=1.00 | RX-removed 1: inV 1 inF 0 | RX-added 22: inV 0 inF 22 | tests V/F 0/0
+RUSTSEC-2024-0009:write_headers vs HR CVE-2024-23644: RXvuln⊂otherV=0.11 RXfix⊂otherF=0.14 | RX-removed 3: inV 0 inF 0 | RX-added 9: inV 0 inF 0 | tests V/F 0/0
+RUSTSEC-2024-0010:verify vs HR CVE-2024-21491: RXvuln⊂otherV=1.00 RXfix⊂otherF=1.00 | RX-removed 2: inV 2 inF 0 | RX-added 5: inV 0 inF 5 | tests V/F 0/2
+RUSTSEC-2024-0341:poll_accept vs HR CVE-2024-28854: RXvuln⊂otherV=1.00 RXfix⊂otherF=1.00 | RX-removed 4: inV 4 inF 0 | RX-added 10: inV 1 inF 10 | tests V/F 0/0
+RUSTSEC-2021-0003:insert_many vs MZ vuln-0006: RXvuln⊂otherV=1.00 RXfix⊂otherF=1.00 | RX-removed 12: inV 12 inF 1 | RX-added 9: inV 1 inF 9 | tests V/F 94/96
+RUSTSEC-2025-0016:parc_from_arc vs MZ vuln-0029: RXvuln⊂otherV=1.00 RXfix⊂otherF=1.00 | RX-removed 1: inV 1 inF 0 | RX-added 1: inV 0 inF 1 | tests V/F 40/40
+RUSTSEC-2025-0016:parc_project vs MZ vuln-0029: RXvuln⊂otherV=1.00 RXfix⊂otherF=1.00 | RX-removed 1: inV 1 inF 1 | RX-added 1: inV 1 inF 1 | tests V/F 40/40
+RUSTSEC-2025-0016:parc_try_from_arc vs MZ vuln-0029: RXvuln⊂otherV=1.00 RXfix⊂otherF=1.00 | RX-removed 1: inV 1 inF 0 | RX-added 1: inV 0 inF 1 | tests V/F 40/40
+RUSTSEC-2025-0016:prc_from_rc vs MZ vuln-0029: RXvuln⊂otherV=1.00 RXfix⊂otherF=1.00 | RX-removed 1: inV 1 inF 0 | RX-added 1: inV 1 inF 1 | tests V/F 40/40
+RUSTSEC-2025-0016:prc_project vs MZ vuln-0029: RXvuln⊂otherV=1.00 RXfix⊂otherF=1.00 | RX-removed 0: inV 0 inF 0 | RX-added 1: inV 1 inF 1 | tests V/F 40/40
+RUSTSEC-2025-0016:prc_try_from_rc vs MZ vuln-0029: RXvuln⊂otherV=1.00 RXfix⊂otherF=1.00 | RX-removed 1: inV 1 inF 0 | RX-added 1: inV 1 inF 1 | tests V/F 40/40
+RUSTSEC-2025-0018:get_bucket vs MZ vuln-0041: RXvuln⊂otherV=1.00 RXfix⊂otherF=1.00 | RX-removed 2: inV 2 inF 0 | RX-added 3: inV 0 inF 3 | tests V/F 3/3
+RUSTSEC-2025-0018:get_chain vs MZ vuln-0041: RXvuln⊂otherV=1.00 RXfix⊂otherF=1.00 | RX-removed 3: inV 3 inF 0 | RX-added 4: inV 0 inF 4 | tests V/F 3/3
+
+CVE-2018-21000~vuln-0003: HR removed 2 (in MZv 2, MZf 0); HR added 2 (in MZv 0, MZf 2); MZ diff lines -5/+5; MZ-removed in HRv 5 HRf 0; MZ-added in HRv 0 HRf 5
+CVE-2020-35869~vuln-0033: HR removed 0 (in MZv 0, MZf 0); HR added 0 (in MZv 0, MZf 0); MZ diff lines -185/+417; MZ-removed in HRv 1 HRf 1; MZ-added in HRv 1 HRf 1
+CVE-2020-35870~vuln-0034: HR removed 25 (in MZv 25, MZf 2); HR added 31 (in MZv 2, MZf 31); MZ diff lines -150/+382; MZ-removed in HRv 23 HRf 0; MZ-added in HRv 0 HRf 29
+CVE-2021-25900~vuln-0006: HR removed 12 (in MZv 12, MZf 1); HR added 9 (in MZv 1, MZf 9); MZ diff lines -33/+31; MZ-removed in HRv 33 HRf 0; MZ-added in HRv 0 HRf 24
+CVE-2023-50711~vuln-0026: HR removed 6 (in MZv 5, MZf 0); HR added 37 (in MZv 16, MZf 35); MZ diff lines -10/+38; MZ-removed in HRv 10 HRf 0; MZ-added in HRv 0 HRf 38

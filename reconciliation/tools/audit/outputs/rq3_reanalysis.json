@@ -1,0 +1,305 @@
+{
+ "structural_ties": {
+  "RUSTSEC-2021-0125:from_der_": 66,
+  "RUSTSEC-2024-0345:raw_cert_parser_next": 66
+ },
+ "subsets": {
+  "all": {
+   "pairs": 171,
+   "lineages": 93,
+   "PA": {
+    "C2": 0.4951,
+    "SC": 0.5244,
+    "C3": 0.5653
+   },
+   "C2-C3": [
+    -0.07018,
+    -0.15247,
+    0.01266
+   ],
+   "SC-C3": [
+    -0.04094,
+    -0.09763,
+    0.02166
+   ],
+   "C2-SC": [
+    -0.02924,
+    -0.07434,
+    0.01861
+   ]
+  },
+  "exposed": {
+   "pairs": 23,
+   "lineages": 11,
+   "PA": {
+    "C2": 0.4783,
+    "SC": 0.5942,
+    "C3": 0.5217
+   },
+   "C2-C3": [
+    -0.04348,
+    -0.15625,
+    0.1
+   ],
+   "SC-C3": [
+    0.07246,
+    -0.04755,
+    0.27179
+   ],
+   "C2-SC": [
+    -0.11594,
+    -0.28572,
+    -0.03768
+   ]
+  },
+  "exposed_valid": {
+   "pairs": 21,
+   "lineages": 9,
+   "PA": {
+    "C2": 0.4762,
+    "SC": 0.5849,
+    "C3": 0.5079
+   },
+   "C2-C3": [
+    -0.03175,
+    -0.15054,
+    0.13725
+   ],
+   "SC-C3": [
+    0.07698,
+    -0.05052,
+    0.3197
+   ],
+   "C2-SC": [
+    -0.10873,
+    -0.3,
+    -0.02575
+   ]
+  },
+  "unexposed": {
+   "pairs": 148,
+   "lineages": 82,
+   "PA": {
+    "C2": 0.4977,
+    "SC": 0.5135,
+    "C3": 0.5721
+   },
+   "C2-C3": [
+    -0.07432,
+    -0.16667,
+    0.02143
+   ],
+   "SC-C3": [
+    -0.05856,
+    -0.12157,
+    0.00898
+   ],
+   "C2-SC": [
+    -0.01577,
+    -0.06596,
+    0.03907
+   ]
+  },
+  "exposed_effective_C2": {
+   "pairs": 16,
+   "lineages": 9,
+   "PA": {
+    "C2": 0.5417,
+    "SC": 0.6781,
+    "C3": 0.5208
+   },
+   "C2-C3": [
+    0.02083,
+    -0.1,
+    0.15152
+   ],
+   "SC-C3": [
+    0.15729,
+    0.0679,
+    0.33667
+   ],
+   "C2-SC": [
+    -0.13646,
+    -0.36333,
+    -0.02812
+   ]
+  },
+  "exposed_effective_C2_valid": {
+   "pairs": 14,
+   "lineages": 7,
+   "PA": {
+    "C2": 0.5476,
+    "SC": 0.6762,
+    "C3": 0.5
+   },
+   "C2-C3": [
+    0.04762,
+    -0.07407,
+    0.2
+   ],
+   "SC-C3": [
+    0.17619,
+    0.08056,
+    0.4
+   ],
+   "C2-SC": [
+    -0.12857,
+    -0.41667,
+    -0.00417
+   ]
+  }
+ },
+ "interaction_C2-C3_exposed_minus_unexposed": [
+  0.03085,
+  -0.11905,
+  0.20021
+ ],
+ "per_seed_exposed_PA": {
+  "C2:42": 0.304,
+  "C2:1337": 0.696,
+  "C2:2026": 0.435,
+  "C3:42": 0.522,
+  "C3:1337": 0.609,
+  "C3:2026": 0.435
+ },
+ "holdout_effect": {
+  "C2_units_trained": 87,
+  "C3_units_trained": 77,
+  "pool": 107,
+  "C2_minus_C3_trained": 20,
+  "C3_minus_C2_trained": 10,
+  "related_units_in_C2_training": 9,
+  "related_units_held_out_in_C2": [
+   "halurust-up:CVE-2021-25900_CWE-787",
+   "halurust-up:CVE-2022-31173_CWE-400",
+   "rustmizan-up:vuln-0006"
+  ],
+  "SC_draws": [
+   {
+    "trained": 78,
+    "dropped_vs_C2": 20,
+    "added_vs_C2": 11,
+    "related_kept": 11
+   },
+   {
+    "trained": 82,
+    "dropped_vs_C2": 23,
+    "added_vs_C2": 18,
+    "related_kept": 12
+   },
+   {
+    "trained": 76,
+    "dropped_vs_C2": 23,
+    "added_vs_C2": 12,
+    "related_kept": 10
+   },
+   {
+    "trained": 77,
+    "dropped_vs_C2": 21,
+    "added_vs_C2": 11,
+    "related_kept": 10
+   },
+   {
+    "trained": 78,
+    "dropped_vs_C2": 21,
+    "added_vs_C2": 12,
+    "related_kept": 12
+   },
+   {
+    "trained": 83,
+    "dropped_vs_C2": 20,
+    "added_vs_C2": 16,
+    "related_kept": 12
+   },
+   {
+    "trained": 83,
+    "dropped_vs_C2": 21,
+    "added_vs_C2": 17,
+    "related_kept": 11
+   },
+   {
+    "trained": 83,
+    "dropped_vs_C2": 22,
+    "added_vs_C2": 18,
+    "related_kept": 11
+   },
+   {
+    "trained": 83,
+    "dropped_vs_C2": 20,
+    "added_vs_C2": 16,
+    "related_kept": 12
+   },
+   {
+    "trained": 82,
+    "dropped_vs_C2": 23,
+    "added_vs_C2": 18,
+    "related_kept": 10
+   },
+   {
+    "trained": 82,
+    "dropped_vs_C2": 23,
+    "added_vs_C2": 18,
+    "related_kept": 12
+   },
+   {
+    "trained": 77,
+    "dropped_vs_C2": 22,
+    "added_vs_C2": 12,
+    "related_kept": 11
+   },
+   {
+    "trained": 77,
+    "dropped_vs_C2": 21,
+    "added_vs_C2": 11,
+    "related_kept": 11
+   },
+   {
+    "trained": 78,
+    "dropped_vs_C2": 21,
+    "added_vs_C2": 12,
+    "related_kept": 10
+   },
+   {
+    "trained": 82,
+    "dropped_vs_C2": 20,
+    "added_vs_C2": 15,
+    "related_kept": 10
+   },
+   {
+    "trained": 78,
+    "dropped_vs_C2": 19,
+    "added_vs_C2": 10,
+    "related_kept": 11
+   },
+   {
+    "trained": 78,
+    "dropped_vs_C2": 19,
+    "added_vs_C2": 10,
+    "related_kept": 11
+   },
+   {
+    "trained": 77,
+    "dropped_vs_C2": 23,
+    "added_vs_C2": 13,
+    "related_kept": 11
+   },
+   {
+    "trained": 77,
+    "dropped_vs_C2": 22,
+    "added_vs_C2": 12,
+    "related_kept": 9
+   },
+   {
+    "trained": 83,
+    "dropped_vs_C2": 21,
+    "added_vs_C2": 17,
+    "related_kept": 10
+   }
+  ]
+ },
+ "positive_control": {
+  "pairs": 171,
+  "PA": 1.0,
+  "note": "label header injected into training AND test inputs"
+ }
+}

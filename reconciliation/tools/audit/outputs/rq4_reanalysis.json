@@ -1,0 +1,169 @@
+{
+ "pairs": 21,
+ "entities": 15,
+ "cluster_sizes": {
+  "RUSTSEC-2019-0016": 1,
+  "RUSTSEC-2020-0091": 1,
+  "RUSTSEC-2020-0073": 1,
+  "RUSTSEC-2020-0088": 1,
+  "RUSTSEC-2020-0096": 1,
+  "RUSTSEC-2025-0019": 1,
+  "RUSTSEC-2020-0107": 1,
+  "RUSTSEC-2020-0007": 1,
+  "RUSTSEC-2025-0032": 1,
+  "RUSTSEC-2020-0041": 6,
+  "RUSTSEC-2020-0039": 2,
+  "RUSTSEC-2019-0017": 1,
+  "RUSTSEC-2019-0012": 1,
+  "RUSTSEC-2025-0027": 1,
+  "RUSTSEC-2025-0003": 1
+ },
+ "structural_ties": {
+  "vuln-0020": 12,
+  "vuln-0021": 12,
+  "vuln-0040": 12
+ },
+ "PA_mean": {
+  "RX": 0.6508,
+  "HR": 0.5238,
+  "NU": 0.6032,
+  "ID": 0.5556
+ },
+ "PA_per_seed": {
+  "RX": [
+   0.7143,
+   0.5714,
+   0.6667
+  ],
+  "HR": [
+   0.4762,
+   0.5238,
+   0.5714
+  ],
+  "NU": [
+   0.6667,
+   0.6667,
+   0.4762
+  ],
+  "ID": [
+   0.619,
+   0.5714,
+   0.4762
+  ]
+ },
+ "contrasts": {
+  "HR-RX": [
+   -0.127,
+   -0.2222,
+   -0.058
+  ],
+  "NU-RX": [
+   -0.0476,
+   -0.2292,
+   0.0648
+  ],
+  "ID-RX": [
+   -0.0952,
+   -0.2708,
+   0.0222
+  ],
+  "NU-HR": [
+   0.0794,
+   -0.0625,
+   0.1733
+  ],
+  "ID-HR": [
+   0.0317,
+   -0.1042,
+   0.127
+  ],
+  "ID-NU": [
+   -0.0476,
+   -0.1569,
+   0.0667
+  ]
+ },
+ "per_seed_contrasts": {
+  "HR-RX": [
+   -0.2381,
+   -0.0476,
+   -0.0952
+  ],
+  "NU-RX": [
+   -0.0476,
+   0.0952,
+   -0.1905
+  ],
+  "ID-NU": [
+   -0.0476,
+   -0.0952,
+   0.0
+  ]
+ },
+ "pool_sizes": {
+  "RX": 176,
+  "HR": 82,
+  "NU": 258,
+  "ID": 248
+ },
+ "trained_units": {
+  "RX": 150,
+  "HR": 70,
+  "NU": 223,
+  "ID": 213
+ },
+ "NU_vs_ID_trained_difference": [
+  10,
+  0
+ ],
+ "RX_units_trained_RX_vs_NU": {
+  "both": 126,
+  "only_RX": 24,
+  "only_NU": 23
+ },
+ "ID_dropped": [
+  "HR:CVE-2020-35870_CWE-416",
+  "HR:CVE-2021-21235_CWE-400",
+  "HR:CVE-2021-21299_CWE-444",
+  "HR:CVE-2021-25900_CWE-787",
+  "HR:CVE-2022-24713_CWE-400",
+  "HR:CVE-2022-31169_CWE-682",
+  "HR:CVE-2022-31173_CWE-400",
+  "HR:CVE-2024-21491_CWE-288",
+  "HR:CVE-2024-23644_CWE-113",
+  "HR:CVE-2024-28854_CWE-400"
+ ],
+ "watched_units_in_pool": {
+  "HR:CVE-2020-35869_CWE-134": {
+   "RX": false,
+   "HR": true,
+   "NU": true,
+   "ID": true
+  },
+  "HR:CVE-2020-35870_CWE-416": {
+   "RX": false,
+   "HR": true,
+   "NU": true,
+   "ID": false
+  },
+  "HR:CVE-2023-50711_CWE-787": {
+   "RX": false,
+   "HR": true,
+   "NU": true,
+   "ID": true
+  },
+  "HR:CVE-2021-21235_CWE-400": {
+   "RX": false,
+   "HR": true,
+   "NU": true,
+   "ID": false
+  },
+  "HR:CVE-2024-23644_CWE-113": {
+   "RX": false,
+   "HR": true,
+   "NU": true,
+   "ID": false
+  }
+ },
+ "max_attainable_PA": 0.8571
+}
