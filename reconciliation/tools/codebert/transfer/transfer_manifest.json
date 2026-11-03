@@ -2193,10 +2193,10 @@
    "source": "HR",
    "entity": "CVE-2015-20001",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2015-20001_CWE-119.rs"
+    "../CVE_Samples/Data/Positive/CVE-2015-20001_CWE-119.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2015-20001_CWE-119.rs"
+    "../CVE_Samples/Data/Negative/CVE-2015-20001_CWE-119.rs"
    ]
   },
   {
@@ -2204,10 +2204,10 @@
    "source": "HR",
    "entity": "CVE-2017-18016",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2017-18016_CWE-346.rs"
+    "../CVE_Samples/Data/Positive/CVE-2017-18016_CWE-346.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2017-18016_CWE-346.rs"
+    "../CVE_Samples/Data/Negative/CVE-2017-18016_CWE-346.rs"
    ]
   },
   {
@@ -2215,10 +2215,10 @@
    "source": "HR",
    "entity": "CVE-2018-1000657",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2018-1000657_CWE-119.rs"
+    "../CVE_Samples/Data/Positive/CVE-2018-1000657_CWE-119.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2018-1000657_CWE-119.rs"
+    "../CVE_Samples/Data/Negative/CVE-2018-1000657_CWE-119.rs"
    ]
   },
   {
@@ -2226,10 +2226,10 @@
    "source": "HR",
    "entity": "CVE-2018-1000810",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2018-1000810_CWE-190.rs"
+    "../CVE_Samples/Data/Positive/CVE-2018-1000810_CWE-190.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2018-1000810_CWE-190.rs"
+    "../CVE_Samples/Data/Negative/CVE-2018-1000810_CWE-190.rs"
    ]
   },
   {
@@ -2237,10 +2237,10 @@
    "source": "HR",
    "entity": "RUSTSEC-2018-0013",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2018-21000_CWE-119.rs"
+    "../CVE_Samples/Data/Positive/CVE-2018-21000_CWE-119.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2018-21000_CWE-119.rs"
+    "../CVE_Samples/Data/Negative/CVE-2018-21000_CWE-119.rs"
    ]
   },
   {
@@ -2248,10 +2248,10 @@
    "source": "HR",
    "entity": "CVE-2018-25008",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2018-25008_CWE-662.rs"
+    "../CVE_Samples/Data/Positive/CVE-2018-25008_CWE-662.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2018-25008_CWE-662.rs"
+    "../CVE_Samples/Data/Negative/CVE-2018-25008_CWE-662.rs"
    ]
   },
   {
@@ -2259,10 +2259,10 @@
    "source": "HR",
    "entity": "CVE-2019-1010299",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2019-1010299_CWE-200.rs"
+    "../CVE_Samples/Data/Positive/CVE-2019-1010299_CWE-200.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2019-1010299_CWE-200.rs"
+    "../CVE_Samples/Data/Negative/CVE-2019-1010299_CWE-200.rs"
    ]
   },
   {
@@ -2270,10 +2270,10 @@
    "source": "HR",
    "entity": "CVE-2019-15541",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2019-15541_CWE-88.rs"
+    "../CVE_Samples/Data/Positive/CVE-2019-15541_CWE-88.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2019-15541_CWE-88.rs"
+    "../CVE_Samples/Data/Negative/CVE-2019-15541_CWE-88.rs"
    ]
   },
   {
@@ -2281,10 +2281,10 @@
    "source": "HR",
    "entity": "RUSTSEC-2019-0008",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2019-15550_CWE-125.rs"
+    "../CVE_Samples/Data/Positive/CVE-2019-15550_CWE-125.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2019-15550_CWE-125.rs"
+    "../CVE_Samples/Data/Negative/CVE-2019-15550_CWE-125.rs"
    ]
   },
   {
@@ -2292,10 +2292,10 @@
    "source": "HR",
    "entity": "CVE-2019-16214",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2019-16214_CWE-701.rs"
+    "../CVE_Samples/Data/Positive/CVE-2019-16214_CWE-701.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2019-16214_CWE-701.rs"
+    "../CVE_Samples/Data/Negative/CVE-2019-16214_CWE-701.rs"
    ]
   },
   {
@@ -2303,10 +2303,10 @@
    "source": "HR",
    "entity": "RUSTSEC-2019-0021",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2019-16880_CWE-415.rs"
+    "../CVE_Samples/Data/Positive/CVE-2019-16880_CWE-415.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2019-16880_CWE-415.rs"
+    "../CVE_Samples/Data/Negative/CVE-2019-16880_CWE-415.rs"
    ]
   },
   {
@@ -2314,10 +2314,10 @@
    "source": "HR",
    "entity": "RUSTSEC-2019-0023",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2019-16882_CWE-416.rs"
+    "../CVE_Samples/Data/Positive/CVE-2019-16882_CWE-416.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2019-16882_CWE-416.rs"
+    "../CVE_Samples/Data/Negative/CVE-2019-16882_CWE-416.rs"
    ]
   },
   {
@@ -2325,10 +2325,10 @@
    "source": "HR",
    "entity": "RUSTSEC-2020-0156",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2019-20399_CWE-203.rs"
+    "../CVE_Samples/Data/Positive/CVE-2019-20399_CWE-203.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2019-20399_CWE-203.rs"
+    "../CVE_Samples/Data/Negative/CVE-2019-20399_CWE-203.rs"
    ]
   },
   {
@@ -2336,10 +2336,10 @@
    "source": "HR",
    "entity": "RUSTSEC-2020-0026",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2020-25573_CWE-824.rs"
+    "../CVE_Samples/Data/Positive/CVE-2020-25573_CWE-824.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2020-25573_CWE-824.rs"
+    "../CVE_Samples/Data/Negative/CVE-2020-25573_CWE-824.rs"
    ]
   },
   {
@@ -2347,10 +2347,10 @@
    "source": "HR",
    "entity": "RUSTSEC-2021-0001",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2020-26297_CWE-79.rs"
+    "../CVE_Samples/Data/Positive/CVE-2020-26297_CWE-79.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2020-26297_CWE-79.rs"
+    "../CVE_Samples/Data/Negative/CVE-2020-26297_CWE-79.rs"
    ]
   },
   {
@@ -2358,10 +2358,10 @@
    "source": "HR",
    "entity": "RUSTSEC-2020-0006",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2020-35861_CWE-125.rs"
+    "../CVE_Samples/Data/Positive/CVE-2020-35861_CWE-125.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2020-35861_CWE-125.rs"
+    "../CVE_Samples/Data/Negative/CVE-2020-35861_CWE-125.rs"
    ]
   },
   {
@@ -2369,10 +2369,10 @@
    "source": "HR",
    "entity": "RUSTSEC-2020-0014",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2020-35869_CWE-134.rs"
+    "../CVE_Samples/Data/Positive/CVE-2020-35869_CWE-134.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2020-35869_CWE-134.rs"
+    "../CVE_Samples/Data/Negative/CVE-2020-35869_CWE-134.rs"
    ]
   },
   {
@@ -2380,10 +2380,10 @@
    "source": "HR",
    "entity": "RUSTSEC-2020-0014",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2020-35870_CWE-416.rs"
+    "../CVE_Samples/Data/Positive/CVE-2020-35870_CWE-416.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2020-35870_CWE-416.rs"
+    "../CVE_Samples/Data/Negative/CVE-2020-35870_CWE-416.rs"
    ]
   },
   {
@@ -2391,10 +2391,10 @@
    "source": "HR",
    "entity": "RUSTSEC-2020-0052",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2020-35904_CWE-131.rs"
+    "../CVE_Samples/Data/Positive/CVE-2020-35904_CWE-131.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2020-35904_CWE-131.rs"
+    "../CVE_Samples/Data/Negative/CVE-2020-35904_CWE-131.rs"
    ]
   },
   {
@@ -2402,10 +2402,10 @@
    "source": "HR",
    "entity": "RUSTSEC-2020-0060",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2020-35906_CWE-416.rs"
+    "../CVE_Samples/Data/Positive/CVE-2020-35906_CWE-416.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2020-35906_CWE-416.rs"
+    "../CVE_Samples/Data/Negative/CVE-2020-35906_CWE-416.rs"
    ]
   },
   {
@@ -2413,10 +2413,10 @@
    "source": "HR",
    "entity": "RUSTSEC-2020-0074",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2020-35917_CWE-416.rs"
+    "../CVE_Samples/Data/Positive/CVE-2020-35917_CWE-416.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2020-35917_CWE-416.rs"
+    "../CVE_Samples/Data/Negative/CVE-2020-35917_CWE-416.rs"
    ]
   },
   {
@@ -2424,10 +2424,10 @@
    "source": "HR",
    "entity": "RUSTSEC-2020-0082",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2020-35923_CWE-416.rs"
+    "../CVE_Samples/Data/Positive/CVE-2020-35923_CWE-416.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2020-35923_CWE-416.rs"
+    "../CVE_Samples/Data/Negative/CVE-2020-35923_CWE-416.rs"
    ]
   },
   {
@@ -2435,10 +2435,10 @@
    "source": "HR",
    "entity": "RUSTSEC-2020-0103",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2020-36210_CWE-908.rs"
+    "../CVE_Samples/Data/Positive/CVE-2020-36210_CWE-908.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2020-36210_CWE-908.rs"
+    "../CVE_Samples/Data/Negative/CVE-2020-36210_CWE-908.rs"
    ]
   },
   {
@@ -2446,10 +2446,10 @@
    "source": "HR",
    "entity": "CVE-2020-36317",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2020-36317_CWE-787.rs"
+    "../CVE_Samples/Data/Positive/CVE-2020-36317_CWE-787.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2020-36317_CWE-787.rs"
+    "../CVE_Samples/Data/Negative/CVE-2020-36317_CWE-787.rs"
    ]
   },
   {
@@ -2457,10 +2457,10 @@
    "source": "HR",
    "entity": "CVE-2020-36318",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2020-36318_CWE-416.rs"
+    "../CVE_Samples/Data/Positive/CVE-2020-36318_CWE-416.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2020-36318_CWE-416.rs"
+    "../CVE_Samples/Data/Negative/CVE-2020-36318_CWE-416.rs"
    ]
   },
   {
@@ -2468,10 +2468,10 @@
    "source": "HR",
    "entity": "RUSTSEC-2021-0143",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-21235_CWE-400.rs"
+    "../CVE_Samples/Data/Positive/CVE-2021-21235_CWE-400.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-21235_CWE-400.rs"
+    "../CVE_Samples/Data/Negative/CVE-2021-21235_CWE-400.rs"
    ]
   },
   {
@@ -2479,10 +2479,10 @@
    "source": "HR",
    "entity": "RUSTSEC-2021-0020",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-21299_CWE-444.rs"
+    "../CVE_Samples/Data/Positive/CVE-2021-21299_CWE-444.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-21299_CWE-444.rs"
+    "../CVE_Samples/Data/Negative/CVE-2021-21299_CWE-444.rs"
    ]
   },
   {
@@ -2490,10 +2490,10 @@
    "source": "HR",
    "entity": "CVE-2021-24117",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-24117_CWE-203.rs"
+    "../CVE_Samples/Data/Positive/CVE-2021-24117_CWE-203.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-24117_CWE-203.rs"
+    "../CVE_Samples/Data/Negative/CVE-2021-24117_CWE-203.rs"
    ]
   },
   {
@@ -2501,10 +2501,10 @@
    "source": "HR",
    "entity": "RUSTSEC-2021-0003",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-25900_CWE-787.rs"
+    "../CVE_Samples/Data/Positive/CVE-2021-25900_CWE-787.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-25900_CWE-787.rs"
+    "../CVE_Samples/Data/Negative/CVE-2021-25900_CWE-787.rs"
    ]
   },
   {
@@ -2512,10 +2512,10 @@
    "source": "HR",
    "entity": "RUSTSEC-2021-0005",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-25902_CWE-416.rs"
+    "../CVE_Samples/Data/Positive/CVE-2021-25902_CWE-416.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-25902_CWE-416.rs"
+    "../CVE_Samples/Data/Negative/CVE-2021-25902_CWE-416.rs"
    ]
   },
   {
@@ -2523,10 +2523,10 @@
    "source": "HR",
    "entity": "CVE-2021-28875",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-28875_CWE-252.rs"
+    "../CVE_Samples/Data/Positive/CVE-2021-28875_CWE-252.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-28875_CWE-252.rs"
+    "../CVE_Samples/Data/Negative/CVE-2021-28875_CWE-252.rs"
    ]
   },
   {
@@ -2534,10 +2534,10 @@
    "source": "HR",
    "entity": "CVE-2021-28876",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-28876_CWE-755.rs"
+    "../CVE_Samples/Data/Positive/CVE-2021-28876_CWE-755.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-28876_CWE-755.rs"
+    "../CVE_Samples/Data/Negative/CVE-2021-28876_CWE-755.rs"
    ]
   },
   {
@@ -2545,10 +2545,10 @@
    "source": "HR",
    "entity": "CVE-2021-28877",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-28877_CWE-119.rs"
+    "../CVE_Samples/Data/Positive/CVE-2021-28877_CWE-119.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-28877_CWE-119.rs"
+    "../CVE_Samples/Data/Negative/CVE-2021-28877_CWE-119.rs"
    ]
   },
   {
@@ -2556,10 +2556,10 @@
    "source": "HR",
    "entity": "CVE-2021-28878",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-28878_CWE-119.rs"
+    "../CVE_Samples/Data/Positive/CVE-2021-28878_CWE-119.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-28878_CWE-119.rs"
+    "../CVE_Samples/Data/Negative/CVE-2021-28878_CWE-119.rs"
    ]
   },
   {
@@ -2567,10 +2567,10 @@
    "source": "HR",
    "entity": "CVE-2021-28879",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-28879_CWE-190.rs"
+    "../CVE_Samples/Data/Positive/CVE-2021-28879_CWE-190.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-28879_CWE-190.rs"
+    "../CVE_Samples/Data/Negative/CVE-2021-28879_CWE-190.rs"
    ]
   },
   {
@@ -2578,10 +2578,10 @@
    "source": "HR",
    "entity": "CVE-2021-29511",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-29511_CWE-770.rs"
+    "../CVE_Samples/Data/Positive/CVE-2021-29511_CWE-770.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-29511_CWE-770.rs"
+    "../CVE_Samples/Data/Negative/CVE-2021-29511_CWE-770.rs"
    ]
   },
   {
@@ -2589,10 +2589,10 @@
    "source": "HR",
    "entity": "CVE-2021-29922",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-29922_CWE-20.rs"
+    "../CVE_Samples/Data/Positive/CVE-2021-29922_CWE-20.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-29922_CWE-20.rs"
+    "../CVE_Samples/Data/Negative/CVE-2021-29922_CWE-20.rs"
    ]
   },
   {
@@ -2600,10 +2600,10 @@
    "source": "HR",
    "entity": "CVE-2021-31162",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-31162_CWE-415.rs"
+    "../CVE_Samples/Data/Positive/CVE-2021-31162_CWE-415.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-31162_CWE-415.rs"
+    "../CVE_Samples/Data/Negative/CVE-2021-31162_CWE-415.rs"
    ]
   },
   {
@@ -2611,10 +2611,10 @@
    "source": "HR",
    "entity": "RUSTSEC-2021-0078",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-32715_CWE-444.rs"
+    "../CVE_Samples/Data/Positive/CVE-2021-32715_CWE-444.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-32715_CWE-444.rs"
+    "../CVE_Samples/Data/Negative/CVE-2021-32715_CWE-444.rs"
    ]
   },
   {
@@ -2622,10 +2622,10 @@
    "source": "HR",
    "entity": "CVE-2021-32814",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-32814_CWE-22.rs"
+    "../CVE_Samples/Data/Positive/CVE-2021-32814_CWE-22.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-32814_CWE-22.rs"
+    "../CVE_Samples/Data/Negative/CVE-2021-32814_CWE-22.rs"
    ]
   },
   {
@@ -2633,10 +2633,10 @@
    "source": "HR",
    "entity": "RUSTSEC-2021-0105",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-36376_CWE-427.rs"
+    "../CVE_Samples/Data/Positive/CVE-2021-36376_CWE-427.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-36376_CWE-427.rs"
+    "../CVE_Samples/Data/Negative/CVE-2021-36376_CWE-427.rs"
    ]
   },
   {
@@ -2644,10 +2644,10 @@
    "source": "HR",
    "entity": "RUSTSEC-2021-0106",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-36753_CWE-427.rs"
+    "../CVE_Samples/Data/Positive/CVE-2021-36753_CWE-427.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-36753_CWE-427.rs"
+    "../CVE_Samples/Data/Negative/CVE-2021-36753_CWE-427.rs"
    ]
   },
   {
@@ -2655,10 +2655,10 @@
    "source": "HR",
    "entity": "CVE-2021-37625",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-37625_CWE-252.rs"
+    "../CVE_Samples/Data/Positive/CVE-2021-37625_CWE-252.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-37625_CWE-252.rs"
+    "../CVE_Samples/Data/Negative/CVE-2021-37625_CWE-252.rs"
    ]
   },
   {
@@ -2666,10 +2666,10 @@
    "source": "HR",
    "entity": "CVE-2021-3917",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-3917_CWE-276.rs"
+    "../CVE_Samples/Data/Positive/CVE-2021-3917_CWE-276.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-3917_CWE-276.rs"
+    "../CVE_Samples/Data/Negative/CVE-2021-3917_CWE-276.rs"
    ]
   },
   {
@@ -2677,10 +2677,10 @@
    "source": "HR",
    "entity": "CVE-2021-39193",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-39193_CWE-20.rs"
+    "../CVE_Samples/Data/Positive/CVE-2021-39193_CWE-20.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-39193_CWE-20.rs"
+    "../CVE_Samples/Data/Negative/CVE-2021-39193_CWE-20.rs"
    ]
   },
   {
@@ -2688,10 +2688,10 @@
    "source": "HR",
    "entity": "CVE-2021-41138",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-41138_CWE-20.rs"
+    "../CVE_Samples/Data/Positive/CVE-2021-41138_CWE-20.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-41138_CWE-20.rs"
+    "../CVE_Samples/Data/Negative/CVE-2021-41138_CWE-20.rs"
    ]
   },
   {
@@ -2699,10 +2699,10 @@
    "source": "HR",
    "entity": "CVE-2021-41153",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-41153_CWE-670.rs"
+    "../CVE_Samples/Data/Positive/CVE-2021-41153_CWE-670.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-41153_CWE-670.rs"
+    "../CVE_Samples/Data/Negative/CVE-2021-41153_CWE-670.rs"
    ]
   },
   {
@@ -2710,10 +2710,10 @@
    "source": "HR",
    "entity": "RUSTSEC-2021-0155",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-43790_CWE-416.rs"
+    "../CVE_Samples/Data/Positive/CVE-2021-43790_CWE-416.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-43790_CWE-416.rs"
+    "../CVE_Samples/Data/Negative/CVE-2021-43790_CWE-416.rs"
    ]
   },
   {
@@ -2721,10 +2721,10 @@
    "source": "HR",
    "entity": "CVE-2021-44421",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2021-44421_CWE-203.rs"
+    "../CVE_Samples/Data/Positive/CVE-2021-44421_CWE-203.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2021-44421_CWE-203.rs"
+    "../CVE_Samples/Data/Negative/CVE-2021-44421_CWE-203.rs"
    ]
   },
   {
@@ -2732,10 +2732,10 @@
    "source": "HR",
    "entity": "CVE-2022-21685",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2022-21685_CWE-191.rs"
+    "../CVE_Samples/Data/Positive/CVE-2022-21685_CWE-191.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2022-21685_CWE-191.rs"
+    "../CVE_Samples/Data/Negative/CVE-2022-21685_CWE-191.rs"
    ]
   },
   {
@@ -2743,10 +2743,10 @@
    "source": "HR",
    "entity": "CVE-2022-23066",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2022-23066_CWE-682.rs"
+    "../CVE_Samples/Data/Positive/CVE-2022-23066_CWE-682.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2022-23066_CWE-682.rs"
+    "../CVE_Samples/Data/Negative/CVE-2022-23066_CWE-682.rs"
    ]
   },
   {
@@ -2754,10 +2754,10 @@
    "source": "HR",
    "entity": "CVE-2022-23573",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2022-23573_CWE-908.rs"
+    "../CVE_Samples/Data/Positive/CVE-2022-23573_CWE-908.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2022-23573_CWE-908.rs"
+    "../CVE_Samples/Data/Negative/CVE-2022-23573_CWE-908.rs"
    ]
   },
   {
@@ -2765,10 +2765,10 @@
    "source": "HR",
    "entity": "RUSTSEC-2022-0041",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2022-23639_CWE-362.rs"
+    "../CVE_Samples/Data/Positive/CVE-2022-23639_CWE-362.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2022-23639_CWE-362.rs"
+    "../CVE_Samples/Data/Negative/CVE-2022-23639_CWE-362.rs"
    ]
   },
   {
@@ -2776,10 +2776,10 @@
    "source": "HR",
    "entity": "RUSTSEC-2022-0013",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2022-24713_CWE-400.rs"
+    "../CVE_Samples/Data/Positive/CVE-2022-24713_CWE-400.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2022-24713_CWE-400.rs"
+    "../CVE_Samples/Data/Negative/CVE-2022-24713_CWE-400.rs"
    ]
   },
   {
@@ -2787,10 +2787,10 @@
    "source": "HR",
    "entity": "RUSTSEC-2022-0099",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2022-24791_CWE-416.rs"
+    "../CVE_Samples/Data/Positive/CVE-2022-24791_CWE-416.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2022-24791_CWE-416.rs"
+    "../CVE_Samples/Data/Negative/CVE-2022-24791_CWE-416.rs"
    ]
   },
   {
@@ -2798,10 +2798,10 @@
    "source": "HR",
    "entity": "CVE-2022-27815",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2022-27815_CWE-59.rs"
+    "../CVE_Samples/Data/Positive/CVE-2022-27815_CWE-59.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2022-27815_CWE-59.rs"
+    "../CVE_Samples/Data/Negative/CVE-2022-27815_CWE-59.rs"
    ]
   },
   {
@@ -2809,10 +2809,10 @@
    "source": "HR",
    "entity": "CVE-2022-27816",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2022-27816_CWE-59.rs"
+    "../CVE_Samples/Data/Positive/CVE-2022-27816_CWE-59.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2022-27816_CWE-59.rs"
+    "../CVE_Samples/Data/Negative/CVE-2022-27816_CWE-59.rs"
    ]
   },
   {
@@ -2820,10 +2820,10 @@
    "source": "HR",
    "entity": "CVE-2022-27818",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2022-27818_CWE-668.rs"
+    "../CVE_Samples/Data/Positive/CVE-2022-27818_CWE-668.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2022-27818_CWE-668.rs"
+    "../CVE_Samples/Data/Negative/CVE-2022-27818_CWE-668.rs"
    ]
   },
   {
@@ -2831,10 +2831,10 @@
    "source": "HR",
    "entity": "CVE-2022-27819",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2022-27819_CWE-400.rs"
+    "../CVE_Samples/Data/Positive/CVE-2022-27819_CWE-400.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2022-27819_CWE-400.rs"
+    "../CVE_Samples/Data/Negative/CVE-2022-27819_CWE-400.rs"
    ]
   },
   {
@@ -2842,10 +2842,10 @@
    "source": "HR",
    "entity": "RUSTSEC-2022-0030",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2022-31099_CWE-674.rs"
+    "../CVE_Samples/Data/Positive/CVE-2022-31099_CWE-674.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2022-31099_CWE-674.rs"
+    "../CVE_Samples/Data/Negative/CVE-2022-31099_CWE-674.rs"
    ]
   },
   {
@@ -2853,10 +2853,10 @@
    "source": "HR",
    "entity": "RUSTSEC-2022-0031",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2022-31100_CWE-617.rs"
+    "../CVE_Samples/Data/Positive/CVE-2022-31100_CWE-617.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2022-31100_CWE-617.rs"
+    "../CVE_Samples/Data/Negative/CVE-2022-31100_CWE-617.rs"
    ]
   },
   {
@@ -2864,10 +2864,10 @@
    "source": "HR",
    "entity": "CVE-2022-31111",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2022-31111_CWE-670.rs"
+    "../CVE_Samples/Data/Positive/CVE-2022-31111_CWE-670.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2022-31111_CWE-670.rs"
+    "../CVE_Samples/Data/Negative/CVE-2022-31111_CWE-670.rs"
    ]
   },
   {
@@ -2875,10 +2875,10 @@
    "source": "HR",
    "entity": "RUSTSEC-2022-0101",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2022-31169_CWE-682.rs"
+    "../CVE_Samples/Data/Positive/CVE-2022-31169_CWE-682.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2022-31169_CWE-682.rs"
+    "../CVE_Samples/Data/Negative/CVE-2022-31169_CWE-682.rs"
    ]
   },
   {
@@ -2886,10 +2886,10 @@
    "source": "HR",
    "entity": "RUSTSEC-2022-0038",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2022-31173_CWE-400.rs"
+    "../CVE_Samples/Data/Positive/CVE-2022-31173_CWE-400.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2022-31173_CWE-400.rs"
+    "../CVE_Samples/Data/Negative/CVE-2022-31173_CWE-400.rs"
    ]
   },
   {
@@ -2897,10 +2897,10 @@
    "source": "HR",
    "entity": "RUSTSEC-2022-0035",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2022-35922_CWE-400.rs"
+    "../CVE_Samples/Data/Positive/CVE-2022-35922_CWE-400.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2022-35922_CWE-400.rs"
+    "../CVE_Samples/Data/Negative/CVE-2022-35922_CWE-400.rs"
    ]
   },
   {
@@ -2908,10 +2908,10 @@
    "source": "HR",
    "entity": "CVE-2022-36008",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2022-36008_CWE-190.rs"
+    "../CVE_Samples/Data/Positive/CVE-2022-36008_CWE-190.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2022-36008_CWE-190.rs"
+    "../CVE_Samples/Data/Negative/CVE-2022-36008_CWE-190.rs"
    ]
   },
   {
@@ -2919,10 +2919,10 @@
    "source": "HR",
    "entity": "CVE-2022-36113",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2022-36113_CWE-22.rs"
+    "../CVE_Samples/Data/Positive/CVE-2022-36113_CWE-22.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2022-36113_CWE-22.rs"
+    "../CVE_Samples/Data/Negative/CVE-2022-36113_CWE-22.rs"
    ]
   },
   {
@@ -2930,10 +2930,10 @@
    "source": "HR",
    "entity": "RUSTSEC-2022-0085",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2022-39252_CWE-287.rs"
+    "../CVE_Samples/Data/Positive/CVE-2022-39252_CWE-287.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2022-39252_CWE-287.rs"
+    "../CVE_Samples/Data/Negative/CVE-2022-39252_CWE-287.rs"
    ]
   },
   {
@@ -2941,10 +2941,10 @@
    "source": "HR",
    "entity": "RUSTSEC-2023-0001",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2023-22466_CWE-665.rs"
+    "../CVE_Samples/Data/Positive/CVE-2023-22466_CWE-665.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2023-22466_CWE-665.rs"
+    "../CVE_Samples/Data/Negative/CVE-2023-22466_CWE-665.rs"
    ]
   },
   {
@@ -2952,10 +2952,10 @@
    "source": "HR",
    "entity": "CVE-2023-28113",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2023-28113_CWE-347.rs"
+    "../CVE_Samples/Data/Positive/CVE-2023-28113_CWE-347.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2023-28113_CWE-347.rs"
+    "../CVE_Samples/Data/Negative/CVE-2023-28113_CWE-347.rs"
    ]
   },
   {
@@ -2963,10 +2963,10 @@
    "source": "HR",
    "entity": "RUSTSEC-2023-0092",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2023-30624_CWE-758.rs"
+    "../CVE_Samples/Data/Positive/CVE-2023-30624_CWE-758.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2023-30624_CWE-758.rs"
+    "../CVE_Samples/Data/Negative/CVE-2023-30624_CWE-758.rs"
    ]
   },
   {
@@ -2974,10 +2974,10 @@
    "source": "HR",
    "entity": "RUSTSEC-2023-0056",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2023-41051_CWE-125.rs"
+    "../CVE_Samples/Data/Positive/CVE-2023-41051_CWE-125.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2023-41051_CWE-125.rs"
+    "../CVE_Samples/Data/Negative/CVE-2023-41051_CWE-125.rs"
    ]
   },
   {
@@ -2985,10 +2985,10 @@
    "source": "HR",
    "entity": "CVE-2023-41317",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2023-41317_CWE-755.rs"
+    "../CVE_Samples/Data/Positive/CVE-2023-41317_CWE-755.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2023-41317_CWE-755.rs"
+    "../CVE_Samples/Data/Negative/CVE-2023-41317_CWE-755.rs"
    ]
   },
   {
@@ -2996,10 +2996,10 @@
    "source": "HR",
    "entity": "CVE-2023-45812",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2023-45812_CWE-754.rs"
+    "../CVE_Samples/Data/Positive/CVE-2023-45812_CWE-754.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2023-45812_CWE-754.rs"
+    "../CVE_Samples/Data/Negative/CVE-2023-45812_CWE-754.rs"
    ]
   },
   {
@@ -3007,10 +3007,10 @@
    "source": "HR",
    "entity": "CVE-2023-46135",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2023-46135_CWE-248.rs"
+    "../CVE_Samples/Data/Positive/CVE-2023-46135_CWE-248.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2023-46135_CWE-248.rs"
+    "../CVE_Samples/Data/Negative/CVE-2023-46135_CWE-248.rs"
    ]
   },
   {
@@ -3018,10 +3018,10 @@
    "source": "HR",
    "entity": "RUSTSEC-2024-0002",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2023-50711_CWE-787.rs"
+    "../CVE_Samples/Data/Positive/CVE-2023-50711_CWE-787.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2023-50711_CWE-787.rs"
+    "../CVE_Samples/Data/Negative/CVE-2023-50711_CWE-787.rs"
    ]
   },
   {
@@ -3029,10 +3029,10 @@
    "source": "HR",
    "entity": "RUSTSEC-2023-0073",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2023-6245_CWE-20.rs"
+    "../CVE_Samples/Data/Positive/CVE-2023-6245_CWE-20.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2023-6245_CWE-20.rs"
+    "../CVE_Samples/Data/Negative/CVE-2023-6245_CWE-20.rs"
    ]
   },
   {
@@ -3040,10 +3040,10 @@
    "source": "HR",
    "entity": "CVE-2024-20380",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2024-20380_CWE-475.rs"
+    "../CVE_Samples/Data/Positive/CVE-2024-20380_CWE-475.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2024-20380_CWE-475.rs"
+    "../CVE_Samples/Data/Negative/CVE-2024-20380_CWE-475.rs"
    ]
   },
   {
@@ -3051,10 +3051,10 @@
    "source": "HR",
    "entity": "RUSTSEC-2024-0010",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2024-21491_CWE-288.rs"
+    "../CVE_Samples/Data/Positive/CVE-2024-21491_CWE-288.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2024-21491_CWE-288.rs"
+    "../CVE_Samples/Data/Negative/CVE-2024-21491_CWE-288.rs"
    ]
   },
   {
@@ -3062,10 +3062,10 @@
    "source": "HR",
    "entity": "CVE-2024-21629",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2024-21629_CWE-703.rs"
+    "../CVE_Samples/Data/Positive/CVE-2024-21629_CWE-703.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2024-21629_CWE-703.rs"
+    "../CVE_Samples/Data/Negative/CVE-2024-21629_CWE-703.rs"
    ]
   },
   {
@@ -3073,10 +3073,10 @@
    "source": "HR",
    "entity": "RUSTSEC-2024-0008",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2024-23644_CWE-113.rs"
+    "../CVE_Samples/Data/Positive/CVE-2024-23644_CWE-113.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2024-23644_CWE-113.rs"
+    "../CVE_Samples/Data/Negative/CVE-2024-23644_CWE-113.rs"
    ]
   },
   {
@@ -3084,10 +3084,10 @@
    "source": "HR",
    "entity": "RUSTSEC-2024-0341",
    "vulnerable_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Positive/CVE-2024-28854_CWE-400.rs"
+    "../CVE_Samples/Data/Positive/CVE-2024-28854_CWE-400.rs"
    ],
    "fixed_files": [
-    "/Users/yukthapriya/CVE_Samples/Data/Negative/CVE-2024-28854_CWE-400.rs"
+    "../CVE_Samples/Data/Negative/CVE-2024-28854_CWE-400.rs"
    ]
   }
  ],
