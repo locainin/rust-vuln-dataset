@@ -4,5 +4,5 @@ version = "0.1.0"
 
 [dev-dependencies]
 hound   = "3.0"
-time    = "0.1.35"
+time    = "0.3.55"
 walkdir = "1.0"
