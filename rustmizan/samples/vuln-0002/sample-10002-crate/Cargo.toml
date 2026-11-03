@@ -16,7 +16,7 @@ weak = []
 
 [dev-dependencies]
 criterion = "~0.3"
-crossbeam-utils = "~0.7"
+crossbeam-utils = "~0.8"
 itertools = "~0.9"
 num_cpus = "~1"
 once_cell = "~1"
